@@ -1,0 +1,231 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\insertbooks.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\insertbooks.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\insertbooks.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\insertbooks.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\createactualbook.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\createactualbook.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\createactualbook.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\createactualbook.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\fetchanything.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\fetchanything.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\maindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\maindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\maindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\maindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\signup.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\signup.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\signup.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\signup.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\userdashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\userdashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 931,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FetchAnything.vb",
+              "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\FetchAnything.vb",
+              "RelativeDocumentMoniker": "TryLibraryManagement\\FetchAnything.vb",
+              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\FetchAnything.vb",
+              "RelativeToolTip": "TryLibraryManagement\\FetchAnything.vb",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-10T12:20:37.869Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateActualBook.vb",
+              "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\CreateActualBook.vb",
+              "RelativeDocumentMoniker": "TryLibraryManagement\\CreateActualBook.vb",
+              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\CreateActualBook.vb",
+              "RelativeToolTip": "TryLibraryManagement\\CreateActualBook.vb",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwBkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-08T04:49:33.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateActualBook.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\CreateActualBook.vb",
+              "RelativeDocumentMoniker": "TryLibraryManagement\\CreateActualBook.vb",
+              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\CreateActualBook.vb [Design]",
+              "RelativeToolTip": "TryLibraryManagement\\CreateActualBook.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-08T04:10:59.702Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InsertBooks.vb",
+              "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\InsertBooks.vb",
+              "RelativeDocumentMoniker": "TryLibraryManagement\\InsertBooks.vb",
+              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\InsertBooks.vb",
+              "RelativeToolTip": "TryLibraryManagement\\InsertBooks.vb",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAiwCMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-04T17:09:06.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InsertBooks.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\InsertBooks.vb",
+              "RelativeDocumentMoniker": "TryLibraryManagement\\InsertBooks.vb",
+              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\InsertBooks.vb [Design]",
+              "RelativeToolTip": "TryLibraryManagement\\InsertBooks.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-04T16:48:36.905Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainDashboard.vb",
+              "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\MainDashboard.vb",
+              "RelativeDocumentMoniker": "TryLibraryManagement\\MainDashboard.vb",
+              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\MainDashboard.vb",
+              "RelativeToolTip": "TryLibraryManagement\\MainDashboard.vb",
+              "ViewState": "AgIAANwAAAAAAAAAAAAAAAABAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-16T10:28:56.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SignUp.vb",
+              "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\SignUp.vb",
+              "RelativeDocumentMoniker": "TryLibraryManagement\\SignUp.vb",
+              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\SignUp.vb",
+              "RelativeToolTip": "TryLibraryManagement\\SignUp.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-01T07:30:59.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainDashboard.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\MainDashboard.vb",
+              "RelativeDocumentMoniker": "TryLibraryManagement\\MainDashboard.vb",
+              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\MainDashboard.vb [Design]",
+              "RelativeToolTip": "TryLibraryManagement\\MainDashboard.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-10T07:42:48.183Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SignUp.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\SignUp.vb",
+              "RelativeDocumentMoniker": "TryLibraryManagement\\SignUp.vb",
+              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\SignUp.vb [Design]",
+              "RelativeToolTip": "TryLibraryManagement\\SignUp.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-01T07:30:55.043Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserDashboard.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\UserDashboard.vb",
+              "RelativeDocumentMoniker": "TryLibraryManagement\\UserDashboard.vb",
+              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\UserDashboard.vb [Design]",
+              "RelativeToolTip": "TryLibraryManagement\\UserDashboard.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-06T03:29:30.59Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Form1.vb",
+              "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\Form1.vb",
+              "RelativeDocumentMoniker": "TryLibraryManagement\\Form1.vb",
+              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\Form1.vb",
+              "RelativeToolTip": "TryLibraryManagement\\Form1.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-17T11:55:25.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Form1.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\Form1.vb",
+              "RelativeDocumentMoniker": "TryLibraryManagement\\Form1.vb",
+              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\Form1.vb [Design]",
+              "RelativeToolTip": "TryLibraryManagement\\Form1.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-17T11:55:21.499Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 483,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{25f7e850-ffa1-11d0-b63f-00a0c922e851}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
