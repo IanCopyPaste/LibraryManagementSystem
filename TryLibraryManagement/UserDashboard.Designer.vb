@@ -26,9 +26,11 @@ Partial Class UserDashboard
         ' 
         ' UserDashboard
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1266, 637)
+        Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Margin = New Padding(4, 4, 4, 4)
         Name = "UserDashboard"
         StartPosition = FormStartPosition.CenterScreen
         Text = "UserDashboard"

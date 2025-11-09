@@ -176,13 +176,14 @@ Public Class InsertBooks
     Sub searchUser()
         Try
             dbConOpen()
-            Dim query As String = "SELECT bookID, title, author, publishDate, category FROM books WHERE bookID = 'JK'
-                                   OR title LIKE '%JK%'
-                                   OR author LIKE '%JK%'
-                                   OR publishDate LIKE '%JK%'
-                                   OR category LIKE '%JK%';"
+            Dim query As String = "SELECT bookID, title, author, publishDate, category FROM books " &
+                              "WHERE bookID LIKE @search " &
+                              "OR title LIKE @search " &
+                              "OR author LIKE @search " &
+                              "OR publishDate LIKE @search " &
+                              "OR category LIKE @search;"
             Dim cmd As New MySqlCommand(query, con)
-            cmd.Parameters.AddWithValue("@search", txtSearchList.Text)
+            cmd.Parameters.AddWithValue("@search", "%" & txtSearchList.Text & "%") ' ← add wildcards here
             Dim da As New MySqlDataAdapter(cmd)
             Dim dt As New DataTable
             da.Fill(dt)
@@ -196,6 +197,7 @@ Public Class InsertBooks
             dbConClose()
         End Try
     End Sub
+
 
     Public Sub displayAllBooks()
         Try
