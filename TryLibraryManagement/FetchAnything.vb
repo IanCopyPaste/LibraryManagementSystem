@@ -7,6 +7,8 @@ Module FetchAnything
     Public pathTocreate As String
 
     'CreateActualBookForm
+
+    'main process
     Public Function checkIfBookTitleisUnique(HELLO As String)
         Try
             con.Open()
@@ -29,14 +31,21 @@ Module FetchAnything
         End Try
     End Function
 
+
+    'main process
+
+    'methods
     Public Sub createPath(path As String)
+        Dim path2 As String = ""
         For Each e As String In path
             If e = "\" Then
                 e = "\\"
             End If
-            path += e
+            path2 += e
         Next
-        pathTocreate = path
+        pathTocreate = path2
     End Sub
+    'methods
+
     'CreateActualBookForm
 End Module

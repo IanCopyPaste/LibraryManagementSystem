@@ -180,6 +180,7 @@ Partial Class CreateActualBook
         Name = "CreateActualBook"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Insert a Book"
+        TopMost = True
         CType(bookPic, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()

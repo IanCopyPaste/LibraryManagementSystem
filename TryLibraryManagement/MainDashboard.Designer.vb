@@ -249,7 +249,7 @@ Partial Class MainDashboard
         userPageBtn.Name = "userPageBtn"
         userPageBtn.Size = New Size(105, 60)
         userPageBtn.TabIndex = 0
-        userPageBtn.Text = "HOME"
+        userPageBtn.Text = "Home"
         userPageBtn.UseVisualStyleBackColor = False
         ' 
         ' toPhotoBtn
@@ -393,7 +393,7 @@ Partial Class MainDashboard
         ' 
         ' ProfileBoxMain
         ' 
-        ProfileBoxMain.BackColor = Color.Silver
+        ProfileBoxMain.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         ProfileBoxMain.ErrorImage = Nothing
         ProfileBoxMain.InitialImage = Nothing
         ProfileBoxMain.Location = New Point(97, 19)
@@ -627,7 +627,6 @@ Partial Class MainDashboard
         Controls.Add(SidePanel)
         Controls.Add(TopPanel)
         Font = New Font("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        FormBorderStyle = FormBorderStyle.FixedToolWindow
         Margin = New Padding(3, 4, 3, 4)
         Name = "MainDashboard"
         StartPosition = FormStartPosition.CenterScreen
@@ -686,7 +685,7 @@ Partial Class MainDashboard
     Friend WithEvents ACCESS As DataGridViewTextBoxColumn
     Friend WithEvents Edit As DataGridViewImageColumn
     Friend WithEvents Delete As DataGridViewImageColumn
-    Friend WithEvents toPhotoBtn As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents BookHistoryBtn As Button
+    Friend WithEvents toPhotoBtn As Button
 End Class

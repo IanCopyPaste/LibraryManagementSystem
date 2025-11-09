@@ -26,15 +26,16 @@ Public Class CreateActualBook
             GC.Collect()
             con.Close()
             clearAny()
+            pathTocreate = Nothing
         End Try
     End Sub
 
     Private Sub btnUploadPhoto_Click(sender As Object, e As EventArgs) Handles btnUploadPhoto.Click
         If UploadPhotoDialoag.ShowDialog = DialogResult.OK Then
             Dim path As String = UploadPhotoDialoag.FileName
+            createPath(path)
             btnUploadPhoto.Visible = False
             bookPic.Image = Image.FromFile(UploadPhotoDialoag.FileName)
-            createPath(path)
         End If
     End Sub
 

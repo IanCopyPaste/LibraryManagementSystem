@@ -32,7 +32,7 @@ Public Class MainDashboard
                 MsgBox("PLEASE CLICK A VALID ROW!", vbInformation, "PLEASE FIX YOUR ASS UP")
             End If
         Catch ex As Exception
-            MsgBox("Error")
+            MsgBox("Please Select a Valid Row", vbCritical, "Invalid Row")
         End Try
     End Sub
     Private Sub updateBtn_Click(sender As Object, e As EventArgs) Handles updateBtn.Click
@@ -63,10 +63,6 @@ Public Class MainDashboard
 
 
     'short btn starts
-    Private Sub toPhotoBtn_Click(sender As Object, e As EventArgs) Handles toPhotoBtn.Click
-        picture.Show()
-        Me.Hide()
-    End Sub
 
     Private Sub TimeForTimer_Tick(sender As Object, e As EventArgs) Handles TimeForTimer.Tick
         TimeLabel.Text = "Time Now: " & "  " & Date.Now
@@ -207,7 +203,7 @@ Public Class MainDashboard
             MsgBox(ex.Message, vbCritical, "ERROR OCCURED")
         Finally
             GC.Collect()
-            DBcon.dbConOpen()
+            DBcon.dbConClose()
         End Try
     End Sub
 
@@ -238,7 +234,7 @@ Public Class MainDashboard
             MsgBox(ex.Message, vbCritical, "ERROR OCCURED")
         Finally
             GC.Collect()
-            DBcon.dbConOpen()
+            DBcon.dbConClose()
         End Try
     End Sub
 
@@ -257,7 +253,6 @@ Public Class MainDashboard
                 ProfileBoxMain.Image = Image.FromStream(ms)
             End If
         Catch ex As Exception
-
         End Try
     End Sub
 

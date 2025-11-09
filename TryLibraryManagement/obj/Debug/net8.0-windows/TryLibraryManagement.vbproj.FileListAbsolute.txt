@@ -80,7 +80,6 @@ C:\Users\CLIENT\Documents\vbWorks\TryLibraryManagement\TryLibraryManagement\obj\
 C:\Users\CLIENT\Documents\vbWorks\TryLibraryManagement\TryLibraryManagement\obj\Debug\net8.0-windows\TryLibraryManagement.Form1.resources
 C:\Users\CLIENT\Documents\vbWorks\TryLibraryManagement\TryLibraryManagement\obj\Debug\net8.0-windows\TryLibraryManagement.MainDashboard.resources
 C:\Users\CLIENT\Documents\vbWorks\TryLibraryManagement\TryLibraryManagement\obj\Debug\net8.0-windows\TryLibraryManagement.Resources.resources
-C:\Users\CLIENT\Documents\vbWorks\TryLibraryManagement\TryLibraryManagement\obj\Debug\net8.0-windows\TryLibraryManagement.picture.resources
 C:\Users\CLIENT\Documents\vbWorks\TryLibraryManagement\TryLibraryManagement\obj\Debug\net8.0-windows\TryLibraryManagement.SignUp.resources
 C:\Users\CLIENT\Documents\vbWorks\TryLibraryManagement\TryLibraryManagement\obj\Debug\net8.0-windows\TryLibraryManagement.vbproj.GenerateResource.cache
 C:\Users\CLIENT\Documents\vbWorks\TryLibraryManagement\TryLibraryManagement\obj\Debug\net8.0-windows\TryLibraryManagement.GeneratedMSBuildEditorConfig.editorconfig
@@ -96,3 +95,4 @@ C:\Users\CLIENT\Documents\vbWorks\TryLibraryManagement\TryLibraryManagement\obj\
 C:\Users\CLIENT\Documents\vbWorks\TryLibraryManagement\TryLibraryManagement\obj\Debug\net8.0-windows\TryLibraryManagement.InsertBooks.resources
 C:\Users\CLIENT\Documents\vbWorks\TryLibraryManagement\TryLibraryManagement\obj\Debug\net8.0-windows\TryLibraryManagement.UserDashboard.resources
 C:\Users\CLIENT\Documents\vbWorks\TryLibraryManagement\TryLibraryManagement\obj\Debug\net8.0-windows\TryLibraryManagement.CreateActualBook.resources
+C:\Users\CLIENT\Documents\vbWorks\TryLibraryManagement\TryLibraryManagement\obj\Debug\net8.0-windows\TryLibraryManagement.sourcelink.json
