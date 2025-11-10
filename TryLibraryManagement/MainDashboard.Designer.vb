@@ -45,7 +45,6 @@ Partial Class MainDashboard
         SignOutBtn = New Button()
         InsertBooksBtn = New Button()
         userPageBtn = New Button()
-        toPhotoBtn = New Button()
         refreshBtn = New Button()
         MainPanel = New Panel()
         Label9 = New Label()
@@ -60,7 +59,7 @@ Partial Class MainDashboard
         ProfileBoxMain = New PictureBox()
         updateBtn = New Button()
         comboAccess = New ComboBox()
-        txtPassword = New TextBox()
+        txtEmail = New TextBox()
         txtUsername = New TextBox()
         txtSuffix = New TextBox()
         txtMname = New TextBox()
@@ -71,7 +70,7 @@ Partial Class MainDashboard
         USER_ID = New DataGridViewTextBoxColumn()
         FULLNAME = New DataGridViewTextBoxColumn()
         USERNAME = New DataGridViewTextBoxColumn()
-        PASS = New DataGridViewTextBoxColumn()
+        EMAIL = New DataGridViewTextBoxColumn()
         ACCESS = New DataGridViewTextBoxColumn()
         Edit = New DataGridViewImageColumn()
         Delete = New DataGridViewImageColumn()
@@ -162,9 +161,9 @@ Partial Class MainDashboard
         Label1.Font = New Font("Sitka Banner", 27.75F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(12, 7)
         Label1.Name = "Label1"
-        Label1.Size = New Size(532, 53)
+        Label1.Size = New Size(642, 53)
         Label1.TabIndex = 0
-        Label1.Text = "Simpol Library Management System"
+        Label1.Text = "Simpol Library Management System - Home"
         Label1.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' SidePanel
@@ -175,7 +174,6 @@ Partial Class MainDashboard
         SidePanel.Controls.Add(SignOutBtn)
         SidePanel.Controls.Add(InsertBooksBtn)
         SidePanel.Controls.Add(userPageBtn)
-        SidePanel.Controls.Add(toPhotoBtn)
         SidePanel.Dock = DockStyle.Left
         SidePanel.Location = New Point(0, 74)
         SidePanel.Name = "SidePanel"
@@ -249,18 +247,8 @@ Partial Class MainDashboard
         userPageBtn.Name = "userPageBtn"
         userPageBtn.Size = New Size(105, 60)
         userPageBtn.TabIndex = 0
-        userPageBtn.Text = "Home"
+        userPageBtn.Text = "Manage Users"
         userPageBtn.UseVisualStyleBackColor = False
-        ' 
-        ' toPhotoBtn
-        ' 
-        toPhotoBtn.Location = New Point(9, 19)
-        toPhotoBtn.Name = "toPhotoBtn"
-        toPhotoBtn.Size = New Size(83, 25)
-        toPhotoBtn.TabIndex = 6
-        toPhotoBtn.Text = "Photo"
-        toPhotoBtn.UseVisualStyleBackColor = True
-        toPhotoBtn.Visible = False
         ' 
         ' refreshBtn
         ' 
@@ -287,7 +275,7 @@ Partial Class MainDashboard
         MainPanel.Controls.Add(refreshBtn)
         MainPanel.Controls.Add(updateBtn)
         MainPanel.Controls.Add(comboAccess)
-        MainPanel.Controls.Add(txtPassword)
+        MainPanel.Controls.Add(txtEmail)
         MainPanel.Controls.Add(txtUsername)
         MainPanel.Controls.Add(txtSuffix)
         MainPanel.Controls.Add(txtMname)
@@ -325,11 +313,11 @@ Partial Class MainDashboard
         ' 
         Label8.AutoSize = True
         Label8.Font = New Font("Tahoma", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label8.Location = New Point(231, 406)
+        Label8.Location = New Point(240, 406)
         Label8.Name = "Label8"
-        Label8.Size = New Size(62, 16)
+        Label8.Size = New Size(38, 16)
         Label8.TabIndex = 19
-        Label8.Text = "Password"
+        Label8.Text = "Email"
         ' 
         ' Label7
         ' 
@@ -423,14 +411,14 @@ Partial Class MainDashboard
         comboAccess.TabIndex = 11
         comboAccess.Text = "user"
         ' 
-        ' txtPassword
+        ' txtEmail
         ' 
-        txtPassword.Location = New Point(187, 377)
-        txtPassword.Name = "txtPassword"
-        txtPassword.ReadOnly = True
-        txtPassword.Size = New Size(155, 26)
-        txtPassword.TabIndex = 10
-        txtPassword.TextAlign = HorizontalAlignment.Center
+        txtEmail.Location = New Point(187, 377)
+        txtEmail.Name = "txtEmail"
+        txtEmail.ReadOnly = True
+        txtEmail.Size = New Size(155, 26)
+        txtEmail.TabIndex = 10
+        txtEmail.TextAlign = HorizontalAlignment.Center
         ' 
         ' txtUsername
         ' 
@@ -492,7 +480,7 @@ Partial Class MainDashboard
         ewanTable.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         ewanTable.BackgroundColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         ewanTable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        ewanTable.Columns.AddRange(New DataGridViewColumn() {USER_ID, FULLNAME, USERNAME, PASS, ACCESS, Edit, Delete})
+        ewanTable.Columns.AddRange(New DataGridViewColumn() {USER_ID, FULLNAME, USERNAME, EMAIL, ACCESS, Edit, Delete})
         DataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle6.BackColor = SystemColors.Window
         DataGridViewCellStyle6.Font = New Font("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
@@ -518,7 +506,7 @@ Partial Class MainDashboard
         DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleRight
         USER_ID.DefaultCellStyle = DataGridViewCellStyle1
         USER_ID.FillWeight = 426.3958F
-        USER_ID.HeaderText = "USER_ID"
+        USER_ID.HeaderText = "UserID"
         USER_ID.MinimumWidth = 80
         USER_ID.Name = "USER_ID"
         USER_ID.ReadOnly = True
@@ -531,7 +519,7 @@ Partial Class MainDashboard
         DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
         FULLNAME.DefaultCellStyle = DataGridViewCellStyle2
         FULLNAME.FillWeight = 74.611824F
-        FULLNAME.HeaderText = "FULLNAME"
+        FULLNAME.HeaderText = "Fullname"
         FULLNAME.MinimumWidth = 175
         FULLNAME.Name = "FULLNAME"
         FULLNAME.ReadOnly = True
@@ -544,31 +532,31 @@ Partial Class MainDashboard
         DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
         USERNAME.DefaultCellStyle = DataGridViewCellStyle3
         USERNAME.FillWeight = 74.611824F
-        USERNAME.HeaderText = "USERNAME"
+        USERNAME.HeaderText = "Username"
         USERNAME.MinimumWidth = 150
         USERNAME.Name = "USERNAME"
         USERNAME.ReadOnly = True
         USERNAME.SortMode = DataGridViewColumnSortMode.NotSortable
         ' 
-        ' PASS
+        ' EMAIL
         ' 
-        PASS.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
-        PASS.DataPropertyName = "PASS"
+        EMAIL.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+        EMAIL.DataPropertyName = "EMAIL"
         DataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft
-        PASS.DefaultCellStyle = DataGridViewCellStyle4
-        PASS.FillWeight = 74.611824F
-        PASS.HeaderText = "PASS"
-        PASS.MinimumWidth = 150
-        PASS.Name = "PASS"
-        PASS.ReadOnly = True
-        PASS.SortMode = DataGridViewColumnSortMode.NotSortable
+        EMAIL.DefaultCellStyle = DataGridViewCellStyle4
+        EMAIL.FillWeight = 74.611824F
+        EMAIL.HeaderText = "Email"
+        EMAIL.MinimumWidth = 150
+        EMAIL.Name = "EMAIL"
+        EMAIL.ReadOnly = True
+        EMAIL.SortMode = DataGridViewColumnSortMode.NotSortable
         ' 
         ' ACCESS
         ' 
         ACCESS.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
         ACCESS.DataPropertyName = "ACCESS"
         ACCESS.FillWeight = 8.837968F
-        ACCESS.HeaderText = "ACCESS"
+        ACCESS.HeaderText = "Access"
         ACCESS.MinimumWidth = 100
         ACCESS.Name = "ACCESS"
         ACCESS.ReadOnly = True
@@ -658,7 +646,7 @@ Partial Class MainDashboard
     Friend WithEvents searchBox As TextBox
     Friend WithEvents updateBtn As Button
     Friend WithEvents comboAccess As ComboBox
-    Friend WithEvents txtPassword As TextBox
+    Friend WithEvents txtEmail As TextBox
     Friend WithEvents txtUsername As TextBox
     Friend WithEvents txtSuffix As TextBox
     Friend WithEvents txtMname As TextBox
@@ -678,14 +666,13 @@ Partial Class MainDashboard
     Friend WithEvents Label9 As Label
     Friend WithEvents txtUserID As TextBox
     Friend WithEvents SignOutBtn As Button
+    Friend WithEvents Button1 As Button
+    Friend WithEvents BookHistoryBtn As Button
     Friend WithEvents USER_ID As DataGridViewTextBoxColumn
     Friend WithEvents FULLNAME As DataGridViewTextBoxColumn
     Friend WithEvents USERNAME As DataGridViewTextBoxColumn
-    Friend WithEvents PASS As DataGridViewTextBoxColumn
+    Friend WithEvents EMAIL As DataGridViewTextBoxColumn
     Friend WithEvents ACCESS As DataGridViewTextBoxColumn
     Friend WithEvents Edit As DataGridViewImageColumn
     Friend WithEvents Delete As DataGridViewImageColumn
-    Friend WithEvents Button1 As Button
-    Friend WithEvents BookHistoryBtn As Button
-    Friend WithEvents toPhotoBtn As Button
 End Class

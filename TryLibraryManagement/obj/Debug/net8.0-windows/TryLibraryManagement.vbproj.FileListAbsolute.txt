@@ -96,3 +96,5 @@ C:\Users\CLIENT\Documents\vbWorks\TryLibraryManagement\TryLibraryManagement\obj\
 C:\Users\CLIENT\Documents\vbWorks\TryLibraryManagement\TryLibraryManagement\obj\Debug\net8.0-windows\TryLibraryManagement.UserDashboard.resources
 C:\Users\CLIENT\Documents\vbWorks\TryLibraryManagement\TryLibraryManagement\obj\Debug\net8.0-windows\TryLibraryManagement.CreateActualBook.resources
 C:\Users\CLIENT\Documents\vbWorks\TryLibraryManagement\TryLibraryManagement\obj\Debug\net8.0-windows\TryLibraryManagement.sourcelink.json
+C:\Users\CLIENT\Documents\vbWorks\TryLibraryManagement\TryLibraryManagement\obj\Debug\net8.0-windows\TryLibraryManagement.BorrowHistory.resources
+C:\Users\CLIENT\Documents\vbWorks\TryLibraryManagement\TryLibraryManagement\obj\Debug\net8.0-windows\TryLibraryManagement.BorrowBookForm.resources

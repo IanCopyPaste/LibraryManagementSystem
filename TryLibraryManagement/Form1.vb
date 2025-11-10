@@ -30,7 +30,7 @@ Public Class Form1
                             MsgBox("LOG IN SUCCESS TO USER", vbInformation, "SUCCESS")
                             count.Close()
                             close_clear()
-                            MainDashboard.Show()
+                            UserDashboard.Show()
                             Exit While
                         End If
                     End While
@@ -64,9 +64,5 @@ Public Class Form1
                 obj.clear()
             End If
         Next
-    End Sub
-
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
     End Sub
 End Class

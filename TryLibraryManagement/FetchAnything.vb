@@ -1,4 +1,6 @@
-﻿Imports System.Security.Cryptography.X509Certificates
+﻿Imports System.Net
+Imports System.Net.Mail
+Imports System.Security.Cryptography.X509Certificates
 Imports MySql.Data.MySqlClient
 Module FetchAnything
     Public name As String
@@ -48,4 +50,31 @@ Module FetchAnything
     'methods
 
     'CreateActualBookForm
+
+    'API CALLS
+    Public Sub SendEmail(email As String, code As Integer)
+        Try
+            Dim mail As New MailMessage()
+            mail.From = New MailAddress("bobbycuen@gmail.com", "FROM: LIBRARY MANAGEMENT SYSTEM by Ian")
+            mail.To.Add(email)
+            mail.Subject = "Your Verification Code: " & code
+            mail.Body = "Your one-time password for verification is" & code & ". Please use this code to complete your login within five minutes. 
+Do not share this code with anyone to keep your account secure. 
+If you did not request this verification, please ignore this message.
+"
+
+            Dim smtp As New SmtpClient("smtp.gmail.com")
+            smtp.Port = 587
+            smtp.Credentials = New NetworkCredential("bobbycuen@gmail.com", "iqpv kbbd dniy akom")
+            smtp.EnableSsl = True
+
+            smtp.Send(mail)
+
+            MessageBox.Show("Email sent successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+        Catch ex As Exception
+            MessageBox.Show("Error: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+    'API CALLS
 End Module

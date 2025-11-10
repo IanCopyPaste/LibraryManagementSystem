@@ -61,7 +61,7 @@ Public Class InsertBooks
         If MsgBox("ARE YOU SURE YOU WANT TO UDPATE THIS?", vbYesNo + vbQuestion, "UPDATE CONFIRMATION") = MsgBoxResult.Yes Then
             Try
                 dbConOpen()
-                Dim query As String = "UPDATE books SET title = @title, author = @auth, category = @cat, publishDate = @pub, profile = LOAD_FILE(@path) WHERE bookID = @id"
+                Dim query As String = "UPDATE books SET title = @title, author = @auth, category = @cat, publishDate = @pub,stat = @stat, profile = LOAD_FILE(@path) WHERE bookID = @id"
                 Dim cmd As New MySqlCommand(query, con)
                 cmd.Parameters.AddWithValue("@id", id)
                 cmd.Parameters.AddWithValue("@title", txtTitle.Text.Trim)
@@ -69,6 +69,7 @@ Public Class InsertBooks
                 cmd.Parameters.AddWithValue("@cat", txtCategory.Text.Trim)
                 cmd.Parameters.AddWithValue("@pub", txtPubDate.Value.ToString("yyyy-MM-dd"))
                 cmd.Parameters.AddWithValue("@path", pathTocreate)
+                cmd.Parameters.AddWithValue("@stat", txtStatus.Text.Trim)
                 cmd.ExecuteNonQuery()
                 MsgBox("Book Update Successfully!", vbInformation, "Update Success!")
             Catch ex As MySqlException
@@ -165,6 +166,7 @@ Public Class InsertBooks
         txtTitle.ReadOnly = Not ok
         txtAuthor.ReadOnly = Not ok
         txtCategory.Enabled = ok
+        txtStatus.Enabled = ok
         txtPubDate.Enabled = ok
     End Sub
     Public Sub refresh()
@@ -202,7 +204,7 @@ Public Class InsertBooks
     Public Sub displayAllBooks()
         Try
             DBcon.dbConOpen()
-            Dim query As String = "SELECT bookID, title, author, publishDate, category FROM books"
+            Dim query As String = "SELECT bookID, title, author, publishDate, category,stat FROM books"
             Dim dasd As New MySqlDataAdapter(query, con)
             Dim dt As New DataTable
             dasd.Fill(dt)
@@ -214,6 +216,11 @@ Public Class InsertBooks
         Finally
             DBcon.dbConClose()
         End Try
+    End Sub
+
+    Private Sub BookHistoryBtn_Click(sender As Object, e As EventArgs) Handles BookHistoryBtn.Click
+        BorrowHistory.Show()
+        Me.Dispose()
     End Sub
     'methods
 End Class

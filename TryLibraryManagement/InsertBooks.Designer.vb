@@ -34,6 +34,8 @@ Partial Class InsertBooks
         InsertBooksBtn = New Button()
         userPageBtn = New Button()
         MainPanel = New Panel()
+        Label8 = New Label()
+        txtStatus = New ComboBox()
         refreshBtn = New Button()
         UpdateBtn = New Button()
         Label7 = New Label()
@@ -57,6 +59,7 @@ Partial Class InsertBooks
         Author = New DataGridViewTextBoxColumn()
         PublishDate = New DataGridViewTextBoxColumn()
         Category = New DataGridViewTextBoxColumn()
+        status = New DataGridViewTextBoxColumn()
         Edit = New DataGridViewImageColumn()
         delete = New DataGridViewImageColumn()
         upPic1 = New OpenFileDialog()
@@ -85,9 +88,9 @@ Partial Class InsertBooks
         Label1.Font = New Font("Sitka Banner", 27.75F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(3, 7)
         Label1.Name = "Label1"
-        Label1.Size = New Size(725, 53)
+        Label1.Size = New Size(761, 53)
         Label1.TabIndex = 0
-        Label1.Text = "Simpol Library Management System - InsertBooks"
+        Label1.Text = "Simpol Library Management System - Manage Books"
         Label1.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' TimeLabel
@@ -188,6 +191,8 @@ Partial Class InsertBooks
         ' MainPanel
         ' 
         MainPanel.BackColor = Color.FromArgb(CByte(192), CByte(192), CByte(255))
+        MainPanel.Controls.Add(Label8)
+        MainPanel.Controls.Add(txtStatus)
         MainPanel.Controls.Add(refreshBtn)
         MainPanel.Controls.Add(TimeLabel)
         MainPanel.Controls.Add(UpdateBtn)
@@ -213,6 +218,28 @@ Partial Class InsertBooks
         MainPanel.Size = New Size(1161, 563)
         MainPanel.TabIndex = 3
         ' 
+        ' Label8
+        ' 
+        Label8.AutoSize = True
+        Label8.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label8.Location = New Point(174, 472)
+        Label8.Name = "Label8"
+        Label8.Size = New Size(72, 20)
+        Label8.TabIndex = 30
+        Label8.Text = "Category"
+        ' 
+        ' txtStatus
+        ' 
+        txtStatus.Enabled = False
+        txtStatus.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        txtStatus.FormattingEnabled = True
+        txtStatus.Items.AddRange(New Object() {"Available", "Not Available"})
+        txtStatus.Location = New Point(119, 444)
+        txtStatus.Name = "txtStatus"
+        txtStatus.Size = New Size(178, 25)
+        txtStatus.TabIndex = 29
+        txtStatus.Text = "Available"
+        ' 
         ' refreshBtn
         ' 
         refreshBtn.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
@@ -225,13 +252,16 @@ Partial Class InsertBooks
         ' 
         ' UpdateBtn
         ' 
+        UpdateBtn.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
+        UpdateBtn.FlatAppearance.BorderSize = 0
+        UpdateBtn.FlatStyle = FlatStyle.Flat
         UpdateBtn.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        UpdateBtn.Location = New Point(106, 457)
+        UpdateBtn.Location = New Point(107, 505)
         UpdateBtn.Name = "UpdateBtn"
         UpdateBtn.Size = New Size(209, 31)
         UpdateBtn.TabIndex = 27
         UpdateBtn.Text = "Update"
-        UpdateBtn.UseVisualStyleBackColor = True
+        UpdateBtn.UseVisualStyleBackColor = False
         ' 
         ' Label7
         ' 
@@ -245,7 +275,7 @@ Partial Class InsertBooks
         ' 
         ' btnUpdatePhoto
         ' 
-        btnUpdatePhoto.Location = New Point(166, 26)
+        btnUpdatePhoto.Location = New Point(166, 16)
         btnUpdatePhoto.Name = "btnUpdatePhoto"
         btnUpdatePhoto.Size = New Size(88, 31)
         btnUpdatePhoto.TabIndex = 25
@@ -265,7 +295,7 @@ Partial Class InsertBooks
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label6.Location = New Point(183, 272)
+        Label6.Location = New Point(183, 262)
         Label6.Name = "Label6"
         Label6.Size = New Size(59, 20)
         Label6.TabIndex = 22
@@ -274,7 +304,7 @@ Partial Class InsertBooks
         ' txtBookID
         ' 
         txtBookID.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtBookID.Location = New Point(135, 244)
+        txtBookID.Location = New Point(135, 234)
         txtBookID.Name = "txtBookID"
         txtBookID.ReadOnly = True
         txtBookID.Size = New Size(150, 25)
@@ -285,7 +315,7 @@ Partial Class InsertBooks
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label5.Location = New Point(53, 413)
+        Label5.Location = New Point(53, 403)
         Label5.Name = "Label5"
         Label5.Size = New Size(112, 20)
         Label5.TabIndex = 20
@@ -295,7 +325,7 @@ Partial Class InsertBooks
         ' 
         txtPubDate.Enabled = False
         txtPubDate.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtPubDate.Location = New Point(18, 385)
+        txtPubDate.Location = New Point(18, 375)
         txtPubDate.Name = "txtPubDate"
         txtPubDate.Size = New Size(178, 25)
         txtPubDate.TabIndex = 19
@@ -304,7 +334,7 @@ Partial Class InsertBooks
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label4.Location = New Point(284, 413)
+        Label4.Location = New Point(284, 403)
         Label4.Name = "Label4"
         Label4.Size = New Size(72, 20)
         Label4.TabIndex = 18
@@ -316,7 +346,7 @@ Partial Class InsertBooks
         txtCategory.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         txtCategory.FormattingEnabled = True
         txtCategory.Items.AddRange(New Object() {"Adult", "Horror", "Science Fiction", "Romance", "Poetry", "Lifestyle", "Action", "History"})
-        txtCategory.Location = New Point(229, 385)
+        txtCategory.Location = New Point(229, 375)
         txtCategory.Name = "txtCategory"
         txtCategory.Size = New Size(178, 25)
         txtCategory.TabIndex = 17
@@ -326,7 +356,7 @@ Partial Class InsertBooks
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(269, 341)
+        Label3.Location = New Point(269, 331)
         Label3.Name = "Label3"
         Label3.Size = New Size(96, 20)
         Label3.TabIndex = 16
@@ -336,7 +366,7 @@ Partial Class InsertBooks
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(69, 341)
+        Label2.Location = New Point(69, 331)
         Label2.Name = "Label2"
         Label2.Size = New Size(77, 20)
         Label2.TabIndex = 15
@@ -345,7 +375,7 @@ Partial Class InsertBooks
         ' txtAuthor
         ' 
         txtAuthor.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtAuthor.Location = New Point(229, 313)
+        txtAuthor.Location = New Point(229, 303)
         txtAuthor.Name = "txtAuthor"
         txtAuthor.ReadOnly = True
         txtAuthor.Size = New Size(178, 25)
@@ -354,7 +384,7 @@ Partial Class InsertBooks
         ' txtTitle
         ' 
         txtTitle.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtTitle.Location = New Point(18, 313)
+        txtTitle.Location = New Point(18, 303)
         txtTitle.Name = "txtTitle"
         txtTitle.ReadOnly = True
         txtTitle.Size = New Size(178, 25)
@@ -373,7 +403,7 @@ Partial Class InsertBooks
         ' bookPhotoBox
         ' 
         bookPhotoBox.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        bookPhotoBox.Location = New Point(118, 63)
+        bookPhotoBox.Location = New Point(118, 53)
         bookPhotoBox.Name = "bookPhotoBox"
         bookPhotoBox.Size = New Size(179, 169)
         bookPhotoBox.SizeMode = PictureBoxSizeMode.StretchImage
@@ -386,7 +416,7 @@ Partial Class InsertBooks
         BookTable.AllowUserToDeleteRows = False
         BookTable.BackgroundColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         BookTable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        BookTable.Columns.AddRange(New DataGridViewColumn() {BookID, Title, Author, PublishDate, Category, Edit, delete})
+        BookTable.Columns.AddRange(New DataGridViewColumn() {BookID, Title, Author, PublishDate, Category, status, Edit, delete})
         BookTable.Location = New Point(416, 53)
         BookTable.Name = "BookTable"
         BookTable.ReadOnly = True
@@ -432,6 +462,13 @@ Partial Class InsertBooks
         Category.HeaderText = "Category"
         Category.Name = "Category"
         Category.ReadOnly = True
+        ' 
+        ' status
+        ' 
+        status.DataPropertyName = "stat"
+        status.HeaderText = "Status"
+        status.Name = "status"
+        status.ReadOnly = True
         ' 
         ' Edit
         ' 
@@ -515,12 +552,15 @@ Partial Class InsertBooks
     Friend WithEvents btnUpdatePhoto As Button
     Friend WithEvents UpdateBtn As Button
     Friend WithEvents Label7 As Label
+    Friend WithEvents refreshBtn As Button
     Friend WithEvents BookID As DataGridViewTextBoxColumn
     Friend WithEvents Title As DataGridViewTextBoxColumn
     Friend WithEvents Author As DataGridViewTextBoxColumn
     Friend WithEvents PublishDate As DataGridViewTextBoxColumn
     Friend WithEvents Category As DataGridViewTextBoxColumn
+    Friend WithEvents status As DataGridViewTextBoxColumn
     Friend WithEvents Edit As DataGridViewImageColumn
     Friend WithEvents delete As DataGridViewImageColumn
-    Friend WithEvents refreshBtn As Button
+    Friend WithEvents Label8 As Label
+    Friend WithEvents txtStatus As ComboBox
 End Class

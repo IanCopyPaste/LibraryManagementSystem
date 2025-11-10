@@ -96,10 +96,9 @@ Public Class MainDashboard
     Sub loadTable()
         Try
             DBcon.dbConOpen()
-            Dim query As String = "SELECT u.userID as USER_ID, CONCAT(n.fname,' ',n.mname,' ',n.lname,' ',n.suffix) AS FULLNAME,
-            u.username AS USERNAME, u.password AS PASS, u.role AS ACCESS
-            FROM users u
-            JOIN namess n ON n.nameID = u.nameID"
+            Dim query As String = "SELECT u.userID AS USER_ID, CONCAT_WS(' ', n.fname, n.mname, n.lname, n.suffix) AS FULLNAME,
+                                   u.username AS USERNAME, u.email AS EMAIL, u.role AS ACCESS FROM users u
+                                   INNER JOIN namess n ON n.nameID = u.nameID;"
             Dim da As New MySqlDataAdapter(query, con)
             Dim dt As New DataTable
             da.Fill(dt)
@@ -218,14 +217,14 @@ Public Class MainDashboard
             cmd.Parameters.AddWithValue("@userID", id)
             Dim read As MySqlDataReader = cmd.ExecuteReader
             While read.Read
-                txtFname.Text = read.GetString("fname")
-                txtLname.Text = read.GetString("lname")
-                txtMname.Text = read.GetString("mname")
-                txtSuffix.Text = read.GetString("suffix")
-                txtUsername.Text = read.GetString("username")
-                txtPassword.Text = read.GetString("password")
-                comboAccess.Text = read.GetString("role")
-                FetchAnything.nameID = read.GetInt32("nameID")
+                txtFname.Text = If(IsDBNull(read("fname")), "", read("fname").ToString())
+                txtLname.Text = If(IsDBNull(read("lname")), "", read("lname").ToString())
+                txtMname.Text = If(IsDBNull(read("mname")), "", read("mname").ToString())
+                txtSuffix.Text = If(IsDBNull(read("suffix")), "", read("suffix").ToString())
+                txtUsername.Text = If(IsDBNull(read("username")), "", read("username").ToString())
+                txtEmail.Text = If(IsDBNull(read("email")), "", read("email").ToString())
+                comboAccess.Text = If(IsDBNull(read("role")), "", read("role").ToString())
+                FetchAnything.nameID = If(IsDBNull(read("nameID")), 0, read.GetInt32("nameID"))
             End While
             txtUserID.Text = id.ToString
             read.Close()
@@ -263,7 +262,7 @@ Public Class MainDashboard
                                    SET fname = @fname, lname = @lname, mname = @mname, suffix = @suffix
                                    WHERE nameID = @nameID;"
             Dim query2 As String = "UPDATE users
-                                   SET username = @user, password = @pass, role = @role
+                                   SET username = @user, role = @role, email = @email
                                    WHERE userID = @userID;"
             Dim cmd1 As New MySqlCommand(query1, con)
             Dim cmd2 As New MySqlCommand(query2, con)
@@ -275,7 +274,7 @@ Public Class MainDashboard
 
             cmd2.Parameters.AddWithValue("@userID", txtUserID.Text)
             cmd2.Parameters.AddWithValue("@user", txtUsername.Text)
-            cmd2.Parameters.AddWithValue("@pass", txtPassword.Text)
+            cmd2.Parameters.AddWithValue("@email", txtEmail.Text)
             cmd2.Parameters.AddWithValue("@role", comboAccess.Text)
             cmd1.ExecuteNonQuery()
             cmd2.ExecuteNonQuery()
@@ -295,7 +294,7 @@ Public Class MainDashboard
         txtMname.ReadOnly = ok
         txtSuffix.ReadOnly = ok
         txtUsername.ReadOnly = ok
-        txtPassword.ReadOnly = ok
+        txtEmail.ReadOnly = ok
         updateBtn.Enabled = Not ok
     End Sub
     Sub profileBtnVisibility(open As Boolean)
@@ -315,6 +314,11 @@ Public Class MainDashboard
         Dim main As New MainDashboard
         Me.Dispose()
         main.Show()
+    End Sub
+
+    Private Sub BookHistoryBtn_Click(sender As Object, e As EventArgs) Handles BookHistoryBtn.Click
+        BorrowHistory.Show()
+        Me.Dispose()
     End Sub
     'methods ends
 End Class

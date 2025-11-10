@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class UserDashboard
+Partial Class BorrowHistory
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,24 +22,19 @@ Partial Class UserDashboard
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UserDashboard))
         TopPanel = New Panel()
-        updateProfileBtn = New Button()
         Label1 = New Label()
-        profileBtn = New Button()
-        txtWelcome = New TextBox()
-        userIDlbl = New Label()
-        ProfileBoxUpper = New PictureBox()
         SidePanel = New Panel()
-        Button2 = New Button()
+        BookHistoryBtn = New Button()
         Button1 = New Button()
         SignOutBtn = New Button()
+        InsertBooksBtn = New Button()
+        userPageBtn = New Button()
         MainPanel = New Panel()
         searchBox = New TextBox()
         TimeLabel = New Label()
         FlowLayoutPanel1 = New FlowLayoutPanel()
         TopPanel.SuspendLayout()
-        CType(ProfileBoxUpper, ComponentModel.ISupportInitialize).BeginInit()
         SidePanel.SuspendLayout()
         MainPanel.SuspendLayout()
         SuspendLayout()
@@ -47,27 +42,12 @@ Partial Class UserDashboard
         ' TopPanel
         ' 
         TopPanel.BackColor = SystemColors.ActiveCaption
-        TopPanel.Controls.Add(updateProfileBtn)
         TopPanel.Controls.Add(Label1)
-        TopPanel.Controls.Add(profileBtn)
-        TopPanel.Controls.Add(txtWelcome)
-        TopPanel.Controls.Add(userIDlbl)
-        TopPanel.Controls.Add(ProfileBoxUpper)
         TopPanel.Dock = DockStyle.Top
         TopPanel.Location = New Point(0, 0)
         TopPanel.Name = "TopPanel"
         TopPanel.Size = New Size(1266, 74)
-        TopPanel.TabIndex = 2
-        ' 
-        ' updateProfileBtn
-        ' 
-        updateProfileBtn.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        updateProfileBtn.Location = New Point(1113, 9)
-        updateProfileBtn.Name = "updateProfileBtn"
-        updateProfileBtn.Size = New Size(60, 46)
-        updateProfileBtn.TabIndex = 13
-        updateProfileBtn.Text = "Update" & vbCrLf & " Profile"
-        updateProfileBtn.UseVisualStyleBackColor = True
+        TopPanel.TabIndex = 1
         ' 
         ' Label1
         ' 
@@ -76,77 +56,38 @@ Partial Class UserDashboard
         Label1.Font = New Font("Sitka Banner", 27.75F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(12, 7)
         Label1.Name = "Label1"
-        Label1.Size = New Size(532, 53)
+        Label1.Size = New Size(782, 53)
         Label1.TabIndex = 0
-        Label1.Text = "Simpol Library Management System"
+        Label1.Text = "Simpol Library Management System - Borrow History"
         Label1.TextAlign = ContentAlignment.MiddleCenter
-        ' 
-        ' profileBtn
-        ' 
-        profileBtn.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        profileBtn.Location = New Point(1188, 12)
-        profileBtn.Name = "profileBtn"
-        profileBtn.Size = New Size(64, 42)
-        profileBtn.TabIndex = 12
-        profileBtn.Text = "  Upload " & vbCrLf & " Profile"
-        profileBtn.UseVisualStyleBackColor = True
-        ' 
-        ' txtWelcome
-        ' 
-        txtWelcome.BackColor = Color.White
-        txtWelcome.BorderStyle = BorderStyle.None
-        txtWelcome.Font = New Font("Tahoma", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtWelcome.Location = New Point(847, 21)
-        txtWelcome.Name = "txtWelcome"
-        txtWelcome.ReadOnly = True
-        txtWelcome.Size = New Size(237, 23)
-        txtWelcome.TabIndex = 10
-        txtWelcome.Text = "Welcome, "
-        txtWelcome.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' userIDlbl
-        ' 
-        userIDlbl.AutoSize = True
-        userIDlbl.Location = New Point(847, 47)
-        userIDlbl.Name = "userIDlbl"
-        userIDlbl.Size = New Size(67, 21)
-        userIDlbl.TabIndex = 11
-        userIDlbl.Text = "UserID: "
-        ' 
-        ' ProfileBoxUpper
-        ' 
-        ProfileBoxUpper.ErrorImage = CType(resources.GetObject("ProfileBoxUpper.ErrorImage"), Image)
-        ProfileBoxUpper.Location = New Point(1179, 6)
-        ProfileBoxUpper.Name = "ProfileBoxUpper"
-        ProfileBoxUpper.Size = New Size(73, 56)
-        ProfileBoxUpper.TabIndex = 9
-        ProfileBoxUpper.TabStop = False
         ' 
         ' SidePanel
         ' 
         SidePanel.BackColor = SystemColors.Highlight
-        SidePanel.Controls.Add(Button2)
+        SidePanel.Controls.Add(BookHistoryBtn)
         SidePanel.Controls.Add(Button1)
         SidePanel.Controls.Add(SignOutBtn)
+        SidePanel.Controls.Add(InsertBooksBtn)
+        SidePanel.Controls.Add(userPageBtn)
         SidePanel.Dock = DockStyle.Left
         SidePanel.Location = New Point(0, 74)
         SidePanel.Name = "SidePanel"
         SidePanel.Size = New Size(105, 563)
-        SidePanel.TabIndex = 3
+        SidePanel.TabIndex = 2
         ' 
-        ' Button2
+        ' BookHistoryBtn
         ' 
-        Button2.BackColor = SystemColors.HotTrack
-        Button2.FlatAppearance.BorderSize = 0
-        Button2.FlatStyle = FlatStyle.Flat
-        Button2.Font = New Font("Tahoma", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button2.ForeColor = SystemColors.ControlLightLight
-        Button2.Location = New Point(0, 173)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(103, 60)
-        Button2.TabIndex = 8
-        Button2.Text = "Book Dashboard"
-        Button2.UseVisualStyleBackColor = False
+        BookHistoryBtn.BackColor = SystemColors.HotTrack
+        BookHistoryBtn.FlatAppearance.BorderSize = 0
+        BookHistoryBtn.FlatStyle = FlatStyle.Flat
+        BookHistoryBtn.Font = New Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BookHistoryBtn.ForeColor = SystemColors.ControlLightLight
+        BookHistoryBtn.Location = New Point(2, 244)
+        BookHistoryBtn.Name = "BookHistoryBtn"
+        BookHistoryBtn.Size = New Size(103, 60)
+        BookHistoryBtn.TabIndex = 9
+        BookHistoryBtn.Text = "Borrow History"
+        BookHistoryBtn.UseVisualStyleBackColor = False
         ' 
         ' Button1
         ' 
@@ -155,7 +96,7 @@ Partial Class UserDashboard
         Button1.FlatStyle = FlatStyle.Flat
         Button1.Font = New Font("Tahoma", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button1.ForeColor = SystemColors.ControlLightLight
-        Button1.Location = New Point(0, 68)
+        Button1.Location = New Point(2, 324)
         Button1.Name = "Button1"
         Button1.Size = New Size(103, 60)
         Button1.TabIndex = 7
@@ -176,6 +117,34 @@ Partial Class UserDashboard
         SignOutBtn.Text = "Sign Out"
         SignOutBtn.UseVisualStyleBackColor = False
         ' 
+        ' InsertBooksBtn
+        ' 
+        InsertBooksBtn.BackColor = SystemColors.HotTrack
+        InsertBooksBtn.FlatAppearance.BorderSize = 0
+        InsertBooksBtn.FlatStyle = FlatStyle.Flat
+        InsertBooksBtn.Font = New Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        InsertBooksBtn.ForeColor = SystemColors.ControlLightLight
+        InsertBooksBtn.Location = New Point(2, 161)
+        InsertBooksBtn.Name = "InsertBooksBtn"
+        InsertBooksBtn.Size = New Size(103, 60)
+        InsertBooksBtn.TabIndex = 1
+        InsertBooksBtn.Text = "Manage" & vbCrLf & "Books" & vbCrLf
+        InsertBooksBtn.UseVisualStyleBackColor = False
+        ' 
+        ' userPageBtn
+        ' 
+        userPageBtn.BackColor = SystemColors.HotTrack
+        userPageBtn.FlatAppearance.BorderSize = 0
+        userPageBtn.FlatStyle = FlatStyle.Flat
+        userPageBtn.Font = New Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        userPageBtn.ForeColor = SystemColors.ControlLightLight
+        userPageBtn.Location = New Point(0, 82)
+        userPageBtn.Name = "userPageBtn"
+        userPageBtn.Size = New Size(105, 60)
+        userPageBtn.TabIndex = 0
+        userPageBtn.Text = "Home"
+        userPageBtn.UseVisualStyleBackColor = False
+        ' 
         ' MainPanel
         ' 
         MainPanel.BackColor = Color.FromArgb(CByte(192), CByte(192), CByte(255))
@@ -186,14 +155,14 @@ Partial Class UserDashboard
         MainPanel.Location = New Point(105, 74)
         MainPanel.Name = "MainPanel"
         MainPanel.Size = New Size(1161, 563)
-        MainPanel.TabIndex = 4
+        MainPanel.TabIndex = 3
         ' 
         ' searchBox
         ' 
         searchBox.Location = New Point(757, 21)
         searchBox.Name = "searchBox"
         searchBox.PlaceholderText = "Search User"
-        searchBox.Size = New Size(379, 29)
+        searchBox.Size = New Size(379, 23)
         searchBox.TabIndex = 3
         ' 
         ' TimeLabel
@@ -210,27 +179,24 @@ Partial Class UserDashboard
         ' FlowLayoutPanel1
         ' 
         FlowLayoutPanel1.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        FlowLayoutPanel1.Location = New Point(37, 56)
+        FlowLayoutPanel1.Location = New Point(37, 60)
         FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        FlowLayoutPanel1.Size = New Size(1087, 465)
+        FlowLayoutPanel1.Size = New Size(1099, 467)
         FlowLayoutPanel1.TabIndex = 4
         ' 
-        ' UserDashboard
+        ' BorrowHistory
         ' 
-        AutoScaleDimensions = New SizeF(9F, 21F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1266, 637)
         Controls.Add(MainPanel)
         Controls.Add(SidePanel)
         Controls.Add(TopPanel)
-        Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Margin = New Padding(4)
-        Name = "UserDashboard"
+        Name = "BorrowHistory"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "UserDashboard"
+        Text = "BorrowHistory"
         TopPanel.ResumeLayout(False)
         TopPanel.PerformLayout()
-        CType(ProfileBoxUpper, ComponentModel.ISupportInitialize).EndInit()
         SidePanel.ResumeLayout(False)
         MainPanel.ResumeLayout(False)
         MainPanel.PerformLayout()
@@ -239,15 +205,12 @@ Partial Class UserDashboard
 
     Friend WithEvents TopPanel As Panel
     Friend WithEvents Label1 As Label
-    Friend WithEvents updateProfileBtn As Button
-    Friend WithEvents profileBtn As Button
-    Friend WithEvents txtWelcome As TextBox
-    Friend WithEvents userIDlbl As Label
-    Friend WithEvents ProfileBoxUpper As PictureBox
     Friend WithEvents SidePanel As Panel
+    Friend WithEvents BookHistoryBtn As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents SignOutBtn As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents InsertBooksBtn As Button
+    Friend WithEvents userPageBtn As Button
     Friend WithEvents MainPanel As Panel
     Friend WithEvents searchBox As TextBox
     Friend WithEvents TimeLabel As Label

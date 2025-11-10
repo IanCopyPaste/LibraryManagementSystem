@@ -7,10 +7,10 @@ Public Class SignUp
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles SignUpbtn.Click
-        If fnameBox.Text = "" Or lnameBox.Text = "" Then
-            MsgBox("Please Enter Firstname and Lastname", vbInformation, "Credentials!")
+        If fnameBox.Text = "" Or lnameBox.Text = "" Or emailBox.Text = "" Or usernamBox.Text = "" Then
+            MsgBox("Please Complete Credentials!", vbInformation, "Credentials!")
         ElseIf passwordBox.Text <> CpasswordBox.Text Then
-            MsgBox("Password Do Not Match", vbInformation, "Password!")
+            MsgBox("Passwords Do Not Match!!", vbInformation, "Passwords!")
         Else
             Try
                 DBcon.dbConOpen()
@@ -32,11 +32,12 @@ Public Class SignUp
                     cmd.ExecuteNonQuery()
                     Dim lastID As Long = cmd.LastInsertedId
 
-                    Dim query1 As String = "INSERT INTO users (nameID, username, password, role) VALUES (@lastID, @user, @pass, 'user')"
+                    Dim query1 As String = "INSERT INTO users (nameID, username, password,email, role) VALUES (@lastID, @user, @pass, @email, 'user')"
                     Dim cmd1 As New MySqlCommand(query1, con)
                     cmd1.Parameters.AddWithValue("@lastID", lastID)
                     cmd1.Parameters.AddWithValue("@user", usernamBox.Text.Trim)
-                    cmd1.Parameters.AddWithValue("@pass", passwordBox.Text.Trim)
+                    cmd1.Parameters.AddWithValue("@pass", CpasswordBox.Text.Trim)
+                    cmd1.Parameters.AddWithValue("@email", emailBox.Text.Trim)
                     cmd1.ExecuteNonQuery()
 
                     MsgBox("ACCOUNT CREATED SUCCESFULLY", vbInformation, "ANGAS TOTOO")
@@ -58,7 +59,26 @@ Public Class SignUp
         Next
     End Sub
 
-    Private Sub SignUp_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub CpasswordBox_TextChanged(sender As Object, e As EventArgs) Handles CpasswordBox.TextChanged
+        If passwordBox.Text = CpasswordBox.Text Then
+            confirmLbl.Text = "Passwords Match!!"
+            confirmLbl.ForeColor = Color.Green
+            SignUpbtn.Enabled = True
+        Else
+            confirmLbl.Text = "Passwords Do Not Match!!"
+            confirmLbl.ForeColor = Color.Red
+            SignUpbtn.Enabled = False
+        End If
+    End Sub
 
+    Dim see As Boolean = False
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+        If see Then
+            passwordBox.UseSystemPasswordChar = False
+            see = False
+        Else
+            passwordBox.UseSystemPasswordChar = True
+            see = True
+        End If
     End Sub
 End Class
