@@ -1,8 +1,8 @@
 ﻿Imports System.IO
 Imports MySql.Data.MySqlClient
 
-Public Class BorrowBookForm
-    Private Sub BorrowBookForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+Public Class ReturnBookForm
+    Private Sub ReturnBookForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         txtBookID.Text = getID3
         Try
             dbConOpen()
@@ -28,40 +28,31 @@ Public Class BorrowBookForm
         Finally
             dbConClose()
             If txtStatus.Text = "Not Available" Then
-                btnBorrow.Enabled = False
-                lblNotVail.Visible = True
+                txtStatus.Text = "You Borrowed it Nigga"
             End If
         End Try
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        UserDashboard.Show()
-        Me.Dispose()
-    End Sub
-
-    Private Sub btnBorrow_Click(sender As Object, e As EventArgs) Handles btnBorrow.Click
-        If MsgBox("ARE YOU SURE YOU WANT TO BORROW BOOK ID: " & getID3, vbYesNo + vbQuestion, "SURE KANA BA?") = MsgBoxResult.Yes Then
+    Private Sub btnBorrow_Click(sender As Object, e As EventArgs) Handles btnReturn.Click
+        If MsgBox("ARE YOU SURE TO RETURN BOOKID: " & getID3, vbYesNo + vbQuestion, "SURE KANA BA YA") = MsgBoxResult.Yes Then
             Try
                 dbConOpen()
-                Dim query0 As String = "INSERT INTO borrow(userID,bookID,borrowDate,dueDate) 
-                                   VALUES (@userID,@bookID,@borrow,@due)"
+                Dim query0 As String = "UPDATE books SET stat = 'Available' WHERE bookID = @id"
                 Dim cmd0 As New MySqlCommand(query0, con)
-                cmd0.Parameters.AddWithValue("@userID", accNum)
-                cmd0.Parameters.AddWithValue("@bookID", getID3)
-                cmd0.Parameters.AddWithValue("@borrow", Date.Now.ToString("yyyy-MM-dd"))
-                cmd0.Parameters.AddWithValue("@due", Date.Now.AddDays(3).ToString("yyyy-MM-dd"))
-                cmd0.ExecuteNonQuery()
+                cmd0.Parameters.AddWithValue("@id", getID3)
 
-                Dim query1 As String = "UPDATE books SET stat = 'Not Available' WHERE bookID = @bookID"
+                Dim query1 As String = "UPDATE borrow SET stat = 'Returned' WHERE userID = @id0 AND bookID = @id1"
                 Dim cmd1 As New MySqlCommand(query1, con)
-                cmd1.Parameters.AddWithValue("@bookID", getID3)
+                cmd1.Parameters.AddWithValue("@id0", accNum)
+                cmd1.Parameters.AddWithValue("@id1", getID3)
+
+                cmd0.ExecuteNonQuery()
                 cmd1.ExecuteNonQuery()
-            Catch ex As MysqlException
-                MsgBox(ex.Message, vbCritical, "ERROR BORROW BOOK(0)")
+
+            Catch ex As MySqlException
+
             Catch ex As Exception
-                MsgBox(ex.Message, vbCritical, "ERROR BORROW BOOK(1)")
-            Finally
-                dbConClose()
+
             End Try
         End If
     End Sub

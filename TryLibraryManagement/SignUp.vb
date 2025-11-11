@@ -12,43 +12,15 @@ Public Class SignUp
         ElseIf passwordBox.Text <> CpasswordBox.Text Then
             MsgBox("Passwords Do Not Match!!", vbInformation, "Passwords!")
         Else
-            Try
-                DBcon.dbConOpen()
-                Dim queryVer As String = "SELECT * FROM users WHERE username = @user"
-                Dim cmd2 As New MySqlCommand(queryVer, con)
-                cmd2.Parameters.AddWithValue("@user", usernamBox.Text)
-                Dim ver As MySqlDataReader = cmd2.ExecuteReader
-                If ver.HasRows Then
-                    MsgBox("USERNAME ALREARY EXIST!", vbInformation, "USERNAME DUPLICATION")
-                    ver.Close()
-                Else
-                    ver.Close()
-                    Dim query As String = "INSERT INTO namess (fname,lname,mname,suffix) VALUES (UCASE(@fname),UCASE(@lname),UCASE(@mname),UCASE(@suffix))"
-                    Dim cmd As New MySqlCommand(query, con)
-                    cmd.Parameters.AddWithValue("@fname", fnameBox.Text.Trim)
-                    cmd.Parameters.AddWithValue("@lname", lnameBox.Text.Trim)
-                    cmd.Parameters.AddWithValue("@mname", mnameBox.Text.Trim)
-                    cmd.Parameters.AddWithValue("@suffix", suffBox.Text.Trim)
-                    cmd.ExecuteNonQuery()
-                    Dim lastID As Long = cmd.LastInsertedId
-
-                    Dim query1 As String = "INSERT INTO users (nameID, username, password,email, role) VALUES (@lastID, @user, @pass, @email, 'user')"
-                    Dim cmd1 As New MySqlCommand(query1, con)
-                    cmd1.Parameters.AddWithValue("@lastID", lastID)
-                    cmd1.Parameters.AddWithValue("@user", usernamBox.Text.Trim)
-                    cmd1.Parameters.AddWithValue("@pass", CpasswordBox.Text.Trim)
-                    cmd1.Parameters.AddWithValue("@email", emailBox.Text.Trim)
-                    cmd1.ExecuteNonQuery()
-
-                    MsgBox("ACCOUNT CREATED SUCCESFULLY", vbInformation, "ANGAS TOTOO")
-                End If
-            Catch ex As Exception
-                MsgBox(ex.Message, vbCritical, "ERROR OCCURED")
-            Finally
-                GC.Collect()
-                DBcon.dbConClose()
-                clear()
-            End Try
+            fname = fnameBox.Text.Trim
+            lname = lnameBox.Text.Trim
+            mname = mnameBox.Text.Trim
+            suffix = suffBox.Text.Trim
+            username = usernamBox.Text.Trim
+            email = emailBox.Text.Trim
+            password = CpasswordBox.Text.Trim
+            SendEmail()
+            SignUpOtpCode.Show()
         End If
     End Sub
     Sub clear()
@@ -80,5 +52,9 @@ Public Class SignUp
             passwordBox.UseSystemPasswordChar = True
             see = True
         End If
+    End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
     End Sub
 End Class

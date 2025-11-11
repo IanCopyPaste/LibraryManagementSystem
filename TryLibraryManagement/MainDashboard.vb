@@ -76,8 +76,8 @@ Public Class MainDashboard
         refresh()
     End Sub
     Private Sub InsertBooksBtn_Click(sender As Object, e As EventArgs) Handles InsertBooksBtn.Click
-        InsertBooks.Show
-        Close
+        InsertBooks.Show()
+        Close()
     End Sub
 
     Private Sub SignOutBtn_Click(sender As Object, e As EventArgs) Handles SignOutBtn.Click
@@ -320,5 +320,11 @@ Public Class MainDashboard
         BorrowHistory.Show()
         Me.Dispose()
     End Sub
+
+    Private Sub btnBookDashboard_Click(sender As Object, e As EventArgs) Handles btnBookDashboard.Click
+        BookDashboardForAdmin.Show()
+        Me.Dispose()
+    End Sub
+
     'methods ends
 End Class

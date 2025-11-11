@@ -41,7 +41,7 @@ Partial Class MainDashboard
         Label1 = New Label()
         SidePanel = New Panel()
         BookHistoryBtn = New Button()
-        Button1 = New Button()
+        btnBookDashboard = New Button()
         SignOutBtn = New Button()
         InsertBooksBtn = New Button()
         userPageBtn = New Button()
@@ -170,7 +170,7 @@ Partial Class MainDashboard
         ' 
         SidePanel.BackColor = SystemColors.Highlight
         SidePanel.Controls.Add(BookHistoryBtn)
-        SidePanel.Controls.Add(Button1)
+        SidePanel.Controls.Add(btnBookDashboard)
         SidePanel.Controls.Add(SignOutBtn)
         SidePanel.Controls.Add(InsertBooksBtn)
         SidePanel.Controls.Add(userPageBtn)
@@ -194,19 +194,19 @@ Partial Class MainDashboard
         BookHistoryBtn.Text = "Borrow History"
         BookHistoryBtn.UseVisualStyleBackColor = False
         ' 
-        ' Button1
+        ' btnBookDashboard
         ' 
-        Button1.BackColor = SystemColors.HotTrack
-        Button1.FlatAppearance.BorderSize = 0
-        Button1.FlatStyle = FlatStyle.Flat
-        Button1.Font = New Font("Tahoma", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.ForeColor = SystemColors.ControlLightLight
-        Button1.Location = New Point(2, 324)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(103, 60)
-        Button1.TabIndex = 7
-        Button1.Text = "Book Dashboard"
-        Button1.UseVisualStyleBackColor = False
+        btnBookDashboard.BackColor = SystemColors.HotTrack
+        btnBookDashboard.FlatAppearance.BorderSize = 0
+        btnBookDashboard.FlatStyle = FlatStyle.Flat
+        btnBookDashboard.Font = New Font("Tahoma", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnBookDashboard.ForeColor = SystemColors.ControlLightLight
+        btnBookDashboard.Location = New Point(2, 324)
+        btnBookDashboard.Name = "btnBookDashboard"
+        btnBookDashboard.Size = New Size(103, 60)
+        btnBookDashboard.TabIndex = 7
+        btnBookDashboard.Text = "Book Dashboard"
+        btnBookDashboard.UseVisualStyleBackColor = False
         ' 
         ' SignOutBtn
         ' 
@@ -666,7 +666,7 @@ Partial Class MainDashboard
     Friend WithEvents Label9 As Label
     Friend WithEvents txtUserID As TextBox
     Friend WithEvents SignOutBtn As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnBookDashboard As Button
     Friend WithEvents BookHistoryBtn As Button
     Friend WithEvents USER_ID As DataGridViewTextBoxColumn
     Friend WithEvents FULLNAME As DataGridViewTextBoxColumn

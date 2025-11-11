@@ -1,16 +1,8 @@
-﻿Imports System.Drawing.Drawing2D
-Imports System.IO
-Imports System.Security.Cryptography.X509Certificates
+﻿Imports System.IO
 Imports MySql.Data.MySqlClient
 
-Public Class UserDashboard
-    Private Sub SignOutBtn_Click(sender As Object, e As EventArgs) Handles SignOutBtn.Click
-        Form1.Show()
-        Me.Close()
-        Me.Dispose()
-    End Sub
-
-    Private Sub UserDashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+Public Class BookDashboardForAdmin
+    Private Sub BookDashboardForAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         flowPanelRecords.Controls.Clear()
         Try
             dbConOpen()
@@ -144,8 +136,18 @@ Public Class UserDashboard
         End Try
     End Sub
 
-    Private Sub btnYourBooks_Click(sender As Object, e As EventArgs) Handles btnYourBooks.Click
-        YourBorrowedBooks.Show()
+    Private Sub userPageBtn_Click(sender As Object, e As EventArgs) Handles userPageBtn.Click
+        MainDashboard.Show()
+        Me.Dispose()
+    End Sub
+
+    Private Sub SignOutBtn_Click(sender As Object, e As EventArgs) Handles SignOutBtn.Click
+        Form1.Show()
+        Me.Dispose()
+    End Sub
+
+    Private Sub InsertBooksBtn_Click(sender As Object, e As EventArgs) Handles InsertBooksBtn.Click
+        InsertBooks.Show()
         Me.Dispose()
     End Sub
 End Class
