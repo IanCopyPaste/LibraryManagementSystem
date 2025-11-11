@@ -162,3 +162,7 @@ C:\Users\CLIENT\Documents\vbWorks\LibrarySystemFronLaptop-main\TryLibraryManagem
 C:\Users\CLIENT\Documents\vbWorks\LibrarySystemFronLaptop-main\TryLibraryManagement\obj\Debug\net8.0-windows\TryLibraryManagement.genruntimeconfig.cache
 C:\Users\CLIENT\Documents\vbWorks\LibrarySystemFronLaptop-main\TryLibraryManagement\obj\Debug\net8.0-windows\ref\TryLibraryManagement.dll
 C:\Users\CLIENT\Documents\vbWorks\LibrarySystemFronLaptop-main\TryLibraryManagement\obj\Debug\net8.0-windows\TryLibraryManagement.BookDashboardForAdmin.resources
+C:\Users\CLIENT\Documents\vbWorks\TryLibraryManagement\TryLibraryManagement\obj\Debug\net8.0-windows\TryLibraryManagement.BookDashboardForAdmin.resources
+C:\Users\CLIENT\Documents\vbWorks\TryLibraryManagement\TryLibraryManagement\obj\Debug\net8.0-windows\TryLibraryManagement.ReturnBookForm.resources
+C:\Users\CLIENT\Documents\vbWorks\TryLibraryManagement\TryLibraryManagement\obj\Debug\net8.0-windows\TryLibraryManagement.SignUpOtpCode.resources
+C:\Users\CLIENT\Documents\vbWorks\TryLibraryManagement\TryLibraryManagement\obj\Debug\net8.0-windows\TryLibraryManagement.YourBorrowedBooks.resources

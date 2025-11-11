@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CLIENT\\Documents\\vbWorks\\LibrarySystemFronLaptop-main\\TryLibraryManagement\\TryLibraryManagement.vbproj": {}
+    "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\TryLibraryManagement.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\CLIENT\\Documents\\vbWorks\\LibrarySystemFronLaptop-main\\TryLibraryManagement\\TryLibraryManagement.vbproj": {
+    "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\TryLibraryManagement.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CLIENT\\Documents\\vbWorks\\LibrarySystemFronLaptop-main\\TryLibraryManagement\\TryLibraryManagement.vbproj",
+        "projectUniqueName": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\TryLibraryManagement.vbproj",
         "projectName": "TryLibraryManagement",
-        "projectPath": "C:\\Users\\CLIENT\\Documents\\vbWorks\\LibrarySystemFronLaptop-main\\TryLibraryManagement\\TryLibraryManagement.vbproj",
+        "projectPath": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\TryLibraryManagement.vbproj",
         "packagesPath": "C:\\Users\\CLIENT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CLIENT\\Documents\\vbWorks\\LibrarySystemFronLaptop-main\\TryLibraryManagement\\obj\\",
+        "outputPath": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

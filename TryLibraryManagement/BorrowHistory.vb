@@ -76,4 +76,18 @@ Public Class BorrowHistory
     Private Sub btnSend_Click(sender As Object, e As EventArgs) Handles btnSend.Click
         NotifyReturnees(txtEmail.Text, RichTextBox1.Text)
     End Sub
+
+    Private Sub btnClearBorrow_Click(sender As Object, e As EventArgs) Handles btnClearBorrow.Click
+        Try
+            dbConOpen()
+            Dim query As String = "TRUNCATE borrow"
+            Dim cmd As New MySqlCommand(query, con)
+            cmd.ExecuteNonQuery()
+            MsgBox("TABLE CLEARED", vbInformation, "CLEARED")
+        Catch ex As Exception
+            MsgBox(ex.Message, vbCritical, "TRUNCATION ERROR(0)")
+        Finally
+            dbConClose()
+        End Try
+    End Sub
 End Class

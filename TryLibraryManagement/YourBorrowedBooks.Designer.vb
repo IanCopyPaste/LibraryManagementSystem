@@ -260,7 +260,7 @@ Partial Class YourBorrowedBooks
         Margin = New Padding(4)
         Name = "YourBorrowedBooks"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "YourBorrowedBooks"
+        Text = "w"
         TopPanel.ResumeLayout(False)
         TopPanel.PerformLayout()
         CType(ProfileBoxUpper, ComponentModel.ISupportInitialize).EndInit()

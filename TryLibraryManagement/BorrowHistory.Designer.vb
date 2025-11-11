@@ -49,6 +49,7 @@ Partial Class BorrowHistory
         searchBox = New TextBox()
         TimeLabel = New Label()
         Timer1 = New Timer(components)
+        btnClearBorrow = New Button()
         TopPanel.SuspendLayout()
         SidePanel.SuspendLayout()
         MainPanel.SuspendLayout()
@@ -59,6 +60,7 @@ Partial Class BorrowHistory
         ' 
         TopPanel.BackColor = SystemColors.ActiveCaption
         TopPanel.Controls.Add(Label1)
+        TopPanel.Controls.Add(TimeLabel)
         TopPanel.Dock = DockStyle.Top
         TopPanel.Location = New Point(0, 0)
         TopPanel.Name = "TopPanel"
@@ -164,6 +166,7 @@ Partial Class BorrowHistory
         ' MainPanel
         ' 
         MainPanel.BackColor = Color.FromArgb(CByte(192), CByte(192), CByte(255))
+        MainPanel.Controls.Add(btnClearBorrow)
         MainPanel.Controls.Add(txtEmail)
         MainPanel.Controls.Add(Label3)
         MainPanel.Controls.Add(BorrowTable)
@@ -172,7 +175,6 @@ Partial Class BorrowHistory
         MainPanel.Controls.Add(Label2)
         MainPanel.Controls.Add(RichTextBox1)
         MainPanel.Controls.Add(searchBox)
-        MainPanel.Controls.Add(TimeLabel)
         MainPanel.Dock = DockStyle.Fill
         MainPanel.Location = New Point(105, 74)
         MainPanel.Name = "MainPanel"
@@ -325,7 +327,7 @@ Partial Class BorrowHistory
         TimeLabel.AutoSize = True
         TimeLabel.Font = New Font("Tahoma", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         TimeLabel.ForeColor = SystemColors.ActiveCaptionText
-        TimeLabel.Location = New Point(334, 21)
+        TimeLabel.Location = New Point(820, 28)
         TimeLabel.Name = "TimeLabel"
         TimeLabel.Size = New Size(131, 25)
         TimeLabel.TabIndex = 1
@@ -334,6 +336,16 @@ Partial Class BorrowHistory
         ' Timer1
         ' 
         Timer1.Enabled = True
+        ' 
+        ' btnClearBorrow
+        ' 
+        btnClearBorrow.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        btnClearBorrow.Location = New Point(334, 28)
+        btnClearBorrow.Name = "btnClearBorrow"
+        btnClearBorrow.Size = New Size(97, 28)
+        btnClearBorrow.TabIndex = 12
+        btnClearBorrow.Text = "Clear Table"
+        btnClearBorrow.UseVisualStyleBackColor = True
         ' 
         ' BorrowHistory
         ' 
@@ -381,4 +393,5 @@ Partial Class BorrowHistory
     Friend WithEvents Status As DataGridViewTextBoxColumn
     Friend WithEvents txtEmail As TextBox
     Friend WithEvents Label3 As Label
+    Friend WithEvents btnClearBorrow As Button
 End Class
