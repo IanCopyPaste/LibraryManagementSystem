@@ -51,19 +51,25 @@ Public Class BorrowHistory
     End Sub
 
     Private Sub BorrowTable_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles BorrowTable.CellClick
+        Dim title As String = ""
+        Dim borrowDate As Date
+        Dim dueDate As Date
         Try
             Dim id As Integer = BorrowTable.Rows(e.RowIndex).Cells(1).Value
+            title = BorrowTable.Rows(e.RowIndex).Cells(3).Value
+            txtEmail.Text = BorrowTable.Rows(e.RowIndex).Cells(2).Value
             MsgBox(id)
             Try
                 dbConOpen()
-                Dim query As String = "SELECT u.email As Email
+                Dim query As String = "SELECT br.borrowDate AS borrowD, br.dueDate AS DueD
                                    FROM borrow br JOIN users u ON u.userID = br.userID
                                    WHERE u.userID = @id"
                 Dim cmd As New MySqlCommand(query, con)
                 cmd.Parameters.AddWithValue("@id", id)
                 Dim read As MySqlDataReader = cmd.ExecuteReader
                 While read.Read
-                    txtEmail.Text = read.GetString("Email")
+                    borrowDate = read.GetDateTime("borrowD")
+                    dueDate = read.GetDateTime("DueD")
                 End While
             Catch ex As MySqlException
                 MsgBox(ex.Message, vbCritical, "ERROR BORROW HISTORY(0)")
@@ -73,6 +79,13 @@ Public Class BorrowHistory
                 dbConClose()
             End Try
         Catch ex As Exception
+        Finally
+            RichTextBox1.Text = "🔔 Library Due Date Reminder" & vbCrLf &
+    "Book Title: " & title & vbCrLf &
+    "Borrowed Date: " & borrowDate & vbCrLf &
+    "Due Date: " & dueDate & vbCrLf & vbCrLf &
+    "⚠️ This book is now due for return." & vbCrLf &
+    "Please return it to the library immediately to avoid penalties or suspension of borrowing privileges."
         End Try
     End Sub
 

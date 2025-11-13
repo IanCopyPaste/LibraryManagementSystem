@@ -24,14 +24,14 @@ Partial Class MainDashboard
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainDashboard))
-        Dim DataGridViewCellStyle17 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle23 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle24 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle18 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle19 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle20 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle21 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle22 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As DataGridViewCellStyle = New DataGridViewCellStyle()
         uploadPhotoDialog = New OpenFileDialog()
         TopPanel = New Panel()
         PictureBox1 = New PictureBox()
@@ -242,7 +242,7 @@ Partial Class MainDashboard
         btnBookDashboard.Font = New Font("Tahoma", 9.75F, FontStyle.Bold)
         btnBookDashboard.ForeColor = Color.WhiteSmoke
         btnBookDashboard.Image = CType(resources.GetObject("btnBookDashboard.Image"), Image)
-        btnBookDashboard.Location = New Point(0, 266)
+        btnBookDashboard.Location = New Point(0, 267)
         btnBookDashboard.Name = "btnBookDashboard"
         btnBookDashboard.Size = New Size(106, 60)
         btnBookDashboard.TabIndex = 7
@@ -303,17 +303,18 @@ Partial Class MainDashboard
         ' 
         ' refreshBtn
         ' 
-        refreshBtn.BackColor = Color.Brown
+        refreshBtn.BackColor = Color.Transparent
+        refreshBtn.Cursor = Cursors.Hand
         refreshBtn.FlatAppearance.BorderSize = 0
-        refreshBtn.FlatAppearance.MouseOverBackColor = Color.Salmon
+        refreshBtn.FlatAppearance.MouseOverBackColor = Color.LightCoral
         refreshBtn.FlatStyle = FlatStyle.Flat
         refreshBtn.Font = New Font("Rockwell", 12F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        refreshBtn.ForeColor = Color.WhiteSmoke
-        refreshBtn.Location = New Point(6, 6)
+        refreshBtn.ForeColor = Color.Transparent
+        refreshBtn.Image = CType(resources.GetObject("refreshBtn.Image"), Image)
+        refreshBtn.Location = New Point(0, 6)
         refreshBtn.Name = "refreshBtn"
-        refreshBtn.Size = New Size(81, 25)
+        refreshBtn.Size = New Size(44, 38)
         refreshBtn.TabIndex = 5
-        refreshBtn.Text = "Refresh"
         refreshBtn.UseVisualStyleBackColor = False
         ' 
         ' MainPanel
@@ -342,6 +343,7 @@ Partial Class MainDashboard
         MainPanel.Controls.Add(ewanTable)
         MainPanel.Controls.Add(TimeLabel)
         MainPanel.Dock = DockStyle.Fill
+        MainPanel.Font = New Font("Sitka Banner", 12.7499981F, FontStyle.Bold Or FontStyle.Italic)
         MainPanel.Location = New Point(105, 74)
         MainPanel.Name = "MainPanel"
         MainPanel.Size = New Size(1161, 563)
@@ -351,11 +353,11 @@ Partial Class MainDashboard
         ' 
         Label9.AutoSize = True
         Label9.BackColor = Color.Transparent
-        Label9.Font = New Font("Rockwell", 11.25F, FontStyle.Bold Or FontStyle.Italic)
-        Label9.ForeColor = Color.WhiteSmoke
-        Label9.Location = New Point(144, 186)
+        Label9.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
+        Label9.ForeColor = Color.White
+        Label9.Location = New Point(132, 185)
         Label9.Name = "Label9"
-        Label9.Size = New Size(62, 19)
+        Label9.Size = New Size(70, 23)
         Label9.TabIndex = 21
         Label9.Text = "User ID"
         ' 
@@ -376,11 +378,11 @@ Partial Class MainDashboard
         ' 
         Label8.AutoSize = True
         Label8.BackColor = Color.Transparent
-        Label8.Font = New Font("Rockwell", 11.25F, FontStyle.Bold Or FontStyle.Italic)
-        Label8.ForeColor = Color.WhiteSmoke
-        Label8.Location = New Point(239, 406)
+        Label8.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
+        Label8.ForeColor = Color.White
+        Label8.Location = New Point(239, 398)
         Label8.Name = "Label8"
-        Label8.Size = New Size(52, 19)
+        Label8.Size = New Size(56, 23)
         Label8.TabIndex = 19
         Label8.Text = "Email"
         ' 
@@ -388,11 +390,11 @@ Partial Class MainDashboard
         ' 
         Label7.AutoSize = True
         Label7.BackColor = Color.Transparent
-        Label7.Font = New Font("Rockwell", 11.25F, FontStyle.Bold Or FontStyle.Italic)
-        Label7.ForeColor = Color.WhiteSmoke
-        Label7.Location = New Point(49, 406)
+        Label7.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
+        Label7.ForeColor = Color.White
+        Label7.Location = New Point(49, 398)
         Label7.Name = "Label7"
-        Label7.Size = New Size(89, 19)
+        Label7.Size = New Size(95, 23)
         Label7.TabIndex = 18
         Label7.Text = "User Name"
         ' 
@@ -400,11 +402,11 @@ Partial Class MainDashboard
         ' 
         Label6.AutoSize = True
         Label6.BackColor = Color.Transparent
-        Label6.Font = New Font("Rockwell", 11.25F, FontStyle.Bold Or FontStyle.Italic)
-        Label6.ForeColor = Color.WhiteSmoke
+        Label6.Font = New Font("Sitka Banner", 12.7499981F, FontStyle.Bold Or FontStyle.Italic)
+        Label6.ForeColor = Color.White
         Label6.Location = New Point(149, 477)
         Label6.Name = "Label6"
-        Label6.Size = New Size(57, 19)
+        Label6.Size = New Size(53, 24)
         Label6.TabIndex = 17
         Label6.Text = "Access"
         ' 
@@ -412,11 +414,11 @@ Partial Class MainDashboard
         ' 
         Label5.AutoSize = True
         Label5.BackColor = Color.Transparent
-        Label5.Font = New Font("Rockwell", 11.25F, FontStyle.Bold Or FontStyle.Italic)
-        Label5.ForeColor = Color.WhiteSmoke
+        Label5.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
+        Label5.ForeColor = Color.White
         Label5.Location = New Point(239, 315)
         Label5.Name = "Label5"
-        Label5.Size = New Size(49, 19)
+        Label5.Size = New Size(57, 23)
         Label5.TabIndex = 16
         Label5.Text = "Suffix"
         ' 
@@ -424,11 +426,11 @@ Partial Class MainDashboard
         ' 
         Label4.AutoSize = True
         Label4.BackColor = Color.Transparent
-        Label4.Font = New Font("Rockwell", 11.25F, FontStyle.Bold Or FontStyle.Italic)
-        Label4.ForeColor = Color.WhiteSmoke
+        Label4.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
+        Label4.ForeColor = Color.White
         Label4.Location = New Point(40, 315)
         Label4.Name = "Label4"
-        Label4.Size = New Size(107, 19)
+        Label4.Size = New Size(113, 23)
         Label4.TabIndex = 15
         Label4.Text = "Middle Name"
         ' 
@@ -436,11 +438,11 @@ Partial Class MainDashboard
         ' 
         Label3.AutoSize = True
         Label3.BackColor = Color.Transparent
-        Label3.Font = New Font("Rockwell", 11.25F, FontStyle.Bold Or FontStyle.Italic)
-        Label3.ForeColor = Color.WhiteSmoke
-        Label3.Location = New Point(223, 244)
+        Label3.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
+        Label3.ForeColor = Color.White
+        Label3.Location = New Point(219, 243)
         Label3.Name = "Label3"
-        Label3.Size = New Size(87, 19)
+        Label3.Size = New Size(93, 23)
         Label3.TabIndex = 14
         Label3.Text = "Last Name"
         ' 
@@ -448,11 +450,11 @@ Partial Class MainDashboard
         ' 
         Label2.AutoSize = True
         Label2.BackColor = Color.Transparent
-        Label2.Font = New Font("Rockwell", 11.25F, FontStyle.Bold Or FontStyle.Italic)
-        Label2.ForeColor = Color.WhiteSmoke
-        Label2.Location = New Point(49, 244)
+        Label2.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
+        Label2.ForeColor = Color.White
+        Label2.Location = New Point(46, 243)
         Label2.Name = "Label2"
-        Label2.Size = New Size(89, 19)
+        Label2.Size = New Size(98, 23)
         Label2.TabIndex = 13
         Label2.Text = "First Name"
         ' 
@@ -505,7 +507,7 @@ Partial Class MainDashboard
         txtEmail.BorderStyle = BorderStyle.FixedSingle
         txtEmail.Font = New Font("Rockwell", 11.25F)
         txtEmail.ForeColor = Color.Black
-        txtEmail.Location = New Point(187, 377)
+        txtEmail.Location = New Point(187, 370)
         txtEmail.Name = "txtEmail"
         txtEmail.ReadOnly = True
         txtEmail.Size = New Size(155, 25)
@@ -518,7 +520,7 @@ Partial Class MainDashboard
         txtUsername.BorderStyle = BorderStyle.FixedSingle
         txtUsername.Font = New Font("Rockwell", 11.25F)
         txtUsername.ForeColor = Color.Black
-        txtUsername.Location = New Point(15, 377)
+        txtUsername.Location = New Point(15, 370)
         txtUsername.Name = "txtUsername"
         txtUsername.ReadOnly = True
         txtUsername.Size = New Size(152, 25)
@@ -592,35 +594,35 @@ Partial Class MainDashboard
         ewanTable.AllowUserToDeleteRows = False
         ewanTable.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         ewanTable.BackgroundColor = Color.Brown
-        DataGridViewCellStyle17.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle17.BackColor = Color.Brown
-        DataGridViewCellStyle17.Font = New Font("Rockwell", 11.25F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        DataGridViewCellStyle17.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle17.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle17.WrapMode = DataGridViewTriState.True
-        ewanTable.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle17
+        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = Color.Brown
+        DataGridViewCellStyle1.Font = New Font("Rockwell", 11.25F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        DataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = DataGridViewTriState.True
+        ewanTable.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         ewanTable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         ewanTable.Columns.AddRange(New DataGridViewColumn() {USER_ID, FULLNAME, USERNAME, EMAIL, ACCESS, Edit, Delete})
-        DataGridViewCellStyle23.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle23.BackColor = Color.Tomato
-        DataGridViewCellStyle23.Font = New Font("Rockwell", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        DataGridViewCellStyle23.ForeColor = Color.WhiteSmoke
-        DataGridViewCellStyle23.SelectionBackColor = Color.Salmon
-        DataGridViewCellStyle23.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle23.WrapMode = DataGridViewTriState.False
-        ewanTable.DefaultCellStyle = DataGridViewCellStyle23
+        DataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = Color.Tomato
+        DataGridViewCellStyle7.Font = New Font("Sitka Banner", 12.7499981F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        DataGridViewCellStyle7.ForeColor = Color.WhiteSmoke
+        DataGridViewCellStyle7.SelectionBackColor = Color.Salmon
+        DataGridViewCellStyle7.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle7.WrapMode = DataGridViewTriState.False
+        ewanTable.DefaultCellStyle = DataGridViewCellStyle7
         ewanTable.GridColor = Color.Tomato
         ewanTable.Location = New Point(353, 51)
         ewanTable.Name = "ewanTable"
         ewanTable.ReadOnly = True
-        DataGridViewCellStyle24.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle24.BackColor = Color.Lime
-        DataGridViewCellStyle24.Font = New Font("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        DataGridViewCellStyle24.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle24.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle24.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle24.WrapMode = DataGridViewTriState.True
-        ewanTable.RowHeadersDefaultCellStyle = DataGridViewCellStyle24
+        DataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = Color.Lime
+        DataGridViewCellStyle8.Font = New Font("Sitka Banner", 12.7499981F, FontStyle.Bold Or FontStyle.Italic)
+        DataGridViewCellStyle8.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle8.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle8.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = DataGridViewTriState.True
+        ewanTable.RowHeadersDefaultCellStyle = DataGridViewCellStyle8
         ewanTable.SelectionMode = DataGridViewSelectionMode.FullRowSelect
         ewanTable.Size = New Size(796, 481)
         ewanTable.TabIndex = 2
@@ -629,8 +631,8 @@ Partial Class MainDashboard
         ' 
         USER_ID.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
         USER_ID.DataPropertyName = "USER_ID"
-        DataGridViewCellStyle18.Alignment = DataGridViewContentAlignment.MiddleRight
-        USER_ID.DefaultCellStyle = DataGridViewCellStyle18
+        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleRight
+        USER_ID.DefaultCellStyle = DataGridViewCellStyle2
         USER_ID.FillWeight = 426.3958F
         USER_ID.HeaderText = "UserID"
         USER_ID.MinimumWidth = 80
@@ -641,8 +643,8 @@ Partial Class MainDashboard
         ' 
         FULLNAME.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
         FULLNAME.DataPropertyName = "FULLNAME"
-        DataGridViewCellStyle19.Alignment = DataGridViewContentAlignment.MiddleLeft
-        FULLNAME.DefaultCellStyle = DataGridViewCellStyle19
+        DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
+        FULLNAME.DefaultCellStyle = DataGridViewCellStyle3
         FULLNAME.FillWeight = 74.611824F
         FULLNAME.HeaderText = "Fullname"
         FULLNAME.MinimumWidth = 175
@@ -654,8 +656,8 @@ Partial Class MainDashboard
         ' 
         USERNAME.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
         USERNAME.DataPropertyName = "USERNAME"
-        DataGridViewCellStyle20.Alignment = DataGridViewContentAlignment.MiddleLeft
-        USERNAME.DefaultCellStyle = DataGridViewCellStyle20
+        DataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft
+        USERNAME.DefaultCellStyle = DataGridViewCellStyle4
         USERNAME.FillWeight = 74.611824F
         USERNAME.HeaderText = "Username"
         USERNAME.MinimumWidth = 150
@@ -667,8 +669,8 @@ Partial Class MainDashboard
         ' 
         EMAIL.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
         EMAIL.DataPropertyName = "EMAIL"
-        DataGridViewCellStyle21.Alignment = DataGridViewContentAlignment.MiddleLeft
-        EMAIL.DefaultCellStyle = DataGridViewCellStyle21
+        DataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft
+        EMAIL.DefaultCellStyle = DataGridViewCellStyle5
         EMAIL.FillWeight = 74.611824F
         EMAIL.HeaderText = "Email"
         EMAIL.MinimumWidth = 150
@@ -690,10 +692,10 @@ Partial Class MainDashboard
         ' Edit
         ' 
         Edit.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
-        DataGridViewCellStyle22.Alignment = DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle22.Font = New Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        DataGridViewCellStyle22.NullValue = resources.GetObject("DataGridViewCellStyle22.NullValue")
-        Edit.DefaultCellStyle = DataGridViewCellStyle22
+        DataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle6.Font = New Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        DataGridViewCellStyle6.NullValue = resources.GetObject("DataGridViewCellStyle6.NullValue")
+        Edit.DefaultCellStyle = DataGridViewCellStyle6
         Edit.FillWeight = 17.2273083F
         Edit.HeaderText = "Edit"
         Edit.Image = CType(resources.GetObject("Edit.Image"), Image)

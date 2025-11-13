@@ -164,6 +164,7 @@ Public Class InsertBooks
 
     Public Sub enableForUpdate(ok As Boolean)
         btnUpdatePhoto.Enabled = ok
+        UpdateBtn.Enabled = ok
         txtTitle.ReadOnly = Not ok
         txtAuthor.ReadOnly = Not ok
         txtCategory.Enabled = ok
