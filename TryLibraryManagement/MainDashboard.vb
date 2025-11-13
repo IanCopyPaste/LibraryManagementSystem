@@ -28,11 +28,8 @@ Public Class MainDashboard
                 Else
                     UpdateCredentialsVisibility(True)
                 End If
-            Else
-                MsgBox("PLEASE CLICK A VALID ROW!", vbInformation, "PLEASE FIX YOUR ASS UP")
             End If
         Catch ex As Exception
-            MsgBox("Please Select a Valid Row", vbCritical, "Invalid Row")
         End Try
     End Sub
     Private Sub updateBtn_Click(sender As Object, e As EventArgs) Handles updateBtn.Click
@@ -245,7 +242,7 @@ Public Class MainDashboard
             cmd.Parameters.AddWithValue("@userID", id)
             Dim result As Object = cmd.ExecuteScalar
             If IsDBNull(result) Then
-                ProfileBoxMain.ImageLocation = "C:\Users\CLIENT\Downloads\sdsdsds.jpg"
+                ProfileBoxMain.Image = Image.FromFile("C:\Users\CLIENT\Downloads\sdsdsds.jpg")
             Else
                 Dim imageBytes() As Byte = DirectCast(result, Byte())
                 Dim ms As New MemoryStream(imageBytes)
@@ -324,6 +321,10 @@ Public Class MainDashboard
     Private Sub btnBookDashboard_Click(sender As Object, e As EventArgs) Handles btnBookDashboard.Click
         BookDashboardForAdmin.Show()
         Me.Dispose()
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        refresh()
     End Sub
     'methods ends
 End Class

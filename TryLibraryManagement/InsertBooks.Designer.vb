@@ -25,7 +25,6 @@ Partial Class InsertBooks
         components = New ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(InsertBooks))
         TopPanel = New Panel()
-        Label1 = New Label()
         TimeLabel = New Label()
         SidePanel = New Panel()
         BookHistoryBtn = New Button()
@@ -64,40 +63,35 @@ Partial Class InsertBooks
         delete = New DataGridViewImageColumn()
         upPic1 = New OpenFileDialog()
         Timer1 = New Timer(components)
+        PictureBox1 = New PictureBox()
+        Label9 = New Label()
+        ProfileBoxUpper = New PictureBox()
         TopPanel.SuspendLayout()
         SidePanel.SuspendLayout()
         MainPanel.SuspendLayout()
         CType(bookPhotoBox, ComponentModel.ISupportInitialize).BeginInit()
         CType(BookTable, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(ProfileBoxUpper, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' TopPanel
         ' 
-        TopPanel.BackColor = SystemColors.ActiveCaption
-        TopPanel.Controls.Add(Label1)
+        TopPanel.BackColor = Color.Brown
+        TopPanel.Controls.Add(ProfileBoxUpper)
+        TopPanel.Controls.Add(PictureBox1)
+        TopPanel.Controls.Add(Label9)
         TopPanel.Dock = DockStyle.Top
         TopPanel.Location = New Point(0, 0)
         TopPanel.Name = "TopPanel"
         TopPanel.Size = New Size(1266, 74)
         TopPanel.TabIndex = 1
         ' 
-        ' Label1
-        ' 
-        Label1.Anchor = AnchorStyles.None
-        Label1.AutoSize = True
-        Label1.Font = New Font("Sitka Banner", 27.75F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(3, 7)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(762, 53)
-        Label1.TabIndex = 0
-        Label1.Text = "Simpol Library Management System - Manage Books"
-        Label1.TextAlign = ContentAlignment.MiddleCenter
-        ' 
         ' TimeLabel
         ' 
         TimeLabel.AutoSize = True
         TimeLabel.Font = New Font("Tahoma", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        TimeLabel.ForeColor = SystemColors.ActiveCaptionText
+        TimeLabel.ForeColor = Color.WhiteSmoke
         TimeLabel.Location = New Point(502, 20)
         TimeLabel.Name = "TimeLabel"
         TimeLabel.Size = New Size(131, 25)
@@ -497,6 +491,42 @@ Partial Class InsertBooks
         ' 
         Timer1.Enabled = True
         ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.BackColor = Color.Transparent
+        PictureBox1.BackgroundImageLayout = ImageLayout.Center
+        PictureBox1.Cursor = Cursors.Hand
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
+        PictureBox1.Location = New Point(12, 10)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(58, 54)
+        PictureBox1.SizeMode = PictureBoxSizeMode.CenterImage
+        PictureBox1.TabIndex = 11
+        PictureBox1.TabStop = False
+        ' 
+        ' Label9
+        ' 
+        Label9.Anchor = AnchorStyles.None
+        Label9.AutoSize = True
+        Label9.BackColor = Color.Transparent
+        Label9.Font = New Font("Sitka Text Semibold", 27.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label9.ForeColor = Color.White
+        Label9.Location = New Point(65, 9)
+        Label9.Name = "Label9"
+        Label9.Size = New Size(605, 53)
+        Label9.TabIndex = 10
+        Label9.Text = "Baranggay International Library"
+        Label9.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' ProfileBoxUpper
+        ' 
+        ProfileBoxUpper.ErrorImage = CType(resources.GetObject("ProfileBoxUpper.ErrorImage"), Image)
+        ProfileBoxUpper.Location = New Point(1178, 3)
+        ProfileBoxUpper.Name = "ProfileBoxUpper"
+        ProfileBoxUpper.Size = New Size(76, 68)
+        ProfileBoxUpper.TabIndex = 12
+        ProfileBoxUpper.TabStop = False
+        ' 
         ' InsertBooks
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -515,11 +545,12 @@ Partial Class InsertBooks
         MainPanel.PerformLayout()
         CType(bookPhotoBox, ComponentModel.ISupportInitialize).EndInit()
         CType(BookTable, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        CType(ProfileBoxUpper, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
     Friend WithEvents TopPanel As Panel
-    Friend WithEvents Label1 As Label
     Friend WithEvents SidePanel As Panel
     Friend WithEvents SignOutBtn As Button
     Friend WithEvents InsertBooksBtn As Button
@@ -562,4 +593,7 @@ Partial Class InsertBooks
     Friend WithEvents delete As DataGridViewImageColumn
     Friend WithEvents Label8 As Label
     Friend WithEvents txtStatus As ComboBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label9 As Label
+    Friend WithEvents ProfileBoxUpper As PictureBox
 End Class
