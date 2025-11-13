@@ -325,6 +325,5 @@ Public Class MainDashboard
         BookDashboardForAdmin.Show()
         Me.Dispose()
     End Sub
-
     'methods ends
 End Class

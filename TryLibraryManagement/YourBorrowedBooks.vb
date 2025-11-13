@@ -20,8 +20,8 @@ Public Class YourBorrowedBooks
                 Dim cat As String = reader.GetString("cat")
                 Dim getID2 As Integer = reader.GetValue("bookid")
 
-                Using ms As New MemoryStream(imgBytes)
-                    Dim img As Image = Image.FromStream(ms)
+                Dim ms As New MemoryStream(imgBytes)
+                Dim img As Image = Image.FromStream(ms)
 
                     Dim cardShadow As New Panel With {
                 .Width = 180,
@@ -127,8 +127,7 @@ Public Class YourBorrowedBooks
                     card.Controls.Add(lblGenre)
                     cardShadow.Controls.Add(card)
 
-                    ewanFLow.Controls.Add(cardShadow)
-                End Using
+                ewanFLow.Controls.Add(cardShadow)
             End While
 
             reader.Close()

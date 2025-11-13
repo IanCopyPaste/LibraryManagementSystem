@@ -51,25 +51,28 @@ Public Class BorrowHistory
     End Sub
 
     Private Sub BorrowTable_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles BorrowTable.CellClick
-        Dim id As Integer = BorrowTable.Rows(e.RowIndex).Cells(1).Value
-        MsgBox(id)
         Try
-            dbConOpen()
-            Dim query As String = "SELECT u.email As Email
+            Dim id As Integer = BorrowTable.Rows(e.RowIndex).Cells(1).Value
+            MsgBox(id)
+            Try
+                dbConOpen()
+                Dim query As String = "SELECT u.email As Email
                                    FROM borrow br JOIN users u ON u.userID = br.userID
                                    WHERE u.userID = @id"
-            Dim cmd As New MySqlCommand(query, con)
-            cmd.Parameters.AddWithValue("@id", id)
-            Dim read As MySqlDataReader = cmd.ExecuteReader
-            While read.Read
-                txtEmail.Text = read.GetString("Email")
-            End While
-        Catch ex As MySqlException
-            MsgBox(ex.Message, vbCritical, "ERROR BORROW HISTORY(0)")
+                Dim cmd As New MySqlCommand(query, con)
+                cmd.Parameters.AddWithValue("@id", id)
+                Dim read As MySqlDataReader = cmd.ExecuteReader
+                While read.Read
+                    txtEmail.Text = read.GetString("Email")
+                End While
+            Catch ex As MySqlException
+                MsgBox(ex.Message, vbCritical, "ERROR BORROW HISTORY(0)")
+            Catch ex As Exception
+                MsgBox(ex.Message, vbCritical, "ERROR BORROW HISTORY(1)")
+            Finally
+                dbConClose()
+            End Try
         Catch ex As Exception
-            MsgBox(ex.Message, vbCritical, "ERROR BORROW HISTORY(1)")
-        Finally
-            dbConClose()
         End Try
     End Sub
 

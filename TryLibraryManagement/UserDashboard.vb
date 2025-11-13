@@ -24,8 +24,8 @@ Public Class UserDashboard
                 Dim cat As String = reader.GetString("category")
                 Dim getID2 As Integer = reader.GetValue("bookID")
 
-                Using ms As New MemoryStream(imgBytes)
-                    Dim img As Image = Image.FromStream(ms)
+                Dim ms As New MemoryStream(imgBytes)
+                Dim img As Image = Image.FromStream(ms)
 
                     Dim cardShadow As New Panel With {
                 .Width = 180,
@@ -132,7 +132,6 @@ Public Class UserDashboard
                     cardShadow.Controls.Add(card)
 
                     flowPanelRecords.Controls.Add(cardShadow)
-                End Using
             End While
 
             reader.Close()
