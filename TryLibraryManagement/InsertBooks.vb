@@ -9,9 +9,7 @@ Public Class InsertBooks
         Me.Dispose()
     End Sub
     Private Sub InsertBooksBtn_Click(sender As Object, e As EventArgs) Handles InsertBooksBtn.Click
-        Dim ins As New InsertBooks
-        Dispose()
-        ins.Show()
+        refresh()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnNewBook.Click
@@ -26,6 +24,7 @@ Public Class InsertBooks
     Public id As Integer
     Private Sub InsertBooks_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         displayAllBooks()
+        ToolTip1.SetToolTip(refreshBtn, "Refresh")
     End Sub
     Private Sub btnInsert_Click(sender As Object, e As EventArgs)
         Dim pic As New PictureBox
@@ -225,7 +224,17 @@ Public Class InsertBooks
     End Sub
 
     Private Sub SignOutBtn_Click(sender As Object, e As EventArgs) Handles SignOutBtn.Click
-        SignUp.Show()
+        Form1.Show()
+        Me.Dispose()
+    End Sub
+
+    Private Sub bookDashBtn_Click(sender As Object, e As EventArgs) Handles bookDashBtn.Click
+        BookDashboardForAdmin.Show()
+        Me.Dispose()
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        MainDashboard.Show()
         Me.Dispose()
     End Sub
     'methods

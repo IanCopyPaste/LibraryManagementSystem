@@ -3,32 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\borrowhistory.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\borrowhistory.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\insertbooks.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\insertbooks.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\borrowhistory.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\borrowhistory.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\insertbooks.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\insertbooks.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\maindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\maindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\maindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\maindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\borrowhistory.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\borrowhistory.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\createactualbook.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\createactualbook.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\createactualbook.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\createactualbook.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\insertbooks.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\insertbooks.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\maindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\maindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\bookdashboardforadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
@@ -90,10 +98,6 @@
       "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\fetchanything.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\createactualbook.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\createactualbook.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\signup.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\signup.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
@@ -113,7 +117,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 931,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -121,12 +125,25 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreateActualBook.vb",
+              "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\CreateActualBook.vb",
+              "RelativeDocumentMoniker": "TryLibraryManagement\\CreateActualBook.vb",
+              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\CreateActualBook.vb*",
+              "RelativeToolTip": "TryLibraryManagement\\CreateActualBook.vb*",
+              "ViewState": "AgIAABwAAAAAAAAAAAAnwCEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-14T05:26:59.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "BorrowHistory.vb",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\BorrowHistory.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\BorrowHistory.vb",
-              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\BorrowHistory.vb*",
-              "RelativeToolTip": "TryLibraryManagement\\BorrowHistory.vb*",
+              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\BorrowHistory.vb",
+              "RelativeToolTip": "TryLibraryManagement\\BorrowHistory.vb",
               "ViewState": "AgIAAC0AAAAAAAAAAAAnwDcAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-11-10T12:23:31.393Z",
@@ -134,25 +151,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainDashboard.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\MainDashboard.vb",
-              "RelativeDocumentMoniker": "TryLibraryManagement\\MainDashboard.vb",
-              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\MainDashboard.vb [Design]",
-              "RelativeToolTip": "TryLibraryManagement\\MainDashboard.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-11T04:43:11.758Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "MainDashboard.vb",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\MainDashboard.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\MainDashboard.vb",
               "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\MainDashboard.vb",
               "RelativeToolTip": "TryLibraryManagement\\MainDashboard.vb",
-              "ViewState": "AgIAACABAAAAAAAAAAApwDYBAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAACABAAAAAAAAAIA9wDABAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-10-16T10:28:56.16Z",
               "EditorCaption": ""
@@ -171,44 +176,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "InsertBooks.vb [Design]",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\InsertBooks.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\InsertBooks.vb",
-              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\InsertBooks.vb [Design]",
-              "RelativeToolTip": "TryLibraryManagement\\InsertBooks.vb [Design]",
+              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\InsertBooks.vb [Design]*",
+              "RelativeToolTip": "TryLibraryManagement\\InsertBooks.vb [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-11-10T14:46:59.693Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "InsertBooks.vb",
-              "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\InsertBooks.vb",
-              "RelativeDocumentMoniker": "TryLibraryManagement\\InsertBooks.vb",
-              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\InsertBooks.vb",
-              "RelativeToolTip": "TryLibraryManagement\\InsertBooks.vb",
-              "ViewState": "AgIAAI4AAAAAAAAAAAAiwKYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-10T14:47:22.366Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "BorrowHistory.vb [Design]",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\BorrowHistory.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\BorrowHistory.vb",
-              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\BorrowHistory.vb [Design]*",
-              "RelativeToolTip": "TryLibraryManagement\\BorrowHistory.vb [Design]*",
+              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\BorrowHistory.vb [Design]",
+              "RelativeToolTip": "TryLibraryManagement\\BorrowHistory.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-11-09T15:25:39.13Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateActualBook.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\CreateActualBook.vb",
+              "RelativeDocumentMoniker": "TryLibraryManagement\\CreateActualBook.vb",
+              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\CreateActualBook.vb [Design]*",
+              "RelativeToolTip": "TryLibraryManagement\\CreateActualBook.vb [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-08T04:10:59.702Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "InsertBooks.vb",
+              "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\InsertBooks.vb",
+              "RelativeDocumentMoniker": "TryLibraryManagement\\InsertBooks.vb",
+              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\InsertBooks.vb*",
+              "RelativeToolTip": "TryLibraryManagement\\InsertBooks.vb*",
+              "ViewState": "AgIAANYAAAAAAAAAAAApwO0AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-10T14:47:22.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainDashboard.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\MainDashboard.vb",
+              "RelativeDocumentMoniker": "TryLibraryManagement\\MainDashboard.vb",
+              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\MainDashboard.vb [Design]",
+              "RelativeToolTip": "TryLibraryManagement\\MainDashboard.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-14T04:51:42.315Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "BookDashboardForAdmin.vb [Design]",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\BookDashboardForAdmin.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\BookDashboardForAdmin.vb",
@@ -220,7 +249,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "YourBorrowedBooks.vb",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\YourBorrowedBooks.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\YourBorrowedBooks.vb",
@@ -232,7 +261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "YourBorrowedBooks.vb [Design]",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\YourBorrowedBooks.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\YourBorrowedBooks.vb",
@@ -244,7 +273,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "UserDashboard.vb [Design]",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\UserDashboard.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\UserDashboard.vb",
@@ -256,7 +285,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "ReturnBookForm.vb [Design]",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\ReturnBookForm.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\ReturnBookForm.vb",
@@ -268,7 +297,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "UserDashboard.vb",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\UserDashboard.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\UserDashboard.vb",
@@ -280,7 +309,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "BookDashboardForAdmin.vb",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\BookDashboardForAdmin.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\BookDashboardForAdmin.vb",
@@ -292,7 +321,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Image.cs",
               "DocumentMoniker": "C:\\Users\\CLIENT\\AppData\\Local\\Temp\\.vsdbgsrc\\2e71c23070ea2a86fba34093f2eb9c6f2f082c0eda3f17327b1eb8045550e1bb\\Image.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\2e71c23070ea2a86fba34093f2eb9c6f2f082c0eda3f17327b1eb8045550e1bb\\Image.cs",
@@ -305,7 +334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "BorrowBookForm.vb [Design]",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\BorrowBookForm.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\BorrowBookForm.vb",
@@ -317,7 +346,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "ReturnBookForm.vb",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\ReturnBookForm.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\ReturnBookForm.vb",
@@ -329,7 +358,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "BorrowBookForm.vb",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\BorrowBookForm.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\BorrowBookForm.vb",
@@ -341,7 +370,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "BorrowBookForm.Designer.vb",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\BorrowBookForm.Designer.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\BorrowBookForm.Designer.vb",
@@ -353,7 +382,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "SignUpOtpCode.vb [Design]",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\SignUpOtpCode.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\SignUpOtpCode.vb",
@@ -365,7 +394,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "SignUp.vb [Design]",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\SignUp.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\SignUp.vb",
@@ -377,7 +406,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "FetchAnything.vb",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\FetchAnything.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\FetchAnything.vb",
@@ -389,19 +418,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "CreateActualBook.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\CreateActualBook.vb",
-              "RelativeDocumentMoniker": "TryLibraryManagement\\CreateActualBook.vb",
-              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\CreateActualBook.vb [Design]",
-              "RelativeToolTip": "TryLibraryManagement\\CreateActualBook.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-08T04:10:59.702Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "SignUp.vb",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\SignUp.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\SignUp.vb",
@@ -413,7 +430,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "Form1.vb",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\Form1.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\Form1.vb",
@@ -425,7 +442,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "SignUpOtpCode.vb",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\SignUpOtpCode.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\SignUpOtpCode.vb",

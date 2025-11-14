@@ -1,4 +1,5 @@
-﻿Imports System.Net
+﻿Imports System.IO
+Imports System.Net
 Imports System.Net.Mail
 Imports System.Security.Cryptography.X509Certificates
 Imports MySql.Data.MySqlClient
@@ -14,6 +15,8 @@ Module FetchAnything
     'app password for the sender of the message
     Private app_pass As String = "iqpv kbbd dniy akom"
 
+    'used to fetch profile image for all forms
+    Public ms1 As New MemoryStream
 
     'CreateActualBookForm
 
@@ -164,4 +167,19 @@ Module FetchAnything
         End Try
     End Sub
     'API CALLS FOR BORROW HISTORY
+
+    'method for diaplaying profile picture
+    Public Sub loadProfileImage()
+        Try
+            dbConOpen()
+            Dim query As String = "SELECT profile_image FROM users WHERE userID = @id"
+            Dim cmd As New MySqlCommand(query, con)
+            cmd.Parameters.AddWithValue("@id", accNum)
+            Dim pic As Object = cmd.ExecuteScalar
+            Dim image() As Byte = DirectCast(pic, Byte())
+        Catch ex As Exception
+
+        End Try
+    End Sub
+    'method for diaplaying profile picture
 End Module

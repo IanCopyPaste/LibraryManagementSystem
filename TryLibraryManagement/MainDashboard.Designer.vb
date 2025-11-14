@@ -78,6 +78,7 @@ Partial Class MainDashboard
         Delete = New DataGridViewImageColumn()
         TimeLabel = New Label()
         TimeForTimer = New Timer(components)
+        ToolTip1 = New ToolTip(components)
         TopPanel.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(ProfileBoxUpper, ComponentModel.ISupportInitialize).BeginInit()
@@ -734,6 +735,11 @@ Partial Class MainDashboard
         TimeForTimer.Enabled = True
         TimeForTimer.Interval = 1000
         ' 
+        ' ToolTip1
+        ' 
+        ToolTip1.BackColor = Color.Brown
+        ToolTip1.ForeColor = Color.White
+        ' 
         ' MainDashboard
         ' 
         AutoScaleDimensions = New SizeF(8F, 18F)
@@ -805,4 +811,5 @@ Partial Class MainDashboard
     Friend WithEvents ACCESS As DataGridViewTextBoxColumn
     Friend WithEvents Edit As DataGridViewImageColumn
     Friend WithEvents Delete As DataGridViewImageColumn
+    Friend WithEvents ToolTip1 As ToolTip
 End Class

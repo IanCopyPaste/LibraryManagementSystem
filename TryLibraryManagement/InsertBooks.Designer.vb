@@ -57,8 +57,6 @@ Partial Class InsertBooks
         btnNewBook = New Button()
         bookPhotoBox = New PictureBox()
         BookTable = New DataGridView()
-        upPic1 = New OpenFileDialog()
-        Timer1 = New Timer(components)
         BookID = New DataGridViewTextBoxColumn()
         Title = New DataGridViewTextBoxColumn()
         Author = New DataGridViewTextBoxColumn()
@@ -67,6 +65,9 @@ Partial Class InsertBooks
         status = New DataGridViewTextBoxColumn()
         Edit = New DataGridViewImageColumn()
         delete = New DataGridViewImageColumn()
+        upPic1 = New OpenFileDialog()
+        Timer1 = New Timer(components)
+        ToolTip1 = New ToolTip(components)
         TopPanel.SuspendLayout()
         CType(ProfileBoxUpper, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -112,16 +113,15 @@ Partial Class InsertBooks
         ' 
         ' Label9
         ' 
-        Label9.Anchor = AnchorStyles.None
         Label9.AutoSize = True
         Label9.BackColor = Color.Transparent
         Label9.Font = New Font("Sitka Text Semibold", 27.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label9.ForeColor = Color.White
         Label9.Location = New Point(65, 9)
         Label9.Name = "Label9"
-        Label9.Size = New Size(605, 53)
+        Label9.Size = New Size(897, 53)
         Label9.TabIndex = 10
-        Label9.Text = "Baranggay International Library"
+        Label9.Text = "Baranggay International Library - Manage Books"
         Label9.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' TimeLabel
@@ -129,11 +129,11 @@ Partial Class InsertBooks
         TimeLabel.AutoSize = True
         TimeLabel.Font = New Font("Tahoma", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         TimeLabel.ForeColor = Color.WhiteSmoke
-        TimeLabel.Location = New Point(502, 20)
+        TimeLabel.Location = New Point(520, 16)
         TimeLabel.Name = "TimeLabel"
-        TimeLabel.Size = New Size(131, 25)
+        TimeLabel.Size = New Size(124, 25)
         TimeLabel.TabIndex = 2
-        TimeLabel.Text = "Time Now: "
+        TimeLabel.Text = "Date Now:"
         ' 
         ' SidePanel
         ' 
@@ -152,6 +152,7 @@ Partial Class InsertBooks
         ' BookHistoryBtn
         ' 
         BookHistoryBtn.BackColor = Color.Brown
+        BookHistoryBtn.Cursor = Cursors.Hand
         BookHistoryBtn.FlatAppearance.BorderSize = 0
         BookHistoryBtn.FlatStyle = FlatStyle.Flat
         BookHistoryBtn.Font = New Font("Tahoma", 9.75F, FontStyle.Bold)
@@ -168,6 +169,7 @@ Partial Class InsertBooks
         ' bookDashBtn
         ' 
         bookDashBtn.BackColor = Color.Brown
+        bookDashBtn.Cursor = Cursors.Hand
         bookDashBtn.FlatAppearance.BorderSize = 0
         bookDashBtn.FlatStyle = FlatStyle.Flat
         bookDashBtn.Font = New Font("Tahoma", 9.75F, FontStyle.Bold)
@@ -184,6 +186,7 @@ Partial Class InsertBooks
         ' SignOutBtn
         ' 
         SignOutBtn.BackColor = Color.Brown
+        SignOutBtn.Cursor = Cursors.Hand
         SignOutBtn.FlatAppearance.BorderSize = 0
         SignOutBtn.FlatStyle = FlatStyle.Flat
         SignOutBtn.Font = New Font("Tahoma", 9.75F, FontStyle.Bold)
@@ -200,6 +203,7 @@ Partial Class InsertBooks
         ' InsertBooksBtn
         ' 
         InsertBooksBtn.BackColor = Color.Brown
+        InsertBooksBtn.Cursor = Cursors.Hand
         InsertBooksBtn.FlatAppearance.BorderSize = 0
         InsertBooksBtn.FlatStyle = FlatStyle.Flat
         InsertBooksBtn.Font = New Font("Tahoma", 9.75F, FontStyle.Bold)
@@ -216,6 +220,7 @@ Partial Class InsertBooks
         ' userPageBtn
         ' 
         userPageBtn.BackColor = Color.Brown
+        userPageBtn.Cursor = Cursors.Hand
         userPageBtn.FlatAppearance.BorderSize = 0
         userPageBtn.FlatStyle = FlatStyle.Flat
         userPageBtn.Font = New Font("Tahoma", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
@@ -262,11 +267,12 @@ Partial Class InsertBooks
         ' 
         Label8.AutoSize = True
         Label8.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label8.Location = New Point(174, 472)
+        Label8.ForeColor = Color.White
+        Label8.Location = New Point(183, 472)
         Label8.Name = "Label8"
-        Label8.Size = New Size(72, 20)
+        Label8.Size = New Size(50, 20)
         Label8.TabIndex = 30
-        Label8.Text = "Category"
+        Label8.Text = "Status"
         ' 
         ' txtStatus
         ' 
@@ -282,6 +288,7 @@ Partial Class InsertBooks
         ' refreshBtn
         ' 
         refreshBtn.BackColor = Color.Transparent
+        refreshBtn.Cursor = Cursors.Hand
         refreshBtn.FlatAppearance.BorderSize = 0
         refreshBtn.FlatStyle = FlatStyle.Flat
         refreshBtn.Font = New Font("Rockwell", 9.75F, FontStyle.Bold)
@@ -295,6 +302,7 @@ Partial Class InsertBooks
         ' UpdateBtn
         ' 
         UpdateBtn.BackColor = Color.Brown
+        UpdateBtn.Cursor = Cursors.Hand
         UpdateBtn.Enabled = False
         UpdateBtn.FlatAppearance.BorderSize = 0
         UpdateBtn.FlatStyle = FlatStyle.Flat
@@ -310,20 +318,24 @@ Partial Class InsertBooks
         ' btnUpdatePhoto
         ' 
         btnUpdatePhoto.BackColor = Color.Brown
+        btnUpdatePhoto.Cursor = Cursors.Hand
         btnUpdatePhoto.FlatAppearance.BorderSize = 0
         btnUpdatePhoto.FlatStyle = FlatStyle.Flat
         btnUpdatePhoto.Font = New Font("Rockwell", 9.75F, FontStyle.Bold)
         btnUpdatePhoto.ForeColor = Color.WhiteSmoke
-        btnUpdatePhoto.Location = New Point(158, 20)
+        btnUpdatePhoto.Image = CType(resources.GetObject("btnUpdatePhoto.Image"), Image)
+        btnUpdatePhoto.Location = New Point(11, 104)
         btnUpdatePhoto.Name = "btnUpdatePhoto"
-        btnUpdatePhoto.Size = New Size(102, 29)
+        btnUpdatePhoto.Size = New Size(102, 42)
         btnUpdatePhoto.TabIndex = 25
-        btnUpdatePhoto.Text = "Update Photo"
+        btnUpdatePhoto.Text = "Update " & vbCrLf & "Photo"
+        btnUpdatePhoto.TextImageRelation = TextImageRelation.ImageBeforeText
         btnUpdatePhoto.UseVisualStyleBackColor = False
         ' 
         ' txtSearchList
         ' 
-        txtSearchList.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        txtSearchList.Cursor = Cursors.Hand
+        txtSearchList.Font = New Font("Rockwell", 11.25F)
         txtSearchList.Location = New Point(892, 20)
         txtSearchList.Name = "txtSearchList"
         txtSearchList.PlaceholderText = "Search List"
@@ -334,6 +346,7 @@ Partial Class InsertBooks
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label6.ForeColor = Color.White
         Label6.Location = New Point(183, 262)
         Label6.Name = "Label6"
         Label6.Size = New Size(59, 20)
@@ -354,6 +367,7 @@ Partial Class InsertBooks
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label5.ForeColor = Color.White
         Label5.Location = New Point(53, 403)
         Label5.Name = "Label5"
         Label5.Size = New Size(112, 20)
@@ -373,6 +387,7 @@ Partial Class InsertBooks
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label4.ForeColor = Color.White
         Label4.Location = New Point(284, 403)
         Label4.Name = "Label4"
         Label4.Size = New Size(72, 20)
@@ -395,6 +410,7 @@ Partial Class InsertBooks
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label3.ForeColor = Color.White
         Label3.Location = New Point(269, 331)
         Label3.Name = "Label3"
         Label3.Size = New Size(96, 20)
@@ -405,6 +421,7 @@ Partial Class InsertBooks
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.ForeColor = Color.White
         Label2.Location = New Point(69, 331)
         Label2.Name = "Label2"
         Label2.Size = New Size(77, 20)
@@ -432,23 +449,26 @@ Partial Class InsertBooks
         ' btnNewBook
         ' 
         btnNewBook.BackColor = Color.Brown
+        btnNewBook.Cursor = Cursors.Hand
         btnNewBook.FlatAppearance.BorderSize = 0
         btnNewBook.FlatStyle = FlatStyle.Flat
-        btnNewBook.Font = New Font("Rockwell", 9.75F, FontStyle.Bold)
+        btnNewBook.Font = New Font("Rockwell", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnNewBook.ForeColor = Color.WhiteSmoke
-        btnNewBook.Location = New Point(416, 20)
+        btnNewBook.Image = CType(resources.GetObject("btnNewBook.Image"), Image)
+        btnNewBook.Location = New Point(416, 6)
         btnNewBook.Name = "btnNewBook"
-        btnNewBook.Size = New Size(80, 26)
+        btnNewBook.Size = New Size(98, 42)
         btnNewBook.TabIndex = 2
         btnNewBook.Text = "New..."
+        btnNewBook.TextImageRelation = TextImageRelation.ImageBeforeText
         btnNewBook.UseVisualStyleBackColor = False
         ' 
         ' bookPhotoBox
         ' 
         bookPhotoBox.BackColor = Color.Brown
-        bookPhotoBox.Location = New Point(118, 53)
+        bookPhotoBox.Location = New Point(119, 6)
         bookPhotoBox.Name = "bookPhotoBox"
-        bookPhotoBox.Size = New Size(179, 169)
+        bookPhotoBox.Size = New Size(178, 222)
         bookPhotoBox.SizeMode = PictureBoxSizeMode.StretchImage
         bookPhotoBox.TabIndex = 1
         bookPhotoBox.TabStop = False
@@ -468,27 +488,22 @@ Partial Class InsertBooks
         BookTable.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         BookTable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         BookTable.Columns.AddRange(New DataGridViewColumn() {BookID, Title, Author, PublishDate, Category, status, Edit, delete})
+        BookTable.Cursor = Cursors.Hand
         DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = SystemColors.Window
+        DataGridViewCellStyle2.BackColor = Color.Tomato
         DataGridViewCellStyle2.Font = New Font("Sitka Banner", 12.7499981F, FontStyle.Bold Or FontStyle.Italic)
-        DataGridViewCellStyle2.ForeColor = SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle2.ForeColor = Color.White
+        DataGridViewCellStyle2.SelectionBackColor = Color.Salmon
         DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = DataGridViewTriState.False
         BookTable.DefaultCellStyle = DataGridViewCellStyle2
+        BookTable.GridColor = Color.Tomato
         BookTable.Location = New Point(416, 53)
         BookTable.Name = "BookTable"
         BookTable.ReadOnly = True
+        BookTable.SelectionMode = DataGridViewSelectionMode.FullRowSelect
         BookTable.Size = New Size(733, 483)
         BookTable.TabIndex = 0
-        ' 
-        ' upPic1
-        ' 
-        upPic1.FileName = "OpenFileDialog1"
-        ' 
-        ' Timer1
-        ' 
-        Timer1.Enabled = True
         ' 
         ' BookID
         ' 
@@ -559,6 +574,14 @@ Partial Class InsertBooks
         delete.Resizable = DataGridViewTriState.True
         delete.Width = 57
         ' 
+        ' upPic1
+        ' 
+        upPic1.FileName = "OpenFileDialog1"
+        ' 
+        ' Timer1
+        ' 
+        Timer1.Enabled = True
+        ' 
         ' InsertBooks
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -627,4 +650,5 @@ Partial Class InsertBooks
     Friend WithEvents status As DataGridViewTextBoxColumn
     Friend WithEvents Edit As DataGridViewImageColumn
     Friend WithEvents delete As DataGridViewImageColumn
+    Friend WithEvents ToolTip1 As ToolTip
 End Class

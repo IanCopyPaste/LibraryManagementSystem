@@ -10,6 +10,7 @@ Public Class MainDashboard
         checkIfNullProfile()
         ProfileBoxMain.SizeMode = PictureBoxSizeMode.StretchImage
         ProfileBoxUpper.SizeMode = PictureBoxSizeMode.Zoom
+        ToolTip1.SetToolTip(refreshBtn, "Refresh")
     End Sub
 
     Private Sub ewanTable_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles ewanTable.CellContentClick
@@ -242,7 +243,7 @@ Public Class MainDashboard
             cmd.Parameters.AddWithValue("@userID", id)
             Dim result As Object = cmd.ExecuteScalar
             If IsDBNull(result) Then
-                ProfileBoxMain.Image = Image.FromFile("C:\Users\CLIENT\Downloads\sdsdsds.jpg")
+                ProfileBoxMain.Image = Image.FromFile("C:\Users\CLIENT\Documents\vbWorks\TryLibraryManagement\sdsdsds.jpg")
             Else
                 Dim imageBytes() As Byte = DirectCast(result, Byte())
                 Dim ms As New MemoryStream(imageBytes)
@@ -308,9 +309,7 @@ Public Class MainDashboard
     End Sub
 
     Private Sub userPageBtn_Click(sender As Object, e As EventArgs) Handles userPageBtn.Click
-        Dim main As New MainDashboard
-        Me.Dispose()
-        main.Show()
+        refresh()
     End Sub
 
     Private Sub BookHistoryBtn_Click(sender As Object, e As EventArgs) Handles BookHistoryBtn.Click
