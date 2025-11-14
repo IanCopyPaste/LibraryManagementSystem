@@ -24,12 +24,14 @@ Public Class Form1
                             MsgBox("LOG IN SUCCESS TO ADMIN", vbInformation, "SUCCESS")
                             count.Close()
                             close_clear()
+                            loadProfileImage()
                             MainDashboard.Show()
                             Exit While
                         ElseIf count.GetString("role") = "user" Then
                             MsgBox("LOG IN SUCCESS TO USER", vbInformation, "SUCCESS")
                             count.Close()
                             close_clear()
+                            loadProfileImage()
                             UserDashboard.Show()
                             Exit While
                         End If

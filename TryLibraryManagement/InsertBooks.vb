@@ -25,6 +25,7 @@ Public Class InsertBooks
     Private Sub InsertBooks_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         displayAllBooks()
         ToolTip1.SetToolTip(refreshBtn, "Refresh")
+        ProfileBoxUpper.Image = userImage
     End Sub
     Private Sub btnInsert_Click(sender As Object, e As EventArgs)
         Dim pic As New PictureBox

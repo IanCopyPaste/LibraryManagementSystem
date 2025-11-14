@@ -3,31 +3,35 @@ Imports MySql.Data.MySqlClient
 
 Public Class CreateActualBook
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles InsertBtn.Click
-        Try
-            If checkIfBookTitleisUnique(txtTitle.Text.Trim) Then
-                MsgBox("THE TITLE IS ALREADY ON THE DATABASE")
-            Else
-                con.Open()
-                Dim query As String = "INSERT INTO books (title, author, category, publishDate, profile) VALUES (@title, @auth, @cat, @pubDate, LOAD_FILE(@path))"
-                Dim cmd As New MySqlCommand(query, con)
-                cmd.Parameters.AddWithValue("@title", txtTitle.Text.Trim)
-                cmd.Parameters.AddWithValue("@auth", txtAuthor.Text.Trim)
-                cmd.Parameters.AddWithValue("@cat", txtCategory.Text.Trim)
-                cmd.Parameters.AddWithValue("@pubDate", txtPubDate.Value.ToString("yyyy/MM/dd"))
-                cmd.Parameters.AddWithValue("@path", pathTocreate)
-                cmd.ExecuteNonQuery()
-                MsgBox("Book is Inserted!", vbInformation, "Title Inserted!")
-            End If
-        Catch ex As MySqlException
-            MsgBox(ex.Message, vbCritical, "fine")
-        Catch ex As Exception
-            MsgBox(ex.Message, vbCritical, "shii")
-        Finally
-            GC.Collect()
-            con.Close()
-            clearAny()
-            pathTocreate = Nothing
-        End Try
+        If txtTitle.Text = "" And txtAuthor.Text = "" Then
+            MsgBox("PLEASE COMPLETE THE CREDENTIALS", vbInformation, "PLEASE ENTER ALL!")
+        Else
+            Try
+                If checkIfBookTitleisUnique(txtTitle.Text.Trim) Then
+                    MsgBox("THE TITLE IS ALREADY ON THE DATABASE")
+                Else
+                    con.Open()
+                    Dim query As String = "INSERT INTO books (title, author, category, publishDate, profile) VALUES (@title, @auth, @cat, @pubDate, LOAD_FILE(@path))"
+                    Dim cmd As New MySqlCommand(query, con)
+                    cmd.Parameters.AddWithValue("@title", txtTitle.Text.Trim)
+                    cmd.Parameters.AddWithValue("@auth", txtAuthor.Text.Trim)
+                    cmd.Parameters.AddWithValue("@cat", txtCategory.Text.Trim)
+                    cmd.Parameters.AddWithValue("@pubDate", txtPubDate.Value.ToString("yyyy/MM/dd"))
+                    cmd.Parameters.AddWithValue("@path", pathTocreate)
+                    cmd.ExecuteNonQuery()
+                    MsgBox("Book is Inserted!", vbInformation, "Title Inserted!")
+                End If
+            Catch ex As MySqlException
+                MsgBox(ex.Message, vbCritical, "fine")
+            Catch ex As Exception
+                MsgBox(ex.Message, vbCritical, "shii")
+            Finally
+                GC.Collect()
+                con.Close()
+                clearAny()
+                pathTocreate = Nothing
+            End Try
+        End If
     End Sub
 
     Private Sub btnUploadPhoto_Click(sender As Object, e As EventArgs) Handles btnUploadPhoto.Click
@@ -48,6 +52,9 @@ Public Class CreateActualBook
         Next
         bookPic.Image = Nothing
         btnUploadPhoto.Visible = True
+        InsertBooks.Close()
+        InsertBooks.Show()
+        Me.Dispose()
     End Sub
 
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click

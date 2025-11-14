@@ -356,7 +356,7 @@ Partial Class MainDashboard
         Label9.BackColor = Color.Transparent
         Label9.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
         Label9.ForeColor = Color.White
-        Label9.Location = New Point(132, 185)
+        Label9.Location = New Point(128, 201)
         Label9.Name = "Label9"
         Label9.Size = New Size(70, 23)
         Label9.TabIndex = 21
@@ -364,11 +364,11 @@ Partial Class MainDashboard
         ' 
         ' txtUserID
         ' 
-        txtUserID.BackColor = Color.WhiteSmoke
+        txtUserID.BackColor = Color.Brown
         txtUserID.BorderStyle = BorderStyle.FixedSingle
         txtUserID.Font = New Font("Rockwell", 11.25F)
-        txtUserID.ForeColor = Color.Black
-        txtUserID.Location = New Point(122, 157)
+        txtUserID.ForeColor = Color.White
+        txtUserID.Location = New Point(118, 173)
         txtUserID.Name = "txtUserID"
         txtUserID.ReadOnly = True
         txtUserID.Size = New Size(102, 25)
@@ -379,9 +379,9 @@ Partial Class MainDashboard
         ' 
         Label8.AutoSize = True
         Label8.BackColor = Color.Transparent
-        Label8.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
+        Label8.Font = New Font("Sitka Text", 12.0F, FontStyle.Bold Or FontStyle.Italic)
         Label8.ForeColor = Color.White
-        Label8.Location = New Point(239, 398)
+        Label8.Location = New Point(235, 414)
         Label8.Name = "Label8"
         Label8.Size = New Size(56, 23)
         Label8.TabIndex = 19
@@ -391,9 +391,9 @@ Partial Class MainDashboard
         ' 
         Label7.AutoSize = True
         Label7.BackColor = Color.Transparent
-        Label7.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
+        Label7.Font = New Font("Sitka Text", 12.0F, FontStyle.Bold Or FontStyle.Italic)
         Label7.ForeColor = Color.White
-        Label7.Location = New Point(49, 398)
+        Label7.Location = New Point(45, 414)
         Label7.Name = "Label7"
         Label7.Size = New Size(95, 23)
         Label7.TabIndex = 18
@@ -415,9 +415,9 @@ Partial Class MainDashboard
         ' 
         Label5.AutoSize = True
         Label5.BackColor = Color.Transparent
-        Label5.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
+        Label5.Font = New Font("Sitka Text", 12.0F, FontStyle.Bold Or FontStyle.Italic)
         Label5.ForeColor = Color.White
-        Label5.Location = New Point(239, 315)
+        Label5.Location = New Point(235, 331)
         Label5.Name = "Label5"
         Label5.Size = New Size(57, 23)
         Label5.TabIndex = 16
@@ -427,9 +427,9 @@ Partial Class MainDashboard
         ' 
         Label4.AutoSize = True
         Label4.BackColor = Color.Transparent
-        Label4.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
+        Label4.Font = New Font("Sitka Text", 12.0F, FontStyle.Bold Or FontStyle.Italic)
         Label4.ForeColor = Color.White
-        Label4.Location = New Point(40, 315)
+        Label4.Location = New Point(36, 331)
         Label4.Name = "Label4"
         Label4.Size = New Size(113, 23)
         Label4.TabIndex = 15
@@ -439,9 +439,9 @@ Partial Class MainDashboard
         ' 
         Label3.AutoSize = True
         Label3.BackColor = Color.Transparent
-        Label3.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
+        Label3.Font = New Font("Sitka Text", 12.0F, FontStyle.Bold Or FontStyle.Italic)
         Label3.ForeColor = Color.White
-        Label3.Location = New Point(219, 243)
+        Label3.Location = New Point(215, 259)
         Label3.Name = "Label3"
         Label3.Size = New Size(93, 23)
         Label3.TabIndex = 14
@@ -451,9 +451,9 @@ Partial Class MainDashboard
         ' 
         Label2.AutoSize = True
         Label2.BackColor = Color.Transparent
-        Label2.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
+        Label2.Font = New Font("Sitka Text", 12.0F, FontStyle.Bold Or FontStyle.Italic)
         Label2.ForeColor = Color.White
-        Label2.Location = New Point(46, 243)
+        Label2.Location = New Point(42, 259)
         Label2.Name = "Label2"
         Label2.Size = New Size(98, 23)
         Label2.TabIndex = 13
@@ -465,9 +465,9 @@ Partial Class MainDashboard
         ProfileBoxMain.BackgroundImageLayout = ImageLayout.Stretch
         ProfileBoxMain.ErrorImage = Nothing
         ProfileBoxMain.InitialImage = Nothing
-        ProfileBoxMain.Location = New Point(97, 19)
+        ProfileBoxMain.Location = New Point(88, 19)
         ProfileBoxMain.Name = "ProfileBoxMain"
-        ProfileBoxMain.Size = New Size(148, 132)
+        ProfileBoxMain.Size = New Size(160, 145)
         ProfileBoxMain.TabIndex = 4
         ProfileBoxMain.TabStop = False
         ' 
@@ -490,10 +490,10 @@ Partial Class MainDashboard
         ' 
         ' comboAccess
         ' 
-        comboAccess.BackColor = Color.WhiteSmoke
+        comboAccess.BackColor = Color.Brown
         comboAccess.FlatStyle = FlatStyle.Flat
         comboAccess.Font = New Font("Rockwell", 11.25F)
-        comboAccess.ForeColor = Color.Black
+        comboAccess.ForeColor = Color.White
         comboAccess.FormattingEnabled = True
         comboAccess.Items.AddRange(New Object() {"user", "admin"})
         comboAccess.Location = New Point(88, 451)
@@ -504,11 +504,11 @@ Partial Class MainDashboard
         ' 
         ' txtEmail
         ' 
-        txtEmail.BackColor = Color.WhiteSmoke
+        txtEmail.BackColor = Color.Brown
         txtEmail.BorderStyle = BorderStyle.FixedSingle
         txtEmail.Font = New Font("Rockwell", 11.25F)
-        txtEmail.ForeColor = Color.Black
-        txtEmail.Location = New Point(187, 370)
+        txtEmail.ForeColor = Color.White
+        txtEmail.Location = New Point(183, 386)
         txtEmail.Name = "txtEmail"
         txtEmail.ReadOnly = True
         txtEmail.Size = New Size(155, 25)
@@ -517,11 +517,11 @@ Partial Class MainDashboard
         ' 
         ' txtUsername
         ' 
-        txtUsername.BackColor = Color.WhiteSmoke
+        txtUsername.BackColor = Color.Brown
         txtUsername.BorderStyle = BorderStyle.FixedSingle
         txtUsername.Font = New Font("Rockwell", 11.25F)
-        txtUsername.ForeColor = Color.Black
-        txtUsername.Location = New Point(15, 370)
+        txtUsername.ForeColor = Color.White
+        txtUsername.Location = New Point(11, 386)
         txtUsername.Name = "txtUsername"
         txtUsername.ReadOnly = True
         txtUsername.Size = New Size(152, 25)
@@ -530,11 +530,11 @@ Partial Class MainDashboard
         ' 
         ' txtSuffix
         ' 
-        txtSuffix.BackColor = Color.WhiteSmoke
+        txtSuffix.BackColor = Color.Brown
         txtSuffix.BorderStyle = BorderStyle.FixedSingle
         txtSuffix.Font = New Font("Rockwell", 11.25F)
-        txtSuffix.ForeColor = Color.Black
-        txtSuffix.Location = New Point(187, 286)
+        txtSuffix.ForeColor = Color.White
+        txtSuffix.Location = New Point(183, 302)
         txtSuffix.Name = "txtSuffix"
         txtSuffix.ReadOnly = True
         txtSuffix.Size = New Size(155, 25)
@@ -543,11 +543,11 @@ Partial Class MainDashboard
         ' 
         ' txtMname
         ' 
-        txtMname.BackColor = Color.WhiteSmoke
+        txtMname.BackColor = Color.Brown
         txtMname.BorderStyle = BorderStyle.FixedSingle
         txtMname.Font = New Font("Rockwell", 11.25F)
-        txtMname.ForeColor = Color.Black
-        txtMname.Location = New Point(15, 286)
+        txtMname.ForeColor = Color.White
+        txtMname.Location = New Point(11, 302)
         txtMname.Name = "txtMname"
         txtMname.ReadOnly = True
         txtMname.Size = New Size(152, 25)
@@ -556,11 +556,11 @@ Partial Class MainDashboard
         ' 
         ' txtLname
         ' 
-        txtLname.BackColor = Color.WhiteSmoke
+        txtLname.BackColor = Color.Brown
         txtLname.BorderStyle = BorderStyle.FixedSingle
         txtLname.Font = New Font("Rockwell", 11.25F)
-        txtLname.ForeColor = Color.Black
-        txtLname.Location = New Point(187, 215)
+        txtLname.ForeColor = Color.White
+        txtLname.Location = New Point(183, 231)
         txtLname.Name = "txtLname"
         txtLname.ReadOnly = True
         txtLname.Size = New Size(155, 25)
@@ -569,11 +569,11 @@ Partial Class MainDashboard
         ' 
         ' txtFname
         ' 
-        txtFname.BackColor = Color.WhiteSmoke
+        txtFname.BackColor = Color.Brown
         txtFname.BorderStyle = BorderStyle.FixedSingle
         txtFname.Font = New Font("Rockwell", 11.25F)
-        txtFname.ForeColor = Color.Black
-        txtFname.Location = New Point(15, 215)
+        txtFname.ForeColor = Color.White
+        txtFname.Location = New Point(11, 231)
         txtFname.Name = "txtFname"
         txtFname.ReadOnly = True
         txtFname.Size = New Size(152, 25)
@@ -604,6 +604,7 @@ Partial Class MainDashboard
         ewanTable.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         ewanTable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         ewanTable.Columns.AddRange(New DataGridViewColumn() {USER_ID, FULLNAME, USERNAME, EMAIL, ACCESS, Edit, Delete})
+        ewanTable.Cursor = Cursors.Hand
         DataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle7.BackColor = Color.Tomato
         DataGridViewCellStyle7.Font = New Font("Sitka Banner", 12.7499981F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
@@ -722,11 +723,11 @@ Partial Class MainDashboard
         ' 
         TimeLabel.AutoSize = True
         TimeLabel.BackColor = Color.Transparent
-        TimeLabel.Font = New Font("Tahoma", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        TimeLabel.Font = New Font("Rockwell", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         TimeLabel.ForeColor = Color.WhiteSmoke
         TimeLabel.Location = New Point(353, 19)
         TimeLabel.Name = "TimeLabel"
-        TimeLabel.Size = New Size(131, 25)
+        TimeLabel.Size = New Size(129, 25)
         TimeLabel.TabIndex = 1
         TimeLabel.Text = "Time Now: "
         ' 

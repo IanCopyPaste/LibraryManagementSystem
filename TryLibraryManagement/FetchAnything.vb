@@ -15,8 +15,8 @@ Module FetchAnything
     'app password for the sender of the message
     Private app_pass As String = "iqpv kbbd dniy akom"
 
-    'used to fetch profile image for all forms
-    Public ms1 As New MemoryStream
+    'fetch profile picture to any form
+    Public userImage As Image
 
     'CreateActualBookForm
 
@@ -176,9 +176,12 @@ Module FetchAnything
             Dim cmd As New MySqlCommand(query, con)
             cmd.Parameters.AddWithValue("@id", accNum)
             Dim pic As Object = cmd.ExecuteScalar
-            Dim image() As Byte = DirectCast(pic, Byte())
+            Dim imagesByte() As Byte = DirectCast(pic, Byte())
+            Dim ms As New MemoryStream(imagesByte)
+            userImage = Image.FromStream(ms)
         Catch ex As Exception
-
+        Finally
+            dbConClose()
         End Try
     End Sub
     'method for diaplaying profile picture

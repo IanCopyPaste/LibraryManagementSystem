@@ -79,6 +79,7 @@ Public Class MainDashboard
     End Sub
 
     Private Sub SignOutBtn_Click(sender As Object, e As EventArgs) Handles SignOutBtn.Click
+        userImage = Nothing
         Form1.Show()
         Me.Close()
     End Sub

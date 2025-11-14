@@ -95,6 +95,7 @@ Partial Class InsertBooks
         ProfileBoxUpper.Location = New Point(1178, 3)
         ProfileBoxUpper.Name = "ProfileBoxUpper"
         ProfileBoxUpper.Size = New Size(76, 68)
+        ProfileBoxUpper.SizeMode = PictureBoxSizeMode.Zoom
         ProfileBoxUpper.TabIndex = 12
         ProfileBoxUpper.TabStop = False
         ' 
@@ -127,11 +128,11 @@ Partial Class InsertBooks
         ' TimeLabel
         ' 
         TimeLabel.AutoSize = True
-        TimeLabel.Font = New Font("Tahoma", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        TimeLabel.Font = New Font("Rockwell", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         TimeLabel.ForeColor = Color.WhiteSmoke
         TimeLabel.Location = New Point(520, 16)
         TimeLabel.Name = "TimeLabel"
-        TimeLabel.Size = New Size(124, 25)
+        TimeLabel.Size = New Size(118, 25)
         TimeLabel.TabIndex = 2
         TimeLabel.Text = "Date Now:"
         ' 
@@ -158,7 +159,7 @@ Partial Class InsertBooks
         BookHistoryBtn.Font = New Font("Tahoma", 9.75F, FontStyle.Bold)
         BookHistoryBtn.ForeColor = Color.WhiteSmoke
         BookHistoryBtn.Image = CType(resources.GetObject("BookHistoryBtn.Image"), Image)
-        BookHistoryBtn.Location = New Point(1, 186)
+        BookHistoryBtn.Location = New Point(0, 186)
         BookHistoryBtn.Name = "BookHistoryBtn"
         BookHistoryBtn.Size = New Size(105, 60)
         BookHistoryBtn.TabIndex = 8
@@ -258,6 +259,7 @@ Partial Class InsertBooks
         MainPanel.Controls.Add(bookPhotoBox)
         MainPanel.Controls.Add(BookTable)
         MainPanel.Dock = DockStyle.Fill
+        MainPanel.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
         MainPanel.Location = New Point(105, 74)
         MainPanel.Name = "MainPanel"
         MainPanel.Size = New Size(1161, 563)
@@ -266,24 +268,27 @@ Partial Class InsertBooks
         ' Label8
         ' 
         Label8.AutoSize = True
-        Label8.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label8.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
         Label8.ForeColor = Color.White
         Label8.Location = New Point(183, 472)
         Label8.Name = "Label8"
-        Label8.Size = New Size(50, 20)
+        Label8.Size = New Size(61, 23)
         Label8.TabIndex = 30
         Label8.Text = "Status"
         ' 
         ' txtStatus
         ' 
+        txtStatus.BackColor = SystemColors.Window
         txtStatus.Enabled = False
         txtStatus.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        txtStatus.ForeColor = SystemColors.ControlText
         txtStatus.FormattingEnabled = True
         txtStatus.Items.AddRange(New Object() {"Available", "Not Available"})
         txtStatus.Location = New Point(119, 444)
         txtStatus.Name = "txtStatus"
         txtStatus.Size = New Size(178, 25)
         txtStatus.TabIndex = 29
+        txtStatus.Text = "Available"
         ' 
         ' refreshBtn
         ' 
@@ -345,17 +350,20 @@ Partial Class InsertBooks
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label6.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
         Label6.ForeColor = Color.White
-        Label6.Location = New Point(183, 262)
+        Label6.Location = New Point(177, 262)
         Label6.Name = "Label6"
-        Label6.Size = New Size(59, 20)
+        Label6.Size = New Size(67, 23)
         Label6.TabIndex = 22
         Label6.Text = "BookID"
         ' 
         ' txtBookID
         ' 
-        txtBookID.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        txtBookID.BackColor = Color.Brown
+        txtBookID.BorderStyle = BorderStyle.FixedSingle
+        txtBookID.Font = New Font("Rockwell", 11.25F, FontStyle.Bold)
+        txtBookID.ForeColor = Color.White
         txtBookID.Location = New Point(135, 234)
         txtBookID.Name = "txtBookID"
         txtBookID.ReadOnly = True
@@ -366,11 +374,11 @@ Partial Class InsertBooks
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label5.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
         Label5.ForeColor = Color.White
-        Label5.Location = New Point(53, 403)
+        Label5.Location = New Point(52, 403)
         Label5.Name = "Label5"
-        Label5.Size = New Size(112, 20)
+        Label5.Size = New Size(128, 23)
         Label5.TabIndex = 20
         Label5.Text = "Date Published"
         ' 
@@ -386,18 +394,20 @@ Partial Class InsertBooks
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label4.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
         Label4.ForeColor = Color.White
-        Label4.Location = New Point(284, 403)
+        Label4.Location = New Point(280, 403)
         Label4.Name = "Label4"
-        Label4.Size = New Size(72, 20)
+        Label4.Size = New Size(81, 23)
         Label4.TabIndex = 18
         Label4.Text = "Category"
         ' 
         ' txtCategory
         ' 
+        txtCategory.BackColor = SystemColors.Window
         txtCategory.Enabled = False
         txtCategory.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        txtCategory.ForeColor = SystemColors.ControlText
         txtCategory.FormattingEnabled = True
         txtCategory.Items.AddRange(New Object() {"Adult", "Horror", "Science Fiction", "Romance", "Poetry", "Lifestyle", "Action", "History"})
         txtCategory.Location = New Point(229, 375)
@@ -409,29 +419,32 @@ Partial Class InsertBooks
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label3.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
         Label3.ForeColor = Color.White
-        Label3.Location = New Point(269, 331)
+        Label3.Location = New Point(266, 331)
         Label3.Name = "Label3"
-        Label3.Size = New Size(96, 20)
+        Label3.Size = New Size(108, 23)
         Label3.TabIndex = 16
         Label3.Text = "Book Author"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
         Label2.ForeColor = Color.White
         Label2.Location = New Point(69, 331)
         Label2.Name = "Label2"
-        Label2.Size = New Size(77, 20)
+        Label2.Size = New Size(89, 23)
         Label2.TabIndex = 15
         Label2.Text = "Book Title"
         ' 
         ' txtAuthor
         ' 
-        txtAuthor.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtAuthor.Location = New Point(229, 303)
+        txtAuthor.BackColor = Color.Brown
+        txtAuthor.BorderStyle = BorderStyle.FixedSingle
+        txtAuthor.Font = New Font("Rockwell", 11.25F, FontStyle.Bold)
+        txtAuthor.ForeColor = Color.White
+        txtAuthor.Location = New Point(229, 302)
         txtAuthor.Name = "txtAuthor"
         txtAuthor.ReadOnly = True
         txtAuthor.Size = New Size(178, 25)
@@ -439,7 +452,10 @@ Partial Class InsertBooks
         ' 
         ' txtTitle
         ' 
-        txtTitle.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        txtTitle.BackColor = Color.Brown
+        txtTitle.BorderStyle = BorderStyle.FixedSingle
+        txtTitle.Font = New Font("Rockwell", 11.25F, FontStyle.Bold)
+        txtTitle.ForeColor = Color.White
         txtTitle.Location = New Point(18, 303)
         txtTitle.Name = "txtTitle"
         txtTitle.ReadOnly = True
@@ -466,9 +482,9 @@ Partial Class InsertBooks
         ' bookPhotoBox
         ' 
         bookPhotoBox.BackColor = Color.Brown
-        bookPhotoBox.Location = New Point(119, 6)
+        bookPhotoBox.Location = New Point(135, 11)
         bookPhotoBox.Name = "bookPhotoBox"
-        bookPhotoBox.Size = New Size(178, 222)
+        bookPhotoBox.Size = New Size(150, 212)
         bookPhotoBox.SizeMode = PictureBoxSizeMode.StretchImage
         bookPhotoBox.TabIndex = 1
         bookPhotoBox.TabStop = False

@@ -21,7 +21,7 @@ Public Class BorrowHistory
     End Sub
 
     Private Sub SignOutBtn_Click(sender As Object, e As EventArgs) Handles SignOutBtn.Click
-        SignUp.Show()
+        Form1.Show()
         Me.Dispose()
     End Sub
 
@@ -32,6 +32,8 @@ Public Class BorrowHistory
     End Sub
 
     Private Sub BorrowHistory_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ProfileBoxUpper.Image = userImage
+        ToolTip1.SetToolTip(Refresh, "Refresh")
         Try
             dbConOpen()
             Dim query As String = "SELECT br.borrowID AS BorrowID, u.userID AS UserID, u.email AS Email, bk.title AS Book_Borrowed, br.borrowDate AS Borrowed_On, br.dueDate AS Due_Date, br.stat AS Statuss
@@ -58,7 +60,6 @@ Public Class BorrowHistory
             Dim id As Integer = BorrowTable.Rows(e.RowIndex).Cells(1).Value
             title = BorrowTable.Rows(e.RowIndex).Cells(3).Value
             txtEmail.Text = BorrowTable.Rows(e.RowIndex).Cells(2).Value
-            MsgBox(id)
             Try
                 dbConOpen()
                 Dim query As String = "SELECT br.borrowDate AS borrowD, br.dueDate AS DueD
@@ -105,5 +106,15 @@ Public Class BorrowHistory
         Finally
             dbConClose()
         End Try
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        MainDashboard.Show()
+        Me.Dispose()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        BookDashboardForAdmin.Show()
+        Me.Dispose()
     End Sub
 End Class

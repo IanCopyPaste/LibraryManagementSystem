@@ -1,5 +1,6 @@
 ﻿Imports System.Drawing.Drawing2D
 Imports System.IO
+Imports System.Runtime
 Imports System.Security.Cryptography.X509Certificates
 Imports MySql.Data.MySqlClient
 
@@ -11,8 +12,16 @@ Public Class UserDashboard
     End Sub
 
     Private Sub UserDashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        txtWelcome.Text = "Welcome! " & FetchAnything.name
+        userIDlbl.Text = "UserID: " & FetchAnything.accNum
+        ProfileBoxUpper.Image = userImage
+        If ProfileBoxUpper.Image Is Nothing Then
+            profileEnable(True)
+        Else
+            profileEnable(False)
+        End If
         flowPanelRecords.Controls.Clear()
-        Try
+            Try
             dbConOpen()
             Dim query As String = "SELECT bookID, profile, category,title FROM books"
             Dim cmd As New MySqlCommand(query, con)
@@ -27,7 +36,7 @@ Public Class UserDashboard
                 Dim ms As New MemoryStream(imgBytes)
                 Dim img As Image = Image.FromStream(ms)
 
-                    Dim cardShadow As New Panel With {
+                Dim cardShadow As New Panel With {
                 .Width = 180,
                 .Height = 300,
                 .Margin = New Padding(15),
@@ -35,7 +44,7 @@ Public Class UserDashboard
                 .Padding = New Padding(0, 3, 3, 3)
             }
 
-                    Dim card As New Panel With {
+                Dim card As New Panel With {
                 .Width = 177,
                 .Height = 277,
                 .BackColor = Color.White,
@@ -43,7 +52,7 @@ Public Class UserDashboard
                 .Cursor = Cursors.Hand
             }
 
-                    Dim imgContainer As New Panel With {
+                Dim imgContainer As New Panel With {
                 .Width = 160,
                 .Height = 200,
                 .Location = New Point(9, 9),
@@ -51,7 +60,7 @@ Public Class UserDashboard
             }
 
 
-                    Dim pic As New PictureBox With {
+                Dim pic As New PictureBox With {
                 .Image = img,
                 .SizeMode = PictureBoxSizeMode.StretchImage,
                 .Width = 160,
@@ -60,7 +69,7 @@ Public Class UserDashboard
                 .BackColor = Color.Transparent
             }
 
-                    Dim lblTitle As New Label With {
+                Dim lblTitle As New Label With {
                 .Text = title,
                 .ForeColor = Color.FromArgb(33, 33, 33),
                 .Font = New Font("Segoe UI Semibold", 10.5F, FontStyle.Bold),
@@ -69,7 +78,7 @@ Public Class UserDashboard
                 .Location = New Point(9, 212),
                 .TextAlign = ContentAlignment.TopLeft
             }
-                    Dim lblBookID As New Label With {
+                Dim lblBookID As New Label With {
                 .Text = "ID: " & getID2,
                 .ForeColor = Color.FromArgb(33, 33, 33),
                 .Font = New Font("Segoe UI Semibold", 10.5F, FontStyle.Bold),
@@ -78,7 +87,7 @@ Public Class UserDashboard
                 .Location = New Point(9, 235),
                 .TextAlign = ContentAlignment.TopLeft
             }
-                    Dim lblGenre As New Label With {
+                Dim lblGenre As New Label With {
                 .Text = "Genre: " & cat,
                 .ForeColor = Color.FromArgb(33, 33, 33),
                 .Font = New Font("Segoe UI Semibold", 10.5F, FontStyle.Bold),
@@ -87,51 +96,51 @@ Public Class UserDashboard
                 .Location = New Point(9, 258),
                 .TextAlign = ContentAlignment.TopLeft
             }
-                    AddHandler card.MouseEnter, Sub(sender1, e1)
-                                                    card.BackColor = Color.FromArgb(250, 250, 250)
-                                                    cardShadow.BackColor = Color.FromArgb(150, 150, 150)
-                                                    cardShadow.Padding = New Padding(0, 5, 5, 5)
-                                                End Sub
+                AddHandler card.MouseEnter, Sub(sender1, e1)
+                                                card.BackColor = Color.FromArgb(250, 250, 250)
+                                                cardShadow.BackColor = Color.FromArgb(150, 150, 150)
+                                                cardShadow.Padding = New Padding(0, 5, 5, 5)
+                                            End Sub
 
-                    AddHandler card.MouseLeave, Sub(sender1, e1)
-                                                    card.BackColor = Color.White
-                                                    cardShadow.BackColor = Color.FromArgb(200, 200, 200)
-                                                    cardShadow.Padding = New Padding(0, 3, 3, 3)
-                                                End Sub
+                AddHandler card.MouseLeave, Sub(sender1, e1)
+                                                card.BackColor = Color.White
+                                                cardShadow.BackColor = Color.FromArgb(200, 200, 200)
+                                                cardShadow.Padding = New Padding(0, 3, 3, 3)
+                                            End Sub
 
-                    AddHandler card.Click, Sub(sender1, e1)
+                AddHandler card.Click, Sub(sender1, e1)
+                                           FetchAnything.getID3 = getID2
+                                           MsgBox(getID2)
+                                           BorrowBookForm.Show()
+                                       End Sub
+
+                For Each ctrl As Control In {pic, imgContainer, lblTitle}
+                    ctrl.Cursor = Cursors.Hand
+                    AddHandler ctrl.Click, Sub(sender2, e2)
                                                FetchAnything.getID3 = getID2
                                                MsgBox(getID2)
                                                BorrowBookForm.Show()
                                            End Sub
+                    AddHandler ctrl.MouseEnter, Sub(sender2, e2)
+                                                    card.BackColor = Color.FromArgb(250, 250, 250)
+                                                    cardShadow.BackColor = Color.FromArgb(150, 150, 150)
+                                                    cardShadow.Padding = New Padding(0, 5, 5, 5)
+                                                End Sub
+                    AddHandler ctrl.MouseLeave, Sub(sender2, e2)
+                                                    card.BackColor = Color.White
+                                                    cardShadow.BackColor = Color.FromArgb(200, 200, 200)
+                                                    cardShadow.Padding = New Padding(0, 3, 3, 3)
+                                                End Sub
+                Next
+                'gawin ang card
+                imgContainer.Controls.Add(pic)
+                card.Controls.Add(imgContainer)
+                card.Controls.Add(lblTitle)
+                card.Controls.Add(lblBookID)
+                card.Controls.Add(lblGenre)
+                cardShadow.Controls.Add(card)
 
-                    For Each ctrl As Control In {pic, imgContainer, lblTitle}
-                        ctrl.Cursor = Cursors.Hand
-                        AddHandler ctrl.Click, Sub(sender2, e2)
-                                                   FetchAnything.getID3 = getID2
-                                                   MsgBox(getID2)
-                                                   BorrowBookForm.Show()
-                                               End Sub
-                        AddHandler ctrl.MouseEnter, Sub(sender2, e2)
-                                                        card.BackColor = Color.FromArgb(250, 250, 250)
-                                                        cardShadow.BackColor = Color.FromArgb(150, 150, 150)
-                                                        cardShadow.Padding = New Padding(0, 5, 5, 5)
-                                                    End Sub
-                        AddHandler ctrl.MouseLeave, Sub(sender2, e2)
-                                                        card.BackColor = Color.White
-                                                        cardShadow.BackColor = Color.FromArgb(200, 200, 200)
-                                                        cardShadow.Padding = New Padding(0, 3, 3, 3)
-                                                    End Sub
-                    Next
-                    'gawin ang card
-                    imgContainer.Controls.Add(pic)
-                    card.Controls.Add(imgContainer)
-                    card.Controls.Add(lblTitle)
-                    card.Controls.Add(lblBookID)
-                    card.Controls.Add(lblGenre)
-                    cardShadow.Controls.Add(card)
-
-                    flowPanelRecords.Controls.Add(cardShadow)
+                flowPanelRecords.Controls.Add(cardShadow)
             End While
 
             reader.Close()
@@ -142,9 +151,54 @@ Public Class UserDashboard
             dbConClose()
         End Try
     End Sub
+    Private Sub profileBtn_Click(sender As Object, e As EventArgs) Handles profileBtn.Click
+        If OpenFileDialog1.ShowDialog = DialogResult.OK Then
+            createPath(OpenFileDialog1.FileName)
+            uploadProfiles()
+        End If
+    End Sub
+
+    Private Sub updateProfileBtn_Click(sender As Object, e As EventArgs) Handles updateProfileBtn.Click
+        If OpenFileDialog1.ShowDialog = DialogResult.OK Then
+            createPath(OpenFileDialog1.FileName)
+            uploadProfiles()
+        End If
+    End Sub
 
     Private Sub btnYourBooks_Click(sender As Object, e As EventArgs) Handles btnYourBooks.Click
         YourBorrowedBooks.Show()
         Me.Dispose()
     End Sub
+
+    'methods
+    Public Sub profileEnable(ok As Boolean)
+        profileBtn.Visible = ok
+        updateProfileBtn.Visible = Not ok
+    End Sub
+    Public Sub uploadProfiles()
+        Try
+            dbConOpen()
+            Dim query As String = "UPDATE users SET profile_image = LOAD_FILE(@path) WHERE userID = @id"
+            Dim cmd As New MySqlCommand(query, con)
+            cmd.Parameters.AddWithValue("@id", accNum)
+            cmd.Parameters.AddWithValue("@path", pathTocreate)
+            cmd.ExecuteNonQuery()
+            MsgBox("PROFILE PICTURE UPLOADED SUCESSFULLY!", vbInformation, "PROFILE UPLOADED!")
+        Catch ex As MySqlException
+            MsgBox(ex.Message, vbCritical, "PROFILE INSERTION ERROR(0)")
+        Catch ex As Exception
+            MsgBox(ex.Message, vbCritical, "PROFILE INSERTION ERROR(1)")
+        Finally
+            dbConClose()
+            loadProfileImage()
+            refresh()
+        End Try
+    End Sub
+
+    Public Sub refresh()
+        Dim ud As New UserDashboard
+        ud.Show()
+        Me.Dispose()
+    End Sub
+    'methods
 End Class

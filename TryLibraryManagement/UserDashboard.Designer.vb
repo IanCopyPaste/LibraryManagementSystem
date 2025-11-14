@@ -24,21 +24,23 @@ Partial Class UserDashboard
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UserDashboard))
         TopPanel = New Panel()
+        PictureBox1 = New PictureBox()
         updateProfileBtn = New Button()
-        Label1 = New Label()
         profileBtn = New Button()
-        txtWelcome = New TextBox()
         userIDlbl = New Label()
+        txtWelcome = New TextBox()
         ProfileBoxUpper = New PictureBox()
+        Label1 = New Label()
         SidePanel = New Panel()
         btnYourBooks = New Button()
         Button1 = New Button()
         SignOutBtn = New Button()
         MainPanel = New Panel()
         flowPanelRecords = New FlowLayoutPanel()
-        searchBox = New TextBox()
         TimeLabel = New Label()
+        OpenFileDialog1 = New OpenFileDialog()
         TopPanel.SuspendLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(ProfileBoxUpper, ComponentModel.ISupportInitialize).BeginInit()
         SidePanel.SuspendLayout()
         MainPanel.SuspendLayout()
@@ -46,85 +48,119 @@ Partial Class UserDashboard
         ' 
         ' TopPanel
         ' 
-        TopPanel.BackColor = SystemColors.ActiveCaption
+        TopPanel.BackColor = Color.Brown
+        TopPanel.Controls.Add(PictureBox1)
         TopPanel.Controls.Add(updateProfileBtn)
-        TopPanel.Controls.Add(Label1)
         TopPanel.Controls.Add(profileBtn)
-        TopPanel.Controls.Add(txtWelcome)
         TopPanel.Controls.Add(userIDlbl)
+        TopPanel.Controls.Add(txtWelcome)
         TopPanel.Controls.Add(ProfileBoxUpper)
+        TopPanel.Controls.Add(Label1)
         TopPanel.Dock = DockStyle.Top
         TopPanel.Location = New Point(0, 0)
         TopPanel.Name = "TopPanel"
         TopPanel.Size = New Size(1266, 74)
         TopPanel.TabIndex = 2
         ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.BackColor = Color.Transparent
+        PictureBox1.BackgroundImageLayout = ImageLayout.Center
+        PictureBox1.Cursor = Cursors.Hand
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
+        PictureBox1.Location = New Point(8, 10)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(58, 54)
+        PictureBox1.SizeMode = PictureBoxSizeMode.CenterImage
+        PictureBox1.TabIndex = 16
+        PictureBox1.TabStop = False
+        ' 
         ' updateProfileBtn
         ' 
-        updateProfileBtn.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        updateProfileBtn.Location = New Point(1113, 9)
+        updateProfileBtn.BackColor = Color.Tomato
+        updateProfileBtn.Cursor = Cursors.Hand
+        updateProfileBtn.FlatAppearance.BorderSize = 0
+        updateProfileBtn.FlatStyle = FlatStyle.Flat
+        updateProfileBtn.Font = New Font("Rockwell", 9.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        updateProfileBtn.ForeColor = Color.White
+        updateProfileBtn.Image = CType(resources.GetObject("updateProfileBtn.Image"), Image)
+        updateProfileBtn.Location = New Point(1069, 12)
         updateProfileBtn.Name = "updateProfileBtn"
-        updateProfileBtn.Size = New Size(60, 46)
-        updateProfileBtn.TabIndex = 13
-        updateProfileBtn.Text = "Update" & vbCrLf & " Profile"
-        updateProfileBtn.UseVisualStyleBackColor = True
+        updateProfileBtn.Size = New Size(99, 46)
+        updateProfileBtn.TabIndex = 15
+        updateProfileBtn.Text = " Update" & vbCrLf & " Profile"
+        updateProfileBtn.TextImageRelation = TextImageRelation.ImageBeforeText
+        updateProfileBtn.UseVisualStyleBackColor = False
+        ' 
+        ' profileBtn
+        ' 
+        profileBtn.BackColor = Color.Tomato
+        profileBtn.Cursor = Cursors.Hand
+        profileBtn.FlatAppearance.BorderSize = 0
+        profileBtn.FlatStyle = FlatStyle.Flat
+        profileBtn.Font = New Font("Rockwell", 9.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        profileBtn.ForeColor = Color.White
+        profileBtn.Image = CType(resources.GetObject("profileBtn.Image"), Image)
+        profileBtn.Location = New Point(1159, 12)
+        profileBtn.Name = "profileBtn"
+        profileBtn.Size = New Size(100, 46)
+        profileBtn.TabIndex = 14
+        profileBtn.Text = "  Upload " & vbCrLf & " Profile"
+        profileBtn.TextImageRelation = TextImageRelation.ImageBeforeText
+        profileBtn.UseVisualStyleBackColor = False
+        ' 
+        ' userIDlbl
+        ' 
+        userIDlbl.AutoSize = True
+        userIDlbl.BackColor = Color.Transparent
+        userIDlbl.Font = New Font("Rockwell", 11.25F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        userIDlbl.ForeColor = Color.White
+        userIDlbl.Location = New Point(757, 44)
+        userIDlbl.Name = "userIDlbl"
+        userIDlbl.Size = New Size(67, 19)
+        userIDlbl.TabIndex = 13
+        userIDlbl.Text = "UserID: "
+        ' 
+        ' txtWelcome
+        ' 
+        txtWelcome.BackColor = Color.Brown
+        txtWelcome.BorderStyle = BorderStyle.None
+        txtWelcome.Font = New Font("Sitka Small Semibold", 18F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        txtWelcome.ForeColor = Color.WhiteSmoke
+        txtWelcome.Location = New Point(757, 10)
+        txtWelcome.Name = "txtWelcome"
+        txtWelcome.ReadOnly = True
+        txtWelcome.Size = New Size(237, 31)
+        txtWelcome.TabIndex = 12
+        txtWelcome.Text = "Welcome, "
+        ' 
+        ' ProfileBoxUpper
+        ' 
+        ProfileBoxUpper.ErrorImage = CType(resources.GetObject("ProfileBoxUpper.ErrorImage"), Image)
+        ProfileBoxUpper.Location = New Point(1174, 3)
+        ProfileBoxUpper.Name = "ProfileBoxUpper"
+        ProfileBoxUpper.Size = New Size(76, 68)
+        ProfileBoxUpper.SizeMode = PictureBoxSizeMode.Zoom
+        ProfileBoxUpper.TabIndex = 11
+        ProfileBoxUpper.TabStop = False
         ' 
         ' Label1
         ' 
         Label1.Anchor = AnchorStyles.None
         Label1.AutoSize = True
-        Label1.Font = New Font("Sitka Banner", 27.75F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(12, 7)
+        Label1.BackColor = Color.Transparent
+        Label1.Font = New Font("Sitka Text Semibold", 27.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = Color.White
+        Label1.Location = New Point(61, 9)
         Label1.Name = "Label1"
-        Label1.Size = New Size(532, 53)
-        Label1.TabIndex = 0
-        Label1.Text = "Simpol Library Management System"
+        Label1.Size = New Size(605, 53)
+        Label1.TabIndex = 10
+        Label1.Text = "Baranggay International Library"
         Label1.TextAlign = ContentAlignment.MiddleCenter
-        ' 
-        ' profileBtn
-        ' 
-        profileBtn.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        profileBtn.Location = New Point(1188, 12)
-        profileBtn.Name = "profileBtn"
-        profileBtn.Size = New Size(64, 42)
-        profileBtn.TabIndex = 12
-        profileBtn.Text = "  Upload " & vbCrLf & " Profile"
-        profileBtn.UseVisualStyleBackColor = True
-        ' 
-        ' txtWelcome
-        ' 
-        txtWelcome.BackColor = Color.White
-        txtWelcome.BorderStyle = BorderStyle.None
-        txtWelcome.Font = New Font("Tahoma", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtWelcome.Location = New Point(847, 21)
-        txtWelcome.Name = "txtWelcome"
-        txtWelcome.ReadOnly = True
-        txtWelcome.Size = New Size(237, 23)
-        txtWelcome.TabIndex = 10
-        txtWelcome.Text = "Welcome, "
-        txtWelcome.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' userIDlbl
-        ' 
-        userIDlbl.AutoSize = True
-        userIDlbl.Location = New Point(847, 47)
-        userIDlbl.Name = "userIDlbl"
-        userIDlbl.Size = New Size(67, 21)
-        userIDlbl.TabIndex = 11
-        userIDlbl.Text = "UserID: "
-        ' 
-        ' ProfileBoxUpper
-        ' 
-        ProfileBoxUpper.ErrorImage = CType(resources.GetObject("ProfileBoxUpper.ErrorImage"), Image)
-        ProfileBoxUpper.Location = New Point(1179, 6)
-        ProfileBoxUpper.Name = "ProfileBoxUpper"
-        ProfileBoxUpper.Size = New Size(73, 56)
-        ProfileBoxUpper.TabIndex = 9
-        ProfileBoxUpper.TabStop = False
         ' 
         ' SidePanel
         ' 
-        SidePanel.BackColor = SystemColors.Highlight
+        SidePanel.BackColor = Color.Salmon
         SidePanel.Controls.Add(btnYourBooks)
         SidePanel.Controls.Add(Button1)
         SidePanel.Controls.Add(SignOutBtn)
@@ -178,9 +214,8 @@ Partial Class UserDashboard
         ' 
         ' MainPanel
         ' 
-        MainPanel.BackColor = Color.FromArgb(CByte(192), CByte(192), CByte(255))
+        MainPanel.BackColor = Color.Tomato
         MainPanel.Controls.Add(flowPanelRecords)
-        MainPanel.Controls.Add(searchBox)
         MainPanel.Controls.Add(TimeLabel)
         MainPanel.Dock = DockStyle.Fill
         MainPanel.Location = New Point(105, 74)
@@ -191,19 +226,11 @@ Partial Class UserDashboard
         ' flowPanelRecords
         ' 
         flowPanelRecords.AutoScroll = True
-        flowPanelRecords.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
+        flowPanelRecords.BackColor = Color.Brown
         flowPanelRecords.Location = New Point(37, 56)
         flowPanelRecords.Name = "flowPanelRecords"
         flowPanelRecords.Size = New Size(1087, 465)
         flowPanelRecords.TabIndex = 4
-        ' 
-        ' searchBox
-        ' 
-        searchBox.Location = New Point(757, 21)
-        searchBox.Name = "searchBox"
-        searchBox.PlaceholderText = "Search User"
-        searchBox.Size = New Size(379, 29)
-        searchBox.TabIndex = 3
         ' 
         ' TimeLabel
         ' 
@@ -215,6 +242,10 @@ Partial Class UserDashboard
         TimeLabel.Size = New Size(131, 25)
         TimeLabel.TabIndex = 1
         TimeLabel.Text = "Time Now: "
+        ' 
+        ' OpenFileDialog1
+        ' 
+        OpenFileDialog1.FileName = "OpenFileDialog1"
         ' 
         ' UserDashboard
         ' 
@@ -231,6 +262,7 @@ Partial Class UserDashboard
         Text = "UserDashboard"
         TopPanel.ResumeLayout(False)
         TopPanel.PerformLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         CType(ProfileBoxUpper, ComponentModel.ISupportInitialize).EndInit()
         SidePanel.ResumeLayout(False)
         MainPanel.ResumeLayout(False)
@@ -239,18 +271,19 @@ Partial Class UserDashboard
     End Sub
 
     Friend WithEvents TopPanel As Panel
-    Friend WithEvents Label1 As Label
-    Friend WithEvents updateProfileBtn As Button
-    Friend WithEvents profileBtn As Button
-    Friend WithEvents txtWelcome As TextBox
-    Friend WithEvents userIDlbl As Label
-    Friend WithEvents ProfileBoxUpper As PictureBox
     Friend WithEvents SidePanel As Panel
     Friend WithEvents Button1 As Button
     Friend WithEvents SignOutBtn As Button
     Friend WithEvents btnYourBooks As Button
     Friend WithEvents MainPanel As Panel
-    Friend WithEvents searchBox As TextBox
     Friend WithEvents TimeLabel As Label
     Friend WithEvents flowPanelRecords As FlowLayoutPanel
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents updateProfileBtn As Button
+    Friend WithEvents profileBtn As Button
+    Friend WithEvents userIDlbl As Label
+    Friend WithEvents txtWelcome As TextBox
+    Friend WithEvents ProfileBoxUpper As PictureBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
 End Class
