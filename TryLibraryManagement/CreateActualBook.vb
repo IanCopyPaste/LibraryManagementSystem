@@ -19,7 +19,7 @@ Public Class CreateActualBook
                     cmd.Parameters.AddWithValue("@pubDate", txtPubDate.Value.ToString("yyyy/MM/dd"))
                     cmd.Parameters.AddWithValue("@path", pathTocreate)
                     cmd.ExecuteNonQuery()
-                    MsgBox("Book is Inserted!", vbInformation, "Title Inserted!")
+                    MsgBox("BOOK IS ADDED!", vbInformation, "Title Inserted!")
                 End If
             Catch ex As MySqlException
                 MsgBox(ex.Message, vbCritical, "fine")

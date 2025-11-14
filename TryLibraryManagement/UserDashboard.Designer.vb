@@ -36,8 +36,8 @@ Partial Class UserDashboard
         Button1 = New Button()
         SignOutBtn = New Button()
         MainPanel = New Panel()
+        Label2 = New Label()
         flowPanelRecords = New FlowLayoutPanel()
-        TimeLabel = New Label()
         OpenFileDialog1 = New OpenFileDialog()
         TopPanel.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -167,81 +167,93 @@ Partial Class UserDashboard
         SidePanel.Dock = DockStyle.Left
         SidePanel.Location = New Point(0, 74)
         SidePanel.Name = "SidePanel"
-        SidePanel.Size = New Size(105, 563)
+        SidePanel.Size = New Size(134, 563)
         SidePanel.TabIndex = 3
         ' 
         ' btnYourBooks
         ' 
-        btnYourBooks.BackColor = SystemColors.HotTrack
+        btnYourBooks.BackColor = Color.Brown
+        btnYourBooks.Cursor = Cursors.Hand
         btnYourBooks.FlatAppearance.BorderSize = 0
         btnYourBooks.FlatStyle = FlatStyle.Flat
-        btnYourBooks.Font = New Font("Tahoma", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnYourBooks.ForeColor = SystemColors.ControlLightLight
-        btnYourBooks.Location = New Point(0, 173)
+        btnYourBooks.Font = New Font("Tahoma", 9.75F, FontStyle.Bold)
+        btnYourBooks.ForeColor = Color.White
+        btnYourBooks.Image = CType(resources.GetObject("btnYourBooks.Image"), Image)
+        btnYourBooks.Location = New Point(0, 104)
         btnYourBooks.Name = "btnYourBooks"
-        btnYourBooks.Size = New Size(103, 60)
+        btnYourBooks.Size = New Size(134, 60)
         btnYourBooks.TabIndex = 8
-        btnYourBooks.Text = "Borrowed Books"
+        btnYourBooks.Text = " Your Books"
+        btnYourBooks.TextImageRelation = TextImageRelation.ImageBeforeText
         btnYourBooks.UseVisualStyleBackColor = False
         ' 
         ' Button1
         ' 
-        Button1.BackColor = SystemColors.HotTrack
+        Button1.BackColor = Color.Brown
+        Button1.Cursor = Cursors.Hand
         Button1.FlatAppearance.BorderSize = 0
         Button1.FlatStyle = FlatStyle.Flat
-        Button1.Font = New Font("Tahoma", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.ForeColor = SystemColors.ControlLightLight
-        Button1.Location = New Point(0, 68)
+        Button1.Font = New Font("Tahoma", 9.75F, FontStyle.Bold)
+        Button1.ForeColor = Color.White
+        Button1.Image = My.Resources.Resources.dashboard_icon_182989
+        Button1.Location = New Point(0, 19)
         Button1.Name = "Button1"
-        Button1.Size = New Size(103, 60)
+        Button1.Size = New Size(134, 60)
         Button1.TabIndex = 7
-        Button1.Text = "Book Dashboard"
+        Button1.Text = "Book DashBoard"
+        Button1.TextImageRelation = TextImageRelation.ImageBeforeText
         Button1.UseVisualStyleBackColor = False
         ' 
         ' SignOutBtn
         ' 
-        SignOutBtn.BackColor = SystemColors.HotTrack
+        SignOutBtn.BackColor = Color.Brown
+        SignOutBtn.Cursor = Cursors.Hand
         SignOutBtn.FlatAppearance.BorderSize = 0
         SignOutBtn.FlatStyle = FlatStyle.Flat
-        SignOutBtn.Font = New Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        SignOutBtn.ForeColor = SystemColors.ControlLightLight
-        SignOutBtn.Location = New Point(-3, 454)
+        SignOutBtn.Font = New Font("Tahoma", 9.75F, FontStyle.Bold)
+        SignOutBtn.ForeColor = Color.White
+        SignOutBtn.Image = My.Resources.Resources.dashboard_icon_182989
+        SignOutBtn.Location = New Point(0, 472)
         SignOutBtn.Name = "SignOutBtn"
-        SignOutBtn.Size = New Size(108, 60)
+        SignOutBtn.Size = New Size(134, 60)
         SignOutBtn.TabIndex = 2
         SignOutBtn.Text = "Sign Out"
+        SignOutBtn.TextImageRelation = TextImageRelation.ImageBeforeText
         SignOutBtn.UseVisualStyleBackColor = False
         ' 
         ' MainPanel
         ' 
         MainPanel.BackColor = Color.Tomato
+        MainPanel.Controls.Add(Label2)
         MainPanel.Controls.Add(flowPanelRecords)
-        MainPanel.Controls.Add(TimeLabel)
         MainPanel.Dock = DockStyle.Fill
-        MainPanel.Location = New Point(105, 74)
+        MainPanel.Location = New Point(134, 74)
         MainPanel.Name = "MainPanel"
-        MainPanel.Size = New Size(1161, 563)
+        MainPanel.Size = New Size(1132, 563)
         MainPanel.TabIndex = 4
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Rockwell", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.ForeColor = Color.White
+        Label2.Image = My.Resources.Resources._3700471_book_books_education_library_literature_reading_study_108741
+        Label2.ImageAlign = ContentAlignment.MiddleLeft
+        Label2.Location = New Point(36, 17)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(356, 39)
+        Label2.TabIndex = 25
+        Label2.Text = "        Book Collections:"
+        Label2.TextAlign = ContentAlignment.TopRight
         ' 
         ' flowPanelRecords
         ' 
         flowPanelRecords.AutoScroll = True
         flowPanelRecords.BackColor = Color.Brown
-        flowPanelRecords.Location = New Point(37, 56)
+        flowPanelRecords.Location = New Point(36, 59)
         flowPanelRecords.Name = "flowPanelRecords"
-        flowPanelRecords.Size = New Size(1087, 465)
+        flowPanelRecords.Size = New Size(1086, 465)
         flowPanelRecords.TabIndex = 4
-        ' 
-        ' TimeLabel
-        ' 
-        TimeLabel.AutoSize = True
-        TimeLabel.Font = New Font("Tahoma", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        TimeLabel.ForeColor = SystemColors.ActiveCaptionText
-        TimeLabel.Location = New Point(37, 17)
-        TimeLabel.Name = "TimeLabel"
-        TimeLabel.Size = New Size(131, 25)
-        TimeLabel.TabIndex = 1
-        TimeLabel.Text = "Time Now: "
         ' 
         ' OpenFileDialog1
         ' 
@@ -276,7 +288,6 @@ Partial Class UserDashboard
     Friend WithEvents SignOutBtn As Button
     Friend WithEvents btnYourBooks As Button
     Friend WithEvents MainPanel As Panel
-    Friend WithEvents TimeLabel As Label
     Friend WithEvents flowPanelRecords As FlowLayoutPanel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents updateProfileBtn As Button
@@ -286,4 +297,5 @@ Partial Class UserDashboard
     Friend WithEvents ProfileBoxUpper As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents Label2 As Label
 End Class

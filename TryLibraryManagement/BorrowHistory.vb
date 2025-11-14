@@ -95,17 +95,19 @@ Public Class BorrowHistory
     End Sub
 
     Private Sub btnClearBorrow_Click(sender As Object, e As EventArgs) Handles btnClearBorrow.Click
-        Try
-            dbConOpen()
-            Dim query As String = "TRUNCATE borrow"
-            Dim cmd As New MySqlCommand(query, con)
-            cmd.ExecuteNonQuery()
-            MsgBox("TABLE CLEARED", vbInformation, "CLEARED")
-        Catch ex As Exception
-            MsgBox(ex.Message, vbCritical, "TRUNCATION ERROR(0)")
-        Finally
-            dbConClose()
-        End Try
+        If MsgBox("ARE YOU SURE YOU WANT TO CLEAR THE HISTORY RECORD?", vbYesNo + vbQuestion, "CLEAR CONFIRMATION") = MsgBoxResult.Yes Then
+            Try
+                dbConOpen()
+                Dim query As String = "TRUNCATE borrow"
+                Dim cmd As New MySqlCommand(query, con)
+                cmd.ExecuteNonQuery()
+                MsgBox("TABLE CLEARED", vbInformation, "CLEARED")
+            Catch ex As Exception
+                MsgBox(ex.Message, vbCritical, "TRUNCATION ERROR(0)")
+            Finally
+                dbConClose()
+            End Try
+        End If
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click

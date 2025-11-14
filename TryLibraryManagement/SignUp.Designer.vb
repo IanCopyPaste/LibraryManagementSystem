@@ -53,6 +53,7 @@ Partial Class SignUp
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Tahoma", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = Color.White
         Label1.Location = New Point(94, 24)
         Label1.Name = "Label1"
         Label1.Size = New Size(249, 23)
@@ -63,6 +64,7 @@ Partial Class SignUp
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Tahoma", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.ForeColor = Color.White
         Label2.Location = New Point(386, 24)
         Label2.Name = "Label2"
         Label2.Size = New Size(82, 23)
@@ -159,6 +161,7 @@ Partial Class SignUp
         ' 
         ' Panel1
         ' 
+        Panel1.BackColor = Color.Brown
         Panel1.Controls.Add(Button1)
         Panel1.Controls.Add(confirmLbl)
         Panel1.Controls.Add(Label10)
@@ -203,6 +206,7 @@ Partial Class SignUp
         confirmLbl.AutoSize = True
         confirmLbl.FlatStyle = FlatStyle.System
         confirmLbl.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        confirmLbl.ForeColor = Color.White
         confirmLbl.Location = New Point(357, 394)
         confirmLbl.Name = "confirmLbl"
         confirmLbl.Size = New Size(146, 14)
@@ -215,6 +219,7 @@ Partial Class SignUp
         Label10.AutoSize = True
         Label10.FlatStyle = FlatStyle.System
         Label10.Font = New Font("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label10.ForeColor = Color.White
         Label10.Location = New Point(369, 363)
         Label10.Name = "Label10"
         Label10.Size = New Size(132, 18)
@@ -226,6 +231,7 @@ Partial Class SignUp
         Label9.AutoSize = True
         Label9.FlatStyle = FlatStyle.System
         Label9.Font = New Font("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label9.ForeColor = Color.White
         Label9.Location = New Point(399, 297)
         Label9.Name = "Label9"
         Label9.Size = New Size(77, 18)
@@ -237,6 +243,7 @@ Partial Class SignUp
         Label8.AutoSize = True
         Label8.FlatStyle = FlatStyle.System
         Label8.Font = New Font("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label8.ForeColor = Color.White
         Label8.Location = New Point(134, 363)
         Label8.Name = "Label8"
         Label8.Size = New Size(49, 18)
@@ -248,6 +255,7 @@ Partial Class SignUp
         Label7.AutoSize = True
         Label7.FlatStyle = FlatStyle.System
         Label7.Font = New Font("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label7.ForeColor = Color.White
         Label7.Location = New Point(120, 297)
         Label7.Name = "Label7"
         Label7.Size = New Size(83, 18)
@@ -259,6 +267,7 @@ Partial Class SignUp
         Label6.AutoSize = True
         Label6.FlatStyle = FlatStyle.System
         Label6.Font = New Font("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label6.ForeColor = Color.White
         Label6.Location = New Point(357, 212)
         Label6.Name = "Label6"
         Label6.Size = New Size(44, 18)
@@ -270,6 +279,7 @@ Partial Class SignUp
         Label4.AutoSize = True
         Label4.FlatStyle = FlatStyle.System
         Label4.Font = New Font("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label4.ForeColor = Color.White
         Label4.Location = New Point(342, 131)
         Label4.Name = "Label4"
         Label4.Size = New Size(85, 18)
@@ -281,6 +291,7 @@ Partial Class SignUp
         Label3.AutoSize = True
         Label3.FlatStyle = FlatStyle.System
         Label3.Font = New Font("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label3.ForeColor = Color.White
         Label3.Location = New Point(149, 212)
         Label3.Name = "Label3"
         Label3.Size = New Size(80, 18)
@@ -292,6 +303,7 @@ Partial Class SignUp
         Label5.AutoSize = True
         Label5.FlatStyle = FlatStyle.System
         Label5.Font = New Font("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label5.ForeColor = Color.White
         Label5.Location = New Point(149, 131)
         Label5.Name = "Label5"
         Label5.Size = New Size(80, 18)

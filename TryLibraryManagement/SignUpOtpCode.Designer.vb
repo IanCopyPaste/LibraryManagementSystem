@@ -32,6 +32,7 @@ Partial Class SignUpOtpCode
         ' Label1
         ' 
         Label1.AutoSize = True
+        Label1.ForeColor = Color.White
         Label1.Location = New Point(32, 43)
         Label1.Name = "Label1"
         Label1.Size = New Size(293, 21)
@@ -51,6 +52,7 @@ Partial Class SignUpOtpCode
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label2.ForeColor = Color.White
         Label2.Location = New Point(32, 136)
         Label2.Name = "Label2"
         Label2.Size = New Size(73, 17)
@@ -81,6 +83,7 @@ Partial Class SignUpOtpCode
         ' 
         AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.Brown
         ClientSize = New Size(345, 203)
         Controls.Add(btnResendCode)
         Controls.Add(btnSendCode)
@@ -88,6 +91,7 @@ Partial Class SignUpOtpCode
         Controls.Add(txtOtpCode)
         Controls.Add(Label1)
         Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        ForeColor = SystemColors.ControlText
         Margin = New Padding(4)
         Name = "SignUpOtpCode"
         StartPosition = FormStartPosition.CenterScreen

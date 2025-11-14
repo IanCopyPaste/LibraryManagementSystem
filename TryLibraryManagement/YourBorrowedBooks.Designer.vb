@@ -24,23 +24,18 @@ Partial Class YourBorrowedBooks
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(YourBorrowedBooks))
         TopPanel = New Panel()
-        updateProfileBtn = New Button()
-        profileBtn = New Button()
-        userIDlbl = New Label()
-        txtWelcome = New TextBox()
+        PictureBox1 = New PictureBox()
         ProfileBoxUpper = New PictureBox()
         Label1 = New Label()
         SidePanel = New Panel()
-        BookHistoryBtn = New Button()
-        Button1 = New Button()
+        btnYourBooks = New Button()
         SignOutBtn = New Button()
-        InsertBooksBtn = New Button()
         userPageBtn = New Button()
         MainPanel = New Panel()
+        Label2 = New Label()
         ewanFLow = New FlowLayoutPanel()
-        searchBox = New TextBox()
-        TimeLabel = New Label()
         TopPanel.SuspendLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(ProfileBoxUpper, ComponentModel.ISupportInitialize).BeginInit()
         SidePanel.SuspendLayout()
         MainPanel.SuspendLayout()
@@ -48,11 +43,8 @@ Partial Class YourBorrowedBooks
         ' 
         ' TopPanel
         ' 
-        TopPanel.BackColor = SystemColors.ActiveCaption
-        TopPanel.Controls.Add(updateProfileBtn)
-        TopPanel.Controls.Add(profileBtn)
-        TopPanel.Controls.Add(userIDlbl)
-        TopPanel.Controls.Add(txtWelcome)
+        TopPanel.BackColor = Color.Brown
+        TopPanel.Controls.Add(PictureBox1)
         TopPanel.Controls.Add(ProfileBoxUpper)
         TopPanel.Controls.Add(Label1)
         TopPanel.Dock = DockStyle.Top
@@ -61,192 +53,137 @@ Partial Class YourBorrowedBooks
         TopPanel.Size = New Size(1266, 74)
         TopPanel.TabIndex = 1
         ' 
-        ' updateProfileBtn
+        ' PictureBox1
         ' 
-        updateProfileBtn.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        updateProfileBtn.Location = New Point(1105, 9)
-        updateProfileBtn.Name = "updateProfileBtn"
-        updateProfileBtn.Size = New Size(60, 46)
-        updateProfileBtn.TabIndex = 8
-        updateProfileBtn.Text = "Update" & vbCrLf & " Profile"
-        updateProfileBtn.UseVisualStyleBackColor = True
-        ' 
-        ' profileBtn
-        ' 
-        profileBtn.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        profileBtn.Location = New Point(1180, 13)
-        profileBtn.Name = "profileBtn"
-        profileBtn.Size = New Size(64, 42)
-        profileBtn.TabIndex = 7
-        profileBtn.Text = "  Upload " & vbCrLf & " Profile"
-        profileBtn.UseVisualStyleBackColor = True
-        ' 
-        ' userIDlbl
-        ' 
-        userIDlbl.AutoSize = True
-        userIDlbl.Location = New Point(839, 47)
-        userIDlbl.Name = "userIDlbl"
-        userIDlbl.Size = New Size(63, 20)
-        userIDlbl.TabIndex = 6
-        userIDlbl.Text = "UserID: "
-        ' 
-        ' txtWelcome
-        ' 
-        txtWelcome.BackColor = Color.White
-        txtWelcome.BorderStyle = BorderStyle.None
-        txtWelcome.Font = New Font("Tahoma", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtWelcome.Location = New Point(839, 21)
-        txtWelcome.Name = "txtWelcome"
-        txtWelcome.ReadOnly = True
-        txtWelcome.Size = New Size(237, 23)
-        txtWelcome.TabIndex = 2
-        txtWelcome.Text = "Welcome, "
-        txtWelcome.TextAlign = HorizontalAlignment.Center
+        PictureBox1.BackColor = Color.Transparent
+        PictureBox1.BackgroundImageLayout = ImageLayout.Center
+        PictureBox1.Cursor = Cursors.Hand
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
+        PictureBox1.Location = New Point(12, 10)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(58, 54)
+        PictureBox1.SizeMode = PictureBoxSizeMode.CenterImage
+        PictureBox1.TabIndex = 18
+        PictureBox1.TabStop = False
         ' 
         ' ProfileBoxUpper
         ' 
         ProfileBoxUpper.ErrorImage = CType(resources.GetObject("ProfileBoxUpper.ErrorImage"), Image)
-        ProfileBoxUpper.Location = New Point(1171, 6)
+        ProfileBoxUpper.Location = New Point(1178, 3)
         ProfileBoxUpper.Name = "ProfileBoxUpper"
-        ProfileBoxUpper.Size = New Size(73, 56)
-        ProfileBoxUpper.TabIndex = 1
+        ProfileBoxUpper.Size = New Size(76, 68)
+        ProfileBoxUpper.SizeMode = PictureBoxSizeMode.StretchImage
+        ProfileBoxUpper.TabIndex = 17
         ProfileBoxUpper.TabStop = False
         ' 
         ' Label1
         ' 
         Label1.Anchor = AnchorStyles.None
         Label1.AutoSize = True
-        Label1.Font = New Font("Sitka Banner", 27.75F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(3, 9)
+        Label1.BackColor = Color.Transparent
+        Label1.Font = New Font("Sitka Text Semibold", 27.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = Color.White
+        Label1.Location = New Point(65, 9)
         Label1.Name = "Label1"
-        Label1.Size = New Size(791, 53)
-        Label1.TabIndex = 0
-        Label1.Text = "Simpol Library Management System - Borrowed Books"
+        Label1.Size = New Size(928, 53)
+        Label1.TabIndex = 16
+        Label1.Text = "Baranggay International Library - Borrowed Books"
         Label1.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' SidePanel
         ' 
-        SidePanel.BackColor = SystemColors.Highlight
-        SidePanel.Controls.Add(BookHistoryBtn)
-        SidePanel.Controls.Add(Button1)
+        SidePanel.BackColor = Color.Salmon
+        SidePanel.Controls.Add(btnYourBooks)
         SidePanel.Controls.Add(SignOutBtn)
-        SidePanel.Controls.Add(InsertBooksBtn)
         SidePanel.Controls.Add(userPageBtn)
         SidePanel.Dock = DockStyle.Left
         SidePanel.Location = New Point(0, 74)
         SidePanel.Name = "SidePanel"
-        SidePanel.Size = New Size(105, 563)
+        SidePanel.Size = New Size(134, 563)
         SidePanel.TabIndex = 2
         ' 
-        ' BookHistoryBtn
+        ' btnYourBooks
         ' 
-        BookHistoryBtn.BackColor = SystemColors.HotTrack
-        BookHistoryBtn.FlatAppearance.BorderSize = 0
-        BookHistoryBtn.FlatStyle = FlatStyle.Flat
-        BookHistoryBtn.Font = New Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        BookHistoryBtn.ForeColor = SystemColors.ControlLightLight
-        BookHistoryBtn.Location = New Point(2, 244)
-        BookHistoryBtn.Name = "BookHistoryBtn"
-        BookHistoryBtn.Size = New Size(103, 60)
-        BookHistoryBtn.TabIndex = 9
-        BookHistoryBtn.Text = "Borrow History"
-        BookHistoryBtn.UseVisualStyleBackColor = False
-        ' 
-        ' Button1
-        ' 
-        Button1.BackColor = SystemColors.HotTrack
-        Button1.FlatAppearance.BorderSize = 0
-        Button1.FlatStyle = FlatStyle.Flat
-        Button1.Font = New Font("Tahoma", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.ForeColor = SystemColors.ControlLightLight
-        Button1.Location = New Point(2, 324)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(103, 60)
-        Button1.TabIndex = 7
-        Button1.Text = "Book Dashboard"
-        Button1.UseVisualStyleBackColor = False
+        btnYourBooks.BackColor = Color.Brown
+        btnYourBooks.Cursor = Cursors.Hand
+        btnYourBooks.FlatAppearance.BorderSize = 0
+        btnYourBooks.FlatStyle = FlatStyle.Flat
+        btnYourBooks.Font = New Font("Tahoma", 9.75F, FontStyle.Bold)
+        btnYourBooks.ForeColor = Color.White
+        btnYourBooks.Image = CType(resources.GetObject("btnYourBooks.Image"), Image)
+        btnYourBooks.Location = New Point(0, 104)
+        btnYourBooks.Name = "btnYourBooks"
+        btnYourBooks.Size = New Size(134, 60)
+        btnYourBooks.TabIndex = 9
+        btnYourBooks.Text = " Your Books"
+        btnYourBooks.TextImageRelation = TextImageRelation.ImageBeforeText
+        btnYourBooks.UseVisualStyleBackColor = False
         ' 
         ' SignOutBtn
         ' 
-        SignOutBtn.BackColor = SystemColors.HotTrack
+        SignOutBtn.BackColor = Color.Brown
         SignOutBtn.FlatAppearance.BorderSize = 0
         SignOutBtn.FlatStyle = FlatStyle.Flat
-        SignOutBtn.Font = New Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        SignOutBtn.Font = New Font("Tahoma", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         SignOutBtn.ForeColor = SystemColors.ControlLightLight
-        SignOutBtn.Location = New Point(-3, 454)
+        SignOutBtn.Image = My.Resources.Resources.sign_out_icon_icons_com_69908
+        SignOutBtn.Location = New Point(0, 472)
         SignOutBtn.Name = "SignOutBtn"
-        SignOutBtn.Size = New Size(108, 60)
+        SignOutBtn.Size = New Size(134, 60)
         SignOutBtn.TabIndex = 2
         SignOutBtn.Text = "Sign Out"
+        SignOutBtn.TextImageRelation = TextImageRelation.ImageBeforeText
         SignOutBtn.UseVisualStyleBackColor = False
-        ' 
-        ' InsertBooksBtn
-        ' 
-        InsertBooksBtn.BackColor = SystemColors.HotTrack
-        InsertBooksBtn.FlatAppearance.BorderSize = 0
-        InsertBooksBtn.FlatStyle = FlatStyle.Flat
-        InsertBooksBtn.Font = New Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        InsertBooksBtn.ForeColor = SystemColors.ControlLightLight
-        InsertBooksBtn.Location = New Point(2, 161)
-        InsertBooksBtn.Name = "InsertBooksBtn"
-        InsertBooksBtn.Size = New Size(103, 60)
-        InsertBooksBtn.TabIndex = 1
-        InsertBooksBtn.Text = "Manage" & vbCrLf & "Books" & vbCrLf
-        InsertBooksBtn.UseVisualStyleBackColor = False
         ' 
         ' userPageBtn
         ' 
-        userPageBtn.BackColor = SystemColors.HotTrack
+        userPageBtn.BackColor = Color.Brown
         userPageBtn.FlatAppearance.BorderSize = 0
         userPageBtn.FlatStyle = FlatStyle.Flat
-        userPageBtn.Font = New Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        userPageBtn.Font = New Font("Tahoma", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         userPageBtn.ForeColor = SystemColors.ControlLightLight
-        userPageBtn.Location = New Point(0, 82)
+        userPageBtn.Image = My.Resources.Resources.dashboard_icon_1829891
+        userPageBtn.Location = New Point(0, 19)
         userPageBtn.Name = "userPageBtn"
-        userPageBtn.Size = New Size(105, 60)
+        userPageBtn.Size = New Size(134, 60)
         userPageBtn.TabIndex = 0
-        userPageBtn.Text = "Manage Users"
+        userPageBtn.Text = "Book Dashboard"
+        userPageBtn.TextImageRelation = TextImageRelation.ImageBeforeText
         userPageBtn.UseVisualStyleBackColor = False
         ' 
         ' MainPanel
         ' 
-        MainPanel.BackColor = Color.FromArgb(CByte(192), CByte(192), CByte(255))
+        MainPanel.BackColor = Color.Tomato
+        MainPanel.Controls.Add(Label2)
         MainPanel.Controls.Add(ewanFLow)
-        MainPanel.Controls.Add(searchBox)
-        MainPanel.Controls.Add(TimeLabel)
         MainPanel.Dock = DockStyle.Fill
-        MainPanel.Location = New Point(105, 74)
+        MainPanel.Location = New Point(134, 74)
         MainPanel.Name = "MainPanel"
-        MainPanel.Size = New Size(1161, 563)
+        MainPanel.Size = New Size(1132, 563)
         MainPanel.TabIndex = 3
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Rockwell", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.ForeColor = Color.White
+        Label2.Image = My.Resources.Resources._3700471_book_books_education_library_literature_reading_study_108741
+        Label2.ImageAlign = ContentAlignment.MiddleLeft
+        Label2.Location = New Point(36, 17)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(413, 39)
+        Label2.TabIndex = 26
+        Label2.Text = "        Books You Borrowed:"
+        Label2.TextAlign = ContentAlignment.TopRight
         ' 
         ' ewanFLow
         ' 
         ewanFLow.AutoScroll = True
-        ewanFLow.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        ewanFLow.Location = New Point(72, 69)
+        ewanFLow.BackColor = Color.Brown
+        ewanFLow.Location = New Point(36, 59)
         ewanFLow.Name = "ewanFLow"
-        ewanFLow.Size = New Size(1077, 472)
+        ewanFLow.Size = New Size(1086, 465)
         ewanFLow.TabIndex = 22
-        ' 
-        ' searchBox
-        ' 
-        searchBox.Location = New Point(798, 19)
-        searchBox.Name = "searchBox"
-        searchBox.PlaceholderText = "Search User"
-        searchBox.Size = New Size(345, 27)
-        searchBox.TabIndex = 3
-        ' 
-        ' TimeLabel
-        ' 
-        TimeLabel.AutoSize = True
-        TimeLabel.Font = New Font("Tahoma", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        TimeLabel.ForeColor = SystemColors.ActiveCaptionText
-        TimeLabel.Location = New Point(72, 21)
-        TimeLabel.Name = "TimeLabel"
-        TimeLabel.Size = New Size(178, 25)
-        TimeLabel.TabIndex = 1
-        TimeLabel.Text = "Ruturn all these"
         ' 
         ' YourBorrowedBooks
         ' 
@@ -263,6 +200,7 @@ Partial Class YourBorrowedBooks
         Text = "w"
         TopPanel.ResumeLayout(False)
         TopPanel.PerformLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         CType(ProfileBoxUpper, ComponentModel.ISupportInitialize).EndInit()
         SidePanel.ResumeLayout(False)
         MainPanel.ResumeLayout(False)
@@ -271,20 +209,14 @@ Partial Class YourBorrowedBooks
     End Sub
 
     Friend WithEvents TopPanel As Panel
-    Friend WithEvents updateProfileBtn As Button
-    Friend WithEvents profileBtn As Button
-    Friend WithEvents userIDlbl As Label
-    Friend WithEvents txtWelcome As TextBox
-    Friend WithEvents ProfileBoxUpper As PictureBox
-    Friend WithEvents Label1 As Label
     Friend WithEvents SidePanel As Panel
-    Friend WithEvents BookHistoryBtn As Button
-    Friend WithEvents Button1 As Button
     Friend WithEvents SignOutBtn As Button
-    Friend WithEvents InsertBooksBtn As Button
     Friend WithEvents userPageBtn As Button
     Friend WithEvents MainPanel As Panel
-    Friend WithEvents searchBox As TextBox
-    Friend WithEvents TimeLabel As Label
     Friend WithEvents ewanFLow As FlowLayoutPanel
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents ProfileBoxUpper As PictureBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents btnYourBooks As Button
+    Friend WithEvents Label2 As Label
 End Class

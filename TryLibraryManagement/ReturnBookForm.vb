@@ -48,12 +48,21 @@ Public Class ReturnBookForm
 
                 cmd0.ExecuteNonQuery()
                 cmd1.ExecuteNonQuery()
-
+                MsgBox("YOU RETURNED THE BOOK!", vbInformation, "BOOK RETURNED")
             Catch ex As MySqlException
-
+                MsgBox(ex.Message, vbCritical, "BOOK RETURN ERROR(0)")
             Catch ex As Exception
-
+                MsgBox(ex.Message, vbCritical, "BOOK RETURN ERROR(1)")
+            Finally
+                dbConClose()
+                YourBorrowedBooks.Close()
+                YourBorrowedBooks.Show()
+                Me.Dispose()
             End Try
         End If
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Dispose()
     End Sub
 End Class

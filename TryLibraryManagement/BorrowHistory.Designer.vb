@@ -307,6 +307,7 @@ Partial Class BorrowHistory
         DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = DataGridViewTriState.False
         BorrowTable.DefaultCellStyle = DataGridViewCellStyle2
+        BorrowTable.GridColor = Color.Tomato
         BorrowTable.Location = New Point(334, 47)
         BorrowTable.Name = "BorrowTable"
         BorrowTable.ReadOnly = True

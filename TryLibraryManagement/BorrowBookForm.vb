@@ -35,7 +35,6 @@ Public Class BorrowBookForm
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        UserDashboard.Show()
         Me.Dispose()
     End Sub
 
@@ -56,12 +55,16 @@ Public Class BorrowBookForm
                 Dim cmd1 As New MySqlCommand(query1, con)
                 cmd1.Parameters.AddWithValue("@bookID", getID3)
                 cmd1.ExecuteNonQuery()
+                MsgBox("YOU BORROWED THE BOOK!", vbInformation, "BOOK BORROWED")
             Catch ex As MysqlException
                 MsgBox(ex.Message, vbCritical, "ERROR BORROW BOOK(0)")
             Catch ex As Exception
                 MsgBox(ex.Message, vbCritical, "ERROR BORROW BOOK(1)")
             Finally
                 dbConClose()
+                UserDashboard.Close()
+                UserDashboard.Show()
+                Me.Dispose()
             End Try
         End If
     End Sub

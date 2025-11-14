@@ -37,16 +37,18 @@ Partial Class ReturnBookForm
         Label1 = New Label()
         txtTitle = New TextBox()
         borrowPic = New PictureBox()
+        lblNotVail = New Label()
         CType(borrowPic, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Button1
         ' 
-        Button1.BackColor = Color.White
+        Button1.BackColor = Color.Brown
         Button1.FlatAppearance.BorderSize = 0
         Button1.FlatStyle = FlatStyle.Flat
-        Button1.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.Location = New Point(8, 12)
+        Button1.Font = New Font("Rockwell", 12F, FontStyle.Bold)
+        Button1.ForeColor = Color.White
+        Button1.Location = New Point(0, 0)
         Button1.Name = "Button1"
         Button1.Size = New Size(93, 24)
         Button1.TabIndex = 33
@@ -56,17 +58,18 @@ Partial Class ReturnBookForm
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(387, 45)
+        Label3.Font = New Font("Rockwell", 9.75F, FontStyle.Bold)
+        Label3.ForeColor = Color.White
+        Label3.Location = New Point(370, 24)
         Label3.Name = "Label3"
-        Label3.Size = New Size(61, 17)
+        Label3.Size = New Size(66, 15)
         Label3.TabIndex = 32
         Label3.Text = "BOOK ID"
         ' 
         ' txtBookID
         ' 
         txtBookID.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtBookID.Location = New Point(387, 65)
+        txtBookID.Location = New Point(370, 44)
         txtBookID.Name = "txtBookID"
         txtBookID.PlaceholderText = "BookID"
         txtBookID.Size = New Size(165, 27)
@@ -75,11 +78,12 @@ Partial Class ReturnBookForm
         ' 
         ' btnReturn
         ' 
-        btnReturn.BackColor = Color.White
+        btnReturn.BackColor = Color.Brown
         btnReturn.FlatAppearance.BorderSize = 0
         btnReturn.FlatStyle = FlatStyle.Flat
-        btnReturn.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnReturn.Location = New Point(186, 381)
+        btnReturn.Font = New Font("Rockwell", 12F, FontStyle.Bold)
+        btnReturn.ForeColor = Color.White
+        btnReturn.Location = New Point(149, 375)
         btnReturn.Name = "btnReturn"
         btnReturn.Size = New Size(282, 31)
         btnReturn.TabIndex = 30
@@ -89,17 +93,18 @@ Partial Class ReturnBookForm
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label6.Location = New Point(49, 306)
+        Label6.Font = New Font("Rockwell", 9.75F, FontStyle.Bold)
+        Label6.ForeColor = Color.White
+        Label6.Location = New Point(32, 259)
         Label6.Name = "Label6"
-        Label6.Size = New Size(52, 17)
+        Label6.Size = New Size(57, 15)
         Label6.TabIndex = 29
         Label6.Text = "STATUS"
         ' 
         ' txtStatus
         ' 
         txtStatus.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtStatus.Location = New Point(49, 326)
+        txtStatus.Location = New Point(32, 279)
         txtStatus.Name = "txtStatus"
         txtStatus.PlaceholderText = "STATUS"
         txtStatus.ReadOnly = True
@@ -110,17 +115,18 @@ Partial Class ReturnBookForm
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label5.Location = New Point(49, 245)
+        Label5.Font = New Font("Rockwell", 9.75F, FontStyle.Bold)
+        Label5.ForeColor = Color.White
+        Label5.Location = New Point(32, 207)
         Label5.Name = "Label5"
-        Label5.Size = New Size(49, 17)
+        Label5.Size = New Size(55, 15)
         Label5.TabIndex = 27
         Label5.Text = "GENRE"
         ' 
         ' txtGenre
         ' 
         txtGenre.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtGenre.Location = New Point(49, 265)
+        txtGenre.Location = New Point(32, 227)
         txtGenre.Name = "txtGenre"
         txtGenre.PlaceholderText = "GENRE"
         txtGenre.ReadOnly = True
@@ -131,17 +137,18 @@ Partial Class ReturnBookForm
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label4.Location = New Point(49, 177)
+        Label4.Font = New Font("Rockwell", 9.75F, FontStyle.Bold)
+        Label4.ForeColor = Color.White
+        Label4.Location = New Point(32, 157)
         Label4.Name = "Label4"
-        Label4.Size = New Size(111, 17)
+        Label4.Size = New Size(123, 15)
         Label4.TabIndex = 25
         Label4.Text = "DATE PUBLISHED"
         ' 
         ' txtDate
         ' 
         txtDate.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtDate.Location = New Point(49, 197)
+        txtDate.Location = New Point(32, 177)
         txtDate.Name = "txtDate"
         txtDate.PlaceholderText = "PUBLICATION DATE"
         txtDate.ReadOnly = True
@@ -152,17 +159,18 @@ Partial Class ReturnBookForm
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(49, 111)
+        Label2.Font = New Font("Rockwell", 9.75F, FontStyle.Bold)
+        Label2.ForeColor = Color.White
+        Label2.Location = New Point(32, 107)
         Label2.Name = "Label2"
-        Label2.Size = New Size(61, 17)
+        Label2.Size = New Size(64, 15)
         Label2.TabIndex = 23
         Label2.Text = "AUTHOR"
         ' 
         ' txtAuth
         ' 
         txtAuth.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtAuth.Location = New Point(49, 131)
+        txtAuth.Location = New Point(32, 127)
         txtAuth.Name = "txtAuth"
         txtAuth.PlaceholderText = "Author"
         txtAuth.ReadOnly = True
@@ -173,17 +181,18 @@ Partial Class ReturnBookForm
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(49, 46)
+        Label1.Font = New Font("Rockwell", 9.75F, FontStyle.Bold)
+        Label1.ForeColor = Color.White
+        Label1.Location = New Point(32, 58)
         Label1.Name = "Label1"
-        Label1.Size = New Size(39, 17)
+        Label1.Size = New Size(47, 15)
         Label1.TabIndex = 21
         Label1.Text = "TITLE"
         ' 
         ' txtTitle
         ' 
         txtTitle.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtTitle.Location = New Point(49, 65)
+        txtTitle.Location = New Point(32, 77)
         txtTitle.Name = "txtTitle"
         txtTitle.PlaceholderText = "Title"
         txtTitle.ReadOnly = True
@@ -193,20 +202,33 @@ Partial Class ReturnBookForm
         ' 
         ' borrowPic
         ' 
-        borrowPic.BackColor = Color.FromArgb(CByte(192), CByte(192), CByte(255))
-        borrowPic.Location = New Point(370, 98)
+        borrowPic.BackColor = Color.Salmon
+        borrowPic.Location = New Point(353, 77)
         borrowPic.Name = "borrowPic"
-        borrowPic.Size = New Size(198, 215)
+        borrowPic.Size = New Size(198, 255)
         borrowPic.SizeMode = PictureBoxSizeMode.StretchImage
         borrowPic.TabIndex = 19
         borrowPic.TabStop = False
+        ' 
+        ' lblNotVail
+        ' 
+        lblNotVail.AutoSize = True
+        lblNotVail.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        lblNotVail.ForeColor = Color.White
+        lblNotVail.Location = New Point(203, 355)
+        lblNotVail.Name = "lblNotVail"
+        lblNotVail.Size = New Size(185, 17)
+        lblNotVail.TabIndex = 34
+        lblNotVail.Text = "*Sorry Book is not Avaialble*"
+        lblNotVail.Visible = False
         ' 
         ' ReturnBookForm
         ' 
         AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
+        BackColor = Color.Tomato
         ClientSize = New Size(584, 418)
+        Controls.Add(lblNotVail)
         Controls.Add(Button1)
         Controls.Add(Label3)
         Controls.Add(txtBookID)
@@ -246,4 +268,5 @@ Partial Class ReturnBookForm
     Friend WithEvents Label1 As Label
     Friend WithEvents txtTitle As TextBox
     Friend WithEvents borrowPic As PictureBox
+    Friend WithEvents lblNotVail As Label
 End Class

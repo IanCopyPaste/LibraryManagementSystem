@@ -21,7 +21,7 @@ Public Class UserDashboard
             profileEnable(False)
         End If
         flowPanelRecords.Controls.Clear()
-            Try
+        Try
             dbConOpen()
             Dim query As String = "SELECT bookID, profile, category,title FROM books"
             Dim cmd As New MySqlCommand(query, con)
@@ -40,14 +40,14 @@ Public Class UserDashboard
                 .Width = 180,
                 .Height = 300,
                 .Margin = New Padding(15),
-                .BackColor = Color.FromArgb(200, 200, 200),
+                .BackColor = Color.Tomato,
                 .Padding = New Padding(0, 3, 3, 3)
             }
 
                 Dim card As New Panel With {
                 .Width = 177,
                 .Height = 277,
-                .BackColor = Color.White,
+                .BackColor = Color.Tomato,
                 .Dock = DockStyle.Fill,
                 .Cursor = Cursors.Hand
             }
@@ -56,7 +56,7 @@ Public Class UserDashboard
                 .Width = 160,
                 .Height = 200,
                 .Location = New Point(9, 9),
-                .BackColor = Color.FromArgb(245, 245, 245)
+                .BackColor = Color.Salmon
             }
 
 
@@ -97,20 +97,15 @@ Public Class UserDashboard
                 .TextAlign = ContentAlignment.TopLeft
             }
                 AddHandler card.MouseEnter, Sub(sender1, e1)
-                                                card.BackColor = Color.FromArgb(250, 250, 250)
-                                                cardShadow.BackColor = Color.FromArgb(150, 150, 150)
                                                 cardShadow.Padding = New Padding(0, 5, 5, 5)
                                             End Sub
 
                 AddHandler card.MouseLeave, Sub(sender1, e1)
-                                                card.BackColor = Color.White
-                                                cardShadow.BackColor = Color.FromArgb(200, 200, 200)
                                                 cardShadow.Padding = New Padding(0, 3, 3, 3)
                                             End Sub
 
                 AddHandler card.Click, Sub(sender1, e1)
                                            FetchAnything.getID3 = getID2
-                                           MsgBox(getID2)
                                            BorrowBookForm.Show()
                                        End Sub
 
@@ -118,17 +113,12 @@ Public Class UserDashboard
                     ctrl.Cursor = Cursors.Hand
                     AddHandler ctrl.Click, Sub(sender2, e2)
                                                FetchAnything.getID3 = getID2
-                                               MsgBox(getID2)
                                                BorrowBookForm.Show()
                                            End Sub
                     AddHandler ctrl.MouseEnter, Sub(sender2, e2)
-                                                    card.BackColor = Color.FromArgb(250, 250, 250)
-                                                    cardShadow.BackColor = Color.FromArgb(150, 150, 150)
                                                     cardShadow.Padding = New Padding(0, 5, 5, 5)
                                                 End Sub
                     AddHandler ctrl.MouseLeave, Sub(sender2, e2)
-                                                    card.BackColor = Color.White
-                                                    cardShadow.BackColor = Color.FromArgb(200, 200, 200)
                                                     cardShadow.Padding = New Padding(0, 3, 3, 3)
                                                 End Sub
                 Next
@@ -199,6 +189,10 @@ Public Class UserDashboard
         Dim ud As New UserDashboard
         ud.Show()
         Me.Dispose()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        refresh()
     End Sub
     'methods
 End Class

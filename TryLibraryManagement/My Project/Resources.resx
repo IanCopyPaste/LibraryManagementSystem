@@ -124,14 +124,20 @@
   <data name="28_122665" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\28_122665.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="3700471-book-books-education-library-literature-reading-study_108741" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3700471-book-books-education-library-literature-reading-study_108741.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="sign-out_icon-icons.com_69908" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sign-out_icon-icons.com_69908.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ic_history_128_28522" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_history_128_28522.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="restart_icon_1352511" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\restart_icon_1352511.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Letter-X-icon_34793 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Letter-X-icon_34793 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dashboard_icon_182989" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dashboard_icon_182989.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Coconutfruiticon-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Coconutfruiticon-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,13 +145,10 @@
   <data name="User_Group-80_icon-icons.com_57247" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\User_Group-80_icon-icons.com_57247.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dashboard_icon_182989" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dashboard_icon_182989.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="restart_icon_1352511" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\restart_icon_1352511.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Letter-X-icon_34793 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Letter-X-icon_34793 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="3700471-book-books-education-library-literature-reading-study_108741" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3700471-book-books-education-library-literature-reading-study_108741.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dashboard_icon_1829891" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dashboard_icon_1829891.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

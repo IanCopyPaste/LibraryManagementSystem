@@ -160,7 +160,7 @@ Module FetchAnything
 
             smtp.Send(mail)
 
-            MessageBox.Show("Your Verification Code was sent to your Email", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            MessageBox.Show("YOUR NOTICE WAS SENT TO THEIR EMAIL!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
         Catch ex As Exception
             MessageBox.Show("Error: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)

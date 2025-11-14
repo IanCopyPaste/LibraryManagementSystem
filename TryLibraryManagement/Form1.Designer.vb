@@ -32,12 +32,13 @@ Partial Class Form1
         LinkLabel1 = New LinkLabel()
         toSignUp = New Label()
         Panel1 = New Panel()
+        Label4 = New Label()
         Panel1.SuspendLayout()
         SuspendLayout()
         ' 
         ' txtUsernameLog
         ' 
-        txtUsernameLog.Location = New Point(95, 199)
+        txtUsernameLog.Location = New Point(95, 223)
         txtUsernameLog.Name = "txtUsernameLog"
         txtUsernameLog.PlaceholderText = "Enter username"
         txtUsernameLog.Size = New Size(207, 27)
@@ -45,7 +46,7 @@ Partial Class Form1
         ' 
         ' txtPasswordLog
         ' 
-        txtPasswordLog.Location = New Point(95, 262)
+        txtPasswordLog.Location = New Point(95, 286)
         txtPasswordLog.Name = "txtPasswordLog"
         txtPasswordLog.PlaceholderText = "Enter password"
         txtPasswordLog.Size = New Size(207, 27)
@@ -55,7 +56,7 @@ Partial Class Form1
         ' LogInButton
         ' 
         LogInButton.Font = New Font("Tahoma", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        LogInButton.Location = New Point(158, 320)
+        LogInButton.Location = New Point(158, 344)
         LogInButton.Name = "LogInButton"
         LogInButton.Size = New Size(75, 28)
         LogInButton.TabIndex = 2
@@ -65,18 +66,21 @@ Partial Class Form1
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Tahoma", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(76, 30)
+        Label1.Font = New Font("Rockwell", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = Color.White
+        Label1.Location = New Point(33, 89)
         Label1.Name = "Label1"
-        Label1.Size = New Size(249, 23)
+        Label1.Size = New Size(341, 25)
         Label1.TabIndex = 3
-        Label1.Text = "Library Management System"
+        Label1.Text = "Baranggay International Library"
+        Label1.TextAlign = ContentAlignment.TopCenter
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Tahoma", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(162, 135)
+        Label2.ForeColor = Color.White
+        Label2.Location = New Point(162, 186)
         Label2.Name = "Label2"
         Label2.Size = New Size(71, 23)
         Label2.TabIndex = 4
@@ -104,7 +108,7 @@ Partial Class Form1
         ' 
         toSignUp.AutoSize = True
         toSignUp.Font = New Font("Tahoma", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        toSignUp.ForeColor = SystemColors.MenuHighlight
+        toSignUp.ForeColor = Color.White
         toSignUp.Location = New Point(132, 382)
         toSignUp.Name = "toSignUp"
         toSignUp.Size = New Size(121, 16)
@@ -113,6 +117,8 @@ Partial Class Form1
         ' 
         ' Panel1
         ' 
+        Panel1.BackColor = Color.Brown
+        Panel1.Controls.Add(Label4)
         Panel1.Controls.Add(toSignUp)
         Panel1.Controls.Add(LinkLabel1)
         Panel1.Controls.Add(Label3)
@@ -126,6 +132,18 @@ Partial Class Form1
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(398, 434)
         Panel1.TabIndex = 8
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Font = New Font("Rockwell", 21.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label4.ForeColor = Color.White
+        Label4.Location = New Point(113, 40)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(160, 36)
+        Label4.TabIndex = 8
+        Label4.Text = "Welcome!"
+        Label4.TextAlign = ContentAlignment.TopCenter
         ' 
         ' Form1
         ' 
@@ -151,5 +169,6 @@ Partial Class Form1
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents toSignUp As Label
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents Label4 As Label
 
 End Class
