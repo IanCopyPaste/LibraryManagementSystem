@@ -120,9 +120,9 @@ Partial Class InsertBooks
         Label9.ForeColor = Color.White
         Label9.Location = New Point(65, 9)
         Label9.Name = "Label9"
-        Label9.Size = New Size(897, 53)
+        Label9.Size = New Size(876, 53)
         Label9.TabIndex = 10
-        Label9.Text = "Baranggay International Library - Manage Books"
+        Label9.Text = "Barangay International Library - Manage Books"
         Label9.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' TimeLabel
@@ -409,7 +409,7 @@ Partial Class InsertBooks
         txtCategory.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         txtCategory.ForeColor = SystemColors.ControlText
         txtCategory.FormattingEnabled = True
-        txtCategory.Items.AddRange(New Object() {"Adult", "Horror", "Science Fiction", "Romance", "Poetry", "Lifestyle", "Action", "History"})
+        txtCategory.Items.AddRange(New Object() {"Adult", "Horror", "Science Fiction", "Romance", "Poetry", "Lifestyle", "Action", "History", "Fantasy", "Mystery", "Thriller", "Drama", "Biography", "Adventure", "Self-Help"})
         txtCategory.Location = New Point(229, 375)
         txtCategory.Name = "txtCategory"
         txtCategory.Size = New Size(178, 25)

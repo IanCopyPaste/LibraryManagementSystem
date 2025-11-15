@@ -22,8 +22,7 @@ Partial Class SignUp
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Label1 = New Label()
-        Label2 = New Label()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SignUp))
         fnameBox = New TextBox()
         lnameBox = New TextBox()
         mnameBox = New TextBox()
@@ -35,6 +34,8 @@ Partial Class SignUp
         LinkLabel1 = New LinkLabel()
         toLogIn = New Label()
         Panel1 = New Panel()
+        Label2 = New Label()
+        Label1 = New Label()
         Button1 = New Button()
         confirmLbl = New Label()
         Label10 = New Label()
@@ -49,101 +50,91 @@ Partial Class SignUp
         Panel1.SuspendLayout()
         SuspendLayout()
         ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Tahoma", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.ForeColor = Color.White
-        Label1.Location = New Point(94, 24)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(249, 23)
-        Label1.TabIndex = 4
-        Label1.Text = "Library Management System"
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.Font = New Font("Tahoma", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.ForeColor = Color.White
-        Label2.Location = New Point(386, 24)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(82, 23)
-        Label2.TabIndex = 5
-        Label2.Text = "SIGN UP"
-        ' 
         ' fnameBox
         ' 
-        fnameBox.Location = New Point(106, 101)
+        fnameBox.Font = New Font("Tahoma", 11.25F)
+        fnameBox.Location = New Point(104, 132)
         fnameBox.Name = "fnameBox"
         fnameBox.PlaceholderText = "Enter firstname"
-        fnameBox.Size = New Size(165, 27)
+        fnameBox.Size = New Size(165, 26)
         fnameBox.TabIndex = 6
         ' 
         ' lnameBox
         ' 
-        lnameBox.Location = New Point(106, 182)
+        lnameBox.Font = New Font("Tahoma", 11.25F)
+        lnameBox.Location = New Point(104, 192)
         lnameBox.Name = "lnameBox"
         lnameBox.PlaceholderText = "Enter lastname"
-        lnameBox.Size = New Size(165, 27)
+        lnameBox.Size = New Size(165, 26)
         lnameBox.TabIndex = 7
         ' 
         ' mnameBox
         ' 
-        mnameBox.Location = New Point(304, 101)
+        mnameBox.Font = New Font("Tahoma", 11.25F)
+        mnameBox.Location = New Point(302, 132)
         mnameBox.Name = "mnameBox"
         mnameBox.PlaceholderText = "Enter middlename"
-        mnameBox.Size = New Size(165, 27)
+        mnameBox.Size = New Size(165, 26)
         mnameBox.TabIndex = 8
         ' 
         ' suffBox
         ' 
-        suffBox.Location = New Point(304, 182)
+        suffBox.Font = New Font("Tahoma", 11.25F)
+        suffBox.Location = New Point(302, 192)
         suffBox.Name = "suffBox"
         suffBox.PlaceholderText = "Enter suffix"
-        suffBox.Size = New Size(165, 27)
+        suffBox.Size = New Size(165, 26)
         suffBox.TabIndex = 9
         ' 
         ' usernamBox
         ' 
-        usernamBox.Location = New Point(39, 267)
+        usernamBox.Font = New Font("Tahoma", 11.25F)
+        usernamBox.Location = New Point(37, 277)
         usernamBox.Name = "usernamBox"
         usernamBox.PlaceholderText = "Create username"
-        usernamBox.Size = New Size(232, 27)
+        usernamBox.Size = New Size(232, 26)
         usernamBox.TabIndex = 12
         ' 
         ' passwordBox
         ' 
-        passwordBox.Location = New Point(314, 267)
+        passwordBox.Font = New Font("Tahoma", 11.25F)
+        passwordBox.Location = New Point(312, 277)
         passwordBox.Name = "passwordBox"
         passwordBox.PlaceholderText = "Create password"
-        passwordBox.Size = New Size(232, 27)
+        passwordBox.Size = New Size(232, 26)
         passwordBox.TabIndex = 13
         passwordBox.UseSystemPasswordChar = True
         ' 
         ' CpasswordBox
         ' 
-        CpasswordBox.Location = New Point(314, 333)
+        CpasswordBox.Font = New Font("Tahoma", 11.25F)
+        CpasswordBox.Location = New Point(312, 343)
         CpasswordBox.Name = "CpasswordBox"
         CpasswordBox.PlaceholderText = "Confirm password"
-        CpasswordBox.Size = New Size(232, 27)
+        CpasswordBox.Size = New Size(232, 26)
         CpasswordBox.TabIndex = 14
         CpasswordBox.UseSystemPasswordChar = True
         ' 
         ' SignUpbtn
         ' 
-        SignUpbtn.Font = New Font("Tahoma", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        SignUpbtn.Location = New Point(179, 423)
+        SignUpbtn.BackColor = Color.Tomato
+        SignUpbtn.Cursor = Cursors.Hand
+        SignUpbtn.FlatAppearance.BorderSize = 0
+        SignUpbtn.FlatStyle = FlatStyle.Flat
+        SignUpbtn.Font = New Font("Rockwell", 12F, FontStyle.Bold)
+        SignUpbtn.ForeColor = Color.White
+        SignUpbtn.Location = New Point(177, 421)
         SignUpbtn.Name = "SignUpbtn"
-        SignUpbtn.Size = New Size(239, 28)
+        SignUpbtn.Size = New Size(245, 28)
         SignUpbtn.TabIndex = 15
-        SignUpbtn.Text = "SignUp"
-        SignUpbtn.UseVisualStyleBackColor = True
+        SignUpbtn.Text = "Sign Up"
+        SignUpbtn.UseVisualStyleBackColor = False
         ' 
         ' LinkLabel1
         ' 
         LinkLabel1.AutoSize = True
         LinkLabel1.Font = New Font("Tahoma", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        LinkLabel1.Location = New Point(94, 409)
+        LinkLabel1.Location = New Point(92, 419)
         LinkLabel1.Name = "LinkLabel1"
         LinkLabel1.Size = New Size(0, 16)
         LinkLabel1.TabIndex = 16
@@ -151,9 +142,10 @@ Partial Class SignUp
         ' toLogIn
         ' 
         toLogIn.AutoSize = True
+        toLogIn.Cursor = Cursors.Hand
         toLogIn.Font = New Font("Tahoma", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        toLogIn.ForeColor = SystemColors.MenuHighlight
-        toLogIn.Location = New Point(191, 467)
+        toLogIn.ForeColor = Color.White
+        toLogIn.Location = New Point(196, 464)
         toLogIn.Name = "toLogIn"
         toLogIn.Size = New Size(210, 16)
         toLogIn.TabIndex = 17
@@ -162,6 +154,8 @@ Partial Class SignUp
         ' Panel1
         ' 
         Panel1.BackColor = Color.Brown
+        Panel1.Controls.Add(Label2)
+        Panel1.Controls.Add(Label1)
         Panel1.Controls.Add(Button1)
         Panel1.Controls.Add(confirmLbl)
         Panel1.Controls.Add(Label10)
@@ -183,23 +177,52 @@ Partial Class SignUp
         Panel1.Controls.Add(mnameBox)
         Panel1.Controls.Add(lnameBox)
         Panel1.Controls.Add(fnameBox)
-        Panel1.Controls.Add(Label2)
-        Panel1.Controls.Add(Label1)
         Panel1.Dock = DockStyle.Fill
         Panel1.Location = New Point(0, 0)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(606, 505)
         Panel1.TabIndex = 18
         ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Rockwell", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.ForeColor = Color.White
+        Label2.Location = New Point(244, 66)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(88, 25)
+        Label2.TabIndex = 30
+        Label2.Text = "Sign Up"
+        Label2.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Rockwell", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = Color.White
+        Label1.Image = CType(resources.GetObject("Label1.Image"), Image)
+        Label1.ImageAlign = ContentAlignment.MiddleLeft
+        Label1.Location = New Point(62, 9)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(469, 33)
+        Label1.TabIndex = 29
+        Label1.Text = "     Barangay International Library"
+        Label1.TextAlign = ContentAlignment.TopCenter
+        ' 
         ' Button1
         ' 
+        Button1.BackColor = Color.Brown
+        Button1.Cursor = Cursors.Hand
+        Button1.FlatAppearance.BorderSize = 0
+        Button1.FlatAppearance.MouseOverBackColor = Color.LightCoral
+        Button1.FlatStyle = FlatStyle.Flat
         Button1.Font = New Font("Tahoma", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button1.Location = New Point(552, 271)
+        Button1.Image = CType(resources.GetObject("Button1.Image"), Image)
+        Button1.Location = New Point(550, 277)
         Button1.Name = "Button1"
-        Button1.Size = New Size(37, 23)
+        Button1.Size = New Size(37, 27)
         Button1.TabIndex = 28
-        Button1.Text = "S"
-        Button1.UseVisualStyleBackColor = True
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' confirmLbl
         ' 
@@ -207,7 +230,7 @@ Partial Class SignUp
         confirmLbl.FlatStyle = FlatStyle.System
         confirmLbl.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         confirmLbl.ForeColor = Color.White
-        confirmLbl.Location = New Point(357, 394)
+        confirmLbl.Location = New Point(348, 382)
         confirmLbl.Name = "confirmLbl"
         confirmLbl.Size = New Size(146, 14)
         confirmLbl.TabIndex = 27
@@ -218,11 +241,11 @@ Partial Class SignUp
         ' 
         Label10.AutoSize = True
         Label10.FlatStyle = FlatStyle.System
-        Label10.Font = New Font("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label10.Font = New Font("Rockwell", 11.25F, FontStyle.Italic)
         Label10.ForeColor = Color.White
-        Label10.Location = New Point(369, 363)
+        Label10.Location = New Point(312, 324)
         Label10.Name = "Label10"
-        Label10.Size = New Size(132, 18)
+        Label10.Size = New Size(136, 17)
         Label10.TabIndex = 26
         Label10.Text = "Confirm Password*"
         ' 
@@ -230,11 +253,11 @@ Partial Class SignUp
         ' 
         Label9.AutoSize = True
         Label9.FlatStyle = FlatStyle.System
-        Label9.Font = New Font("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label9.Font = New Font("Rockwell", 11.25F, FontStyle.Italic)
         Label9.ForeColor = Color.White
-        Label9.Location = New Point(399, 297)
+        Label9.Location = New Point(312, 257)
         Label9.Name = "Label9"
-        Label9.Size = New Size(77, 18)
+        Label9.Size = New Size(78, 17)
         Label9.TabIndex = 25
         Label9.Text = "Password*"
         ' 
@@ -242,11 +265,11 @@ Partial Class SignUp
         ' 
         Label8.AutoSize = True
         Label8.FlatStyle = FlatStyle.System
-        Label8.Font = New Font("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label8.Font = New Font("Rockwell", 11.25F, FontStyle.Italic)
         Label8.ForeColor = Color.White
-        Label8.Location = New Point(134, 363)
+        Label8.Location = New Point(38, 323)
         Label8.Name = "Label8"
-        Label8.Size = New Size(49, 18)
+        Label8.Size = New Size(54, 17)
         Label8.TabIndex = 24
         Label8.Text = "Email*"
         ' 
@@ -254,11 +277,11 @@ Partial Class SignUp
         ' 
         Label7.AutoSize = True
         Label7.FlatStyle = FlatStyle.System
-        Label7.Font = New Font("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label7.Font = New Font("Rockwell", 11.25F, FontStyle.Italic)
         Label7.ForeColor = Color.White
-        Label7.Location = New Point(120, 297)
+        Label7.Location = New Point(37, 257)
         Label7.Name = "Label7"
-        Label7.Size = New Size(83, 18)
+        Label7.Size = New Size(83, 17)
         Label7.TabIndex = 23
         Label7.Text = "Username*"
         ' 
@@ -266,11 +289,11 @@ Partial Class SignUp
         ' 
         Label6.AutoSize = True
         Label6.FlatStyle = FlatStyle.System
-        Label6.Font = New Font("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label6.Font = New Font("Rockwell", 11.25F, FontStyle.Italic)
         Label6.ForeColor = Color.White
-        Label6.Location = New Point(357, 212)
+        Label6.Location = New Point(302, 172)
         Label6.Name = "Label6"
-        Label6.Size = New Size(44, 18)
+        Label6.Size = New Size(44, 17)
         Label6.TabIndex = 22
         Label6.Text = "Suffix"
         ' 
@@ -278,11 +301,11 @@ Partial Class SignUp
         ' 
         Label4.AutoSize = True
         Label4.FlatStyle = FlatStyle.System
-        Label4.Font = New Font("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label4.Font = New Font("Rockwell", 11.25F, FontStyle.Italic)
         Label4.ForeColor = Color.White
-        Label4.Location = New Point(342, 131)
+        Label4.Location = New Point(302, 112)
         Label4.Name = "Label4"
-        Label4.Size = New Size(85, 18)
+        Label4.Size = New Size(92, 17)
         Label4.TabIndex = 21
         Label4.Text = "Middlename"
         ' 
@@ -290,11 +313,11 @@ Partial Class SignUp
         ' 
         Label3.AutoSize = True
         Label3.FlatStyle = FlatStyle.System
-        Label3.Font = New Font("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label3.Font = New Font("Rockwell", 11.25F, FontStyle.Italic)
         Label3.ForeColor = Color.White
-        Label3.Location = New Point(149, 212)
+        Label3.Location = New Point(104, 172)
         Label3.Name = "Label3"
-        Label3.Size = New Size(80, 18)
+        Label3.Size = New Size(78, 17)
         Label3.TabIndex = 20
         Label3.Text = "Lastname*"
         ' 
@@ -302,20 +325,21 @@ Partial Class SignUp
         ' 
         Label5.AutoSize = True
         Label5.FlatStyle = FlatStyle.System
-        Label5.Font = New Font("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label5.Font = New Font("Rockwell", 11.25F, FontStyle.Italic)
         Label5.ForeColor = Color.White
-        Label5.Location = New Point(149, 131)
+        Label5.Location = New Point(104, 111)
         Label5.Name = "Label5"
-        Label5.Size = New Size(80, 18)
+        Label5.Size = New Size(81, 17)
         Label5.TabIndex = 19
         Label5.Text = "Firstname*"
         ' 
         ' emailBox
         ' 
-        emailBox.Location = New Point(39, 333)
+        emailBox.Font = New Font("Tahoma", 11.25F)
+        emailBox.Location = New Point(37, 343)
         emailBox.Name = "emailBox"
         emailBox.PlaceholderText = "Enter Email Address"
-        emailBox.Size = New Size(232, 27)
+        emailBox.Size = New Size(232, 26)
         emailBox.TabIndex = 18
         ' 
         ' SignUp
@@ -333,9 +357,6 @@ Partial Class SignUp
         Panel1.PerformLayout()
         ResumeLayout(False)
     End Sub
-
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
     Friend WithEvents fnameBox As TextBox
     Friend WithEvents lnameBox As TextBox
     Friend WithEvents mnameBox As TextBox
@@ -358,4 +379,6 @@ Partial Class SignUp
     Friend WithEvents Label3 As Label
     Friend WithEvents confirmLbl As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
 End Class

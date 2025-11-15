@@ -72,7 +72,7 @@ Partial Class BorrowHistory
         TopPanel.Dock = DockStyle.Top
         TopPanel.Location = New Point(0, 0)
         TopPanel.Name = "TopPanel"
-        TopPanel.Size = New Size(1266, 74)
+        TopPanel.Size = New Size(1271, 74)
         TopPanel.TabIndex = 1
         ' 
         ' PictureBox1
@@ -105,11 +105,11 @@ Partial Class BorrowHistory
         Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Sitka Text Semibold", 27.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.White
-        Label1.Location = New Point(65, 9)
+        Label1.Location = New Point(67, 9)
         Label1.Name = "Label1"
-        Label1.Size = New Size(916, 53)
+        Label1.Size = New Size(895, 53)
         Label1.TabIndex = 10
-        Label1.Text = "Baranggay International Library - Borrow History"
+        Label1.Text = "Barangay International Library - Borrow History"
         Label1.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' SidePanel
@@ -137,7 +137,7 @@ Partial Class BorrowHistory
         BookHistoryBtn.Image = My.Resources.Resources.ic_history_128_28522
         BookHistoryBtn.Location = New Point(0, 186)
         BookHistoryBtn.Name = "BookHistoryBtn"
-        BookHistoryBtn.Size = New Size(103, 60)
+        BookHistoryBtn.Size = New Size(108, 60)
         BookHistoryBtn.TabIndex = 9
         BookHistoryBtn.Text = "Borrow History"
         BookHistoryBtn.TextImageRelation = TextImageRelation.ImageBeforeText
@@ -154,7 +154,7 @@ Partial Class BorrowHistory
         Button1.Image = My.Resources.Resources.dashboard_icon_182989
         Button1.Location = New Point(0, 267)
         Button1.Name = "Button1"
-        Button1.Size = New Size(103, 60)
+        Button1.Size = New Size(108, 60)
         Button1.TabIndex = 7
         Button1.Text = "Book Dash" & vbCrLf & "Board"
         Button1.TextImageRelation = TextImageRelation.ImageBeforeText
@@ -188,7 +188,7 @@ Partial Class BorrowHistory
         InsertBooksBtn.Image = My.Resources.Resources._28_122665
         InsertBooksBtn.Location = New Point(0, 104)
         InsertBooksBtn.Name = "InsertBooksBtn"
-        InsertBooksBtn.Size = New Size(103, 60)
+        InsertBooksBtn.Size = New Size(108, 60)
         InsertBooksBtn.TabIndex = 1
         InsertBooksBtn.Text = "Manage" & vbCrLf & "Books" & vbCrLf
         InsertBooksBtn.TextImageRelation = TextImageRelation.ImageBeforeText
@@ -226,7 +226,7 @@ Partial Class BorrowHistory
         MainPanel.Dock = DockStyle.Fill
         MainPanel.Location = New Point(105, 74)
         MainPanel.Name = "MainPanel"
-        MainPanel.Size = New Size(1161, 563)
+        MainPanel.Size = New Size(1166, 563)
         MainPanel.TabIndex = 3
         ' 
         ' TimeLabel
@@ -312,7 +312,7 @@ Partial Class BorrowHistory
         BorrowTable.Name = "BorrowTable"
         BorrowTable.ReadOnly = True
         BorrowTable.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        BorrowTable.Size = New Size(802, 482)
+        BorrowTable.Size = New Size(807, 482)
         BorrowTable.TabIndex = 9
         ' 
         ' BorrowID
@@ -434,7 +434,7 @@ Partial Class BorrowHistory
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1266, 637)
+        ClientSize = New Size(1271, 637)
         Controls.Add(MainPanel)
         Controls.Add(SidePanel)
         Controls.Add(TopPanel)

@@ -32,20 +32,21 @@ Partial Class SignUpOtpCode
         ' Label1
         ' 
         Label1.AutoSize = True
+        Label1.Font = New Font("Rockwell", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.White
-        Label1.Location = New Point(32, 43)
+        Label1.Location = New Point(12, 45)
         Label1.Name = "Label1"
-        Label1.Size = New Size(293, 21)
+        Label1.Size = New Size(327, 19)
         Label1.TabIndex = 0
         Label1.Text = "Your Verification Code is Sent To Email!"
         ' 
         ' txtOtpCode
         ' 
-        txtOtpCode.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        txtOtpCode.Font = New Font("Tahoma", 11.25F)
         txtOtpCode.Location = New Point(32, 106)
         txtOtpCode.Name = "txtOtpCode"
         txtOtpCode.PlaceholderText = "6 Digit Code"
-        txtOtpCode.Size = New Size(196, 27)
+        txtOtpCode.Size = New Size(196, 26)
         txtOtpCode.TabIndex = 1
         ' 
         ' Label2
@@ -53,7 +54,7 @@ Partial Class SignUpOtpCode
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.White
-        Label2.Location = New Point(32, 136)
+        Label2.Location = New Point(32, 86)
         Label2.Name = "Label2"
         Label2.Size = New Size(73, 17)
         Label2.TabIndex = 2
@@ -61,23 +62,32 @@ Partial Class SignUpOtpCode
         ' 
         ' btnSendCode
         ' 
-        btnSendCode.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnSendCode.Location = New Point(138, 168)
+        btnSendCode.BackColor = Color.Tomato
+        btnSendCode.FlatAppearance.BorderSize = 0
+        btnSendCode.FlatAppearance.MouseOverBackColor = Color.Salmon
+        btnSendCode.FlatStyle = FlatStyle.Flat
+        btnSendCode.Font = New Font("Rockwell", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnSendCode.ForeColor = Color.White
+        btnSendCode.Location = New Point(82, 168)
         btnSendCode.Name = "btnSendCode"
-        btnSendCode.Size = New Size(75, 23)
+        btnSendCode.Size = New Size(191, 23)
         btnSendCode.TabIndex = 3
-        btnSendCode.Text = "Enter"
-        btnSendCode.UseVisualStyleBackColor = True
+        btnSendCode.Text = "Enter Code"
+        btnSendCode.UseVisualStyleBackColor = False
         ' 
         ' btnResendCode
         ' 
-        btnResendCode.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnResendCode.BackColor = Color.Tomato
+        btnResendCode.FlatAppearance.BorderSize = 0
+        btnResendCode.FlatStyle = FlatStyle.Flat
+        btnResendCode.Font = New Font("Rockwell", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnResendCode.ForeColor = Color.White
         btnResendCode.Location = New Point(234, 108)
         btnResendCode.Name = "btnResendCode"
         btnResendCode.Size = New Size(99, 23)
         btnResendCode.TabIndex = 4
         btnResendCode.Text = "Resend Code"
-        btnResendCode.UseVisualStyleBackColor = True
+        btnResendCode.UseVisualStyleBackColor = False
         ' 
         ' SignUpOtpCode
         ' 

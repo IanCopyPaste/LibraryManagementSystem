@@ -153,9 +153,9 @@ Partial Class UserDashboard
         Label1.ForeColor = Color.White
         Label1.Location = New Point(61, 9)
         Label1.Name = "Label1"
-        Label1.Size = New Size(605, 53)
+        Label1.Size = New Size(584, 53)
         Label1.TabIndex = 10
-        Label1.Text = "Baranggay International Library"
+        Label1.Text = "Barangay International Library"
         Label1.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' SidePanel
@@ -212,7 +212,7 @@ Partial Class UserDashboard
         SignOutBtn.FlatStyle = FlatStyle.Flat
         SignOutBtn.Font = New Font("Tahoma", 9.75F, FontStyle.Bold)
         SignOutBtn.ForeColor = Color.White
-        SignOutBtn.Image = My.Resources.Resources.dashboard_icon_182989
+        SignOutBtn.Image = My.Resources.Resources.sign_out_icon_icons_com_69908
         SignOutBtn.Location = New Point(0, 472)
         SignOutBtn.Name = "SignOutBtn"
         SignOutBtn.Size = New Size(134, 60)

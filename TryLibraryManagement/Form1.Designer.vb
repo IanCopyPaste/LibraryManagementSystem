@@ -32,59 +32,77 @@ Partial Class Form1
         LinkLabel1 = New LinkLabel()
         toSignUp = New Label()
         Panel1 = New Panel()
-        Label4 = New Label()
+        Button1 = New Button()
+        Label6 = New Label()
+        Label5 = New Label()
         Panel1.SuspendLayout()
         SuspendLayout()
         ' 
         ' txtUsernameLog
         ' 
-        txtUsernameLog.Location = New Point(95, 223)
+        txtUsernameLog.BackColor = Color.White
+        txtUsernameLog.BorderStyle = BorderStyle.FixedSingle
+        txtUsernameLog.Font = New Font("Tahoma", 11.25F)
+        txtUsernameLog.ForeColor = Color.Black
+        txtUsernameLog.Location = New Point(95, 214)
         txtUsernameLog.Name = "txtUsernameLog"
         txtUsernameLog.PlaceholderText = "Enter username"
-        txtUsernameLog.Size = New Size(207, 27)
+        txtUsernameLog.Size = New Size(207, 26)
         txtUsernameLog.TabIndex = 0
         ' 
         ' txtPasswordLog
         ' 
-        txtPasswordLog.Location = New Point(95, 286)
+        txtPasswordLog.BackColor = Color.White
+        txtPasswordLog.BorderStyle = BorderStyle.FixedSingle
+        txtPasswordLog.Font = New Font("Tahoma", 11.25F)
+        txtPasswordLog.ForeColor = Color.Black
+        txtPasswordLog.Location = New Point(95, 282)
         txtPasswordLog.Name = "txtPasswordLog"
         txtPasswordLog.PlaceholderText = "Enter password"
-        txtPasswordLog.Size = New Size(207, 27)
+        txtPasswordLog.Size = New Size(207, 26)
         txtPasswordLog.TabIndex = 1
         txtPasswordLog.UseSystemPasswordChar = True
         ' 
         ' LogInButton
         ' 
-        LogInButton.Font = New Font("Tahoma", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        LogInButton.Location = New Point(158, 344)
+        LogInButton.BackColor = Color.Tomato
+        LogInButton.Cursor = Cursors.Hand
+        LogInButton.FlatAppearance.BorderSize = 0
+        LogInButton.FlatAppearance.MouseOverBackColor = Color.LightCoral
+        LogInButton.FlatStyle = FlatStyle.Flat
+        LogInButton.Font = New Font("Rockwell", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LogInButton.ForeColor = Color.White
+        LogInButton.Location = New Point(115, 334)
         LogInButton.Name = "LogInButton"
-        LogInButton.Size = New Size(75, 28)
+        LogInButton.Size = New Size(160, 28)
         LogInButton.TabIndex = 2
         LogInButton.Text = "Log In"
-        LogInButton.UseVisualStyleBackColor = True
+        LogInButton.UseVisualStyleBackColor = False
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Rockwell", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Rockwell", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.White
-        Label1.Location = New Point(33, 89)
+        Label1.Image = CType(resources.GetObject("Label1.Image"), Image)
+        Label1.ImageAlign = ContentAlignment.MiddleLeft
+        Label1.Location = New Point(3, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(341, 25)
+        Label1.Size = New Size(354, 66)
         Label1.TabIndex = 3
-        Label1.Text = "Baranggay International Library"
+        Label1.Text = "       Barangay" & vbCrLf & "        International Library"
         Label1.TextAlign = ContentAlignment.TopCenter
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Tahoma", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Rockwell", 11.25F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.White
-        Label2.Location = New Point(162, 186)
+        Label2.Location = New Point(95, 194)
         Label2.Name = "Label2"
-        Label2.Size = New Size(71, 23)
+        Label2.Size = New Size(112, 17)
         Label2.TabIndex = 4
-        Label2.Text = "LOG IN"
+        Label2.Text = "Enter username"
         ' 
         ' Label3
         ' 
@@ -107,18 +125,21 @@ Partial Class Form1
         ' toSignUp
         ' 
         toSignUp.AutoSize = True
+        toSignUp.Cursor = Cursors.Hand
         toSignUp.Font = New Font("Tahoma", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         toSignUp.ForeColor = Color.White
-        toSignUp.Location = New Point(132, 382)
+        toSignUp.Location = New Point(55, 388)
         toSignUp.Name = "toSignUp"
-        toSignUp.Size = New Size(121, 16)
+        toSignUp.Size = New Size(278, 16)
         toSignUp.TabIndex = 7
-        toSignUp.Text = "click here to sign up"
+        toSignUp.Text = "Don't have an account yet? click here to sign up"
         ' 
         ' Panel1
         ' 
         Panel1.BackColor = Color.Brown
-        Panel1.Controls.Add(Label4)
+        Panel1.Controls.Add(Button1)
+        Panel1.Controls.Add(Label6)
+        Panel1.Controls.Add(Label5)
         Panel1.Controls.Add(toSignUp)
         Panel1.Controls.Add(LinkLabel1)
         Panel1.Controls.Add(Label3)
@@ -133,17 +154,43 @@ Partial Class Form1
         Panel1.Size = New Size(398, 434)
         Panel1.TabIndex = 8
         ' 
-        ' Label4
+        ' Button1
         ' 
-        Label4.AutoSize = True
-        Label4.Font = New Font("Rockwell", 21.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label4.ForeColor = Color.White
-        Label4.Location = New Point(113, 40)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(160, 36)
-        Label4.TabIndex = 8
-        Label4.Text = "Welcome!"
-        Label4.TextAlign = ContentAlignment.TopCenter
+        Button1.BackColor = Color.Brown
+        Button1.Cursor = Cursors.Hand
+        Button1.FlatAppearance.BorderSize = 0
+        Button1.FlatAppearance.MouseOverBackColor = Color.LightCoral
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.Font = New Font("Tahoma", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button1.Image = CType(resources.GetObject("Button1.Image"), Image)
+        Button1.Location = New Point(308, 281)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(37, 27)
+        Button1.TabIndex = 29
+        Button1.UseVisualStyleBackColor = False
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.Font = New Font("Rockwell", 20.25F, FontStyle.Bold)
+        Label6.ForeColor = Color.White
+        Label6.Location = New Point(154, 126)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(99, 33)
+        Label6.TabIndex = 10
+        Label6.Text = "Log In"
+        Label6.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Font = New Font("Rockwell", 11.25F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label5.ForeColor = Color.White
+        Label5.Location = New Point(95, 262)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(109, 17)
+        Label5.TabIndex = 9
+        Label5.Text = "Enter Password"
         ' 
         ' Form1
         ' 
@@ -169,6 +216,8 @@ Partial Class Form1
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents toSignUp As Label
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Label4 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Button1 As Button
 
 End Class

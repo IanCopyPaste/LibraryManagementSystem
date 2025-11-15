@@ -99,9 +99,9 @@ Partial Class BookDashboardForAdmin
         Label1.ForeColor = Color.White
         Label1.Location = New Point(65, 9)
         Label1.Name = "Label1"
-        Label1.Size = New Size(928, 53)
+        Label1.Size = New Size(907, 53)
         Label1.TabIndex = 13
-        Label1.Text = "Baranggay International Library - Book Dashboard"
+        Label1.Text = "Barangay International Library - Book Dashboard"
         Label1.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' SidePanel
@@ -129,7 +129,7 @@ Partial Class BookDashboardForAdmin
         BookHistoryBtn.Image = CType(resources.GetObject("BookHistoryBtn.Image"), Image)
         BookHistoryBtn.Location = New Point(0, 186)
         BookHistoryBtn.Name = "BookHistoryBtn"
-        BookHistoryBtn.Size = New Size(103, 60)
+        BookHistoryBtn.Size = New Size(108, 60)
         BookHistoryBtn.TabIndex = 9
         BookHistoryBtn.Text = "Borrow History"
         BookHistoryBtn.TextImageRelation = TextImageRelation.ImageBeforeText
@@ -146,7 +146,7 @@ Partial Class BookDashboardForAdmin
         Button1.Image = CType(resources.GetObject("Button1.Image"), Image)
         Button1.Location = New Point(0, 267)
         Button1.Name = "Button1"
-        Button1.Size = New Size(103, 60)
+        Button1.Size = New Size(108, 60)
         Button1.TabIndex = 7
         Button1.Text = "Book Dash" & vbCrLf & "Board"
         Button1.TextImageRelation = TextImageRelation.ImageBeforeText
@@ -180,7 +180,7 @@ Partial Class BookDashboardForAdmin
         InsertBooksBtn.Image = CType(resources.GetObject("InsertBooksBtn.Image"), Image)
         InsertBooksBtn.Location = New Point(0, 104)
         InsertBooksBtn.Name = "InsertBooksBtn"
-        InsertBooksBtn.Size = New Size(103, 60)
+        InsertBooksBtn.Size = New Size(108, 60)
         InsertBooksBtn.TabIndex = 1
         InsertBooksBtn.Text = "Manage" & vbCrLf & "Books" & vbCrLf
         InsertBooksBtn.TextImageRelation = TextImageRelation.ImageBeforeText

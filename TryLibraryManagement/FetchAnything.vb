@@ -64,12 +64,6 @@ Module FetchAnything
     'API CALLS FOR SIGN UP
     Public otp As String
 
-    Public Function generateCode()
-        Dim rand As New Random
-        Dim code As String = rand.Next(100000, 1000000).ToString("D6")
-        Return code
-    End Function
-
     Public fname As String
     Public lname As String
     Public mname As String
@@ -77,6 +71,12 @@ Module FetchAnything
     Public username As String
     Public email As String
     Public password As String
+
+    Public Function generateCode()
+        Dim rand As New Random
+        Dim code As String = rand.Next(100000, 1000000).ToString("D6")
+        Return code
+    End Function
 
     Public Sub SendEmail()
         Try

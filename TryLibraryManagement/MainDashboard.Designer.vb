@@ -198,9 +198,9 @@ Partial Class MainDashboard
         Label1.ForeColor = Color.White
         Label1.Location = New Point(65, 9)
         Label1.Name = "Label1"
-        Label1.Size = New Size(605, 53)
+        Label1.Size = New Size(584, 53)
         Label1.TabIndex = 0
-        Label1.Text = "Baranggay International Library"
+        Label1.Text = "Barangay International Library"
         Label1.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' SidePanel
@@ -379,7 +379,7 @@ Partial Class MainDashboard
         ' 
         Label8.AutoSize = True
         Label8.BackColor = Color.Transparent
-        Label8.Font = New Font("Sitka Text", 12.0F, FontStyle.Bold Or FontStyle.Italic)
+        Label8.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
         Label8.ForeColor = Color.White
         Label8.Location = New Point(235, 414)
         Label8.Name = "Label8"
@@ -391,7 +391,7 @@ Partial Class MainDashboard
         ' 
         Label7.AutoSize = True
         Label7.BackColor = Color.Transparent
-        Label7.Font = New Font("Sitka Text", 12.0F, FontStyle.Bold Or FontStyle.Italic)
+        Label7.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
         Label7.ForeColor = Color.White
         Label7.Location = New Point(45, 414)
         Label7.Name = "Label7"
@@ -415,7 +415,7 @@ Partial Class MainDashboard
         ' 
         Label5.AutoSize = True
         Label5.BackColor = Color.Transparent
-        Label5.Font = New Font("Sitka Text", 12.0F, FontStyle.Bold Or FontStyle.Italic)
+        Label5.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
         Label5.ForeColor = Color.White
         Label5.Location = New Point(235, 331)
         Label5.Name = "Label5"
@@ -427,7 +427,7 @@ Partial Class MainDashboard
         ' 
         Label4.AutoSize = True
         Label4.BackColor = Color.Transparent
-        Label4.Font = New Font("Sitka Text", 12.0F, FontStyle.Bold Or FontStyle.Italic)
+        Label4.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
         Label4.ForeColor = Color.White
         Label4.Location = New Point(36, 331)
         Label4.Name = "Label4"
@@ -439,7 +439,7 @@ Partial Class MainDashboard
         ' 
         Label3.AutoSize = True
         Label3.BackColor = Color.Transparent
-        Label3.Font = New Font("Sitka Text", 12.0F, FontStyle.Bold Or FontStyle.Italic)
+        Label3.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
         Label3.ForeColor = Color.White
         Label3.Location = New Point(215, 259)
         Label3.Name = "Label3"
@@ -451,7 +451,7 @@ Partial Class MainDashboard
         ' 
         Label2.AutoSize = True
         Label2.BackColor = Color.Transparent
-        Label2.Font = New Font("Sitka Text", 12.0F, FontStyle.Bold Or FontStyle.Italic)
+        Label2.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
         Label2.ForeColor = Color.White
         Label2.Location = New Point(42, 259)
         Label2.Name = "Label2"

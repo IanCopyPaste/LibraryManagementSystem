@@ -85,9 +85,9 @@ Partial Class YourBorrowedBooks
         Label1.ForeColor = Color.White
         Label1.Location = New Point(65, 9)
         Label1.Name = "Label1"
-        Label1.Size = New Size(928, 53)
+        Label1.Size = New Size(907, 53)
         Label1.TabIndex = 16
-        Label1.Text = "Baranggay International Library - Borrowed Books"
+        Label1.Text = "Barangay International Library - Borrowed Books"
         Label1.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' SidePanel

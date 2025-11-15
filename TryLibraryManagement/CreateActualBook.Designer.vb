@@ -68,9 +68,9 @@ Partial Class CreateActualBook
         ' bookPic
         ' 
         bookPic.BackColor = Color.Salmon
-        bookPic.Location = New Point(300, 81)
+        bookPic.Location = New Point(300, 55)
         bookPic.Name = "bookPic"
-        bookPic.Size = New Size(196, 258)
+        bookPic.Size = New Size(196, 284)
         bookPic.SizeMode = PictureBoxSizeMode.StretchImage
         bookPic.TabIndex = 2
         bookPic.TabStop = False
@@ -111,7 +111,7 @@ Partial Class CreateActualBook
         txtCategory.Cursor = Cursors.Hand
         txtCategory.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         txtCategory.FormattingEnabled = True
-        txtCategory.Items.AddRange(New Object() {"Adult", "Horror", "Science Fiction", "Romance", "Poetry", "Lifestyle", "Action", "History"})
+        txtCategory.Items.AddRange(New Object() {"Adult", "Horror", "Science Fiction", "Romance", "Poetry", "Lifestyle", "Action", "History", "Fantasy", "Mystery", "Thriller", "Drama", "Biography", "Adventure", "Self-Help"})
         txtCategory.Location = New Point(40, 232)
         txtCategory.Name = "txtCategory"
         txtCategory.Size = New Size(213, 25)
@@ -159,7 +159,7 @@ Partial Class CreateActualBook
         btnUploadPhoto.Font = New Font("Rockwell", 11.25F, FontStyle.Bold)
         btnUploadPhoto.ForeColor = Color.White
         btnUploadPhoto.Image = CType(resources.GetObject("btnUploadPhoto.Image"), Image)
-        btnUploadPhoto.Location = New Point(319, 193)
+        btnUploadPhoto.Location = New Point(320, 174)
         btnUploadPhoto.Name = "btnUploadPhoto"
         btnUploadPhoto.Size = New Size(155, 39)
         btnUploadPhoto.TabIndex = 13

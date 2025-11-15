@@ -34,7 +34,7 @@ Public Class SignUp
     Private Sub CpasswordBox_TextChanged(sender As Object, e As EventArgs) Handles CpasswordBox.TextChanged
         If passwordBox.Text = CpasswordBox.Text Then
             confirmLbl.Text = "Passwords Match!!"
-            confirmLbl.ForeColor = Color.Green
+            confirmLbl.ForeColor = Color.LightGreen
             SignUpbtn.Enabled = True
         Else
             confirmLbl.Text = "Passwords Do Not Match!!"
