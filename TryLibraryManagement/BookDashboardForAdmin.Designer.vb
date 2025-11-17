@@ -57,7 +57,7 @@ Partial Class BookDashboardForAdmin
         ' 
         ' Panel1
         ' 
-        Panel1.BackColor = Color.Brown
+        Panel1.BackColor = Color.Green
         Panel1.Controls.Add(PictureBox1)
         Panel1.Controls.Add(ProfileBoxUpper)
         Panel1.Controls.Add(Label1)
@@ -86,7 +86,7 @@ Partial Class BookDashboardForAdmin
         ProfileBoxUpper.Location = New Point(1178, 3)
         ProfileBoxUpper.Name = "ProfileBoxUpper"
         ProfileBoxUpper.Size = New Size(76, 68)
-        ProfileBoxUpper.SizeMode = PictureBoxSizeMode.StretchImage
+        ProfileBoxUpper.SizeMode = PictureBoxSizeMode.Zoom
         ProfileBoxUpper.TabIndex = 14
         ProfileBoxUpper.TabStop = False
         ' 
@@ -106,7 +106,7 @@ Partial Class BookDashboardForAdmin
         ' 
         ' SidePanel
         ' 
-        SidePanel.BackColor = Color.Salmon
+        SidePanel.BackColor = Color.LightGreen
         SidePanel.Controls.Add(BookHistoryBtn)
         SidePanel.Controls.Add(Button1)
         SidePanel.Controls.Add(SignOutBtn)
@@ -120,7 +120,7 @@ Partial Class BookDashboardForAdmin
         ' 
         ' BookHistoryBtn
         ' 
-        BookHistoryBtn.BackColor = Color.Brown
+        BookHistoryBtn.BackColor = Color.Green
         BookHistoryBtn.Cursor = Cursors.Hand
         BookHistoryBtn.FlatAppearance.BorderSize = 0
         BookHistoryBtn.FlatStyle = FlatStyle.Flat
@@ -137,7 +137,7 @@ Partial Class BookDashboardForAdmin
         ' 
         ' Button1
         ' 
-        Button1.BackColor = Color.Brown
+        Button1.BackColor = Color.Green
         Button1.Cursor = Cursors.Hand
         Button1.FlatAppearance.BorderSize = 0
         Button1.FlatStyle = FlatStyle.Flat
@@ -154,7 +154,7 @@ Partial Class BookDashboardForAdmin
         ' 
         ' SignOutBtn
         ' 
-        SignOutBtn.BackColor = Color.Brown
+        SignOutBtn.BackColor = Color.Green
         SignOutBtn.Cursor = Cursors.Hand
         SignOutBtn.FlatAppearance.BorderSize = 0
         SignOutBtn.FlatStyle = FlatStyle.Flat
@@ -171,7 +171,7 @@ Partial Class BookDashboardForAdmin
         ' 
         ' InsertBooksBtn
         ' 
-        InsertBooksBtn.BackColor = Color.Brown
+        InsertBooksBtn.BackColor = Color.Green
         InsertBooksBtn.Cursor = Cursors.Hand
         InsertBooksBtn.FlatAppearance.BorderSize = 0
         InsertBooksBtn.FlatStyle = FlatStyle.Flat
@@ -188,7 +188,7 @@ Partial Class BookDashboardForAdmin
         ' 
         ' userPageBtn
         ' 
-        userPageBtn.BackColor = Color.Brown
+        userPageBtn.BackColor = Color.Green
         userPageBtn.Cursor = Cursors.Hand
         userPageBtn.FlatAppearance.BorderSize = 0
         userPageBtn.FlatStyle = FlatStyle.Flat
@@ -205,7 +205,7 @@ Partial Class BookDashboardForAdmin
         ' 
         ' MainPanel
         ' 
-        MainPanel.BackColor = Color.Tomato
+        MainPanel.BackColor = Color.Snow
         MainPanel.Controls.Add(Label2)
         MainPanel.Controls.Add(flowPanelRecords)
         MainPanel.Dock = DockStyle.Fill
@@ -217,8 +217,9 @@ Partial Class BookDashboardForAdmin
         ' Label2
         ' 
         Label2.AutoSize = True
+        Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Rockwell", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label2.ForeColor = Color.White
+        Label2.ForeColor = Color.DarkGreen
         Label2.Image = My.Resources.Resources._3700471_book_books_education_library_literature_reading_study_108741
         Label2.ImageAlign = ContentAlignment.MiddleLeft
         Label2.Location = New Point(34, 17)
@@ -231,7 +232,7 @@ Partial Class BookDashboardForAdmin
         ' flowPanelRecords
         ' 
         flowPanelRecords.AutoScroll = True
-        flowPanelRecords.BackColor = Color.Brown
+        flowPanelRecords.BackColor = Color.LightGreen
         flowPanelRecords.Location = New Point(34, 59)
         flowPanelRecords.Name = "flowPanelRecords"
         flowPanelRecords.Size = New Size(1088, 465)
@@ -249,7 +250,7 @@ Partial Class BookDashboardForAdmin
         Margin = New Padding(4)
         Name = "BookDashboardForAdmin"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "BookDashboardForAdmin"
+        Text = "Admin Dashboard - Book Dashboard"
         TopPanel.ResumeLayout(False)
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()

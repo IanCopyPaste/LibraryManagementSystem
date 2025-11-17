@@ -11,7 +11,7 @@ Public Class CreateActualBook
                     MsgBox("THE TITLE IS ALREADY ON THE DATABASE")
                 Else
                     con.Open()
-                    Dim query As String = "INSERT INTO books (title, author, category, publishDate, profile) VALUES (@title, @auth, @cat, @pubDate, LOAD_FILE(@path))"
+                    Dim query = "INSERT INTO books (title, author, category, publishDate, profile) VALUES (@title, @auth, @cat, @pubDate, LOAD_FILE(@path))"
                     Dim cmd As New MySqlCommand(query, con)
                     cmd.Parameters.AddWithValue("@title", txtTitle.Text.Trim)
                     cmd.Parameters.AddWithValue("@auth", txtAuthor.Text.Trim)
@@ -36,7 +36,7 @@ Public Class CreateActualBook
 
     Private Sub btnUploadPhoto_Click(sender As Object, e As EventArgs) Handles btnUploadPhoto.Click
         If UploadPhotoDialoag.ShowDialog = DialogResult.OK Then
-            Dim path As String = UploadPhotoDialoag.FileName
+            Dim path = UploadPhotoDialoag.FileName
             createPath(path)
             btnUploadPhoto.Visible = False
             bookPic.Image = Image.FromFile(UploadPhotoDialoag.FileName)

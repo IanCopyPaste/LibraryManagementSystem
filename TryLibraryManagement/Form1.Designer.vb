@@ -65,14 +65,13 @@ Partial Class Form1
         ' 
         ' LogInButton
         ' 
-        LogInButton.BackColor = Color.Tomato
+        LogInButton.BackColor = Color.Green
         LogInButton.Cursor = Cursors.Hand
         LogInButton.FlatAppearance.BorderSize = 0
-        LogInButton.FlatAppearance.MouseOverBackColor = Color.LightCoral
         LogInButton.FlatStyle = FlatStyle.Flat
         LogInButton.Font = New Font("Rockwell", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         LogInButton.ForeColor = Color.White
-        LogInButton.Location = New Point(115, 334)
+        LogInButton.Location = New Point(117, 334)
         LogInButton.Name = "LogInButton"
         LogInButton.Size = New Size(160, 28)
         LogInButton.TabIndex = 2
@@ -82,8 +81,9 @@ Partial Class Form1
         ' Label1
         ' 
         Label1.AutoSize = True
+        Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Rockwell", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.ForeColor = Color.White
+        Label1.ForeColor = Color.DarkGreen
         Label1.Image = CType(resources.GetObject("Label1.Image"), Image)
         Label1.ImageAlign = ContentAlignment.MiddleLeft
         Label1.Location = New Point(3, 0)
@@ -96,8 +96,9 @@ Partial Class Form1
         ' Label2
         ' 
         Label2.AutoSize = True
+        Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Rockwell", 11.25F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        Label2.ForeColor = Color.White
+        Label2.ForeColor = Color.DarkGreen
         Label2.Location = New Point(95, 194)
         Label2.Name = "Label2"
         Label2.Size = New Size(112, 17)
@@ -125,9 +126,10 @@ Partial Class Form1
         ' toSignUp
         ' 
         toSignUp.AutoSize = True
+        toSignUp.BackColor = Color.Transparent
         toSignUp.Cursor = Cursors.Hand
         toSignUp.Font = New Font("Tahoma", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        toSignUp.ForeColor = Color.White
+        toSignUp.ForeColor = Color.DarkGreen
         toSignUp.Location = New Point(55, 388)
         toSignUp.Name = "toSignUp"
         toSignUp.Size = New Size(278, 16)
@@ -136,7 +138,7 @@ Partial Class Form1
         ' 
         ' Panel1
         ' 
-        Panel1.BackColor = Color.Brown
+        Panel1.BackColor = Color.Gainsboro
         Panel1.Controls.Add(Button1)
         Panel1.Controls.Add(Label6)
         Panel1.Controls.Add(Label5)
@@ -156,7 +158,7 @@ Partial Class Form1
         ' 
         ' Button1
         ' 
-        Button1.BackColor = Color.Brown
+        Button1.BackColor = Color.Gainsboro
         Button1.Cursor = Cursors.Hand
         Button1.FlatAppearance.BorderSize = 0
         Button1.FlatAppearance.MouseOverBackColor = Color.LightCoral
@@ -172,8 +174,9 @@ Partial Class Form1
         ' Label6
         ' 
         Label6.AutoSize = True
+        Label6.BackColor = Color.Transparent
         Label6.Font = New Font("Rockwell", 20.25F, FontStyle.Bold)
-        Label6.ForeColor = Color.White
+        Label6.ForeColor = Color.DarkGreen
         Label6.Location = New Point(154, 126)
         Label6.Name = "Label6"
         Label6.Size = New Size(99, 33)
@@ -184,8 +187,9 @@ Partial Class Form1
         ' Label5
         ' 
         Label5.AutoSize = True
+        Label5.BackColor = Color.Transparent
         Label5.Font = New Font("Rockwell", 11.25F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        Label5.ForeColor = Color.White
+        Label5.ForeColor = Color.DarkGreen
         Label5.Location = New Point(95, 262)
         Label5.Name = "Label5"
         Label5.Size = New Size(109, 17)

@@ -43,7 +43,7 @@ Partial Class YourBorrowedBooks
         ' 
         ' TopPanel
         ' 
-        TopPanel.BackColor = Color.Brown
+        TopPanel.BackColor = Color.Green
         TopPanel.Controls.Add(PictureBox1)
         TopPanel.Controls.Add(ProfileBoxUpper)
         TopPanel.Controls.Add(Label1)
@@ -92,7 +92,7 @@ Partial Class YourBorrowedBooks
         ' 
         ' SidePanel
         ' 
-        SidePanel.BackColor = Color.Salmon
+        SidePanel.BackColor = Color.LightGreen
         SidePanel.Controls.Add(btnYourBooks)
         SidePanel.Controls.Add(SignOutBtn)
         SidePanel.Controls.Add(userPageBtn)
@@ -104,7 +104,7 @@ Partial Class YourBorrowedBooks
         ' 
         ' btnYourBooks
         ' 
-        btnYourBooks.BackColor = Color.Brown
+        btnYourBooks.BackColor = Color.Green
         btnYourBooks.Cursor = Cursors.Hand
         btnYourBooks.FlatAppearance.BorderSize = 0
         btnYourBooks.FlatStyle = FlatStyle.Flat
@@ -121,7 +121,7 @@ Partial Class YourBorrowedBooks
         ' 
         ' SignOutBtn
         ' 
-        SignOutBtn.BackColor = Color.Brown
+        SignOutBtn.BackColor = Color.Green
         SignOutBtn.FlatAppearance.BorderSize = 0
         SignOutBtn.FlatStyle = FlatStyle.Flat
         SignOutBtn.Font = New Font("Tahoma", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
@@ -137,7 +137,7 @@ Partial Class YourBorrowedBooks
         ' 
         ' userPageBtn
         ' 
-        userPageBtn.BackColor = Color.Brown
+        userPageBtn.BackColor = Color.Green
         userPageBtn.FlatAppearance.BorderSize = 0
         userPageBtn.FlatStyle = FlatStyle.Flat
         userPageBtn.Font = New Font("Tahoma", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
@@ -153,7 +153,7 @@ Partial Class YourBorrowedBooks
         ' 
         ' MainPanel
         ' 
-        MainPanel.BackColor = Color.Tomato
+        MainPanel.BackColor = Color.Snow
         MainPanel.Controls.Add(Label2)
         MainPanel.Controls.Add(ewanFLow)
         MainPanel.Dock = DockStyle.Fill
@@ -165,8 +165,9 @@ Partial Class YourBorrowedBooks
         ' Label2
         ' 
         Label2.AutoSize = True
+        Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Rockwell", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label2.ForeColor = Color.White
+        Label2.ForeColor = Color.DarkGreen
         Label2.Image = My.Resources.Resources._3700471_book_books_education_library_literature_reading_study_108741
         Label2.ImageAlign = ContentAlignment.MiddleLeft
         Label2.Location = New Point(36, 17)
@@ -179,7 +180,7 @@ Partial Class YourBorrowedBooks
         ' ewanFLow
         ' 
         ewanFLow.AutoScroll = True
-        ewanFLow.BackColor = Color.Brown
+        ewanFLow.BackColor = Color.LightGreen
         ewanFLow.Location = New Point(36, 59)
         ewanFLow.Name = "ewanFLow"
         ewanFLow.Size = New Size(1086, 465)
@@ -197,7 +198,7 @@ Partial Class YourBorrowedBooks
         Margin = New Padding(4)
         Name = "YourBorrowedBooks"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "w"
+        Text = "Borrowed Books"
         TopPanel.ResumeLayout(False)
         TopPanel.PerformLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()

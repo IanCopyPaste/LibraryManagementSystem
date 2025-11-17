@@ -27,15 +27,15 @@ Public Class YourBorrowedBooks
             .Width = 180,
             .Height = 300,
             .Margin = New Padding(15),
-            .BackColor = Color.Tomato,
+            .BackColor = Color.Gainsboro,
             .Padding = New Padding(0, 3, 3, 3)
         }
 
                 Dim card As New Panel With {
             .Width = 177,
             .Height = 277,
-            .BackColor = Color.Tomato,
-            .Dock = DockStyle.Fill,
+            .BackColor = Color.Green,
+                .Dock = DockStyle.Fill,
             .Cursor = Cursors.Hand
         }
 
@@ -67,7 +67,7 @@ Public Class YourBorrowedBooks
         }
                 Dim lblBookID As New Label With {
             .Text = "ID: " & getID2,
-            .ForeColor = Color.FromArgb(33, 33, 33),
+            .ForeColor = Color.White,
             .Font = New Font("Segoe UI Semibold", 10.5F, FontStyle.Bold),
             .AutoSize = True,
             .MaximumSize = New Size(160, 0),
@@ -76,7 +76,7 @@ Public Class YourBorrowedBooks
         }
                 Dim lblGenre As New Label With {
             .Text = "Genre: " & cat,
-            .ForeColor = Color.FromArgb(33, 33, 33),
+            .ForeColor = Color.White,
             .Font = New Font("Segoe UI Semibold", 10.5F, FontStyle.Bold),
             .AutoSize = True,
             .MaximumSize = New Size(160, 0),

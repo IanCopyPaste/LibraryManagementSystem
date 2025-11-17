@@ -43,7 +43,7 @@ Partial Class ReturnBookForm
         ' 
         ' Button1
         ' 
-        Button1.BackColor = Color.Brown
+        Button1.BackColor = Color.Green
         Button1.FlatAppearance.BorderSize = 0
         Button1.FlatStyle = FlatStyle.Flat
         Button1.Font = New Font("Rockwell", 12F, FontStyle.Bold)
@@ -58,8 +58,9 @@ Partial Class ReturnBookForm
         ' Label3
         ' 
         Label3.AutoSize = True
+        Label3.BackColor = Color.Transparent
         Label3.Font = New Font("Rockwell", 9.75F, FontStyle.Bold)
-        Label3.ForeColor = Color.White
+        Label3.ForeColor = Color.DarkGreen
         Label3.Location = New Point(370, 24)
         Label3.Name = "Label3"
         Label3.Size = New Size(66, 15)
@@ -68,6 +69,7 @@ Partial Class ReturnBookForm
         ' 
         ' txtBookID
         ' 
+        txtBookID.BackColor = SystemColors.Control
         txtBookID.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         txtBookID.Location = New Point(370, 44)
         txtBookID.Name = "txtBookID"
@@ -78,7 +80,7 @@ Partial Class ReturnBookForm
         ' 
         ' btnReturn
         ' 
-        btnReturn.BackColor = Color.Brown
+        btnReturn.BackColor = Color.Green
         btnReturn.FlatAppearance.BorderSize = 0
         btnReturn.FlatStyle = FlatStyle.Flat
         btnReturn.Font = New Font("Rockwell", 12F, FontStyle.Bold)
@@ -93,8 +95,9 @@ Partial Class ReturnBookForm
         ' Label6
         ' 
         Label6.AutoSize = True
+        Label6.BackColor = Color.Transparent
         Label6.Font = New Font("Rockwell", 9.75F, FontStyle.Bold)
-        Label6.ForeColor = Color.White
+        Label6.ForeColor = Color.DarkGreen
         Label6.Location = New Point(32, 259)
         Label6.Name = "Label6"
         Label6.Size = New Size(57, 15)
@@ -103,6 +106,7 @@ Partial Class ReturnBookForm
         ' 
         ' txtStatus
         ' 
+        txtStatus.BackColor = SystemColors.Control
         txtStatus.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         txtStatus.Location = New Point(32, 279)
         txtStatus.Name = "txtStatus"
@@ -115,8 +119,9 @@ Partial Class ReturnBookForm
         ' Label5
         ' 
         Label5.AutoSize = True
+        Label5.BackColor = Color.Transparent
         Label5.Font = New Font("Rockwell", 9.75F, FontStyle.Bold)
-        Label5.ForeColor = Color.White
+        Label5.ForeColor = Color.DarkGreen
         Label5.Location = New Point(32, 207)
         Label5.Name = "Label5"
         Label5.Size = New Size(55, 15)
@@ -125,6 +130,7 @@ Partial Class ReturnBookForm
         ' 
         ' txtGenre
         ' 
+        txtGenre.BackColor = SystemColors.Control
         txtGenre.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         txtGenre.Location = New Point(32, 227)
         txtGenre.Name = "txtGenre"
@@ -137,8 +143,9 @@ Partial Class ReturnBookForm
         ' Label4
         ' 
         Label4.AutoSize = True
+        Label4.BackColor = Color.Transparent
         Label4.Font = New Font("Rockwell", 9.75F, FontStyle.Bold)
-        Label4.ForeColor = Color.White
+        Label4.ForeColor = Color.DarkGreen
         Label4.Location = New Point(32, 157)
         Label4.Name = "Label4"
         Label4.Size = New Size(123, 15)
@@ -147,6 +154,7 @@ Partial Class ReturnBookForm
         ' 
         ' txtDate
         ' 
+        txtDate.BackColor = SystemColors.Control
         txtDate.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         txtDate.Location = New Point(32, 177)
         txtDate.Name = "txtDate"
@@ -159,8 +167,9 @@ Partial Class ReturnBookForm
         ' Label2
         ' 
         Label2.AutoSize = True
+        Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Rockwell", 9.75F, FontStyle.Bold)
-        Label2.ForeColor = Color.White
+        Label2.ForeColor = Color.DarkGreen
         Label2.Location = New Point(32, 107)
         Label2.Name = "Label2"
         Label2.Size = New Size(64, 15)
@@ -169,6 +178,7 @@ Partial Class ReturnBookForm
         ' 
         ' txtAuth
         ' 
+        txtAuth.BackColor = SystemColors.Control
         txtAuth.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         txtAuth.Location = New Point(32, 127)
         txtAuth.Name = "txtAuth"
@@ -181,8 +191,9 @@ Partial Class ReturnBookForm
         ' Label1
         ' 
         Label1.AutoSize = True
+        Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Rockwell", 9.75F, FontStyle.Bold)
-        Label1.ForeColor = Color.White
+        Label1.ForeColor = Color.DarkGreen
         Label1.Location = New Point(32, 58)
         Label1.Name = "Label1"
         Label1.Size = New Size(47, 15)
@@ -191,6 +202,7 @@ Partial Class ReturnBookForm
         ' 
         ' txtTitle
         ' 
+        txtTitle.BackColor = SystemColors.Control
         txtTitle.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         txtTitle.Location = New Point(32, 77)
         txtTitle.Name = "txtTitle"
@@ -202,7 +214,8 @@ Partial Class ReturnBookForm
         ' 
         ' borrowPic
         ' 
-        borrowPic.BackColor = Color.Salmon
+        borrowPic.BackColor = Color.Green
+        borrowPic.BorderStyle = BorderStyle.FixedSingle
         borrowPic.Location = New Point(353, 77)
         borrowPic.Name = "borrowPic"
         borrowPic.Size = New Size(198, 255)
@@ -226,7 +239,7 @@ Partial Class ReturnBookForm
         ' 
         AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.Tomato
+        BackColor = Color.LightGreen
         ClientSize = New Size(584, 418)
         Controls.Add(lblNotVail)
         Controls.Add(Button1)

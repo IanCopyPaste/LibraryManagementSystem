@@ -48,7 +48,7 @@ Partial Class UserDashboard
         ' 
         ' TopPanel
         ' 
-        TopPanel.BackColor = Color.Brown
+        TopPanel.BackColor = Color.Green
         TopPanel.Controls.Add(PictureBox1)
         TopPanel.Controls.Add(updateProfileBtn)
         TopPanel.Controls.Add(profileBtn)
@@ -77,7 +77,7 @@ Partial Class UserDashboard
         ' 
         ' updateProfileBtn
         ' 
-        updateProfileBtn.BackColor = Color.Tomato
+        updateProfileBtn.BackColor = Color.LimeGreen
         updateProfileBtn.Cursor = Cursors.Hand
         updateProfileBtn.FlatAppearance.BorderSize = 0
         updateProfileBtn.FlatStyle = FlatStyle.Flat
@@ -94,7 +94,7 @@ Partial Class UserDashboard
         ' 
         ' profileBtn
         ' 
-        profileBtn.BackColor = Color.Tomato
+        profileBtn.BackColor = Color.LimeGreen
         profileBtn.Cursor = Cursors.Hand
         profileBtn.FlatAppearance.BorderSize = 0
         profileBtn.FlatStyle = FlatStyle.Flat
@@ -123,7 +123,7 @@ Partial Class UserDashboard
         ' 
         ' txtWelcome
         ' 
-        txtWelcome.BackColor = Color.Brown
+        txtWelcome.BackColor = Color.Green
         txtWelcome.BorderStyle = BorderStyle.None
         txtWelcome.Font = New Font("Sitka Small Semibold", 18F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         txtWelcome.ForeColor = Color.WhiteSmoke
@@ -160,7 +160,7 @@ Partial Class UserDashboard
         ' 
         ' SidePanel
         ' 
-        SidePanel.BackColor = Color.Salmon
+        SidePanel.BackColor = Color.LightGreen
         SidePanel.Controls.Add(btnYourBooks)
         SidePanel.Controls.Add(Button1)
         SidePanel.Controls.Add(SignOutBtn)
@@ -172,7 +172,7 @@ Partial Class UserDashboard
         ' 
         ' btnYourBooks
         ' 
-        btnYourBooks.BackColor = Color.Brown
+        btnYourBooks.BackColor = Color.Green
         btnYourBooks.Cursor = Cursors.Hand
         btnYourBooks.FlatAppearance.BorderSize = 0
         btnYourBooks.FlatStyle = FlatStyle.Flat
@@ -189,7 +189,7 @@ Partial Class UserDashboard
         ' 
         ' Button1
         ' 
-        Button1.BackColor = Color.Brown
+        Button1.BackColor = Color.Green
         Button1.Cursor = Cursors.Hand
         Button1.FlatAppearance.BorderSize = 0
         Button1.FlatStyle = FlatStyle.Flat
@@ -206,7 +206,7 @@ Partial Class UserDashboard
         ' 
         ' SignOutBtn
         ' 
-        SignOutBtn.BackColor = Color.Brown
+        SignOutBtn.BackColor = Color.Green
         SignOutBtn.Cursor = Cursors.Hand
         SignOutBtn.FlatAppearance.BorderSize = 0
         SignOutBtn.FlatStyle = FlatStyle.Flat
@@ -223,7 +223,7 @@ Partial Class UserDashboard
         ' 
         ' MainPanel
         ' 
-        MainPanel.BackColor = Color.Tomato
+        MainPanel.BackColor = Color.Snow
         MainPanel.Controls.Add(Label2)
         MainPanel.Controls.Add(flowPanelRecords)
         MainPanel.Dock = DockStyle.Fill
@@ -235,8 +235,9 @@ Partial Class UserDashboard
         ' Label2
         ' 
         Label2.AutoSize = True
+        Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Rockwell", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label2.ForeColor = Color.White
+        Label2.ForeColor = Color.DarkGreen
         Label2.Image = My.Resources.Resources._3700471_book_books_education_library_literature_reading_study_108741
         Label2.ImageAlign = ContentAlignment.MiddleLeft
         Label2.Location = New Point(36, 17)
@@ -249,7 +250,8 @@ Partial Class UserDashboard
         ' flowPanelRecords
         ' 
         flowPanelRecords.AutoScroll = True
-        flowPanelRecords.BackColor = Color.Brown
+        flowPanelRecords.BackColor = Color.LightGreen
+        flowPanelRecords.ForeColor = Color.Transparent
         flowPanelRecords.Location = New Point(36, 59)
         flowPanelRecords.Name = "flowPanelRecords"
         flowPanelRecords.Size = New Size(1086, 465)
@@ -271,7 +273,7 @@ Partial Class UserDashboard
         Margin = New Padding(4)
         Name = "UserDashboard"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "UserDashboard"
+        Text = "Book Dashboard"
         TopPanel.ResumeLayout(False)
         TopPanel.PerformLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()

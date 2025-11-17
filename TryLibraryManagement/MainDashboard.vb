@@ -10,7 +10,7 @@ Public Class MainDashboard
         checkIfNullProfile()
         ProfileBoxMain.SizeMode = PictureBoxSizeMode.StretchImage
         ProfileBoxUpper.SizeMode = PictureBoxSizeMode.Zoom
-        ToolTip1.SetToolTip(refreshBtn, "Refresh")
+        ToolTip.SetToolTip(refreshBtn, "Refresh")
     End Sub
 
     Private Sub ewanTable_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles ewanTable.CellContentClick

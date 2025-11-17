@@ -33,7 +33,7 @@ Partial Class SignUpOtpCode
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Rockwell", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.ForeColor = Color.White
+        Label1.ForeColor = Color.DarkGreen
         Label1.Location = New Point(12, 45)
         Label1.Name = "Label1"
         Label1.Size = New Size(327, 19)
@@ -53,7 +53,7 @@ Partial Class SignUpOtpCode
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        Label2.ForeColor = Color.White
+        Label2.ForeColor = Color.DarkGreen
         Label2.Location = New Point(32, 86)
         Label2.Name = "Label2"
         Label2.Size = New Size(73, 17)
@@ -62,7 +62,7 @@ Partial Class SignUpOtpCode
         ' 
         ' btnSendCode
         ' 
-        btnSendCode.BackColor = Color.Tomato
+        btnSendCode.BackColor = Color.Green
         btnSendCode.FlatAppearance.BorderSize = 0
         btnSendCode.FlatAppearance.MouseOverBackColor = Color.Salmon
         btnSendCode.FlatStyle = FlatStyle.Flat
@@ -77,7 +77,7 @@ Partial Class SignUpOtpCode
         ' 
         ' btnResendCode
         ' 
-        btnResendCode.BackColor = Color.Tomato
+        btnResendCode.BackColor = Color.Green
         btnResendCode.FlatAppearance.BorderSize = 0
         btnResendCode.FlatStyle = FlatStyle.Flat
         btnResendCode.Font = New Font("Rockwell", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
@@ -93,7 +93,7 @@ Partial Class SignUpOtpCode
         ' 
         AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.Brown
+        BackColor = Color.Gainsboro
         ClientSize = New Size(345, 203)
         Controls.Add(btnResendCode)
         Controls.Add(btnSendCode)

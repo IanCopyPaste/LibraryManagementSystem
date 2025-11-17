@@ -45,30 +45,32 @@ Partial Class CreateActualBook
         txtTitle.Cursor = Cursors.Hand
         txtTitle.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         txtTitle.Location = New Point(40, 100)
+        txtTitle.Margin = New Padding(3, 2, 3, 2)
         txtTitle.Name = "txtTitle"
         txtTitle.Size = New Size(213, 25)
         txtTitle.TabIndex = 0
         ' 
         ' InsertBtn
         ' 
-        InsertBtn.BackColor = Color.Brown
+        InsertBtn.BackColor = Color.Green
         InsertBtn.Cursor = Cursors.Hand
         InsertBtn.FlatAppearance.BorderSize = 0
-        InsertBtn.FlatAppearance.MouseOverBackColor = Color.LightCoral
         InsertBtn.FlatStyle = FlatStyle.Flat
         InsertBtn.Font = New Font("Rockwell", 11.25F, FontStyle.Bold)
         InsertBtn.ForeColor = Color.White
         InsertBtn.Location = New Point(129, 383)
+        InsertBtn.Margin = New Padding(3, 2, 3, 2)
         InsertBtn.Name = "InsertBtn"
-        InsertBtn.Size = New Size(285, 29)
+        InsertBtn.Size = New Size(285, 28)
         InsertBtn.TabIndex = 1
         InsertBtn.Text = "Insert"
         InsertBtn.UseVisualStyleBackColor = False
         ' 
         ' bookPic
         ' 
-        bookPic.BackColor = Color.Salmon
-        bookPic.Location = New Point(300, 55)
+        bookPic.BackColor = Color.Snow
+        bookPic.Location = New Point(300, 56)
+        bookPic.Margin = New Padding(3, 2, 3, 2)
         bookPic.Name = "bookPic"
         bookPic.Size = New Size(196, 284)
         bookPic.SizeMode = PictureBoxSizeMode.StretchImage
@@ -79,7 +81,8 @@ Partial Class CreateActualBook
         ' 
         txtAuthor.Cursor = Cursors.Hand
         txtAuthor.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtAuthor.Location = New Point(40, 165)
+        txtAuthor.Location = New Point(40, 166)
+        txtAuthor.Margin = New Padding(3, 2, 3, 2)
         txtAuthor.Name = "txtAuthor"
         txtAuthor.Size = New Size(213, 25)
         txtAuthor.TabIndex = 3
@@ -87,8 +90,9 @@ Partial Class CreateActualBook
         ' Label2
         ' 
         Label2.AutoSize = True
+        Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label2.ForeColor = Color.White
+        Label2.ForeColor = Color.DarkGreen
         Label2.Location = New Point(110, 128)
         Label2.Name = "Label2"
         Label2.Size = New Size(77, 20)
@@ -98,8 +102,9 @@ Partial Class CreateActualBook
         ' Label3
         ' 
         Label3.AutoSize = True
+        Label3.BackColor = Color.Transparent
         Label3.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label3.ForeColor = Color.White
+        Label3.ForeColor = Color.DarkGreen
         Label3.Location = New Point(101, 193)
         Label3.Name = "Label3"
         Label3.Size = New Size(96, 20)
@@ -113,6 +118,7 @@ Partial Class CreateActualBook
         txtCategory.FormattingEnabled = True
         txtCategory.Items.AddRange(New Object() {"Adult", "Horror", "Science Fiction", "Romance", "Poetry", "Lifestyle", "Action", "History", "Fantasy", "Mystery", "Thriller", "Drama", "Biography", "Adventure", "Self-Help"})
         txtCategory.Location = New Point(40, 232)
+        txtCategory.Margin = New Padding(3, 2, 3, 2)
         txtCategory.Name = "txtCategory"
         txtCategory.Size = New Size(213, 25)
         txtCategory.TabIndex = 9
@@ -121,9 +127,10 @@ Partial Class CreateActualBook
         ' Label4
         ' 
         Label4.AutoSize = True
+        Label4.BackColor = Color.Transparent
         Label4.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label4.ForeColor = Color.White
-        Label4.Location = New Point(115, 260)
+        Label4.ForeColor = Color.DarkGreen
+        Label4.Location = New Point(115, 259)
         Label4.Name = "Label4"
         Label4.Size = New Size(72, 20)
         Label4.TabIndex = 10
@@ -134,6 +141,7 @@ Partial Class CreateActualBook
         txtPubDate.Cursor = Cursors.Hand
         txtPubDate.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         txtPubDate.Location = New Point(40, 298)
+        txtPubDate.Margin = New Padding(3, 2, 3, 2)
         txtPubDate.Name = "txtPubDate"
         txtPubDate.Size = New Size(213, 25)
         txtPubDate.TabIndex = 11
@@ -141,8 +149,9 @@ Partial Class CreateActualBook
         ' Label5
         ' 
         Label5.AutoSize = True
+        Label5.BackColor = Color.Transparent
         Label5.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label5.ForeColor = Color.White
+        Label5.ForeColor = Color.DarkGreen
         Label5.Location = New Point(101, 326)
         Label5.Name = "Label5"
         Label5.Size = New Size(112, 20)
@@ -151,17 +160,17 @@ Partial Class CreateActualBook
         ' 
         ' btnUploadPhoto
         ' 
-        btnUploadPhoto.BackColor = Color.Brown
+        btnUploadPhoto.BackColor = Color.Green
         btnUploadPhoto.Cursor = Cursors.Hand
         btnUploadPhoto.FlatAppearance.BorderSize = 0
-        btnUploadPhoto.FlatAppearance.MouseOverBackColor = Color.LightCoral
         btnUploadPhoto.FlatStyle = FlatStyle.Flat
         btnUploadPhoto.Font = New Font("Rockwell", 11.25F, FontStyle.Bold)
         btnUploadPhoto.ForeColor = Color.White
         btnUploadPhoto.Image = CType(resources.GetObject("btnUploadPhoto.Image"), Image)
-        btnUploadPhoto.Location = New Point(320, 174)
+        btnUploadPhoto.Location = New Point(319, 174)
+        btnUploadPhoto.Margin = New Padding(3, 2, 3, 2)
         btnUploadPhoto.Name = "btnUploadPhoto"
-        btnUploadPhoto.Size = New Size(155, 39)
+        btnUploadPhoto.Size = New Size(155, 40)
         btnUploadPhoto.TabIndex = 13
         btnUploadPhoto.Text = "Upload Photo"
         btnUploadPhoto.TextImageRelation = TextImageRelation.ImageBeforeText
@@ -173,17 +182,17 @@ Partial Class CreateActualBook
         ' 
         ' btnBack
         ' 
-        btnBack.BackColor = Color.Brown
+        btnBack.BackColor = Color.Green
         btnBack.Cursor = Cursors.Hand
         btnBack.FlatAppearance.BorderSize = 0
-        btnBack.FlatAppearance.MouseOverBackColor = Color.LightCoral
         btnBack.FlatStyle = FlatStyle.Flat
         btnBack.Font = New Font("Rockwell", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnBack.ForeColor = Color.White
         btnBack.Image = CType(resources.GetObject("btnBack.Image"), Image)
         btnBack.Location = New Point(12, 12)
+        btnBack.Margin = New Padding(3, 2, 3, 2)
         btnBack.Name = "btnBack"
-        btnBack.Size = New Size(145, 39)
+        btnBack.Size = New Size(145, 40)
         btnBack.TabIndex = 14
         btnBack.Text = "Back To " & vbCrLf & "Dashboard"
         btnBack.TextImageRelation = TextImageRelation.ImageBeforeText
@@ -193,8 +202,8 @@ Partial Class CreateActualBook
         ' 
         AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.Tomato
-        ClientSize = New Size(557, 459)
+        BackColor = Color.LightGreen
+        ClientSize = New Size(557, 460)
         Controls.Add(btnBack)
         Controls.Add(btnUploadPhoto)
         Controls.Add(Label5)

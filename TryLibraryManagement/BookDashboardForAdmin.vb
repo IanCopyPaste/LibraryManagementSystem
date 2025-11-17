@@ -24,14 +24,14 @@ Public Class BookDashboardForAdmin
             .Width = 180,
             .Height = 300,
             .Margin = New Padding(15),
-            .BackColor = Color.Tomato,
+            .BackColor = Color.DarkGray,
             .Padding = New Padding(0, 3, 3, 3)
         }
 
                 Dim card As New Panel With {
             .Width = 177,
             .Height = 277,
-            .BackColor = Color.Tomato,
+            .BackColor = Color.Green,
             .Dock = DockStyle.Fill,
             .Cursor = Cursors.Hand
         }
@@ -56,7 +56,7 @@ Public Class BookDashboardForAdmin
                 Dim lblTitle As New Label With {
             .Text = title,
             .ForeColor = Color.White,
-            .Font = New Font("Segoe UI Semibold", 10.5F, FontStyle.Bold),
+            .Font = New Font("Rockwell", 10.5F, FontStyle.Bold),
             .AutoSize = True,
             .MaximumSize = New Size(160, 0),
             .Location = New Point(9, 212),

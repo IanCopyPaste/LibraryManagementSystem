@@ -43,7 +43,7 @@ Partial Class BorrowBookForm
         ' 
         ' borrowPic
         ' 
-        borrowPic.BackColor = Color.Salmon
+        borrowPic.BackColor = Color.Green
         borrowPic.Location = New Point(353, 77)
         borrowPic.Name = "borrowPic"
         borrowPic.Size = New Size(198, 255)
@@ -66,7 +66,7 @@ Partial Class BorrowBookForm
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Rockwell", 9.75F, FontStyle.Bold)
-        Label1.ForeColor = Color.White
+        Label1.ForeColor = Color.DarkGreen
         Label1.Location = New Point(32, 58)
         Label1.Name = "Label1"
         Label1.Size = New Size(47, 15)
@@ -77,7 +77,7 @@ Partial Class BorrowBookForm
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Rockwell", 9.75F, FontStyle.Bold)
-        Label2.ForeColor = Color.White
+        Label2.ForeColor = Color.DarkGreen
         Label2.Location = New Point(32, 107)
         Label2.Name = "Label2"
         Label2.Size = New Size(64, 15)
@@ -99,7 +99,7 @@ Partial Class BorrowBookForm
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Rockwell", 9.75F, FontStyle.Bold)
-        Label4.ForeColor = Color.White
+        Label4.ForeColor = Color.DarkGreen
         Label4.Location = New Point(32, 157)
         Label4.Name = "Label4"
         Label4.Size = New Size(123, 15)
@@ -121,7 +121,7 @@ Partial Class BorrowBookForm
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Rockwell", 9.75F, FontStyle.Bold)
-        Label5.ForeColor = Color.White
+        Label5.ForeColor = Color.DarkGreen
         Label5.Location = New Point(32, 207)
         Label5.Name = "Label5"
         Label5.Size = New Size(55, 15)
@@ -143,7 +143,7 @@ Partial Class BorrowBookForm
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Rockwell", 9.75F, FontStyle.Bold)
-        Label6.ForeColor = Color.White
+        Label6.ForeColor = Color.DarkGreen
         Label6.Location = New Point(32, 259)
         Label6.Name = "Label6"
         Label6.Size = New Size(57, 15)
@@ -163,10 +163,10 @@ Partial Class BorrowBookForm
         ' 
         ' btnBorrow
         ' 
-        btnBorrow.BackColor = Color.Brown
+        btnBorrow.BackColor = Color.Green
         btnBorrow.FlatAppearance.BorderSize = 0
         btnBorrow.FlatStyle = FlatStyle.Flat
-        btnBorrow.Font = New Font("Rockwell", 12.0F, FontStyle.Bold)
+        btnBorrow.Font = New Font("Rockwell", 12F, FontStyle.Bold)
         btnBorrow.ForeColor = Color.White
         btnBorrow.Location = New Point(149, 375)
         btnBorrow.Name = "btnBorrow"
@@ -179,7 +179,7 @@ Partial Class BorrowBookForm
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Rockwell", 9.75F, FontStyle.Bold)
-        Label3.ForeColor = Color.White
+        Label3.ForeColor = Color.DarkGreen
         Label3.Location = New Point(370, 24)
         Label3.Name = "Label3"
         Label3.Size = New Size(66, 15)
@@ -198,10 +198,10 @@ Partial Class BorrowBookForm
         ' 
         ' Button1
         ' 
-        Button1.BackColor = Color.Brown
+        Button1.BackColor = Color.Green
         Button1.FlatAppearance.BorderSize = 0
         Button1.FlatStyle = FlatStyle.Flat
-        Button1.Font = New Font("Rockwell", 12.0F, FontStyle.Bold)
+        Button1.Font = New Font("Rockwell", 12F, FontStyle.Bold)
         Button1.ForeColor = Color.White
         Button1.Location = New Point(0, 0)
         Button1.Name = "Button1"
@@ -213,8 +213,9 @@ Partial Class BorrowBookForm
         ' lblNotVail
         ' 
         lblNotVail.AutoSize = True
+        lblNotVail.BackColor = Color.LightGreen
         lblNotVail.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        lblNotVail.ForeColor = Color.White
+        lblNotVail.ForeColor = Color.Red
         lblNotVail.Location = New Point(203, 355)
         lblNotVail.Name = "lblNotVail"
         lblNotVail.Size = New Size(185, 17)
@@ -224,9 +225,9 @@ Partial Class BorrowBookForm
         ' 
         ' BorrowBookForm
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.Tomato
+        BackColor = Color.LightGreen
         ClientSize = New Size(584, 418)
         Controls.Add(lblNotVail)
         Controls.Add(Button1)

@@ -40,14 +40,14 @@ Public Class UserDashboard
                 .Width = 180,
                 .Height = 300,
                 .Margin = New Padding(15),
-                .BackColor = Color.Tomato,
+                .BackColor = Color.Gainsboro,
                 .Padding = New Padding(0, 3, 3, 3)
             }
 
                 Dim card As New Panel With {
                 .Width = 177,
                 .Height = 277,
-                .BackColor = Color.Tomato,
+                .BackColor = Color.Green,
                 .Dock = DockStyle.Fill,
                 .Cursor = Cursors.Hand
             }
@@ -71,25 +71,16 @@ Public Class UserDashboard
 
                 Dim lblTitle As New Label With {
                 .Text = title,
-                .ForeColor = Color.FromArgb(33, 33, 33),
+                .ForeColor = Color.White,
                 .Font = New Font("Segoe UI Semibold", 10.5F, FontStyle.Bold),
                 .AutoSize = True,
                 .MaximumSize = New Size(160, 0),
                 .Location = New Point(9, 212),
                 .TextAlign = ContentAlignment.TopLeft
             }
-                Dim lblBookID As New Label With {
-                .Text = "ID: " & getID2,
-                .ForeColor = Color.FromArgb(33, 33, 33),
-                .Font = New Font("Segoe UI Semibold", 10.5F, FontStyle.Bold),
-                .AutoSize = True,
-                .MaximumSize = New Size(160, 0),
-                .Location = New Point(9, 235),
-                .TextAlign = ContentAlignment.TopLeft
-            }
                 Dim lblGenre As New Label With {
                 .Text = "Genre: " & cat,
-                .ForeColor = Color.FromArgb(33, 33, 33),
+                .ForeColor = Color.White,
                 .Font = New Font("Segoe UI Semibold", 10.5F, FontStyle.Bold),
                 .AutoSize = True,
                 .MaximumSize = New Size(160, 0),
@@ -126,7 +117,6 @@ Public Class UserDashboard
                 imgContainer.Controls.Add(pic)
                 card.Controls.Add(imgContainer)
                 card.Controls.Add(lblTitle)
-                card.Controls.Add(lblBookID)
                 card.Controls.Add(lblGenre)
                 cardShadow.Controls.Add(card)
 

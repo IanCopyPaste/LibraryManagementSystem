@@ -26,6 +26,7 @@ Partial Class BorrowHistory
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(BorrowHistory))
         Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
         TopPanel = New Panel()
         PictureBox1 = New PictureBox()
         ProfileBoxUpper = New PictureBox()
@@ -65,7 +66,7 @@ Partial Class BorrowHistory
         ' 
         ' TopPanel
         ' 
-        TopPanel.BackColor = Color.Brown
+        TopPanel.BackColor = Color.Green
         TopPanel.Controls.Add(PictureBox1)
         TopPanel.Controls.Add(ProfileBoxUpper)
         TopPanel.Controls.Add(Label1)
@@ -94,7 +95,7 @@ Partial Class BorrowHistory
         ProfileBoxUpper.Location = New Point(1178, 3)
         ProfileBoxUpper.Name = "ProfileBoxUpper"
         ProfileBoxUpper.Size = New Size(76, 68)
-        ProfileBoxUpper.SizeMode = PictureBoxSizeMode.StretchImage
+        ProfileBoxUpper.SizeMode = PictureBoxSizeMode.Zoom
         ProfileBoxUpper.TabIndex = 11
         ProfileBoxUpper.TabStop = False
         ' 
@@ -114,7 +115,7 @@ Partial Class BorrowHistory
         ' 
         ' SidePanel
         ' 
-        SidePanel.BackColor = Color.Salmon
+        SidePanel.BackColor = Color.LightGreen
         SidePanel.Controls.Add(BookHistoryBtn)
         SidePanel.Controls.Add(Button1)
         SidePanel.Controls.Add(SignOutBtn)
@@ -128,7 +129,7 @@ Partial Class BorrowHistory
         ' 
         ' BookHistoryBtn
         ' 
-        BookHistoryBtn.BackColor = Color.Brown
+        BookHistoryBtn.BackColor = Color.Green
         BookHistoryBtn.Cursor = Cursors.Hand
         BookHistoryBtn.FlatAppearance.BorderSize = 0
         BookHistoryBtn.FlatStyle = FlatStyle.Flat
@@ -145,7 +146,7 @@ Partial Class BorrowHistory
         ' 
         ' Button1
         ' 
-        Button1.BackColor = Color.Brown
+        Button1.BackColor = Color.Green
         Button1.Cursor = Cursors.Hand
         Button1.FlatAppearance.BorderSize = 0
         Button1.FlatStyle = FlatStyle.Flat
@@ -162,7 +163,7 @@ Partial Class BorrowHistory
         ' 
         ' SignOutBtn
         ' 
-        SignOutBtn.BackColor = Color.Brown
+        SignOutBtn.BackColor = Color.Green
         SignOutBtn.Cursor = Cursors.Hand
         SignOutBtn.FlatAppearance.BorderSize = 0
         SignOutBtn.FlatStyle = FlatStyle.Flat
@@ -179,7 +180,7 @@ Partial Class BorrowHistory
         ' 
         ' InsertBooksBtn
         ' 
-        InsertBooksBtn.BackColor = Color.Brown
+        InsertBooksBtn.BackColor = Color.Green
         InsertBooksBtn.Cursor = Cursors.Hand
         InsertBooksBtn.FlatAppearance.BorderSize = 0
         InsertBooksBtn.FlatStyle = FlatStyle.Flat
@@ -196,7 +197,7 @@ Partial Class BorrowHistory
         ' 
         ' userPageBtn
         ' 
-        userPageBtn.BackColor = Color.Brown
+        userPageBtn.BackColor = Color.Green
         userPageBtn.Cursor = Cursors.Hand
         userPageBtn.FlatAppearance.BorderSize = 0
         userPageBtn.FlatStyle = FlatStyle.Flat
@@ -213,7 +214,7 @@ Partial Class BorrowHistory
         ' 
         ' MainPanel
         ' 
-        MainPanel.BackColor = Color.Tomato
+        MainPanel.BackColor = Color.Snow
         MainPanel.Controls.Add(TimeLabel)
         MainPanel.Controls.Add(btnClearBorrow)
         MainPanel.Controls.Add(txtEmail)
@@ -233,7 +234,7 @@ Partial Class BorrowHistory
         ' 
         TimeLabel.AutoSize = True
         TimeLabel.Font = New Font("Rockwell", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        TimeLabel.ForeColor = Color.White
+        TimeLabel.ForeColor = Color.DarkGreen
         TimeLabel.Location = New Point(475, 11)
         TimeLabel.Name = "TimeLabel"
         TimeLabel.Size = New Size(124, 25)
@@ -242,10 +243,9 @@ Partial Class BorrowHistory
         ' 
         ' btnClearBorrow
         ' 
-        btnClearBorrow.BackColor = Color.Brown
+        btnClearBorrow.BackColor = Color.Green
         btnClearBorrow.Cursor = Cursors.Hand
         btnClearBorrow.FlatAppearance.BorderSize = 0
-        btnClearBorrow.FlatAppearance.MouseOverBackColor = Color.LightCoral
         btnClearBorrow.FlatStyle = FlatStyle.Flat
         btnClearBorrow.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         btnClearBorrow.ForeColor = Color.White
@@ -260,10 +260,10 @@ Partial Class BorrowHistory
         ' 
         ' txtEmail
         ' 
-        txtEmail.BackColor = Color.Brown
+        txtEmail.BackColor = Color.Gainsboro
         txtEmail.BorderStyle = BorderStyle.FixedSingle
         txtEmail.Font = New Font("Rockwell", 11.25F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        txtEmail.ForeColor = Color.White
+        txtEmail.ForeColor = Color.Black
         txtEmail.Location = New Point(19, 95)
         txtEmail.Name = "txtEmail"
         txtEmail.PlaceholderText = "@gmail.com"
@@ -275,7 +275,7 @@ Partial Class BorrowHistory
         Label3.AutoSize = True
         Label3.BackColor = Color.Transparent
         Label3.Font = New Font("Rockwell", 11.25F, FontStyle.Bold)
-        Label3.ForeColor = Color.White
+        Label3.ForeColor = Color.DarkGreen
         Label3.Location = New Point(19, 74)
         Label3.Name = "Label3"
         Label3.Size = New Size(36, 18)
@@ -286,28 +286,32 @@ Partial Class BorrowHistory
         ' 
         BorrowTable.AllowUserToAddRows = False
         BorrowTable.AllowUserToDeleteRows = False
+        DataGridViewCellStyle1.BackColor = Color.ForestGreen
+        DataGridViewCellStyle1.ForeColor = Color.White
+        DataGridViewCellStyle1.SelectionBackColor = Color.YellowGreen
+        BorrowTable.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         BorrowTable.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        BorrowTable.BackgroundColor = Color.Brown
-        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = SystemColors.Control
-        DataGridViewCellStyle1.Font = New Font("Rockwell", 11.25F, FontStyle.Italic)
-        DataGridViewCellStyle1.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = DataGridViewTriState.True
-        BorrowTable.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        BorrowTable.BackgroundColor = Color.LimeGreen
+        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = SystemColors.Control
+        DataGridViewCellStyle2.Font = New Font("Rockwell", 11.25F, FontStyle.Italic)
+        DataGridViewCellStyle2.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
+        BorrowTable.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         BorrowTable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         BorrowTable.Columns.AddRange(New DataGridViewColumn() {BorrowID, UserID, Email, BookBorrowed, BorrowDate, DueDate, Status})
         BorrowTable.Cursor = Cursors.Hand
-        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = Color.Tomato
-        DataGridViewCellStyle2.Font = New Font("Sitka Banner", 12.7499981F, FontStyle.Bold Or FontStyle.Italic)
-        DataGridViewCellStyle2.ForeColor = Color.White
-        DataGridViewCellStyle2.SelectionBackColor = Color.Salmon
-        DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.False
-        BorrowTable.DefaultCellStyle = DataGridViewCellStyle2
-        BorrowTable.GridColor = Color.Tomato
+        DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = Color.Green
+        DataGridViewCellStyle3.Font = New Font("Sitka Banner", 12.7499981F, FontStyle.Bold Or FontStyle.Italic)
+        DataGridViewCellStyle3.ForeColor = Color.White
+        DataGridViewCellStyle3.SelectionBackColor = Color.YellowGreen
+        DataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
+        BorrowTable.DefaultCellStyle = DataGridViewCellStyle3
+        BorrowTable.GridColor = Color.Green
         BorrowTable.Location = New Point(334, 47)
         BorrowTable.Name = "BorrowTable"
         BorrowTable.ReadOnly = True
@@ -376,7 +380,6 @@ Partial Class BorrowHistory
         Refresh.BackColor = Color.Transparent
         Refresh.Cursor = Cursors.Hand
         Refresh.FlatAppearance.BorderSize = 0
-        Refresh.FlatAppearance.MouseOverBackColor = Color.LightCoral
         Refresh.FlatStyle = FlatStyle.Flat
         Refresh.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Refresh.Image = My.Resources.Resources.restart_icon_135251
@@ -388,10 +391,9 @@ Partial Class BorrowHistory
         ' 
         ' btnSend
         ' 
-        btnSend.BackColor = Color.Brown
+        btnSend.BackColor = Color.Green
         btnSend.Cursor = Cursors.Hand
         btnSend.FlatAppearance.BorderSize = 0
-        btnSend.FlatAppearance.MouseOverBackColor = Color.LightCoral
         btnSend.FlatStyle = FlatStyle.Flat
         btnSend.Font = New Font("Rockwell", 14.25F, FontStyle.Bold)
         btnSend.ForeColor = Color.White
@@ -407,7 +409,7 @@ Partial Class BorrowHistory
         Label2.AutoSize = True
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Rockwell", 11.25F, FontStyle.Bold)
-        Label2.ForeColor = Color.White
+        Label2.ForeColor = Color.DarkGreen
         Label2.Location = New Point(19, 126)
         Label2.Name = "Label2"
         Label2.Size = New Size(179, 18)
@@ -416,10 +418,10 @@ Partial Class BorrowHistory
         ' 
         ' RichTextBox1
         ' 
-        RichTextBox1.BackColor = Color.Brown
+        RichTextBox1.BackColor = Color.Gainsboro
         RichTextBox1.BorderStyle = BorderStyle.FixedSingle
         RichTextBox1.Font = New Font("Rockwell", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        RichTextBox1.ForeColor = Color.White
+        RichTextBox1.ForeColor = Color.Black
         RichTextBox1.Location = New Point(19, 149)
         RichTextBox1.Name = "RichTextBox1"
         RichTextBox1.Size = New Size(296, 224)
@@ -440,7 +442,7 @@ Partial Class BorrowHistory
         Controls.Add(TopPanel)
         Name = "BorrowHistory"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "BorrowHistory"
+        Text = "Admin Dashboard - Borrow History"
         TopPanel.ResumeLayout(False)
         TopPanel.PerformLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()

@@ -26,6 +26,7 @@ Partial Class InsertBooks
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(InsertBooks))
         Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
         TopPanel = New Panel()
         ProfileBoxUpper = New PictureBox()
         PictureBox1 = New PictureBox()
@@ -79,7 +80,7 @@ Partial Class InsertBooks
         ' 
         ' TopPanel
         ' 
-        TopPanel.BackColor = Color.Brown
+        TopPanel.BackColor = Color.Green
         TopPanel.Controls.Add(ProfileBoxUpper)
         TopPanel.Controls.Add(PictureBox1)
         TopPanel.Controls.Add(Label9)
@@ -138,7 +139,7 @@ Partial Class InsertBooks
         ' 
         ' SidePanel
         ' 
-        SidePanel.BackColor = Color.Salmon
+        SidePanel.BackColor = Color.LightGreen
         SidePanel.Controls.Add(BookHistoryBtn)
         SidePanel.Controls.Add(bookDashBtn)
         SidePanel.Controls.Add(SignOutBtn)
@@ -152,7 +153,7 @@ Partial Class InsertBooks
         ' 
         ' BookHistoryBtn
         ' 
-        BookHistoryBtn.BackColor = Color.Brown
+        BookHistoryBtn.BackColor = Color.Green
         BookHistoryBtn.Cursor = Cursors.Hand
         BookHistoryBtn.FlatAppearance.BorderSize = 0
         BookHistoryBtn.FlatStyle = FlatStyle.Flat
@@ -169,7 +170,7 @@ Partial Class InsertBooks
         ' 
         ' bookDashBtn
         ' 
-        bookDashBtn.BackColor = Color.Brown
+        bookDashBtn.BackColor = Color.Green
         bookDashBtn.Cursor = Cursors.Hand
         bookDashBtn.FlatAppearance.BorderSize = 0
         bookDashBtn.FlatStyle = FlatStyle.Flat
@@ -186,7 +187,7 @@ Partial Class InsertBooks
         ' 
         ' SignOutBtn
         ' 
-        SignOutBtn.BackColor = Color.Brown
+        SignOutBtn.BackColor = Color.Green
         SignOutBtn.Cursor = Cursors.Hand
         SignOutBtn.FlatAppearance.BorderSize = 0
         SignOutBtn.FlatStyle = FlatStyle.Flat
@@ -203,7 +204,7 @@ Partial Class InsertBooks
         ' 
         ' InsertBooksBtn
         ' 
-        InsertBooksBtn.BackColor = Color.Brown
+        InsertBooksBtn.BackColor = Color.Green
         InsertBooksBtn.Cursor = Cursors.Hand
         InsertBooksBtn.FlatAppearance.BorderSize = 0
         InsertBooksBtn.FlatStyle = FlatStyle.Flat
@@ -220,7 +221,7 @@ Partial Class InsertBooks
         ' 
         ' userPageBtn
         ' 
-        userPageBtn.BackColor = Color.Brown
+        userPageBtn.BackColor = Color.Green
         userPageBtn.Cursor = Cursors.Hand
         userPageBtn.FlatAppearance.BorderSize = 0
         userPageBtn.FlatStyle = FlatStyle.Flat
@@ -237,7 +238,7 @@ Partial Class InsertBooks
         ' 
         ' MainPanel
         ' 
-        MainPanel.BackColor = Color.Tomato
+        MainPanel.BackColor = Color.Snow
         MainPanel.Controls.Add(Label8)
         MainPanel.Controls.Add(txtStatus)
         MainPanel.Controls.Add(refreshBtn)
@@ -268,8 +269,9 @@ Partial Class InsertBooks
         ' Label8
         ' 
         Label8.AutoSize = True
+        Label8.BackColor = Color.Transparent
         Label8.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
-        Label8.ForeColor = Color.White
+        Label8.ForeColor = Color.DarkGreen
         Label8.Location = New Point(183, 472)
         Label8.Name = "Label8"
         Label8.Size = New Size(61, 23)
@@ -306,23 +308,23 @@ Partial Class InsertBooks
         ' 
         ' UpdateBtn
         ' 
-        UpdateBtn.BackColor = Color.Brown
+        UpdateBtn.BackColor = Color.Green
         UpdateBtn.Cursor = Cursors.Hand
         UpdateBtn.Enabled = False
         UpdateBtn.FlatAppearance.BorderSize = 0
         UpdateBtn.FlatStyle = FlatStyle.Flat
-        UpdateBtn.Font = New Font("Rockwell", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        UpdateBtn.Font = New Font("Rockwell", 14.25F, FontStyle.Bold)
         UpdateBtn.ForeColor = Color.WhiteSmoke
-        UpdateBtn.Location = New Point(107, 505)
+        UpdateBtn.Location = New Point(69, 505)
         UpdateBtn.Name = "UpdateBtn"
-        UpdateBtn.Size = New Size(209, 31)
+        UpdateBtn.Size = New Size(281, 31)
         UpdateBtn.TabIndex = 27
         UpdateBtn.Text = "Update"
         UpdateBtn.UseVisualStyleBackColor = False
         ' 
         ' btnUpdatePhoto
         ' 
-        btnUpdatePhoto.BackColor = Color.Brown
+        btnUpdatePhoto.BackColor = Color.Green
         btnUpdatePhoto.Cursor = Cursors.Hand
         btnUpdatePhoto.FlatAppearance.BorderSize = 0
         btnUpdatePhoto.FlatStyle = FlatStyle.Flat
@@ -350,8 +352,9 @@ Partial Class InsertBooks
         ' Label6
         ' 
         Label6.AutoSize = True
+        Label6.BackColor = Color.Transparent
         Label6.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
-        Label6.ForeColor = Color.White
+        Label6.ForeColor = Color.DarkGreen
         Label6.Location = New Point(177, 262)
         Label6.Name = "Label6"
         Label6.Size = New Size(67, 23)
@@ -360,10 +363,10 @@ Partial Class InsertBooks
         ' 
         ' txtBookID
         ' 
-        txtBookID.BackColor = Color.Brown
+        txtBookID.BackColor = Color.Gainsboro
         txtBookID.BorderStyle = BorderStyle.FixedSingle
         txtBookID.Font = New Font("Rockwell", 11.25F, FontStyle.Bold)
-        txtBookID.ForeColor = Color.White
+        txtBookID.ForeColor = Color.Black
         txtBookID.Location = New Point(135, 234)
         txtBookID.Name = "txtBookID"
         txtBookID.ReadOnly = True
@@ -374,8 +377,9 @@ Partial Class InsertBooks
         ' Label5
         ' 
         Label5.AutoSize = True
+        Label5.BackColor = Color.Transparent
         Label5.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
-        Label5.ForeColor = Color.White
+        Label5.ForeColor = Color.DarkGreen
         Label5.Location = New Point(52, 403)
         Label5.Name = "Label5"
         Label5.Size = New Size(128, 23)
@@ -394,8 +398,9 @@ Partial Class InsertBooks
         ' Label4
         ' 
         Label4.AutoSize = True
+        Label4.BackColor = Color.Transparent
         Label4.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
-        Label4.ForeColor = Color.White
+        Label4.ForeColor = Color.DarkGreen
         Label4.Location = New Point(280, 403)
         Label4.Name = "Label4"
         Label4.Size = New Size(81, 23)
@@ -419,8 +424,9 @@ Partial Class InsertBooks
         ' Label3
         ' 
         Label3.AutoSize = True
+        Label3.BackColor = Color.Transparent
         Label3.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
-        Label3.ForeColor = Color.White
+        Label3.ForeColor = Color.DarkGreen
         Label3.Location = New Point(266, 331)
         Label3.Name = "Label3"
         Label3.Size = New Size(108, 23)
@@ -430,8 +436,9 @@ Partial Class InsertBooks
         ' Label2
         ' 
         Label2.AutoSize = True
+        Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
-        Label2.ForeColor = Color.White
+        Label2.ForeColor = Color.DarkGreen
         Label2.Location = New Point(69, 331)
         Label2.Name = "Label2"
         Label2.Size = New Size(89, 23)
@@ -440,10 +447,10 @@ Partial Class InsertBooks
         ' 
         ' txtAuthor
         ' 
-        txtAuthor.BackColor = Color.Brown
+        txtAuthor.BackColor = Color.Gainsboro
         txtAuthor.BorderStyle = BorderStyle.FixedSingle
         txtAuthor.Font = New Font("Rockwell", 11.25F, FontStyle.Bold)
-        txtAuthor.ForeColor = Color.White
+        txtAuthor.ForeColor = Color.Black
         txtAuthor.Location = New Point(229, 302)
         txtAuthor.Name = "txtAuthor"
         txtAuthor.ReadOnly = True
@@ -452,10 +459,10 @@ Partial Class InsertBooks
         ' 
         ' txtTitle
         ' 
-        txtTitle.BackColor = Color.Brown
+        txtTitle.BackColor = Color.Gainsboro
         txtTitle.BorderStyle = BorderStyle.FixedSingle
         txtTitle.Font = New Font("Rockwell", 11.25F, FontStyle.Bold)
-        txtTitle.ForeColor = Color.White
+        txtTitle.ForeColor = Color.Black
         txtTitle.Location = New Point(18, 303)
         txtTitle.Name = "txtTitle"
         txtTitle.ReadOnly = True
@@ -464,7 +471,7 @@ Partial Class InsertBooks
         ' 
         ' btnNewBook
         ' 
-        btnNewBook.BackColor = Color.Brown
+        btnNewBook.BackColor = Color.Green
         btnNewBook.Cursor = Cursors.Hand
         btnNewBook.FlatAppearance.BorderSize = 0
         btnNewBook.FlatStyle = FlatStyle.Flat
@@ -481,7 +488,8 @@ Partial Class InsertBooks
         ' 
         ' bookPhotoBox
         ' 
-        bookPhotoBox.BackColor = Color.Brown
+        bookPhotoBox.BackColor = Color.White
+        bookPhotoBox.BorderStyle = BorderStyle.FixedSingle
         bookPhotoBox.Location = New Point(135, 11)
         bookPhotoBox.Name = "bookPhotoBox"
         bookPhotoBox.Size = New Size(150, 212)
@@ -493,27 +501,31 @@ Partial Class InsertBooks
         ' 
         BookTable.AllowUserToAddRows = False
         BookTable.AllowUserToDeleteRows = False
-        BookTable.BackgroundColor = Color.Brown
-        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = Color.Tomato
-        DataGridViewCellStyle1.Font = New Font("Rockwell", 11.25F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        DataGridViewCellStyle1.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = Color.Salmon
-        DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = DataGridViewTriState.True
-        BookTable.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle1.BackColor = Color.ForestGreen
+        DataGridViewCellStyle1.ForeColor = Color.White
+        DataGridViewCellStyle1.SelectionBackColor = Color.YellowGreen
+        BookTable.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        BookTable.BackgroundColor = Color.LimeGreen
+        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = Color.Tomato
+        DataGridViewCellStyle2.Font = New Font("Rockwell", 11.25F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        DataGridViewCellStyle2.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle2.SelectionBackColor = Color.Salmon
+        DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
+        BookTable.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         BookTable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         BookTable.Columns.AddRange(New DataGridViewColumn() {BookID, Title, Author, PublishDate, Category, status, Edit, delete})
         BookTable.Cursor = Cursors.Hand
-        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = Color.Tomato
-        DataGridViewCellStyle2.Font = New Font("Sitka Banner", 12.7499981F, FontStyle.Bold Or FontStyle.Italic)
-        DataGridViewCellStyle2.ForeColor = Color.White
-        DataGridViewCellStyle2.SelectionBackColor = Color.Salmon
-        DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.False
-        BookTable.DefaultCellStyle = DataGridViewCellStyle2
-        BookTable.GridColor = Color.Tomato
+        DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = Color.Green
+        DataGridViewCellStyle3.Font = New Font("Sitka Banner", 12.7499981F, FontStyle.Bold Or FontStyle.Italic)
+        DataGridViewCellStyle3.ForeColor = Color.White
+        DataGridViewCellStyle3.SelectionBackColor = Color.YellowGreen
+        DataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
+        BookTable.DefaultCellStyle = DataGridViewCellStyle3
+        BookTable.GridColor = Color.Green
         BookTable.Location = New Point(416, 53)
         BookTable.Name = "BookTable"
         BookTable.ReadOnly = True
@@ -608,7 +620,7 @@ Partial Class InsertBooks
         Controls.Add(TopPanel)
         Name = "InsertBooks"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "InsertBooks"
+        Text = "Admin Dashboard - Manage Books"
         TopPanel.ResumeLayout(False)
         TopPanel.PerformLayout()
         CType(ProfileBoxUpper, ComponentModel.ISupportInitialize).EndInit()
