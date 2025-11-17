@@ -82,15 +82,15 @@ Partial Class Form1
         ' 
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
-        Label1.Font = New Font("Rockwell", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Segoe UI", 21.75F, FontStyle.Bold Or FontStyle.Italic)
         Label1.ForeColor = Color.DarkGreen
         Label1.Image = CType(resources.GetObject("Label1.Image"), Image)
         Label1.ImageAlign = ContentAlignment.MiddleLeft
-        Label1.Location = New Point(3, 0)
+        Label1.Location = New Point(12, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(354, 66)
+        Label1.Size = New Size(349, 80)
         Label1.TabIndex = 3
-        Label1.Text = "       Barangay" & vbCrLf & "        International Library"
+        Label1.Text = "     Barangay" & vbCrLf & "      International Library"
         Label1.TextAlign = ContentAlignment.TopCenter
         ' 
         ' Label2
@@ -138,7 +138,7 @@ Partial Class Form1
         ' 
         ' Panel1
         ' 
-        Panel1.BackColor = Color.Gainsboro
+        Panel1.BackColor = Color.LightGreen
         Panel1.Controls.Add(Button1)
         Panel1.Controls.Add(Label6)
         Panel1.Controls.Add(Label5)
@@ -158,7 +158,7 @@ Partial Class Form1
         ' 
         ' Button1
         ' 
-        Button1.BackColor = Color.Gainsboro
+        Button1.BackColor = Color.LightGreen
         Button1.Cursor = Cursors.Hand
         Button1.FlatAppearance.BorderSize = 0
         Button1.FlatAppearance.MouseOverBackColor = Color.LightCoral
@@ -175,11 +175,11 @@ Partial Class Form1
         ' 
         Label6.AutoSize = True
         Label6.BackColor = Color.Transparent
-        Label6.Font = New Font("Rockwell", 20.25F, FontStyle.Bold)
+        Label6.Font = New Font("Segoe UI", 18F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label6.ForeColor = Color.DarkGreen
-        Label6.Location = New Point(154, 126)
+        Label6.Location = New Point(162, 150)
         Label6.Name = "Label6"
-        Label6.Size = New Size(99, 33)
+        Label6.Size = New Size(83, 32)
         Label6.TabIndex = 10
         Label6.Text = "Log In"
         Label6.TextAlign = ContentAlignment.TopCenter

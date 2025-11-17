@@ -71,7 +71,7 @@ Partial Class SignUp
         ' mnameBox
         ' 
         mnameBox.Font = New Font("Tahoma", 11.25F)
-        mnameBox.Location = New Point(302, 132)
+        mnameBox.Location = New Point(312, 132)
         mnameBox.Name = "mnameBox"
         mnameBox.PlaceholderText = "Enter middlename"
         mnameBox.Size = New Size(165, 26)
@@ -80,7 +80,7 @@ Partial Class SignUp
         ' suffBox
         ' 
         suffBox.Font = New Font("Tahoma", 11.25F)
-        suffBox.Location = New Point(302, 192)
+        suffBox.Location = New Point(312, 192)
         suffBox.Name = "suffBox"
         suffBox.PlaceholderText = "Enter suffix"
         suffBox.Size = New Size(165, 26)
@@ -142,7 +142,7 @@ Partial Class SignUp
         ' toLogIn
         ' 
         toLogIn.AutoSize = True
-        toLogIn.BackColor = Color.Gainsboro
+        toLogIn.BackColor = Color.LightGreen
         toLogIn.Cursor = Cursors.Hand
         toLogIn.Font = New Font("Tahoma", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         toLogIn.ForeColor = Color.DarkGreen
@@ -154,7 +154,7 @@ Partial Class SignUp
         ' 
         ' Panel1
         ' 
-        Panel1.BackColor = Color.Gainsboro
+        Panel1.BackColor = Color.LightGreen
         Panel1.Controls.Add(Label2)
         Panel1.Controls.Add(Label1)
         Panel1.Controls.Add(Button1)
@@ -187,12 +187,12 @@ Partial Class SignUp
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.BackColor = Color.Gainsboro
-        Label2.Font = New Font("Rockwell", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.BackColor = Color.LightGreen
+        Label2.Font = New Font("Segoe UI", 15.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.DarkGreen
-        Label2.Location = New Point(244, 66)
+        Label2.Location = New Point(240, 71)
         Label2.Name = "Label2"
-        Label2.Size = New Size(88, 25)
+        Label2.Size = New Size(89, 30)
         Label2.TabIndex = 30
         Label2.Text = "Sign Up"
         Label2.TextAlign = ContentAlignment.TopCenter
@@ -200,14 +200,14 @@ Partial Class SignUp
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.BackColor = Color.Gainsboro
-        Label1.Font = New Font("Rockwell", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.BackColor = Color.LightGreen
+        Label1.Font = New Font("Segoe UI", 21.75F, FontStyle.Bold Or FontStyle.Italic)
         Label1.ForeColor = Color.DarkGreen
         Label1.Image = CType(resources.GetObject("Label1.Image"), Image)
         Label1.ImageAlign = ContentAlignment.MiddleLeft
-        Label1.Location = New Point(62, 9)
+        Label1.Location = New Point(63, 9)
         Label1.Name = "Label1"
-        Label1.Size = New Size(469, 33)
+        Label1.Size = New Size(481, 40)
         Label1.TabIndex = 29
         Label1.Text = "     Barangay International Library"
         Label1.TextAlign = ContentAlignment.TopCenter
@@ -243,7 +243,7 @@ Partial Class SignUp
         ' Label10
         ' 
         Label10.AutoSize = True
-        Label10.BackColor = Color.Gainsboro
+        Label10.BackColor = Color.LightGreen
         Label10.FlatStyle = FlatStyle.System
         Label10.Font = New Font("Rockwell", 11.25F, FontStyle.Italic)
         Label10.ForeColor = Color.DarkGreen
@@ -256,7 +256,7 @@ Partial Class SignUp
         ' Label9
         ' 
         Label9.AutoSize = True
-        Label9.BackColor = Color.Gainsboro
+        Label9.BackColor = Color.LightGreen
         Label9.FlatStyle = FlatStyle.System
         Label9.Font = New Font("Rockwell", 11.25F, FontStyle.Italic)
         Label9.ForeColor = Color.DarkGreen
@@ -269,7 +269,7 @@ Partial Class SignUp
         ' Label8
         ' 
         Label8.AutoSize = True
-        Label8.BackColor = Color.Gainsboro
+        Label8.BackColor = Color.LightGreen
         Label8.FlatStyle = FlatStyle.System
         Label8.Font = New Font("Rockwell", 11.25F, FontStyle.Italic)
         Label8.ForeColor = Color.DarkGreen
@@ -282,7 +282,7 @@ Partial Class SignUp
         ' Label7
         ' 
         Label7.AutoSize = True
-        Label7.BackColor = Color.Gainsboro
+        Label7.BackColor = Color.LightGreen
         Label7.FlatStyle = FlatStyle.System
         Label7.Font = New Font("Rockwell", 11.25F, FontStyle.Italic)
         Label7.ForeColor = Color.DarkGreen
@@ -295,11 +295,11 @@ Partial Class SignUp
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.BackColor = Color.Gainsboro
+        Label6.BackColor = Color.LightGreen
         Label6.FlatStyle = FlatStyle.System
         Label6.Font = New Font("Rockwell", 11.25F, FontStyle.Italic)
         Label6.ForeColor = Color.DarkGreen
-        Label6.Location = New Point(302, 172)
+        Label6.Location = New Point(312, 172)
         Label6.Name = "Label6"
         Label6.Size = New Size(44, 17)
         Label6.TabIndex = 22
@@ -308,11 +308,11 @@ Partial Class SignUp
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.BackColor = Color.Gainsboro
+        Label4.BackColor = Color.LightGreen
         Label4.FlatStyle = FlatStyle.System
         Label4.Font = New Font("Rockwell", 11.25F, FontStyle.Italic)
         Label4.ForeColor = Color.DarkGreen
-        Label4.Location = New Point(302, 112)
+        Label4.Location = New Point(312, 112)
         Label4.Name = "Label4"
         Label4.Size = New Size(92, 17)
         Label4.TabIndex = 21
@@ -321,7 +321,7 @@ Partial Class SignUp
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.BackColor = Color.Gainsboro
+        Label3.BackColor = Color.LightGreen
         Label3.FlatStyle = FlatStyle.System
         Label3.Font = New Font("Rockwell", 11.25F, FontStyle.Italic)
         Label3.ForeColor = Color.DarkGreen
@@ -334,11 +334,11 @@ Partial Class SignUp
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.BackColor = Color.Gainsboro
+        Label5.BackColor = Color.LightGreen
         Label5.FlatStyle = FlatStyle.System
         Label5.Font = New Font("Rockwell", 11.25F, FontStyle.Italic)
         Label5.ForeColor = Color.DarkGreen
-        Label5.Location = New Point(104, 111)
+        Label5.Location = New Point(114, 111)
         Label5.Name = "Label5"
         Label5.Size = New Size(81, 17)
         Label5.TabIndex = 19
@@ -349,7 +349,7 @@ Partial Class SignUp
         emailBox.Font = New Font("Tahoma", 11.25F)
         emailBox.Location = New Point(37, 343)
         emailBox.Name = "emailBox"
-        emailBox.PlaceholderText = "Enter Email Address"
+        emailBox.PlaceholderText = "@gmail.com"
         emailBox.Size = New Size(232, 26)
         emailBox.TabIndex = 18
         ' 

@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\signup.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\signup.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\borrowhistory.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\borrowhistory.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\insertbooks.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\insertbooks.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\signup.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\signup.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\userdashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\userdashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\insertbooks.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\insertbooks.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|c:\\users\\client\\documents\\vbworks\\trylibrarymanagement\\trylibrarymanagement\\signup.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1F5442FA-78BA-436D-BCDA-CC9C9F6DDE45}|TryLibraryManagement\\TryLibraryManagement.vbproj|solutionrelative:trylibrarymanagement\\signup.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 931,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,7 +42,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "SignUp.vb",
+              "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\SignUp.vb",
+              "RelativeDocumentMoniker": "TryLibraryManagement\\SignUp.vb",
+              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\SignUp.vb",
+              "RelativeToolTip": "TryLibraryManagement\\SignUp.vb",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAswCQAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-17T12:42:23.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "BorrowHistory.vb [Design]",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\BorrowHistory.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\BorrowHistory.vb",
@@ -50,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "UserDashboard.vb [Design]",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\UserDashboard.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\UserDashboard.vb",
@@ -62,7 +79,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Form1.vb [Design]",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\Form1.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\Form1.vb",
@@ -74,7 +91,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "SignUp.vb [Design]",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\SignUp.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\SignUp.vb",
@@ -86,7 +103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "InsertBooks.vb [Design]",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\InsertBooks.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\InsertBooks.vb",
