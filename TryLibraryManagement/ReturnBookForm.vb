@@ -28,7 +28,7 @@ Public Class ReturnBookForm
         Finally
             dbConClose()
             If txtStatus.Text = "Not Available" Then
-                txtStatus.Text = "You Borrowed it Nigga"
+                txtStatus.Text = "You Borrowed it!"
             End If
         End Try
     End Sub

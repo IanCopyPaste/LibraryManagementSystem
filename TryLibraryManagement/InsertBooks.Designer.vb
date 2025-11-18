@@ -39,6 +39,7 @@ Partial Class InsertBooks
         InsertBooksBtn = New Button()
         userPageBtn = New Button()
         MainPanel = New Panel()
+        Label1 = New Label()
         Label8 = New Label()
         txtStatus = New ComboBox()
         refreshBtn = New Button()
@@ -130,7 +131,7 @@ Partial Class InsertBooks
         ' 
         TimeLabel.AutoSize = True
         TimeLabel.Font = New Font("Rockwell", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        TimeLabel.ForeColor = Color.WhiteSmoke
+        TimeLabel.ForeColor = Color.DarkGreen
         TimeLabel.Location = New Point(520, 16)
         TimeLabel.Name = "TimeLabel"
         TimeLabel.Size = New Size(118, 25)
@@ -238,7 +239,8 @@ Partial Class InsertBooks
         ' 
         ' MainPanel
         ' 
-        MainPanel.BackColor = Color.Snow
+        MainPanel.BackColor = Color.AntiqueWhite
+        MainPanel.Controls.Add(Label1)
         MainPanel.Controls.Add(Label8)
         MainPanel.Controls.Add(txtStatus)
         MainPanel.Controls.Add(refreshBtn)
@@ -265,6 +267,18 @@ Partial Class InsertBooks
         MainPanel.Name = "MainPanel"
         MainPanel.Size = New Size(1161, 563)
         MainPanel.TabIndex = 3
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.BackColor = Color.Transparent
+        Label1.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
+        Label1.ForeColor = Color.DarkGreen
+        Label1.Location = New Point(807, 25)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(63, 23)
+        Label1.TabIndex = 31
+        Label1.Text = "Search"
         ' 
         ' Label8
         ' 
@@ -343,10 +357,10 @@ Partial Class InsertBooks
         ' 
         txtSearchList.Cursor = Cursors.Hand
         txtSearchList.Font = New Font("Rockwell", 11.25F)
-        txtSearchList.Location = New Point(892, 20)
+        txtSearchList.Location = New Point(876, 23)
         txtSearchList.Name = "txtSearchList"
         txtSearchList.PlaceholderText = "Search List"
-        txtSearchList.Size = New Size(257, 25)
+        txtSearchList.Size = New Size(274, 25)
         txtSearchList.TabIndex = 23
         ' 
         ' Label6
@@ -679,4 +693,5 @@ Partial Class InsertBooks
     Friend WithEvents Edit As DataGridViewImageColumn
     Friend WithEvents delete As DataGridViewImageColumn
     Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents Label1 As Label
 End Class

@@ -36,6 +36,8 @@ Partial Class UserDashboard
         Button1 = New Button()
         SignOutBtn = New Button()
         MainPanel = New Panel()
+        Label3 = New Label()
+        txtSearchList = New TextBox()
         Label2 = New Label()
         flowPanelRecords = New FlowLayoutPanel()
         OpenFileDialog1 = New OpenFileDialog()
@@ -125,7 +127,7 @@ Partial Class UserDashboard
         ' 
         txtWelcome.BackColor = Color.Green
         txtWelcome.BorderStyle = BorderStyle.None
-        txtWelcome.Font = New Font("Sitka Small Semibold", 18F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        txtWelcome.Font = New Font("Sitka Small Semibold", 18.0F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         txtWelcome.ForeColor = Color.WhiteSmoke
         txtWelcome.Location = New Point(757, 10)
         txtWelcome.Name = "txtWelcome"
@@ -223,7 +225,9 @@ Partial Class UserDashboard
         ' 
         ' MainPanel
         ' 
-        MainPanel.BackColor = Color.Snow
+        MainPanel.BackColor = Color.AntiqueWhite
+        MainPanel.Controls.Add(Label3)
+        MainPanel.Controls.Add(txtSearchList)
         MainPanel.Controls.Add(Label2)
         MainPanel.Controls.Add(flowPanelRecords)
         MainPanel.Dock = DockStyle.Fill
@@ -232,11 +236,33 @@ Partial Class UserDashboard
         MainPanel.Size = New Size(1132, 563)
         MainPanel.TabIndex = 4
         ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.BackColor = Color.Transparent
+        Label3.Font = New Font("Sitka Text", 12.0F, FontStyle.Bold Or FontStyle.Italic)
+        Label3.ForeColor = Color.DarkGreen
+        Label3.Location = New Point(708, 30)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(63, 23)
+        Label3.TabIndex = 32
+        Label3.Text = "Search"
+        ' 
+        ' txtSearchList
+        ' 
+        txtSearchList.Cursor = Cursors.Hand
+        txtSearchList.Font = New Font("Rockwell", 11.25F)
+        txtSearchList.Location = New Point(777, 28)
+        txtSearchList.Name = "txtSearchList"
+        txtSearchList.PlaceholderText = "Search List"
+        txtSearchList.Size = New Size(345, 25)
+        txtSearchList.TabIndex = 24
+        ' 
         ' Label2
         ' 
         Label2.AutoSize = True
         Label2.BackColor = Color.Transparent
-        Label2.Font = New Font("Rockwell", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Rockwell", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.DarkGreen
         Label2.Image = My.Resources.Resources._3700471_book_books_education_library_literature_reading_study_108741
         Label2.ImageAlign = ContentAlignment.MiddleLeft
@@ -263,13 +289,13 @@ Partial Class UserDashboard
         ' 
         ' UserDashboard
         ' 
-        AutoScaleDimensions = New SizeF(9F, 21F)
+        AutoScaleDimensions = New SizeF(9.0F, 21.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1266, 637)
         Controls.Add(MainPanel)
         Controls.Add(SidePanel)
         Controls.Add(TopPanel)
-        Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Font = New Font("Segoe UI Semibold", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Margin = New Padding(4)
         Name = "UserDashboard"
         StartPosition = FormStartPosition.CenterScreen
@@ -300,4 +326,6 @@ Partial Class UserDashboard
     Friend WithEvents Label1 As Label
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents Label2 As Label
+    Friend WithEvents txtSearchList As TextBox
+    Friend WithEvents Label3 As Label
 End Class

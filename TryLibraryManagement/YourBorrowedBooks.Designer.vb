@@ -153,7 +153,7 @@ Partial Class YourBorrowedBooks
         ' 
         ' MainPanel
         ' 
-        MainPanel.BackColor = Color.Snow
+        MainPanel.BackColor = Color.AntiqueWhite
         MainPanel.Controls.Add(Label2)
         MainPanel.Controls.Add(ewanFLow)
         MainPanel.Dock = DockStyle.Fill

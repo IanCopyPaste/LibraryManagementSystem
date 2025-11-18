@@ -50,6 +50,7 @@ Partial Class MainDashboard
         userPageBtn = New Button()
         refreshBtn = New Button()
         MainPanel = New Panel()
+        Label10 = New Label()
         Label9 = New Label()
         txtUserID = New TextBox()
         Label8 = New Label()
@@ -320,7 +321,8 @@ Partial Class MainDashboard
         ' 
         ' MainPanel
         ' 
-        MainPanel.BackColor = Color.Snow
+        MainPanel.BackColor = Color.AntiqueWhite
+        MainPanel.Controls.Add(Label10)
         MainPanel.Controls.Add(Label9)
         MainPanel.Controls.Add(txtUserID)
         MainPanel.Controls.Add(Label8)
@@ -350,6 +352,18 @@ Partial Class MainDashboard
         MainPanel.Name = "MainPanel"
         MainPanel.Size = New Size(1161, 563)
         MainPanel.TabIndex = 2
+        ' 
+        ' Label10
+        ' 
+        Label10.AutoSize = True
+        Label10.BackColor = Color.Transparent
+        Label10.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
+        Label10.ForeColor = Color.DarkGreen
+        Label10.Location = New Point(735, 19)
+        Label10.Name = "Label10"
+        Label10.Size = New Size(63, 23)
+        Label10.TabIndex = 32
+        Label10.Text = "Search"
         ' 
         ' Label9
         ' 
@@ -470,6 +484,7 @@ Partial Class MainDashboard
         ProfileBoxMain.Location = New Point(88, 19)
         ProfileBoxMain.Name = "ProfileBoxMain"
         ProfileBoxMain.Size = New Size(160, 145)
+        ProfileBoxMain.SizeMode = PictureBoxSizeMode.CenterImage
         ProfileBoxMain.TabIndex = 4
         ProfileBoxMain.TabStop = False
         ' 
@@ -820,4 +835,5 @@ Partial Class MainDashboard
     Friend WithEvents Edit As DataGridViewImageColumn
     Friend WithEvents Delete As DataGridViewImageColumn
     Friend WithEvents ToolTip As ToolTip
+    Friend WithEvents Label10 As Label
 End Class

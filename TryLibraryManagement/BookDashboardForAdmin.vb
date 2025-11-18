@@ -4,11 +4,56 @@ Imports MySql.Data.MySqlClient
 Public Class BookDashboardForAdmin
     Private Sub BookDashboardForAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ProfileBoxUpper.Image = userImage
+        loadBooks("%")
+    End Sub
+
+    Private Sub userPageBtn_Click(sender As Object, e As EventArgs) Handles userPageBtn.Click
+        MainDashboard.Show()
+        Me.Dispose()
+    End Sub
+
+    Private Sub SignOutBtn_Click(sender As Object, e As EventArgs) Handles SignOutBtn.Click
+        Form1.Show()
+        Me.Dispose()
+    End Sub
+
+    Private Sub InsertBooksBtn_Click(sender As Object, e As EventArgs) Handles InsertBooksBtn.Click
+        InsertBooks.Show()
+        Me.Dispose()
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        MainDashboard.Show()
+        Me.Dispose()
+    End Sub
+
+    Private Sub BookHistoryBtn_Click(sender As Object, e As EventArgs) Handles BookHistoryBtn.Click
+        BorrowHistory.Show()
+        Me.Dispose()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim bd As New BookDashboardForAdmin
+        bd.Show()
+        Me.Dispose()
+    End Sub
+
+
+    Private Sub txtSearchList_TextChanged(sender As Object, e As EventArgs) Handles txtSearchList.TextChanged
+        loadBooks(txtSearchList.Text)
+        If txtSearchList.Text = "" Then
+            loadBooks("%")
+        End If
+    End Sub
+
+    'method for displaying book
+    Public Sub loadBooks(param As String)
         flowPanelRecords.Controls.Clear()
         Try
             dbConOpen()
-            Dim query As String = "SELECT bookID, profile, category,title FROM books"
+            Dim query As String = "SELECT bookID, profile, category,title FROM books WHERE title LIKE @search OR category LIKE @search"
             Dim cmd As New MySqlCommand(query, con)
+            cmd.Parameters.AddWithValue("@search", "%" & param & "%")
             Dim reader As MySqlDataReader = cmd.ExecuteReader()
 
             While reader.Read()
@@ -113,35 +158,5 @@ Public Class BookDashboardForAdmin
             dbConClose()
         End Try
     End Sub
-
-    Private Sub userPageBtn_Click(sender As Object, e As EventArgs) Handles userPageBtn.Click
-        MainDashboard.Show()
-        Me.Dispose()
-    End Sub
-
-    Private Sub SignOutBtn_Click(sender As Object, e As EventArgs) Handles SignOutBtn.Click
-        Form1.Show()
-        Me.Dispose()
-    End Sub
-
-    Private Sub InsertBooksBtn_Click(sender As Object, e As EventArgs) Handles InsertBooksBtn.Click
-        InsertBooks.Show()
-        Me.Dispose()
-    End Sub
-
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        MainDashboard.Show()
-        Me.Dispose()
-    End Sub
-
-    Private Sub BookHistoryBtn_Click(sender As Object, e As EventArgs) Handles BookHistoryBtn.Click
-        BorrowHistory.Show()
-        Me.Dispose()
-    End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim bd As New BookDashboardForAdmin
-        bd.Show()
-        Me.Dispose()
-    End Sub
+    'method for displaying book
 End Class

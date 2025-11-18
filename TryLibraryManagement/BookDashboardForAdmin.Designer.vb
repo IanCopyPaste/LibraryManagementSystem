@@ -35,6 +35,8 @@ Partial Class BookDashboardForAdmin
         InsertBooksBtn = New Button()
         userPageBtn = New Button()
         MainPanel = New Panel()
+        Label3 = New Label()
+        txtSearchList = New TextBox()
         Label2 = New Label()
         flowPanelRecords = New FlowLayoutPanel()
         TopPanel.SuspendLayout()
@@ -205,7 +207,9 @@ Partial Class BookDashboardForAdmin
         ' 
         ' MainPanel
         ' 
-        MainPanel.BackColor = Color.Snow
+        MainPanel.BackColor = Color.AntiqueWhite
+        MainPanel.Controls.Add(Label3)
+        MainPanel.Controls.Add(txtSearchList)
         MainPanel.Controls.Add(Label2)
         MainPanel.Controls.Add(flowPanelRecords)
         MainPanel.Dock = DockStyle.Fill
@@ -213,6 +217,28 @@ Partial Class BookDashboardForAdmin
         MainPanel.Name = "MainPanel"
         MainPanel.Size = New Size(1161, 563)
         MainPanel.TabIndex = 4
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.BackColor = Color.Transparent
+        Label3.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
+        Label3.ForeColor = Color.DarkGreen
+        Label3.Location = New Point(621, 17)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(63, 23)
+        Label3.TabIndex = 32
+        Label3.Text = "Search"
+        ' 
+        ' txtSearchList
+        ' 
+        txtSearchList.Cursor = Cursors.Hand
+        txtSearchList.Font = New Font("Rockwell", 11.25F)
+        txtSearchList.Location = New Point(690, 17)
+        txtSearchList.Name = "txtSearchList"
+        txtSearchList.PlaceholderText = "Search List"
+        txtSearchList.Size = New Size(432, 25)
+        txtSearchList.TabIndex = 24
         ' 
         ' Label2
         ' 
@@ -276,4 +302,6 @@ Partial Class BookDashboardForAdmin
     Friend WithEvents ProfileBoxUpper As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents txtSearchList As TextBox
 End Class

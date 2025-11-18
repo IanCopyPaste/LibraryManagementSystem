@@ -202,7 +202,7 @@ Partial Class CreateActualBook
         ' 
         AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.LightGreen
+        BackColor = Color.AntiqueWhite
         ClientSize = New Size(557, 460)
         Controls.Add(btnBack)
         Controls.Add(btnUploadPhoto)

@@ -68,6 +68,9 @@ Public Class MainDashboard
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles searchBox.TextChanged
         searchUser()
+        If searchBox.Text = "" Then
+            loadTable()
+        End If
     End Sub
 
     Private Sub addBtn_Click(sender As Object, e As EventArgs) Handles refreshBtn.Click
@@ -182,17 +185,18 @@ Public Class MainDashboard
     Sub searchUser()
         Try
             DBcon.dbConOpen()
-            Dim query As String = "SELECT u.userID as USER_ID, CONCAT(n.fname,' ',n.mname,' ',n.lname,' ',n.suffix) AS FULLNAME,
-            u.username AS USERNAME, u.password AS PASS, u.role AS ACCESS
-            FROM users u
-            JOIN namess n ON n.nameID = u.nameID
-            WHERE u.userID = @search
-            OR n.fname LIKE CONCAT('%', @search, '%')
-            OR n.lname LIKE CONCAT('%', @search, '%')
-            OR u.username LIKE CONCAT('%', @search, '%')
-            OR u.role LIKE CONCAT('%', @search, '%')"
+            Dim query As String = "SELECT u.userID as USER_ID, CONCAT(n.fname,' ',n.mname,' ',n.lname,' ',n.suffix) AS FULLNAME, " &
+            "u.username AS USERNAME, u.email AS EMAIL, u.role AS ACCESS " &
+            "FROM users u " &
+            "JOIN namess n ON n.nameID = u.nameID " &
+            "WHERE u.userID LIKE @search " &
+            "OR n.fname LIKE @search " &
+            "OR n.lname LIKE @search " &
+            "OR u.username LIKE @search " &
+            "OR u.email LIKE @search " &
+            "OR u.role LIKE @search; "
             Dim cmd As New MySqlCommand(query, con)
-            cmd.Parameters.AddWithValue("@search", searchBox.Text)
+            cmd.Parameters.AddWithValue("@search", "%" & searchBox.Text & "%")
             Dim da As New MySqlDataAdapter(cmd)
             Dim dt As New DataTable
             da.Fill(dt)

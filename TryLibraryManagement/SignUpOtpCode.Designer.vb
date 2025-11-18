@@ -93,7 +93,7 @@ Partial Class SignUpOtpCode
         ' 
         AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.Gainsboro
+        BackColor = Color.AntiqueWhite
         ClientSize = New Size(345, 203)
         Controls.Add(btnResendCode)
         Controls.Add(btnSendCode)

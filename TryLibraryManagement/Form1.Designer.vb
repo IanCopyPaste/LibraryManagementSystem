@@ -138,7 +138,7 @@ Partial Class Form1
         ' 
         ' Panel1
         ' 
-        Panel1.BackColor = Color.LightGreen
+        Panel1.BackColor = Color.AntiqueWhite
         Panel1.Controls.Add(Button1)
         Panel1.Controls.Add(Label6)
         Panel1.Controls.Add(Label5)
@@ -158,7 +158,7 @@ Partial Class Form1
         ' 
         ' Button1
         ' 
-        Button1.BackColor = Color.LightGreen
+        Button1.BackColor = Color.AntiqueWhite
         Button1.Cursor = Cursors.Hand
         Button1.FlatAppearance.BorderSize = 0
         Button1.FlatAppearance.MouseOverBackColor = Color.LightCoral

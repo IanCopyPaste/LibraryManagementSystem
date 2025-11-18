@@ -15,16 +15,80 @@ Public Class UserDashboard
         txtWelcome.Text = "Welcome! " & FetchAnything.name
         userIDlbl.Text = "UserID: " & FetchAnything.accNum
         ProfileBoxUpper.Image = userImage
+        loadBooks("%")
         If ProfileBoxUpper.Image Is Nothing Then
             profileEnable(True)
         Else
             profileEnable(False)
         End If
+    End Sub
+    Private Sub profileBtn_Click(sender As Object, e As EventArgs) Handles profileBtn.Click
+        If OpenFileDialog1.ShowDialog = DialogResult.OK Then
+            createPath(OpenFileDialog1.FileName)
+            uploadProfiles()
+        End If
+    End Sub
+
+    Private Sub updateProfileBtn_Click(sender As Object, e As EventArgs) Handles updateProfileBtn.Click
+        If OpenFileDialog1.ShowDialog = DialogResult.OK Then
+            createPath(OpenFileDialog1.FileName)
+            uploadProfiles()
+        End If
+    End Sub
+
+    Private Sub btnYourBooks_Click(sender As Object, e As EventArgs) Handles btnYourBooks.Click
+        YourBorrowedBooks.Show()
+        Me.Dispose()
+    End Sub
+    Private Sub txtSearchList_TextChanged(sender As Object, e As EventArgs) Handles txtSearchList.TextChanged
+        loadBooks(txtSearchList.Text)
+        If txtSearchList.Text = "" Then
+            loadBooks("%")
+        End If
+    End Sub
+
+    'methods
+    Public Sub profileEnable(ok As Boolean)
+        profileBtn.Visible = ok
+        updateProfileBtn.Visible = Not ok
+    End Sub
+    Public Sub uploadProfiles()
+        Try
+            dbConOpen()
+            Dim query As String = "UPDATE users SET profile_image = LOAD_FILE(@path) WHERE userID = @id"
+            Dim cmd As New MySqlCommand(query, con)
+            cmd.Parameters.AddWithValue("@id", accNum)
+            cmd.Parameters.AddWithValue("@path", pathTocreate)
+            cmd.ExecuteNonQuery()
+            MsgBox("PROFILE PICTURE UPLOADED SUCESSFULLY!", vbInformation, "PROFILE UPLOADED!")
+        Catch ex As MySqlException
+            MsgBox(ex.Message, vbCritical, "PROFILE INSERTION ERROR(0)")
+        Catch ex As Exception
+            MsgBox(ex.Message, vbCritical, "PROFILE INSERTION ERROR(1)")
+        Finally
+            dbConClose()
+            loadProfileImage()
+            refresh()
+        End Try
+    End Sub
+
+    Public Sub refresh()
+        Dim ud As New UserDashboard
+        ud.Show()
+        Me.Dispose()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        refresh()
+    End Sub
+
+    Public Sub loadBooks(param As String)
         flowPanelRecords.Controls.Clear()
         Try
             dbConOpen()
-            Dim query As String = "SELECT bookID, profile, category,title FROM books"
+            Dim query As String = "SELECT bookID, profile, category,title FROM books WHERE title LIKE @search OR category LIKE @search"
             Dim cmd As New MySqlCommand(query, con)
+            cmd.Parameters.AddWithValue("@search", "%" & param & "%")
             Dim reader As MySqlDataReader = cmd.ExecuteReader()
 
             While reader.Read()
@@ -130,59 +194,6 @@ Public Class UserDashboard
         Finally
             dbConClose()
         End Try
-    End Sub
-    Private Sub profileBtn_Click(sender As Object, e As EventArgs) Handles profileBtn.Click
-        If OpenFileDialog1.ShowDialog = DialogResult.OK Then
-            createPath(OpenFileDialog1.FileName)
-            uploadProfiles()
-        End If
-    End Sub
-
-    Private Sub updateProfileBtn_Click(sender As Object, e As EventArgs) Handles updateProfileBtn.Click
-        If OpenFileDialog1.ShowDialog = DialogResult.OK Then
-            createPath(OpenFileDialog1.FileName)
-            uploadProfiles()
-        End If
-    End Sub
-
-    Private Sub btnYourBooks_Click(sender As Object, e As EventArgs) Handles btnYourBooks.Click
-        YourBorrowedBooks.Show()
-        Me.Dispose()
-    End Sub
-
-    'methods
-    Public Sub profileEnable(ok As Boolean)
-        profileBtn.Visible = ok
-        updateProfileBtn.Visible = Not ok
-    End Sub
-    Public Sub uploadProfiles()
-        Try
-            dbConOpen()
-            Dim query As String = "UPDATE users SET profile_image = LOAD_FILE(@path) WHERE userID = @id"
-            Dim cmd As New MySqlCommand(query, con)
-            cmd.Parameters.AddWithValue("@id", accNum)
-            cmd.Parameters.AddWithValue("@path", pathTocreate)
-            cmd.ExecuteNonQuery()
-            MsgBox("PROFILE PICTURE UPLOADED SUCESSFULLY!", vbInformation, "PROFILE UPLOADED!")
-        Catch ex As MySqlException
-            MsgBox(ex.Message, vbCritical, "PROFILE INSERTION ERROR(0)")
-        Catch ex As Exception
-            MsgBox(ex.Message, vbCritical, "PROFILE INSERTION ERROR(1)")
-        Finally
-            dbConClose()
-            loadProfileImage()
-            refresh()
-        End Try
-    End Sub
-
-    Public Sub refresh()
-        Dim ud As New UserDashboard
-        ud.Show()
-        Me.Dispose()
-    End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        refresh()
     End Sub
     'methods
 End Class

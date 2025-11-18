@@ -214,7 +214,7 @@ Partial Class BorrowHistory
         ' 
         ' MainPanel
         ' 
-        MainPanel.BackColor = Color.Snow
+        MainPanel.BackColor = Color.AntiqueWhite
         MainPanel.Controls.Add(TimeLabel)
         MainPanel.Controls.Add(btnClearBorrow)
         MainPanel.Controls.Add(txtEmail)

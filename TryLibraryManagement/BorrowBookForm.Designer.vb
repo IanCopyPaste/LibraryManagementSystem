@@ -213,7 +213,7 @@ Partial Class BorrowBookForm
         ' lblNotVail
         ' 
         lblNotVail.AutoSize = True
-        lblNotVail.BackColor = Color.LightGreen
+        lblNotVail.BackColor = Color.AntiqueWhite
         lblNotVail.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         lblNotVail.ForeColor = Color.Red
         lblNotVail.Location = New Point(203, 355)
@@ -227,7 +227,7 @@ Partial Class BorrowBookForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.LightGreen
+        BackColor = Color.AntiqueWhite
         ClientSize = New Size(584, 418)
         Controls.Add(lblNotVail)
         Controls.Add(Button1)

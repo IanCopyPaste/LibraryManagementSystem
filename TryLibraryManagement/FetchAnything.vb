@@ -24,9 +24,9 @@ Module FetchAnything
     Public Function checkIfBookTitleisUnique(HELLO As String)
         Try
             con.Open()
-            Dim query As String = "SELECT title FROM books WHERE title = @tite"
+            Dim query As String = "SELECT title FROM books WHERE title = @title"
             Dim cmd As New MySqlCommand(query, con)
-            cmd.Parameters.AddWithValue("@tite", HELLO)
+            cmd.Parameters.AddWithValue("@title", HELLO)
             Dim read As MySqlDataReader = cmd.ExecuteReader
             If read.HasRows Then
                 Return True

@@ -142,7 +142,7 @@ Partial Class SignUp
         ' toLogIn
         ' 
         toLogIn.AutoSize = True
-        toLogIn.BackColor = Color.LightGreen
+        toLogIn.BackColor = Color.AntiqueWhite
         toLogIn.Cursor = Cursors.Hand
         toLogIn.Font = New Font("Tahoma", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         toLogIn.ForeColor = Color.DarkGreen
@@ -154,7 +154,7 @@ Partial Class SignUp
         ' 
         ' Panel1
         ' 
-        Panel1.BackColor = Color.LightGreen
+        Panel1.BackColor = Color.AntiqueWhite
         Panel1.Controls.Add(Label2)
         Panel1.Controls.Add(Label1)
         Panel1.Controls.Add(Button1)
@@ -187,7 +187,7 @@ Partial Class SignUp
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.BackColor = Color.LightGreen
+        Label2.BackColor = Color.AntiqueWhite
         Label2.Font = New Font("Segoe UI", 15.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.DarkGreen
         Label2.Location = New Point(240, 71)
@@ -200,7 +200,7 @@ Partial Class SignUp
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.BackColor = Color.LightGreen
+        Label1.BackColor = Color.AntiqueWhite
         Label1.Font = New Font("Segoe UI", 21.75F, FontStyle.Bold Or FontStyle.Italic)
         Label1.ForeColor = Color.DarkGreen
         Label1.Image = CType(resources.GetObject("Label1.Image"), Image)
@@ -214,7 +214,7 @@ Partial Class SignUp
         ' 
         ' Button1
         ' 
-        Button1.BackColor = Color.Gainsboro
+        Button1.BackColor = Color.Transparent
         Button1.Cursor = Cursors.Hand
         Button1.FlatAppearance.BorderSize = 0
         Button1.FlatAppearance.MouseOverBackColor = Color.LightCoral
@@ -243,7 +243,7 @@ Partial Class SignUp
         ' Label10
         ' 
         Label10.AutoSize = True
-        Label10.BackColor = Color.LightGreen
+        Label10.BackColor = Color.AntiqueWhite
         Label10.FlatStyle = FlatStyle.System
         Label10.Font = New Font("Rockwell", 11.25F, FontStyle.Italic)
         Label10.ForeColor = Color.DarkGreen
@@ -256,7 +256,7 @@ Partial Class SignUp
         ' Label9
         ' 
         Label9.AutoSize = True
-        Label9.BackColor = Color.LightGreen
+        Label9.BackColor = Color.AntiqueWhite
         Label9.FlatStyle = FlatStyle.System
         Label9.Font = New Font("Rockwell", 11.25F, FontStyle.Italic)
         Label9.ForeColor = Color.DarkGreen
@@ -269,7 +269,7 @@ Partial Class SignUp
         ' Label8
         ' 
         Label8.AutoSize = True
-        Label8.BackColor = Color.LightGreen
+        Label8.BackColor = Color.AntiqueWhite
         Label8.FlatStyle = FlatStyle.System
         Label8.Font = New Font("Rockwell", 11.25F, FontStyle.Italic)
         Label8.ForeColor = Color.DarkGreen
@@ -282,7 +282,7 @@ Partial Class SignUp
         ' Label7
         ' 
         Label7.AutoSize = True
-        Label7.BackColor = Color.LightGreen
+        Label7.BackColor = Color.AntiqueWhite
         Label7.FlatStyle = FlatStyle.System
         Label7.Font = New Font("Rockwell", 11.25F, FontStyle.Italic)
         Label7.ForeColor = Color.DarkGreen
@@ -295,7 +295,7 @@ Partial Class SignUp
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.BackColor = Color.LightGreen
+        Label6.BackColor = Color.AntiqueWhite
         Label6.FlatStyle = FlatStyle.System
         Label6.Font = New Font("Rockwell", 11.25F, FontStyle.Italic)
         Label6.ForeColor = Color.DarkGreen
@@ -308,7 +308,7 @@ Partial Class SignUp
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.BackColor = Color.LightGreen
+        Label4.BackColor = Color.AntiqueWhite
         Label4.FlatStyle = FlatStyle.System
         Label4.Font = New Font("Rockwell", 11.25F, FontStyle.Italic)
         Label4.ForeColor = Color.DarkGreen
@@ -321,7 +321,7 @@ Partial Class SignUp
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.BackColor = Color.LightGreen
+        Label3.BackColor = Color.AntiqueWhite
         Label3.FlatStyle = FlatStyle.System
         Label3.Font = New Font("Rockwell", 11.25F, FontStyle.Italic)
         Label3.ForeColor = Color.DarkGreen
@@ -334,7 +334,7 @@ Partial Class SignUp
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.BackColor = Color.LightGreen
+        Label5.BackColor = Color.AntiqueWhite
         Label5.FlatStyle = FlatStyle.System
         Label5.Font = New Font("Rockwell", 11.25F, FontStyle.Italic)
         Label5.ForeColor = Color.DarkGreen
