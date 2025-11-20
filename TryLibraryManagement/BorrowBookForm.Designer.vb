@@ -192,6 +192,7 @@ Partial Class BorrowBookForm
         txtBookID.Location = New Point(370, 44)
         txtBookID.Name = "txtBookID"
         txtBookID.PlaceholderText = "BookID"
+        txtBookID.ReadOnly = True
         txtBookID.Size = New Size(165, 27)
         txtBookID.TabIndex = 15
         txtBookID.TextAlign = HorizontalAlignment.Center

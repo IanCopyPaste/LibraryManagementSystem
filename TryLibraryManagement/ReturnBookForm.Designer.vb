@@ -74,6 +74,7 @@ Partial Class ReturnBookForm
         txtBookID.Location = New Point(370, 44)
         txtBookID.Name = "txtBookID"
         txtBookID.PlaceholderText = "BookID"
+        txtBookID.ReadOnly = True
         txtBookID.Size = New Size(165, 27)
         txtBookID.TabIndex = 31
         txtBookID.TextAlign = HorizontalAlignment.Center

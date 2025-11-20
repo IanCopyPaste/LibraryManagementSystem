@@ -58,20 +58,11 @@ Public Class YourBorrowedBooks
 
                 Dim lblTitle As New Label With {
             .Text = title,
-            .ForeColor = Color.FromArgb(33, 33, 33),
-            .Font = New Font("Segoe UI Semibold", 10.5F, FontStyle.Bold),
-            .AutoSize = True,
-            .MaximumSize = New Size(160, 0),
-            .Location = New Point(9, 212),
-            .TextAlign = ContentAlignment.TopLeft
-        }
-                Dim lblBookID As New Label With {
-            .Text = "ID: " & getID2,
             .ForeColor = Color.White,
             .Font = New Font("Segoe UI Semibold", 10.5F, FontStyle.Bold),
             .AutoSize = True,
             .MaximumSize = New Size(160, 0),
-            .Location = New Point(9, 235),
+            .Location = New Point(9, 212),
             .TextAlign = ContentAlignment.TopLeft
         }
                 Dim lblGenre As New Label With {
@@ -113,7 +104,6 @@ Public Class YourBorrowedBooks
                 imgContainer.Controls.Add(pic)
                 card.Controls.Add(imgContainer)
                 card.Controls.Add(lblTitle)
-                card.Controls.Add(lblBookID)
                 card.Controls.Add(lblGenre)
                 cardShadow.Controls.Add(card)
 
@@ -137,9 +127,5 @@ Public Class YourBorrowedBooks
     Private Sub userPageBtn_Click(sender As Object, e As EventArgs) Handles userPageBtn.Click
         UserDashboard.Show()
         Me.Dispose()
-    End Sub
-
-    Private Sub btnYourBooks_Click(sender As Object, e As EventArgs) Handles btnYourBooks.Click
-
     End Sub
 End Class
