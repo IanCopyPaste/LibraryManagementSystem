@@ -1,0 +1,7 @@
+C:\Users\CLIENT\Downloads\Library Management System\TryLibraryManagement.exe
+C:\Users\CLIENT\Downloads\Library Management System\TryLibraryManagement.dll
+C:\Users\CLIENT\Downloads\Library Management System\TryLibraryManagement.deps.json
+C:\Users\CLIENT\Downloads\Library Management System\TryLibraryManagement.runtimeconfig.json
+C:\Users\CLIENT\Downloads\Library Management System\TryLibraryManagement.pdb
+C:\Users\CLIENT\Downloads\Library Management System\MySql.Data.dll
+C:\Users\CLIENT\Downloads\Library Management System\MySql.Data.xml

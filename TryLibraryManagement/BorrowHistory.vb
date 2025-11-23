@@ -34,22 +34,17 @@ Public Class BorrowHistory
     Private Sub BorrowHistory_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ProfileBoxUpper.Image = userImage
         ToolTip1.SetToolTip(Refresh, "Refresh")
-        Try
-            dbConOpen()
-            Dim query As String = "SELECT br.borrowID AS BorrowID, u.userID AS UserID, u.email AS Email, bk.title AS Book_Borrowed, br.borrowDate AS Borrowed_On, br.dueDate AS Due_Date, br.stat AS Statuss
-                                   FROM borrow br JOIN users u ON u.userID = br.userID
-                                   JOIN books bk ON bk.bookID = br.bookID"
-            Dim dasd As New MySqlDataAdapter(query, con)
-            Dim dt As New DataTable
-            dasd.Fill(dt)
-            BorrowTable.DataSource = dt
-        Catch ex As MySqlException
-            MsgBox(ex.Message, vbCritical, "ERROR BORROW HISTORY(0)")
-        Catch ex As Exception
-            MsgBox(ex.Message, vbCritical, "ERROR BORROW HISTORY(1)")
-        Finally
-            dbConClose()
-        End Try
+        loadOrFilterTable("")
+    End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles comboStat.SelectedIndexChanged
+        If comboStat.Text = "All" Then
+            loadOrFilterTable("")
+        ElseIf comboStat.Text = "Returned" Then
+            loadOrFilterTable("Returned")
+        ElseIf comboStat.Text = "Borrowed" Then
+            loadOrFilterTable("Borrowed")
+        End If
     End Sub
 
     Private Sub BorrowTable_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles BorrowTable.CellClick
@@ -108,6 +103,28 @@ Public Class BorrowHistory
                 dbConClose()
             End Try
         End If
+    End Sub
+
+    Public Sub loadOrFilterTable(stat As String)
+        Try
+            dbConOpen()
+            Dim query As String = "SELECT br.borrowID AS BorrowID, u.userID AS UserID, u.email AS Email, bk.title AS Book_Borrowed, br.borrowDate AS Borrowed_On, br.dueDate AS Due_Date, br.stat AS Statuss
+                                   FROM borrow br JOIN users u ON u.userID = br.userID
+                                   JOIN books bk ON bk.bookID = br.bookID
+                                   WHERE (@stat = '' OR br.stat = @stat)"
+            Dim cmd As New MySqlCommand(query, con)
+            cmd.Parameters.AddWithValue("@stat", stat)
+            Dim dasd As New MySqlDataAdapter(cmd)
+            Dim dt As New DataTable
+            dasd.Fill(dt)
+            BorrowTable.DataSource = dt
+        Catch ex As MySqlException
+            MsgBox(ex.Message, vbCritical, "ERROR BORROW HISTORY(0)")
+        Catch ex As Exception
+            MsgBox(ex.Message, vbCritical, "ERROR BORROW HISTORY(1)")
+        Finally
+            dbConClose()
+        End Try
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click

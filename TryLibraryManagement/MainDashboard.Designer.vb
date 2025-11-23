@@ -359,7 +359,7 @@ Partial Class MainDashboard
         Label10.BackColor = Color.Transparent
         Label10.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
         Label10.ForeColor = Color.DarkGreen
-        Label10.Location = New Point(735, 19)
+        Label10.Location = New Point(796, 19)
         Label10.Name = "Label10"
         Label10.Size = New Size(63, 23)
         Label10.TabIndex = 32
@@ -601,10 +601,10 @@ Partial Class MainDashboard
         ' 
         searchBox.BorderStyle = BorderStyle.FixedSingle
         searchBox.Font = New Font("Rockwell", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        searchBox.Location = New Point(804, 19)
+        searchBox.Location = New Point(865, 19)
         searchBox.Name = "searchBox"
         searchBox.PlaceholderText = "Search User"
-        searchBox.Size = New Size(345, 25)
+        searchBox.Size = New Size(284, 25)
         searchBox.TabIndex = 3
         ' 
         ' ewanTable

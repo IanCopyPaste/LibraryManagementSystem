@@ -4,9 +4,13 @@ Imports System.Net.Mail
 Imports System.Security.Cryptography.X509Certificates
 Imports MySql.Data.MySqlClient
 Module FetchAnything
+    'for display name
     Public name As String
+    'for display and funtional id
     Public accNum As String
     Public nameID As Integer
+
+    'for double slash sa blob
     Public pathTocreate As String
 
     'variable para sa borrow booko form
@@ -42,8 +46,6 @@ Module FetchAnything
             con.Close()
         End Try
     End Function
-
-
     'main process
 
     'methods
@@ -102,7 +104,6 @@ Module FetchAnything
             MessageBox.Show("Error: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
-
 
     Public Sub insertInfo()
         Try

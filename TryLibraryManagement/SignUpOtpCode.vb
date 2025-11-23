@@ -26,4 +26,8 @@
         email = Nothing
         otp = Nothing
     End Sub
+
+    Private Sub SignUpOtpCode_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

@@ -59,6 +59,9 @@ Partial Class InsertBooks
         btnNewBook = New Button()
         bookPhotoBox = New PictureBox()
         BookTable = New DataGridView()
+        upPic1 = New OpenFileDialog()
+        Timer1 = New Timer(components)
+        ToolTip1 = New ToolTip(components)
         BookID = New DataGridViewTextBoxColumn()
         Title = New DataGridViewTextBoxColumn()
         Author = New DataGridViewTextBoxColumn()
@@ -67,9 +70,6 @@ Partial Class InsertBooks
         status = New DataGridViewTextBoxColumn()
         Edit = New DataGridViewImageColumn()
         delete = New DataGridViewImageColumn()
-        upPic1 = New OpenFileDialog()
-        Timer1 = New Timer(components)
-        ToolTip1 = New ToolTip(components)
         TopPanel.SuspendLayout()
         CType(ProfileBoxUpper, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -547,6 +547,14 @@ Partial Class InsertBooks
         BookTable.Size = New Size(733, 483)
         BookTable.TabIndex = 0
         ' 
+        ' upPic1
+        ' 
+        upPic1.FileName = "OpenFileDialog1"
+        ' 
+        ' Timer1
+        ' 
+        Timer1.Enabled = True
+        ' 
         ' BookID
         ' 
         BookID.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
@@ -616,14 +624,6 @@ Partial Class InsertBooks
         delete.Resizable = DataGridViewTriState.True
         delete.Width = 57
         ' 
-        ' upPic1
-        ' 
-        upPic1.FileName = "OpenFileDialog1"
-        ' 
-        ' Timer1
-        ' 
-        Timer1.Enabled = True
-        ' 
         ' InsertBooks
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -684,6 +684,8 @@ Partial Class InsertBooks
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label9 As Label
     Friend WithEvents ProfileBoxUpper As PictureBox
+    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents Label1 As Label
     Friend WithEvents BookID As DataGridViewTextBoxColumn
     Friend WithEvents Title As DataGridViewTextBoxColumn
     Friend WithEvents Author As DataGridViewTextBoxColumn
@@ -692,6 +694,4 @@ Partial Class InsertBooks
     Friend WithEvents status As DataGridViewTextBoxColumn
     Friend WithEvents Edit As DataGridViewImageColumn
     Friend WithEvents delete As DataGridViewImageColumn
-    Friend WithEvents ToolTip1 As ToolTip
-    Friend WithEvents Label1 As Label
 End Class

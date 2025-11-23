@@ -38,6 +38,8 @@ Partial Class BorrowHistory
         InsertBooksBtn = New Button()
         userPageBtn = New Button()
         MainPanel = New Panel()
+        Label4 = New Label()
+        comboStat = New ComboBox()
         TimeLabel = New Label()
         btnClearBorrow = New Button()
         txtEmail = New TextBox()
@@ -215,6 +217,8 @@ Partial Class BorrowHistory
         ' MainPanel
         ' 
         MainPanel.BackColor = Color.AntiqueWhite
+        MainPanel.Controls.Add(Label4)
+        MainPanel.Controls.Add(comboStat)
         MainPanel.Controls.Add(TimeLabel)
         MainPanel.Controls.Add(btnClearBorrow)
         MainPanel.Controls.Add(txtEmail)
@@ -230,16 +234,38 @@ Partial Class BorrowHistory
         MainPanel.Size = New Size(1166, 563)
         MainPanel.TabIndex = 3
         ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Font = New Font("Rockwell", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label4.ForeColor = Color.DarkGreen
+        Label4.Location = New Point(488, 16)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(83, 19)
+        Label4.TabIndex = 17
+        Label4.Text = "Filter by:"
+        ' 
+        ' comboStat
+        ' 
+        comboStat.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        comboStat.FormattingEnabled = True
+        comboStat.Items.AddRange(New Object() {"Returned", "Borrowed", "All"})
+        comboStat.Location = New Point(577, 12)
+        comboStat.Name = "comboStat"
+        comboStat.Size = New Size(147, 25)
+        comboStat.TabIndex = 16
+        comboStat.Text = "Choose a status"
+        ' 
         ' TimeLabel
         ' 
         TimeLabel.AutoSize = True
         TimeLabel.Font = New Font("Rockwell", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         TimeLabel.ForeColor = Color.DarkGreen
-        TimeLabel.Location = New Point(475, 11)
+        TimeLabel.Location = New Point(762, 12)
         TimeLabel.Name = "TimeLabel"
-        TimeLabel.Size = New Size(124, 25)
+        TimeLabel.Size = New Size(118, 25)
         TimeLabel.TabIndex = 13
-        TimeLabel.Text = "Time Now:"
+        TimeLabel.Text = "Date Now:"
         ' 
         ' btnClearBorrow
         ' 
@@ -252,7 +278,7 @@ Partial Class BorrowHistory
         btnClearBorrow.Image = My.Resources.Resources.Letter_X_icon_34793__1_
         btnClearBorrow.Location = New Point(334, 6)
         btnClearBorrow.Name = "btnClearBorrow"
-        btnClearBorrow.Size = New Size(135, 35)
+        btnClearBorrow.Size = New Size(121, 35)
         btnClearBorrow.TabIndex = 12
         btnClearBorrow.Text = "Clear Table"
         btnClearBorrow.TextImageRelation = TextImageRelation.ImageBeforeText
@@ -483,4 +509,6 @@ Partial Class BorrowHistory
     Friend WithEvents Label1 As Label
     Friend WithEvents TimeLabel As Label
     Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents Label4 As Label
+    Friend WithEvents comboStat As ComboBox
 End Class
