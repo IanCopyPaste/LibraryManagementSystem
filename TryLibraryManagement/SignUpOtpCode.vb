@@ -9,13 +9,14 @@
             Form1.Show()
             Me.Dispose()
         Else
-            MsgBox("OTP NOT MATCHED!")
+            MsgBox("OTP NOT MATCHED!", vbInformation, "EMAIL VERIFY")
         End If
     End Sub
 
     'KAPAG NAG RESEND TATAWAGIN NIYA YUNG OBJECT FROM FETCH ANYTHING
     Private Sub btnResendCode_Click(sender As Object, e As EventArgs) Handles btnResendCode.Click
         SendEmail()
+        MsgBox("CODE WAS RE-SENT TO YOUR EMAIL!", vbInformation, "OTP CODE")
     End Sub
 
     Public Sub clear()

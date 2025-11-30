@@ -27,7 +27,7 @@ Partial Class BookDashboardForAdmin
         Panel1 = New Panel()
         PictureBox1 = New PictureBox()
         ProfileBoxUpper = New PictureBox()
-        Label1 = New Label()
+        Label7 = New Label()
         SidePanel = New Panel()
         BookHistoryBtn = New Button()
         Button1 = New Button()
@@ -38,6 +38,7 @@ Partial Class BookDashboardForAdmin
         Label3 = New Label()
         txtSearchList = New TextBox()
         Label2 = New Label()
+        PictureBox3 = New PictureBox()
         flowPanelRecords = New FlowLayoutPanel()
         TopPanel.SuspendLayout()
         Panel1.SuspendLayout()
@@ -45,6 +46,7 @@ Partial Class BookDashboardForAdmin
         CType(ProfileBoxUpper, ComponentModel.ISupportInitialize).BeginInit()
         SidePanel.SuspendLayout()
         MainPanel.SuspendLayout()
+        CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' TopPanel
@@ -59,10 +61,10 @@ Partial Class BookDashboardForAdmin
         ' 
         ' Panel1
         ' 
-        Panel1.BackColor = Color.Green
+        Panel1.BackColor = Color.DarkSlateGray
         Panel1.Controls.Add(PictureBox1)
         Panel1.Controls.Add(ProfileBoxUpper)
-        Panel1.Controls.Add(Label1)
+        Panel1.Controls.Add(Label7)
         Panel1.Dock = DockStyle.Top
         Panel1.Location = New Point(0, 0)
         Panel1.Name = "Panel1"
@@ -75,7 +77,7 @@ Partial Class BookDashboardForAdmin
         PictureBox1.BackgroundImageLayout = ImageLayout.Center
         PictureBox1.Cursor = Cursors.Hand
         PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(12, 10)
+        PictureBox1.Location = New Point(14, 9)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(58, 54)
         PictureBox1.SizeMode = PictureBoxSizeMode.CenterImage
@@ -92,23 +94,23 @@ Partial Class BookDashboardForAdmin
         ProfileBoxUpper.TabIndex = 14
         ProfileBoxUpper.TabStop = False
         ' 
-        ' Label1
+        ' Label7
         ' 
-        Label1.Anchor = AnchorStyles.None
-        Label1.AutoSize = True
-        Label1.BackColor = Color.Transparent
-        Label1.Font = New Font("Sitka Text Semibold", 27.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        Label1.ForeColor = Color.White
-        Label1.Location = New Point(65, 9)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(907, 53)
-        Label1.TabIndex = 13
-        Label1.Text = "Barangay International Library - Book Dashboard"
-        Label1.TextAlign = ContentAlignment.MiddleCenter
+        Label7.Anchor = AnchorStyles.None
+        Label7.AutoSize = True
+        Label7.BackColor = Color.Transparent
+        Label7.Font = New Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label7.ForeColor = Color.White
+        Label7.Location = New Point(67, 20)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(615, 37)
+        Label7.TabIndex = 14
+        Label7.Text = "Barangay International Library - Book Dashboard"
+        Label7.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' SidePanel
         ' 
-        SidePanel.BackColor = Color.LightGreen
+        SidePanel.BackColor = Color.CadetBlue
         SidePanel.Controls.Add(BookHistoryBtn)
         SidePanel.Controls.Add(Button1)
         SidePanel.Controls.Add(SignOutBtn)
@@ -122,7 +124,7 @@ Partial Class BookDashboardForAdmin
         ' 
         ' BookHistoryBtn
         ' 
-        BookHistoryBtn.BackColor = Color.Green
+        BookHistoryBtn.BackColor = Color.DarkSlateGray
         BookHistoryBtn.Cursor = Cursors.Hand
         BookHistoryBtn.FlatAppearance.BorderSize = 0
         BookHistoryBtn.FlatStyle = FlatStyle.Flat
@@ -139,7 +141,7 @@ Partial Class BookDashboardForAdmin
         ' 
         ' Button1
         ' 
-        Button1.BackColor = Color.Green
+        Button1.BackColor = Color.DarkSlateGray
         Button1.Cursor = Cursors.Hand
         Button1.FlatAppearance.BorderSize = 0
         Button1.FlatStyle = FlatStyle.Flat
@@ -156,13 +158,13 @@ Partial Class BookDashboardForAdmin
         ' 
         ' SignOutBtn
         ' 
-        SignOutBtn.BackColor = Color.Green
+        SignOutBtn.BackColor = Color.DarkSlateGray
         SignOutBtn.Cursor = Cursors.Hand
         SignOutBtn.FlatAppearance.BorderSize = 0
         SignOutBtn.FlatStyle = FlatStyle.Flat
         SignOutBtn.Font = New Font("Tahoma", 9.75F, FontStyle.Bold)
         SignOutBtn.ForeColor = Color.White
-        SignOutBtn.Image = My.Resources.Resources.sign_out_icon_icons_com_69908
+        SignOutBtn.Image = CType(resources.GetObject("SignOutBtn.Image"), Image)
         SignOutBtn.Location = New Point(0, 472)
         SignOutBtn.Name = "SignOutBtn"
         SignOutBtn.Size = New Size(108, 60)
@@ -173,7 +175,7 @@ Partial Class BookDashboardForAdmin
         ' 
         ' InsertBooksBtn
         ' 
-        InsertBooksBtn.BackColor = Color.Green
+        InsertBooksBtn.BackColor = Color.DarkSlateGray
         InsertBooksBtn.Cursor = Cursors.Hand
         InsertBooksBtn.FlatAppearance.BorderSize = 0
         InsertBooksBtn.FlatStyle = FlatStyle.Flat
@@ -190,7 +192,7 @@ Partial Class BookDashboardForAdmin
         ' 
         ' userPageBtn
         ' 
-        userPageBtn.BackColor = Color.Green
+        userPageBtn.BackColor = Color.DarkSlateGray
         userPageBtn.Cursor = Cursors.Hand
         userPageBtn.FlatAppearance.BorderSize = 0
         userPageBtn.FlatStyle = FlatStyle.Flat
@@ -207,10 +209,11 @@ Partial Class BookDashboardForAdmin
         ' 
         ' MainPanel
         ' 
-        MainPanel.BackColor = Color.AntiqueWhite
+        MainPanel.BackColor = Color.Snow
         MainPanel.Controls.Add(Label3)
         MainPanel.Controls.Add(txtSearchList)
         MainPanel.Controls.Add(Label2)
+        MainPanel.Controls.Add(PictureBox3)
         MainPanel.Controls.Add(flowPanelRecords)
         MainPanel.Dock = DockStyle.Fill
         MainPanel.Location = New Point(105, 74)
@@ -222,43 +225,56 @@ Partial Class BookDashboardForAdmin
         ' 
         Label3.AutoSize = True
         Label3.BackColor = Color.Transparent
-        Label3.Font = New Font("Sitka Text", 12F, FontStyle.Bold Or FontStyle.Italic)
-        Label3.ForeColor = Color.DarkGreen
-        Label3.Location = New Point(621, 17)
+        Label3.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold)
+        Label3.ForeColor = SystemColors.ControlText
+        Label3.Location = New Point(848, 22)
         Label3.Name = "Label3"
-        Label3.Size = New Size(63, 23)
+        Label3.Size = New Size(59, 20)
         Label3.TabIndex = 32
-        Label3.Text = "Search"
+        Label3.Text = "Search:"
         ' 
         ' txtSearchList
         ' 
+        txtSearchList.BorderStyle = BorderStyle.None
         txtSearchList.Cursor = Cursors.Hand
-        txtSearchList.Font = New Font("Rockwell", 11.25F)
-        txtSearchList.Location = New Point(690, 17)
+        txtSearchList.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
+        txtSearchList.Location = New Point(925, 24)
         txtSearchList.Name = "txtSearchList"
         txtSearchList.PlaceholderText = "Search List"
-        txtSearchList.Size = New Size(432, 25)
+        txtSearchList.Size = New Size(188, 18)
         txtSearchList.TabIndex = 24
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
         Label2.BackColor = Color.Transparent
-        Label2.Font = New Font("Rockwell", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label2.ForeColor = Color.DarkGreen
+        Label2.Font = New Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.ForeColor = Color.DarkSlateGray
         Label2.Image = My.Resources.Resources._3700471_book_books_education_library_literature_reading_study_108741
         Label2.ImageAlign = ContentAlignment.MiddleLeft
-        Label2.Location = New Point(34, 17)
+        Label2.Location = New Point(34, 19)
         Label2.Name = "Label2"
-        Label2.Size = New Size(356, 39)
+        Label2.Size = New Size(284, 37)
         Label2.TabIndex = 24
         Label2.Text = "        Book Collections:"
         Label2.TextAlign = ContentAlignment.TopRight
         ' 
+        ' PictureBox3
+        ' 
+        PictureBox3.Anchor = AnchorStyles.None
+        PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), Image)
+        PictureBox3.BackgroundImageLayout = ImageLayout.Zoom
+        PictureBox3.Location = New Point(913, 10)
+        PictureBox3.Name = "PictureBox3"
+        PictureBox3.Size = New Size(209, 46)
+        PictureBox3.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox3.TabIndex = 43
+        PictureBox3.TabStop = False
+        ' 
         ' flowPanelRecords
         ' 
         flowPanelRecords.AutoScroll = True
-        flowPanelRecords.BackColor = Color.LightGreen
+        flowPanelRecords.BackColor = Color.DarkSlateGray
         flowPanelRecords.Location = New Point(34, 59)
         flowPanelRecords.Name = "flowPanelRecords"
         flowPanelRecords.Size = New Size(1088, 465)
@@ -285,6 +301,7 @@ Partial Class BookDashboardForAdmin
         SidePanel.ResumeLayout(False)
         MainPanel.ResumeLayout(False)
         MainPanel.PerformLayout()
+        CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -298,10 +315,11 @@ Partial Class BookDashboardForAdmin
     Friend WithEvents MainPanel As Panel
     Friend WithEvents flowPanelRecords As FlowLayoutPanel
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents ProfileBoxUpper As PictureBox
-    Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents txtSearchList As TextBox
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label7 As Label
 End Class

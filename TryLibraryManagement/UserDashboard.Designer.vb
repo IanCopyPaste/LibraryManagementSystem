@@ -24,66 +24,55 @@ Partial Class UserDashboard
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UserDashboard))
         TopPanel = New Panel()
-        PictureBox1 = New PictureBox()
         updateProfileBtn = New Button()
         profileBtn = New Button()
         userIDlbl = New Label()
         txtWelcome = New TextBox()
         ProfileBoxUpper = New PictureBox()
-        Label1 = New Label()
         SidePanel = New Panel()
         btnYourBooks = New Button()
         Button1 = New Button()
         SignOutBtn = New Button()
         MainPanel = New Panel()
-        Label3 = New Label()
         txtSearchList = New TextBox()
-        Label2 = New Label()
         flowPanelRecords = New FlowLayoutPanel()
         OpenFileDialog1 = New OpenFileDialog()
+        PictureBox1 = New PictureBox()
+        Label7 = New Label()
+        Label3 = New Label()
+        Label2 = New Label()
+        PictureBox3 = New PictureBox()
         TopPanel.SuspendLayout()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(ProfileBoxUpper, ComponentModel.ISupportInitialize).BeginInit()
         SidePanel.SuspendLayout()
         MainPanel.SuspendLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' TopPanel
         ' 
-        TopPanel.BackColor = Color.Green
+        TopPanel.BackColor = Color.DarkSlateGray
         TopPanel.Controls.Add(PictureBox1)
         TopPanel.Controls.Add(updateProfileBtn)
+        TopPanel.Controls.Add(Label7)
         TopPanel.Controls.Add(profileBtn)
         TopPanel.Controls.Add(userIDlbl)
         TopPanel.Controls.Add(txtWelcome)
         TopPanel.Controls.Add(ProfileBoxUpper)
-        TopPanel.Controls.Add(Label1)
         TopPanel.Dock = DockStyle.Top
         TopPanel.Location = New Point(0, 0)
         TopPanel.Name = "TopPanel"
         TopPanel.Size = New Size(1266, 74)
         TopPanel.TabIndex = 2
         ' 
-        ' PictureBox1
-        ' 
-        PictureBox1.BackColor = Color.Transparent
-        PictureBox1.BackgroundImageLayout = ImageLayout.Center
-        PictureBox1.Cursor = Cursors.Hand
-        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(8, 10)
-        PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(58, 54)
-        PictureBox1.SizeMode = PictureBoxSizeMode.CenterImage
-        PictureBox1.TabIndex = 16
-        PictureBox1.TabStop = False
-        ' 
         ' updateProfileBtn
         ' 
-        updateProfileBtn.BackColor = Color.LimeGreen
+        updateProfileBtn.BackColor = Color.DarkSlateGray
         updateProfileBtn.Cursor = Cursors.Hand
-        updateProfileBtn.FlatAppearance.BorderSize = 0
+        updateProfileBtn.FlatAppearance.BorderColor = Color.Black
         updateProfileBtn.FlatStyle = FlatStyle.Flat
-        updateProfileBtn.Font = New Font("Rockwell", 9.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        updateProfileBtn.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
         updateProfileBtn.ForeColor = Color.White
         updateProfileBtn.Image = CType(resources.GetObject("updateProfileBtn.Image"), Image)
         updateProfileBtn.Location = New Point(1069, 12)
@@ -96,16 +85,16 @@ Partial Class UserDashboard
         ' 
         ' profileBtn
         ' 
-        profileBtn.BackColor = Color.LimeGreen
+        profileBtn.BackColor = Color.DarkSlateGray
         profileBtn.Cursor = Cursors.Hand
-        profileBtn.FlatAppearance.BorderSize = 0
+        profileBtn.FlatAppearance.BorderColor = Color.Black
         profileBtn.FlatStyle = FlatStyle.Flat
-        profileBtn.Font = New Font("Rockwell", 9.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        profileBtn.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
         profileBtn.ForeColor = Color.White
         profileBtn.Image = CType(resources.GetObject("profileBtn.Image"), Image)
-        profileBtn.Location = New Point(1159, 12)
+        profileBtn.Location = New Point(1154, 12)
         profileBtn.Name = "profileBtn"
-        profileBtn.Size = New Size(100, 46)
+        profileBtn.Size = New Size(105, 46)
         profileBtn.TabIndex = 14
         profileBtn.Text = "  Upload " & vbCrLf & " Profile"
         profileBtn.TextImageRelation = TextImageRelation.ImageBeforeText
@@ -115,24 +104,24 @@ Partial Class UserDashboard
         ' 
         userIDlbl.AutoSize = True
         userIDlbl.BackColor = Color.Transparent
-        userIDlbl.Font = New Font("Rockwell", 11.25F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        userIDlbl.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold)
         userIDlbl.ForeColor = Color.White
-        userIDlbl.Location = New Point(757, 44)
+        userIDlbl.Location = New Point(826, 44)
         userIDlbl.Name = "userIDlbl"
-        userIDlbl.Size = New Size(67, 19)
+        userIDlbl.Size = New Size(63, 20)
         userIDlbl.TabIndex = 13
         userIDlbl.Text = "UserID: "
         ' 
         ' txtWelcome
         ' 
-        txtWelcome.BackColor = Color.Green
+        txtWelcome.BackColor = Color.DarkSlateGray
         txtWelcome.BorderStyle = BorderStyle.None
-        txtWelcome.Font = New Font("Sitka Small Semibold", 18.0F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        txtWelcome.Font = New Font("Segoe UI Semibold", 18F, FontStyle.Bold)
         txtWelcome.ForeColor = Color.WhiteSmoke
-        txtWelcome.Location = New Point(757, 10)
+        txtWelcome.Location = New Point(826, 10)
         txtWelcome.Name = "txtWelcome"
         txtWelcome.ReadOnly = True
-        txtWelcome.Size = New Size(237, 31)
+        txtWelcome.Size = New Size(237, 32)
         txtWelcome.TabIndex = 12
         txtWelcome.Text = "Welcome, "
         ' 
@@ -146,23 +135,9 @@ Partial Class UserDashboard
         ProfileBoxUpper.TabIndex = 11
         ProfileBoxUpper.TabStop = False
         ' 
-        ' Label1
-        ' 
-        Label1.Anchor = AnchorStyles.None
-        Label1.AutoSize = True
-        Label1.BackColor = Color.Transparent
-        Label1.Font = New Font("Sitka Text Semibold", 27.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        Label1.ForeColor = Color.White
-        Label1.Location = New Point(61, 9)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(584, 53)
-        Label1.TabIndex = 10
-        Label1.Text = "Barangay International Library"
-        Label1.TextAlign = ContentAlignment.MiddleCenter
-        ' 
         ' SidePanel
         ' 
-        SidePanel.BackColor = Color.LightGreen
+        SidePanel.BackColor = Color.CadetBlue
         SidePanel.Controls.Add(btnYourBooks)
         SidePanel.Controls.Add(Button1)
         SidePanel.Controls.Add(SignOutBtn)
@@ -174,7 +149,7 @@ Partial Class UserDashboard
         ' 
         ' btnYourBooks
         ' 
-        btnYourBooks.BackColor = Color.Green
+        btnYourBooks.BackColor = Color.DarkSlateGray
         btnYourBooks.Cursor = Cursors.Hand
         btnYourBooks.FlatAppearance.BorderSize = 0
         btnYourBooks.FlatStyle = FlatStyle.Flat
@@ -191,7 +166,7 @@ Partial Class UserDashboard
         ' 
         ' Button1
         ' 
-        Button1.BackColor = Color.Green
+        Button1.BackColor = Color.DarkSlateGray
         Button1.Cursor = Cursors.Hand
         Button1.FlatAppearance.BorderSize = 0
         Button1.FlatStyle = FlatStyle.Flat
@@ -208,13 +183,13 @@ Partial Class UserDashboard
         ' 
         ' SignOutBtn
         ' 
-        SignOutBtn.BackColor = Color.Green
+        SignOutBtn.BackColor = Color.DarkSlateGray
         SignOutBtn.Cursor = Cursors.Hand
         SignOutBtn.FlatAppearance.BorderSize = 0
         SignOutBtn.FlatStyle = FlatStyle.Flat
         SignOutBtn.Font = New Font("Tahoma", 9.75F, FontStyle.Bold)
         SignOutBtn.ForeColor = Color.White
-        SignOutBtn.Image = My.Resources.Resources.sign_out_icon_icons_com_69908
+        SignOutBtn.Image = CType(resources.GetObject("SignOutBtn.Image"), Image)
         SignOutBtn.Location = New Point(0, 472)
         SignOutBtn.Name = "SignOutBtn"
         SignOutBtn.Size = New Size(134, 60)
@@ -225,10 +200,11 @@ Partial Class UserDashboard
         ' 
         ' MainPanel
         ' 
-        MainPanel.BackColor = Color.AntiqueWhite
+        MainPanel.BackColor = Color.Snow
+        MainPanel.Controls.Add(Label2)
         MainPanel.Controls.Add(Label3)
         MainPanel.Controls.Add(txtSearchList)
-        MainPanel.Controls.Add(Label2)
+        MainPanel.Controls.Add(PictureBox3)
         MainPanel.Controls.Add(flowPanelRecords)
         MainPanel.Dock = DockStyle.Fill
         MainPanel.Location = New Point(134, 74)
@@ -236,47 +212,21 @@ Partial Class UserDashboard
         MainPanel.Size = New Size(1132, 563)
         MainPanel.TabIndex = 4
         ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.BackColor = Color.Transparent
-        Label3.Font = New Font("Sitka Text", 12.0F, FontStyle.Bold Or FontStyle.Italic)
-        Label3.ForeColor = Color.DarkGreen
-        Label3.Location = New Point(708, 30)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(63, 23)
-        Label3.TabIndex = 32
-        Label3.Text = "Search"
-        ' 
         ' txtSearchList
         ' 
+        txtSearchList.BorderStyle = BorderStyle.None
         txtSearchList.Cursor = Cursors.Hand
-        txtSearchList.Font = New Font("Rockwell", 11.25F)
-        txtSearchList.Location = New Point(777, 28)
+        txtSearchList.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
+        txtSearchList.Location = New Point(925, 19)
         txtSearchList.Name = "txtSearchList"
         txtSearchList.PlaceholderText = "Search List"
-        txtSearchList.Size = New Size(345, 25)
+        txtSearchList.Size = New Size(182, 18)
         txtSearchList.TabIndex = 24
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.BackColor = Color.Transparent
-        Label2.Font = New Font("Rockwell", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label2.ForeColor = Color.DarkGreen
-        Label2.Image = My.Resources.Resources._3700471_book_books_education_library_literature_reading_study_108741
-        Label2.ImageAlign = ContentAlignment.MiddleLeft
-        Label2.Location = New Point(36, 17)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(356, 39)
-        Label2.TabIndex = 25
-        Label2.Text = "        Book Collections:"
-        Label2.TextAlign = ContentAlignment.TopRight
         ' 
         ' flowPanelRecords
         ' 
         flowPanelRecords.AutoScroll = True
-        flowPanelRecords.BackColor = Color.LightGreen
+        flowPanelRecords.BackColor = Color.DarkSlateGray
         flowPanelRecords.ForeColor = Color.Transparent
         flowPanelRecords.Location = New Point(36, 59)
         flowPanelRecords.Name = "flowPanelRecords"
@@ -287,26 +237,93 @@ Partial Class UserDashboard
         ' 
         OpenFileDialog1.FileName = "OpenFileDialog1"
         ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.BackColor = Color.Transparent
+        PictureBox1.BackgroundImageLayout = ImageLayout.Center
+        PictureBox1.Cursor = Cursors.Hand
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
+        PictureBox1.Location = New Point(13, 10)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(58, 54)
+        PictureBox1.SizeMode = PictureBoxSizeMode.CenterImage
+        PictureBox1.TabIndex = 15
+        PictureBox1.TabStop = False
+        ' 
+        ' Label7
+        ' 
+        Label7.Anchor = AnchorStyles.None
+        Label7.AutoSize = True
+        Label7.BackColor = Color.Transparent
+        Label7.Font = New Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label7.ForeColor = Color.White
+        Label7.Location = New Point(66, 21)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(388, 37)
+        Label7.TabIndex = 14
+        Label7.Text = "Barangay International Library"
+        Label7.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.BackColor = Color.Transparent
+        Label3.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold)
+        Label3.ForeColor = SystemColors.ControlText
+        Label3.Location = New Point(848, 19)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(59, 20)
+        Label3.TabIndex = 33
+        Label3.Text = "Search:"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.BackColor = Color.Transparent
+        Label2.Font = New Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.ForeColor = Color.DarkSlateGray
+        Label2.Image = My.Resources.Resources._3700471_book_books_education_library_literature_reading_study_108741
+        Label2.ImageAlign = ContentAlignment.MiddleLeft
+        Label2.Location = New Point(36, 15)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(284, 37)
+        Label2.TabIndex = 34
+        Label2.Text = "        Book Collections:"
+        Label2.TextAlign = ContentAlignment.TopRight
+        ' 
+        ' PictureBox3
+        ' 
+        PictureBox3.Anchor = AnchorStyles.None
+        PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), Image)
+        PictureBox3.BackgroundImageLayout = ImageLayout.Zoom
+        PictureBox3.Location = New Point(913, 0)
+        PictureBox3.Name = "PictureBox3"
+        PictureBox3.Size = New Size(209, 59)
+        PictureBox3.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox3.TabIndex = 44
+        PictureBox3.TabStop = False
+        ' 
         ' UserDashboard
         ' 
-        AutoScaleDimensions = New SizeF(9.0F, 21.0F)
+        AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1266, 637)
         Controls.Add(MainPanel)
         Controls.Add(SidePanel)
         Controls.Add(TopPanel)
-        Font = New Font("Segoe UI Semibold", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Margin = New Padding(4)
         Name = "UserDashboard"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Book Dashboard"
         TopPanel.ResumeLayout(False)
         TopPanel.PerformLayout()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         CType(ProfileBoxUpper, ComponentModel.ISupportInitialize).EndInit()
         SidePanel.ResumeLayout(False)
         MainPanel.ResumeLayout(False)
         MainPanel.PerformLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -317,15 +334,16 @@ Partial Class UserDashboard
     Friend WithEvents btnYourBooks As Button
     Friend WithEvents MainPanel As Panel
     Friend WithEvents flowPanelRecords As FlowLayoutPanel
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents updateProfileBtn As Button
     Friend WithEvents profileBtn As Button
     Friend WithEvents userIDlbl As Label
     Friend WithEvents txtWelcome As TextBox
     Friend WithEvents ProfileBoxUpper As PictureBox
-    Friend WithEvents Label1 As Label
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
-    Friend WithEvents Label2 As Label
     Friend WithEvents txtSearchList As TextBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label7 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents PictureBox3 As PictureBox
 End Class

@@ -1950,6 +1950,15 @@
         Pctw54Uw3qYSv/q/v2phQ7gDAMBz9v8D3MxdZ0k7zkoAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="SignOutBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAADASURBVFhH7ZXLDcIwEEQDJdAZohIKiaiLkuDy0EoxEiMC
+        zo4l+5B3XHueR8rH07QzIjRCvdWoKIt6q3EFbt4WuHlb4OZtwRJ/6ryaBgUewFnn1TQokD88cAsEwAm4
+        6rwKtwBwBO6L5qbrf3ELBMAlXsRSAjjonlVaFAjSJX4VKGtJZvV9pezWefDp24xfYAv6CHR9lRYF0ocH
+        boFRPsOuP6K+v+IRLqOg63Vs5W2Bm7cFbv4tcFFvNSrKot6dIXkBIS4MoANjCysAAAAASUVORK5CYII=
+</value>
+  </data>
   <metadata name="BorrowID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

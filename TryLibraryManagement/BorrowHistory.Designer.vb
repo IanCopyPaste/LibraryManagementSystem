@@ -29,8 +29,8 @@ Partial Class BorrowHistory
         Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
         TopPanel = New Panel()
         PictureBox1 = New PictureBox()
+        Label7 = New Label()
         ProfileBoxUpper = New PictureBox()
-        Label1 = New Label()
         SidePanel = New Panel()
         BookHistoryBtn = New Button()
         Button1 = New Button()
@@ -68,10 +68,10 @@ Partial Class BorrowHistory
         ' 
         ' TopPanel
         ' 
-        TopPanel.BackColor = Color.Green
+        TopPanel.BackColor = Color.DarkSlateGray
         TopPanel.Controls.Add(PictureBox1)
+        TopPanel.Controls.Add(Label7)
         TopPanel.Controls.Add(ProfileBoxUpper)
-        TopPanel.Controls.Add(Label1)
         TopPanel.Dock = DockStyle.Top
         TopPanel.Location = New Point(0, 0)
         TopPanel.Name = "TopPanel"
@@ -84,12 +84,26 @@ Partial Class BorrowHistory
         PictureBox1.BackgroundImageLayout = ImageLayout.Center
         PictureBox1.Cursor = Cursors.Hand
         PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(12, 10)
+        PictureBox1.Location = New Point(13, 8)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(58, 54)
         PictureBox1.SizeMode = PictureBoxSizeMode.CenterImage
-        PictureBox1.TabIndex = 12
+        PictureBox1.TabIndex = 13
         PictureBox1.TabStop = False
+        ' 
+        ' Label7
+        ' 
+        Label7.Anchor = AnchorStyles.None
+        Label7.AutoSize = True
+        Label7.BackColor = Color.Transparent
+        Label7.Font = New Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label7.ForeColor = Color.White
+        Label7.Location = New Point(66, 19)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(598, 37)
+        Label7.TabIndex = 12
+        Label7.Text = "Barangay International Library - Borrow History"
+        Label7.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' ProfileBoxUpper
         ' 
@@ -101,23 +115,9 @@ Partial Class BorrowHistory
         ProfileBoxUpper.TabIndex = 11
         ProfileBoxUpper.TabStop = False
         ' 
-        ' Label1
-        ' 
-        Label1.Anchor = AnchorStyles.None
-        Label1.AutoSize = True
-        Label1.BackColor = Color.Transparent
-        Label1.Font = New Font("Sitka Text Semibold", 27.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        Label1.ForeColor = Color.White
-        Label1.Location = New Point(67, 9)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(895, 53)
-        Label1.TabIndex = 10
-        Label1.Text = "Barangay International Library - Borrow History"
-        Label1.TextAlign = ContentAlignment.MiddleCenter
-        ' 
         ' SidePanel
         ' 
-        SidePanel.BackColor = Color.LightGreen
+        SidePanel.BackColor = Color.CadetBlue
         SidePanel.Controls.Add(BookHistoryBtn)
         SidePanel.Controls.Add(Button1)
         SidePanel.Controls.Add(SignOutBtn)
@@ -131,7 +131,7 @@ Partial Class BorrowHistory
         ' 
         ' BookHistoryBtn
         ' 
-        BookHistoryBtn.BackColor = Color.Green
+        BookHistoryBtn.BackColor = Color.DarkSlateGray
         BookHistoryBtn.Cursor = Cursors.Hand
         BookHistoryBtn.FlatAppearance.BorderSize = 0
         BookHistoryBtn.FlatStyle = FlatStyle.Flat
@@ -148,7 +148,7 @@ Partial Class BorrowHistory
         ' 
         ' Button1
         ' 
-        Button1.BackColor = Color.Green
+        Button1.BackColor = Color.DarkSlateGray
         Button1.Cursor = Cursors.Hand
         Button1.FlatAppearance.BorderSize = 0
         Button1.FlatStyle = FlatStyle.Flat
@@ -165,13 +165,13 @@ Partial Class BorrowHistory
         ' 
         ' SignOutBtn
         ' 
-        SignOutBtn.BackColor = Color.Green
+        SignOutBtn.BackColor = Color.DarkSlateGray
         SignOutBtn.Cursor = Cursors.Hand
         SignOutBtn.FlatAppearance.BorderSize = 0
         SignOutBtn.FlatStyle = FlatStyle.Flat
         SignOutBtn.Font = New Font("Tahoma", 9.75F, FontStyle.Bold)
         SignOutBtn.ForeColor = SystemColors.ControlLightLight
-        SignOutBtn.Image = My.Resources.Resources.sign_out_icon_icons_com_69908
+        SignOutBtn.Image = CType(resources.GetObject("SignOutBtn.Image"), Image)
         SignOutBtn.Location = New Point(0, 472)
         SignOutBtn.Name = "SignOutBtn"
         SignOutBtn.Size = New Size(108, 60)
@@ -182,7 +182,7 @@ Partial Class BorrowHistory
         ' 
         ' InsertBooksBtn
         ' 
-        InsertBooksBtn.BackColor = Color.Green
+        InsertBooksBtn.BackColor = Color.DarkSlateGray
         InsertBooksBtn.Cursor = Cursors.Hand
         InsertBooksBtn.FlatAppearance.BorderSize = 0
         InsertBooksBtn.FlatStyle = FlatStyle.Flat
@@ -199,7 +199,7 @@ Partial Class BorrowHistory
         ' 
         ' userPageBtn
         ' 
-        userPageBtn.BackColor = Color.Green
+        userPageBtn.BackColor = Color.DarkSlateGray
         userPageBtn.Cursor = Cursors.Hand
         userPageBtn.FlatAppearance.BorderSize = 0
         userPageBtn.FlatStyle = FlatStyle.Flat
@@ -216,7 +216,7 @@ Partial Class BorrowHistory
         ' 
         ' MainPanel
         ' 
-        MainPanel.BackColor = Color.AntiqueWhite
+        MainPanel.BackColor = Color.Snow
         MainPanel.Controls.Add(Label4)
         MainPanel.Controls.Add(comboStat)
         MainPanel.Controls.Add(TimeLabel)
@@ -237,11 +237,11 @@ Partial Class BorrowHistory
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Font = New Font("Rockwell", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label4.ForeColor = Color.DarkGreen
-        Label4.Location = New Point(488, 16)
+        Label4.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label4.ForeColor = SystemColors.ControlText
+        Label4.Location = New Point(498, 15)
         Label4.Name = "Label4"
-        Label4.Size = New Size(83, 19)
+        Label4.Size = New Size(73, 21)
         Label4.TabIndex = 17
         Label4.Text = "Filter by:"
         ' 
@@ -250,7 +250,7 @@ Partial Class BorrowHistory
         comboStat.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         comboStat.FormattingEnabled = True
         comboStat.Items.AddRange(New Object() {"Returned", "Borrowed", "All"})
-        comboStat.Location = New Point(577, 12)
+        comboStat.Location = New Point(577, 16)
         comboStat.Name = "comboStat"
         comboStat.Size = New Size(147, 25)
         comboStat.TabIndex = 16
@@ -259,21 +259,21 @@ Partial Class BorrowHistory
         ' TimeLabel
         ' 
         TimeLabel.AutoSize = True
-        TimeLabel.Font = New Font("Rockwell", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        TimeLabel.ForeColor = Color.DarkGreen
-        TimeLabel.Location = New Point(762, 12)
+        TimeLabel.Font = New Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        TimeLabel.ForeColor = SystemColors.ControlText
+        TimeLabel.Location = New Point(752, 14)
         TimeLabel.Name = "TimeLabel"
-        TimeLabel.Size = New Size(118, 25)
+        TimeLabel.Size = New Size(114, 30)
         TimeLabel.TabIndex = 13
         TimeLabel.Text = "Date Now:"
         ' 
         ' btnClearBorrow
         ' 
-        btnClearBorrow.BackColor = Color.Green
+        btnClearBorrow.BackColor = Color.DarkSlateGray
         btnClearBorrow.Cursor = Cursors.Hand
         btnClearBorrow.FlatAppearance.BorderSize = 0
         btnClearBorrow.FlatStyle = FlatStyle.Flat
-        btnClearBorrow.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        btnClearBorrow.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnClearBorrow.ForeColor = Color.White
         btnClearBorrow.Image = My.Resources.Resources.Letter_X_icon_34793__1_
         btnClearBorrow.Location = New Point(334, 6)
@@ -290,7 +290,7 @@ Partial Class BorrowHistory
         txtEmail.BorderStyle = BorderStyle.FixedSingle
         txtEmail.Font = New Font("Rockwell", 11.25F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         txtEmail.ForeColor = Color.Black
-        txtEmail.Location = New Point(19, 95)
+        txtEmail.Location = New Point(19, 90)
         txtEmail.Name = "txtEmail"
         txtEmail.PlaceholderText = "@gmail.com"
         txtEmail.Size = New Size(296, 25)
@@ -300,11 +300,11 @@ Partial Class BorrowHistory
         ' 
         Label3.AutoSize = True
         Label3.BackColor = Color.Transparent
-        Label3.Font = New Font("Rockwell", 11.25F, FontStyle.Bold)
-        Label3.ForeColor = Color.DarkGreen
-        Label3.Location = New Point(19, 74)
+        Label3.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold)
+        Label3.ForeColor = SystemColors.ControlText
+        Label3.Location = New Point(19, 69)
         Label3.Name = "Label3"
-        Label3.Size = New Size(36, 18)
+        Label3.Size = New Size(33, 20)
         Label3.TabIndex = 10
         Label3.Text = "To :"
         ' 
@@ -312,15 +312,16 @@ Partial Class BorrowHistory
         ' 
         BorrowTable.AllowUserToAddRows = False
         BorrowTable.AllowUserToDeleteRows = False
-        DataGridViewCellStyle1.BackColor = Color.ForestGreen
-        DataGridViewCellStyle1.ForeColor = Color.White
-        DataGridViewCellStyle1.SelectionBackColor = Color.YellowGreen
+        DataGridViewCellStyle1.BackColor = Color.Gainsboro
+        DataGridViewCellStyle1.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        DataGridViewCellStyle1.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle1.SelectionBackColor = Color.DodgerBlue
         BorrowTable.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         BorrowTable.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        BorrowTable.BackgroundColor = Color.LimeGreen
+        BorrowTable.BackgroundColor = Color.DarkSlateGray
         DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = SystemColors.Control
-        DataGridViewCellStyle2.Font = New Font("Rockwell", 11.25F, FontStyle.Italic)
+        DataGridViewCellStyle2.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         DataGridViewCellStyle2.ForeColor = SystemColors.WindowText
         DataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight
         DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
@@ -330,14 +331,14 @@ Partial Class BorrowHistory
         BorrowTable.Columns.AddRange(New DataGridViewColumn() {BorrowID, UserID, Email, BookBorrowed, BorrowDate, DueDate, Status})
         BorrowTable.Cursor = Cursors.Hand
         DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = Color.Green
-        DataGridViewCellStyle3.Font = New Font("Sitka Banner", 12.7499981F, FontStyle.Bold Or FontStyle.Italic)
-        DataGridViewCellStyle3.ForeColor = Color.White
-        DataGridViewCellStyle3.SelectionBackColor = Color.YellowGreen
+        DataGridViewCellStyle3.BackColor = Color.Snow
+        DataGridViewCellStyle3.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        DataGridViewCellStyle3.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle3.SelectionBackColor = Color.DodgerBlue
         DataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText
         DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
         BorrowTable.DefaultCellStyle = DataGridViewCellStyle3
-        BorrowTable.GridColor = Color.Green
+        BorrowTable.GridColor = Color.WhiteSmoke
         BorrowTable.Location = New Point(334, 47)
         BorrowTable.Name = "BorrowTable"
         BorrowTable.ReadOnly = True
@@ -417,13 +418,13 @@ Partial Class BorrowHistory
         ' 
         ' btnSend
         ' 
-        btnSend.BackColor = Color.Green
+        btnSend.BackColor = Color.DarkSlateGray
         btnSend.Cursor = Cursors.Hand
         btnSend.FlatAppearance.BorderSize = 0
         btnSend.FlatStyle = FlatStyle.Flat
-        btnSend.Font = New Font("Rockwell", 14.25F, FontStyle.Bold)
+        btnSend.Font = New Font("Segoe UI Semibold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnSend.ForeColor = Color.White
-        btnSend.Location = New Point(58, 408)
+        btnSend.Location = New Point(56, 439)
         btnSend.Name = "btnSend"
         btnSend.Size = New Size(220, 34)
         btnSend.TabIndex = 7
@@ -434,11 +435,11 @@ Partial Class BorrowHistory
         ' 
         Label2.AutoSize = True
         Label2.BackColor = Color.Transparent
-        Label2.Font = New Font("Rockwell", 11.25F, FontStyle.Bold)
-        Label2.ForeColor = Color.DarkGreen
-        Label2.Location = New Point(19, 126)
+        Label2.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold)
+        Label2.ForeColor = SystemColors.ControlText
+        Label2.Location = New Point(19, 134)
         Label2.Name = "Label2"
-        Label2.Size = New Size(179, 18)
+        Label2.Size = New Size(163, 20)
         Label2.TabIndex = 6
         Label2.Text = "Message to returnees :"
         ' 
@@ -446,9 +447,9 @@ Partial Class BorrowHistory
         ' 
         RichTextBox1.BackColor = Color.Gainsboro
         RichTextBox1.BorderStyle = BorderStyle.FixedSingle
-        RichTextBox1.Font = New Font("Rockwell", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        RichTextBox1.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         RichTextBox1.ForeColor = Color.Black
-        RichTextBox1.Location = New Point(19, 149)
+        RichTextBox1.Location = New Point(19, 157)
         RichTextBox1.Name = "RichTextBox1"
         RichTextBox1.Size = New Size(296, 224)
         RichTextBox1.TabIndex = 5
@@ -504,11 +505,11 @@ Partial Class BorrowHistory
     Friend WithEvents txtEmail As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents btnClearBorrow As Button
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents ProfileBoxUpper As PictureBox
-    Friend WithEvents Label1 As Label
     Friend WithEvents TimeLabel As Label
     Friend WithEvents ToolTip1 As ToolTip
     Friend WithEvents Label4 As Label
     Friend WithEvents comboStat As ComboBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label7 As Label
 End Class

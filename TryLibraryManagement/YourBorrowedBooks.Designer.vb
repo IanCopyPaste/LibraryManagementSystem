@@ -32,8 +32,8 @@ Partial Class YourBorrowedBooks
         SignOutBtn = New Button()
         userPageBtn = New Button()
         MainPanel = New Panel()
-        Label2 = New Label()
         ewanFLow = New FlowLayoutPanel()
+        Label2 = New Label()
         TopPanel.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(ProfileBoxUpper, ComponentModel.ISupportInitialize).BeginInit()
@@ -43,7 +43,7 @@ Partial Class YourBorrowedBooks
         ' 
         ' TopPanel
         ' 
-        TopPanel.BackColor = Color.Green
+        TopPanel.BackColor = Color.DarkSlateGray
         TopPanel.Controls.Add(PictureBox1)
         TopPanel.Controls.Add(ProfileBoxUpper)
         TopPanel.Controls.Add(Label1)
@@ -92,7 +92,7 @@ Partial Class YourBorrowedBooks
         ' 
         ' SidePanel
         ' 
-        SidePanel.BackColor = Color.LightGreen
+        SidePanel.BackColor = Color.CadetBlue
         SidePanel.Controls.Add(btnYourBooks)
         SidePanel.Controls.Add(SignOutBtn)
         SidePanel.Controls.Add(userPageBtn)
@@ -104,7 +104,7 @@ Partial Class YourBorrowedBooks
         ' 
         ' btnYourBooks
         ' 
-        btnYourBooks.BackColor = Color.Green
+        btnYourBooks.BackColor = Color.DarkSlateGray
         btnYourBooks.Cursor = Cursors.Hand
         btnYourBooks.FlatAppearance.BorderSize = 0
         btnYourBooks.FlatStyle = FlatStyle.Flat
@@ -121,12 +121,12 @@ Partial Class YourBorrowedBooks
         ' 
         ' SignOutBtn
         ' 
-        SignOutBtn.BackColor = Color.Green
+        SignOutBtn.BackColor = Color.DarkSlateGray
         SignOutBtn.FlatAppearance.BorderSize = 0
         SignOutBtn.FlatStyle = FlatStyle.Flat
         SignOutBtn.Font = New Font("Tahoma", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         SignOutBtn.ForeColor = SystemColors.ControlLightLight
-        SignOutBtn.Image = My.Resources.Resources.sign_out_icon_icons_com_69908
+        SignOutBtn.Image = CType(resources.GetObject("SignOutBtn.Image"), Image)
         SignOutBtn.Location = New Point(0, 472)
         SignOutBtn.Name = "SignOutBtn"
         SignOutBtn.Size = New Size(134, 60)
@@ -137,7 +137,7 @@ Partial Class YourBorrowedBooks
         ' 
         ' userPageBtn
         ' 
-        userPageBtn.BackColor = Color.Green
+        userPageBtn.BackColor = Color.DarkSlateGray
         userPageBtn.FlatAppearance.BorderSize = 0
         userPageBtn.FlatStyle = FlatStyle.Flat
         userPageBtn.Font = New Font("Tahoma", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
@@ -153,7 +153,7 @@ Partial Class YourBorrowedBooks
         ' 
         ' MainPanel
         ' 
-        MainPanel.BackColor = Color.AntiqueWhite
+        MainPanel.BackColor = Color.Snow
         MainPanel.Controls.Add(Label2)
         MainPanel.Controls.Add(ewanFLow)
         MainPanel.Dock = DockStyle.Fill
@@ -162,29 +162,29 @@ Partial Class YourBorrowedBooks
         MainPanel.Size = New Size(1132, 563)
         MainPanel.TabIndex = 3
         ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.BackColor = Color.Transparent
-        Label2.Font = New Font("Rockwell", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label2.ForeColor = Color.DarkGreen
-        Label2.Image = My.Resources.Resources._3700471_book_books_education_library_literature_reading_study_108741
-        Label2.ImageAlign = ContentAlignment.MiddleLeft
-        Label2.Location = New Point(36, 17)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(413, 39)
-        Label2.TabIndex = 26
-        Label2.Text = "        Books You Borrowed:"
-        Label2.TextAlign = ContentAlignment.TopRight
-        ' 
         ' ewanFLow
         ' 
         ewanFLow.AutoScroll = True
-        ewanFLow.BackColor = Color.LightGreen
+        ewanFLow.BackColor = Color.DarkSlateGray
         ewanFLow.Location = New Point(36, 59)
         ewanFLow.Name = "ewanFLow"
         ewanFLow.Size = New Size(1086, 465)
         ewanFLow.TabIndex = 22
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.BackColor = Color.Transparent
+        Label2.Font = New Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.ForeColor = Color.DarkSlateGray
+        Label2.Image = My.Resources.Resources._3700471_book_books_education_library_literature_reading_study_108741
+        Label2.ImageAlign = ContentAlignment.MiddleLeft
+        Label2.Location = New Point(36, 19)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(284, 37)
+        Label2.TabIndex = 35
+        Label2.Text = "        Book Collections:"
+        Label2.TextAlign = ContentAlignment.TopRight
         ' 
         ' YourBorrowedBooks
         ' 

@@ -22,9 +22,9 @@ Public Class CreateActualBook
                     MsgBox("BOOK IS ADDED!", vbInformation, "Title Inserted!")
                 End If
             Catch ex As MySqlException
-                MsgBox(ex.Message, vbCritical, "fine")
+                MsgBox(ex.Message, vbCritical, "ERROR(0)")
             Catch ex As Exception
-                MsgBox(ex.Message, vbCritical, "shii")
+                MsgBox(ex.Message, vbCritical, "ERROR(1)")
             Finally
                 GC.Collect()
                 con.Close()

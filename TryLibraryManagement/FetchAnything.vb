@@ -47,9 +47,9 @@ Module FetchAnything
                 Return True
             End If
         Catch ex As MySqlException
-            MsgBox(ex.Message, vbCritical, "OH NO!")
+            MsgBox(ex.Message, vbCritical, "BOOK ERROR(0)")
         Catch ex As Exception
-            MsgBox(ex.Message, vbCritical, "GAGU")
+            MsgBox(ex.Message, vbCritical, "BOOK ERROR(1)")
         Finally
             GC.Collect()
             con.Close()
@@ -124,7 +124,6 @@ Module FetchAnything
             smtp.Credentials = New NetworkCredential("bobbycuen@gmail.com", pas)
             smtp.EnableSsl = True
             smtp.Send(mail)
-            MessageBox.Show("Your Verification Code was sent to your Email", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
         Catch ex As Exception
             MessageBox.Show("Error: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try

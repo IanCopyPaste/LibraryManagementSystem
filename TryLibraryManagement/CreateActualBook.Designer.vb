@@ -37,38 +37,43 @@ Partial Class CreateActualBook
         UploadPhotoDialoag = New OpenFileDialog()
         btnBack = New Button()
         BackgroundWorker1 = New ComponentModel.BackgroundWorker()
+        PictureBox3 = New PictureBox()
+        PictureBox1 = New PictureBox()
         CType(bookPic, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' txtTitle
         ' 
+        txtTitle.BorderStyle = BorderStyle.None
         txtTitle.Cursor = Cursors.Hand
         txtTitle.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtTitle.Location = New Point(40, 100)
+        txtTitle.Location = New Point(70, 113)
         txtTitle.Margin = New Padding(3, 2, 3, 2)
         txtTitle.Name = "txtTitle"
-        txtTitle.Size = New Size(213, 25)
+        txtTitle.Size = New Size(181, 18)
         txtTitle.TabIndex = 0
         ' 
         ' InsertBtn
         ' 
-        InsertBtn.BackColor = Color.Green
+        InsertBtn.BackColor = Color.DarkSlateGray
         InsertBtn.Cursor = Cursors.Hand
         InsertBtn.FlatAppearance.BorderSize = 0
         InsertBtn.FlatStyle = FlatStyle.Flat
-        InsertBtn.Font = New Font("Rockwell", 11.25F, FontStyle.Bold)
+        InsertBtn.Font = New Font("Segoe UI Semibold", 12.75F, FontStyle.Bold)
         InsertBtn.ForeColor = Color.White
-        InsertBtn.Location = New Point(129, 383)
+        InsertBtn.Location = New Point(133, 389)
         InsertBtn.Margin = New Padding(3, 2, 3, 2)
         InsertBtn.Name = "InsertBtn"
-        InsertBtn.Size = New Size(285, 28)
+        InsertBtn.Size = New Size(257, 32)
         InsertBtn.TabIndex = 1
         InsertBtn.Text = "Insert"
         InsertBtn.UseVisualStyleBackColor = False
         ' 
         ' bookPic
         ' 
-        bookPic.BackColor = Color.Snow
+        bookPic.BackColor = Color.DarkSlateGray
         bookPic.Location = New Point(300, 56)
         bookPic.Margin = New Padding(3, 2, 3, 2)
         bookPic.Name = "bookPic"
@@ -79,12 +84,13 @@ Partial Class CreateActualBook
         ' 
         ' txtAuthor
         ' 
+        txtAuthor.BorderStyle = BorderStyle.None
         txtAuthor.Cursor = Cursors.Hand
         txtAuthor.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtAuthor.Location = New Point(40, 166)
+        txtAuthor.Location = New Point(70, 179)
         txtAuthor.Margin = New Padding(3, 2, 3, 2)
         txtAuthor.Name = "txtAuthor"
-        txtAuthor.Size = New Size(213, 25)
+        txtAuthor.Size = New Size(181, 18)
         txtAuthor.TabIndex = 3
         ' 
         ' Label2
@@ -92,8 +98,8 @@ Partial Class CreateActualBook
         Label2.AutoSize = True
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label2.ForeColor = Color.DarkGreen
-        Label2.Location = New Point(110, 128)
+        Label2.ForeColor = Color.Black
+        Label2.Location = New Point(53, 76)
         Label2.Name = "Label2"
         Label2.Size = New Size(77, 20)
         Label2.TabIndex = 6
@@ -104,8 +110,8 @@ Partial Class CreateActualBook
         Label3.AutoSize = True
         Label3.BackColor = Color.Transparent
         Label3.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label3.ForeColor = Color.DarkGreen
-        Label3.Location = New Point(101, 193)
+        Label3.ForeColor = Color.Black
+        Label3.Location = New Point(53, 148)
         Label3.Name = "Label3"
         Label3.Size = New Size(96, 20)
         Label3.TabIndex = 7
@@ -117,10 +123,10 @@ Partial Class CreateActualBook
         txtCategory.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         txtCategory.FormattingEnabled = True
         txtCategory.Items.AddRange(New Object() {"Adult", "Horror", "Science Fiction", "Romance", "Poetry", "Lifestyle", "Action", "History", "Fantasy", "Mystery", "Thriller", "Drama", "Biography", "Adventure", "Self-Help"})
-        txtCategory.Location = New Point(40, 232)
+        txtCategory.Location = New Point(53, 244)
         txtCategory.Margin = New Padding(3, 2, 3, 2)
         txtCategory.Name = "txtCategory"
-        txtCategory.Size = New Size(213, 25)
+        txtCategory.Size = New Size(211, 25)
         txtCategory.TabIndex = 9
         txtCategory.Text = "Adult"
         ' 
@@ -129,8 +135,8 @@ Partial Class CreateActualBook
         Label4.AutoSize = True
         Label4.BackColor = Color.Transparent
         Label4.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label4.ForeColor = Color.DarkGreen
-        Label4.Location = New Point(115, 259)
+        Label4.ForeColor = Color.Black
+        Label4.Location = New Point(53, 222)
         Label4.Name = "Label4"
         Label4.Size = New Size(72, 20)
         Label4.TabIndex = 10
@@ -140,10 +146,10 @@ Partial Class CreateActualBook
         ' 
         txtPubDate.Cursor = Cursors.Hand
         txtPubDate.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtPubDate.Location = New Point(40, 298)
+        txtPubDate.Location = New Point(53, 303)
         txtPubDate.Margin = New Padding(3, 2, 3, 2)
         txtPubDate.Name = "txtPubDate"
-        txtPubDate.Size = New Size(213, 25)
+        txtPubDate.Size = New Size(211, 25)
         txtPubDate.TabIndex = 11
         ' 
         ' Label5
@@ -151,8 +157,8 @@ Partial Class CreateActualBook
         Label5.AutoSize = True
         Label5.BackColor = Color.Transparent
         Label5.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label5.ForeColor = Color.DarkGreen
-        Label5.Location = New Point(101, 326)
+        Label5.ForeColor = Color.Black
+        Label5.Location = New Point(53, 281)
         Label5.Name = "Label5"
         Label5.Size = New Size(112, 20)
         Label5.TabIndex = 12
@@ -160,7 +166,7 @@ Partial Class CreateActualBook
         ' 
         ' btnUploadPhoto
         ' 
-        btnUploadPhoto.BackColor = Color.Green
+        btnUploadPhoto.BackColor = Color.Teal
         btnUploadPhoto.Cursor = Cursors.Hand
         btnUploadPhoto.FlatAppearance.BorderSize = 0
         btnUploadPhoto.FlatStyle = FlatStyle.Flat
@@ -182,27 +188,51 @@ Partial Class CreateActualBook
         ' 
         ' btnBack
         ' 
-        btnBack.BackColor = Color.Green
+        btnBack.BackColor = Color.DarkSlateGray
         btnBack.Cursor = Cursors.Hand
         btnBack.FlatAppearance.BorderSize = 0
         btnBack.FlatStyle = FlatStyle.Flat
-        btnBack.Font = New Font("Rockwell", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnBack.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnBack.ForeColor = Color.White
         btnBack.Image = CType(resources.GetObject("btnBack.Image"), Image)
         btnBack.Location = New Point(12, 12)
         btnBack.Margin = New Padding(3, 2, 3, 2)
         btnBack.Name = "btnBack"
-        btnBack.Size = New Size(145, 40)
+        btnBack.Size = New Size(164, 40)
         btnBack.TabIndex = 14
-        btnBack.Text = "Back To " & vbCrLf & "Dashboard"
+        btnBack.Text = "Back To Dashboard"
         btnBack.TextImageRelation = TextImageRelation.ImageBeforeText
         btnBack.UseVisualStyleBackColor = False
+        ' 
+        ' PictureBox3
+        ' 
+        PictureBox3.Anchor = AnchorStyles.None
+        PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), Image)
+        PictureBox3.BackgroundImageLayout = ImageLayout.Zoom
+        PictureBox3.Location = New Point(53, 99)
+        PictureBox3.Name = "PictureBox3"
+        PictureBox3.Size = New Size(211, 46)
+        PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox3.TabIndex = 42
+        PictureBox3.TabStop = False
+        ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Anchor = AnchorStyles.None
+        PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), Image)
+        PictureBox1.BackgroundImageLayout = ImageLayout.Zoom
+        PictureBox1.Location = New Point(53, 163)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(211, 49)
+        PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox1.TabIndex = 43
+        PictureBox1.TabStop = False
         ' 
         ' CreateActualBook
         ' 
         AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.AntiqueWhite
+        BackColor = Color.Snow
         ClientSize = New Size(557, 460)
         Controls.Add(btnBack)
         Controls.Add(btnUploadPhoto)
@@ -216,6 +246,8 @@ Partial Class CreateActualBook
         Controls.Add(bookPic)
         Controls.Add(InsertBtn)
         Controls.Add(txtTitle)
+        Controls.Add(PictureBox1)
+        Controls.Add(PictureBox3)
         Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Margin = New Padding(4)
         Name = "CreateActualBook"
@@ -223,6 +255,8 @@ Partial Class CreateActualBook
         Text = "Insert a Book"
         TopMost = True
         CType(bookPic, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -241,4 +275,6 @@ Partial Class CreateActualBook
     Friend WithEvents UploadPhotoDialoag As OpenFileDialog
     Friend WithEvents btnBack As Button
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

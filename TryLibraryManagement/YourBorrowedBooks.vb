@@ -34,7 +34,7 @@ Public Class YourBorrowedBooks
                 Dim card As New Panel With {
             .Width = 177,
             .Height = 277,
-            .BackColor = Color.Green,
+            .BackColor = Color.Teal,
                 .Dock = DockStyle.Fill,
             .Cursor = Cursors.Hand
         }
@@ -43,7 +43,7 @@ Public Class YourBorrowedBooks
             .Width = 160,
             .Height = 200,
             .Location = New Point(9, 9),
-            .BackColor = Color.Salmon
+            .BackColor = Color.Teal
         }
 
 

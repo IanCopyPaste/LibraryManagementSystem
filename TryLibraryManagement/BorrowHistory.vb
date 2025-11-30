@@ -127,9 +127,9 @@ Public Class BorrowHistory
         End Try
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        MainDashboard.Show()
-        Me.Dispose()
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
+        MainDashboard.Show
+        Dispose
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
