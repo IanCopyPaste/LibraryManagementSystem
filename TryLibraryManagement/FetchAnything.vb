@@ -17,10 +17,21 @@ Module FetchAnything
     Public getID3 As Integer
 
     'app password for the sender of the message
-    Private app_pass As String = "iqpv kbbd dniy akom"
+    Private pass As New appPass
+    Private pas As String = pass.getAppPass
 
     'fetch profile picture to any form
     Public userImage As Image
+
+    'VARIABLES TO IPASA YUNG CREDENTIALS FROM SIGNUP FORM PAPUNTA DITO PARA IEXECUTE YUNG INSERT INFO METHOD
+    Public fname As String
+    Public lname As String
+    Public mname As String
+    Public suffix As String
+    Public username As String
+    Public email As String
+    Public password As String
+
 
     'CreateActualBookForm
 
@@ -34,8 +45,6 @@ Module FetchAnything
             Dim read As MySqlDataReader = cmd.ExecuteReader
             If read.HasRows Then
                 Return True
-            Else
-                Return False
             End If
         Catch ex As MySqlException
             MsgBox(ex.Message, vbCritical, "OH NO!")
@@ -45,6 +54,28 @@ Module FetchAnything
             GC.Collect()
             con.Close()
         End Try
+        Return False
+    End Function
+
+    Public Function checkUsernameUnique(username As String)
+        Try
+            con.Open()
+            Dim query As String = "SELECT * FROM users WHERE username=?"
+            Dim cmd As New MySqlCommand(query, con)
+            cmd.Parameters.AddWithValue("username", username)
+            Dim read As MySqlDataReader = cmd.ExecuteReader
+            If read.HasRows Then
+                Return True
+            End If
+            read.Close()
+        Catch ex As MySqlException
+            MsgBox("ERROR OCCURED IN USERNAME UNIQUE", vbCritical, "ERROR OCCURED(0)")
+        Catch ex As Exception
+            MsgBox("ERROR OCCURED IN USERNAME UNIQUE", vbCritical, "ERROR OCCURED(1)")
+        Finally
+            con.Close()
+        End Try
+        Return False
     End Function
     'main process
 
@@ -66,23 +97,18 @@ Module FetchAnything
     'API CALLS FOR SIGN UP
     Public otp As String
 
-    Public fname As String
-    Public lname As String
-    Public mname As String
-    Public suffix As String
-    Public username As String
-    Public email As String
-    Public password As String
-
+    'BASICALLY MAG GEGENERATE SIYA DITO NG RANDOM NUMBERS NA 6 DIGITS AT GAGAMITIN PARA SA OTP
     Public Function generateCode()
         Dim rand As New Random
         Dim code As String = rand.Next(100000, 1000000).ToString("D6")
         Return code
     End Function
 
+    'ITO YUNG SUB NA NAG SESEND NG EMAIL
     Public Sub SendEmail()
         Try
             otp = generateCode()
+            'ITONG BLOCK NA TO, ITO YUNG FOUNDATION NG EMAIL
             Dim mail As New MailMessage()
             mail.From = New MailAddress("bobbycuen@gmail.com", "FROM: LIBRARY MANAGEMENT SYSTEM by Ian")
             mail.To.Add(email)
@@ -91,20 +117,20 @@ Module FetchAnything
                         Do not share this code with anyone to keep your account secure. 
                         If you did not request this verification, please ignore this message."
 
+            'ITO YUNG FORMAT NG EMAIL PARA ALAM NI SMTP ANG TARGET DOMAIN
             Dim smtp As New SmtpClient("smtp.gmail.com")
             smtp.Port = 587
-            smtp.Credentials = New NetworkCredential("bobbycuen@gmail.com", app_pass)
+            'ITONG OBJECT NA TO IS KINUKUHA NIYA YUNG INFO AT PASSWORD NI SENDER NAKA ENCAPSULATE YUNG PASS PARA HINDI NIYO MAKITA!
+            smtp.Credentials = New NetworkCredential("bobbycuen@gmail.com", pas)
             smtp.EnableSsl = True
-
             smtp.Send(mail)
-
             MessageBox.Show("Your Verification Code was sent to your Email", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
-
         Catch ex As Exception
             MessageBox.Show("Error: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
 
+    'ITONG SUB NA TO PARA, TATAWAGIN TO SA SIGN UP FORM PARA IPSOK YUNG CRED SA DATABASE
     Public Sub insertInfo()
         Try
             DBcon.dbConOpen()
@@ -141,11 +167,14 @@ Module FetchAnything
         Finally
             GC.Collect()
             DBcon.dbConClose()
+            clear(SignUp.Panel1)
         End Try
     End Sub
     'API CALLS FOR SIGN UP
 
     'API CALLS FOR BORROW HISTORY
+
+    'ITONG SUB NA TO AY PARA SA BORROW HISTORY PANG NOTIFY DIN
     Public Sub NotifyReturnees(emails As String, misij As String)
         Try
             Dim mail As New MailMessage()
@@ -156,7 +185,7 @@ Module FetchAnything
 
             Dim smtp As New SmtpClient("smtp.gmail.com")
             smtp.Port = 587
-            smtp.Credentials = New NetworkCredential("bobbycuen@gmail.com", app_pass)
+            smtp.Credentials = New NetworkCredential("bobbycuen@gmail.com", pas)
             smtp.EnableSsl = True
 
             smtp.Send(mail)
@@ -186,4 +215,13 @@ Module FetchAnything
         End Try
     End Sub
     'method for diaplaying profile picture
+
+    'ITONG SUB NA TO AY PANG CLEAR NG TEXTBOX SA LAHAT NG FORM PARA ISAHAN NALANG
+    Sub clear(pnl As Panel)
+        For Each obj In pnl.Controls
+            If TypeOf obj Is TextBox Then
+                obj.clear()
+            End If
+        Next
+    End Sub
 End Module

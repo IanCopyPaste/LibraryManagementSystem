@@ -1,4 +1,5 @@
 ﻿Public Class SignUpOtpCode
+    'VERIFY KUNG TAMA AYUNG OTP NA NAINPUT KUNG INDE MAG BABATO NG MSG BOX
     Private Sub btnSendCode_Click(sender As Object, e As EventArgs) Handles btnSendCode.Click
         If txtOtpCode.Text = otp Then
             insertInfo()
@@ -12,6 +13,7 @@
         End If
     End Sub
 
+    'KAPAG NAG RESEND TATAWAGIN NIYA YUNG OBJECT FROM FETCH ANYTHING
     Private Sub btnResendCode_Click(sender As Object, e As EventArgs) Handles btnResendCode.Click
         SendEmail()
     End Sub
@@ -25,9 +27,5 @@
         password = Nothing
         email = Nothing
         otp = Nothing
-    End Sub
-
-    Private Sub SignUpOtpCode_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
     End Sub
 End Class

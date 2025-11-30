@@ -6,7 +6,12 @@ Public Class SignUp
         Me.Hide()
     End Sub
 
+    'ITONG SUB NA TO AY CHEKCING KUNG COMPLETE ANG NILAGAY NI USER
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles SignUpbtn.Click
+        If checkUsernameUnique(usernamBox.Text.Trim) Then
+            MsgBox("USERNAME ALREADY TAKEN! PLEASE CHOOSE ANOTHER", vbInformation, "USERNAME")
+            Exit Sub
+        End If
         If fnameBox.Text = "" Or lnameBox.Text = "" Or emailBox.Text = "" Or usernamBox.Text = "" Then
             MsgBox("Please Complete Credentials!", vbInformation, "Credentials!")
         ElseIf passwordBox.Text <> CpasswordBox.Text Then
@@ -23,14 +28,8 @@ Public Class SignUp
             SignUpOtpCode.Show()
         End If
     End Sub
-    Sub clear()
-        For Each obj In Panel1.Controls
-            If TypeOf obj Is TextBox Then
-                obj.clear()
-            End If
-        Next
-    End Sub
 
+    'ITONG SUB NA TO AY PARA NAG BABAGO YUNG STATUS NG CONFIRM PASS PAG NAG EENTER
     Private Sub CpasswordBox_TextChanged(sender As Object, e As EventArgs) Handles CpasswordBox.TextChanged
         If passwordBox.Text = CpasswordBox.Text Then
             confirmLbl.Text = "Passwords Match!!"
@@ -52,9 +51,5 @@ Public Class SignUp
             passwordBox.UseSystemPasswordChar = True
             see = True
         End If
-    End Sub
-
-    Private Sub SignUp_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
     End Sub
 End Class
