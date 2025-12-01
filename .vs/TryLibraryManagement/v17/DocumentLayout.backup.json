@@ -110,13 +110,12 @@
               "Title": "SignUp.vb",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\SignUp.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\SignUp.vb",
-              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\SignUp.vb*",
-              "RelativeToolTip": "TryLibraryManagement\\SignUp.vb*",
+              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\SignUp.vb",
+              "RelativeToolTip": "TryLibraryManagement\\SignUp.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-11-30T04:51:25.597Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -128,8 +127,8 @@
               "Title": "Form1.vb [Design]",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\Form1.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\Form1.vb",
-              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\Form1.vb [Design]*",
-              "RelativeToolTip": "TryLibraryManagement\\Form1.vb [Design]*",
+              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\Form1.vb [Design]",
+              "RelativeToolTip": "TryLibraryManagement\\Form1.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-11-21T09:31:19.662Z",
               "EditorCaption": " [Design]"
@@ -140,12 +139,11 @@
               "Title": "Form1.vb",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\Form1.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\Form1.vb",
-              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\Form1.vb*",
-              "RelativeToolTip": "TryLibraryManagement\\Form1.vb*",
+              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\Form1.vb",
+              "RelativeToolTip": "TryLibraryManagement\\Form1.vb",
               "ViewState": "AgIAAAEAAAAAAAAAAAAnwEsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-21T11:39:58.689Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T11:39:58.689Z"
             },
             {
               "$type": "Document",
@@ -153,8 +151,8 @@
               "Title": "SignUp.vb [Design]",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\SignUp.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\SignUp.vb",
-              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\SignUp.vb [Design]*",
-              "RelativeToolTip": "TryLibraryManagement\\SignUp.vb [Design]*",
+              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\SignUp.vb [Design]",
+              "RelativeToolTip": "TryLibraryManagement\\SignUp.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-11-21T11:42:00.28Z",
               "EditorCaption": " [Design]"
@@ -167,7 +165,7 @@
               "RelativeDocumentMoniker": "TryLibraryManagement\\FetchAnything.vb",
               "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\FetchAnything.vb",
               "RelativeToolTip": "TryLibraryManagement\\FetchAnything.vb",
-              "ViewState": "AgIAABcAAAAAAAAAAAAvwDEAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAANYAAAAAAAAAAAAqwCUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-11-30T05:16:04.778Z",
               "EditorCaption": ""
@@ -178,8 +176,8 @@
               "Title": "CreateActualBook.vb [Design]",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\CreateActualBook.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\CreateActualBook.vb",
-              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\CreateActualBook.vb [Design]*",
-              "RelativeToolTip": "TryLibraryManagement\\CreateActualBook.vb [Design]*",
+              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\CreateActualBook.vb [Design]",
+              "RelativeToolTip": "TryLibraryManagement\\CreateActualBook.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-11-30T10:58:38.483Z",
               "EditorCaption": " [Design]"
@@ -190,12 +188,11 @@
               "Title": "CreateActualBook.vb",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\CreateActualBook.vb",
               "RelativeDocumentMoniker": "TryLibraryManagement\\CreateActualBook.vb",
-              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\CreateActualBook.vb*",
-              "RelativeToolTip": "TryLibraryManagement\\CreateActualBook.vb*",
+              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\TryLibraryManagement\\TryLibraryManagement\\CreateActualBook.vb",
+              "RelativeToolTip": "TryLibraryManagement\\CreateActualBook.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-30T11:44:56.296Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T11:44:56.296Z"
             },
             {
               "$type": "Document",
@@ -231,8 +228,7 @@
               "RelativeToolTip": "TryLibraryManagement\\SignUpOtpCode.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-30T05:21:54.093Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T05:21:54.093Z"
             },
             {
               "$type": "Document",
@@ -268,8 +264,7 @@
               "RelativeToolTip": "TryLibraryManagement\\BorrowBookForm.vb",
               "ViewState": "AgIAADAAAAAAAAAAAAAvwDYAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-30T11:41:23.081Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T11:41:23.081Z"
             },
             {
               "$type": "Document",
@@ -317,8 +312,7 @@
               "RelativeToolTip": "TryLibraryManagement\\YourBorrowedBooks.vb",
               "ViewState": "AgIAABMAAAAAAAAAAAAowC0AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-30T12:10:50.369Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T12:10:50.369Z"
             },
             {
               "$type": "Document",
@@ -330,8 +324,7 @@
               "RelativeToolTip": "TryLibraryManagement\\ReturnBookForm.vb",
               "ViewState": "AgIAAC0AAAAAAAAAAAAEwEIAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-30T11:54:20.357Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T11:54:20.357Z"
             },
             {
               "$type": "Document",
@@ -355,8 +348,7 @@
               "RelativeToolTip": "TryLibraryManagement\\BookDashboardForAdmin.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-30T11:16:02.111Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T11:16:02.111Z"
             },
             {
               "$type": "Document",
@@ -380,8 +372,7 @@
               "RelativeToolTip": "TryLibraryManagement\\UserDashboard.vb",
               "ViewState": "AgIAAGUAAAAAAAAAAAAswHoAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-30T11:24:30.387Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T11:24:30.387Z"
             },
             {
               "$type": "Document",
@@ -393,8 +384,7 @@
               "RelativeToolTip": "TryLibraryManagement\\MainDashboard.vb",
               "ViewState": "AgIAADwBAAAAAAAAAIAwwE4BAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-30T09:41:03.139Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T09:41:03.139Z"
             }
           ]
         },
