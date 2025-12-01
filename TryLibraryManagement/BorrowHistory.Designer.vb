@@ -467,6 +467,7 @@ Partial Class BorrowHistory
         Controls.Add(MainPanel)
         Controls.Add(SidePanel)
         Controls.Add(TopPanel)
+        MinimumSize = New Size(1287, 676)
         Name = "BorrowHistory"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Admin Dashboard - Borrow History"

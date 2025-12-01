@@ -1952,11 +1952,11 @@
   </data>
   <data name="SignOutBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAADASURBVFhH7ZXLDcIwEEQDJdAZohIKiaiLkuDy0EoxEiMC
-        zo4l+5B3XHueR8rH07QzIjRCvdWoKIt6q3EFbt4WuHlb4OZtwRJ/6ryaBgUewFnn1TQokD88cAsEwAm4
-        6rwKtwBwBO6L5qbrf3ELBMAlXsRSAjjonlVaFAjSJX4VKGtJZvV9pezWefDp24xfYAv6CHR9lRYF0ocH
-        boFRPsOuP6K+v+IRLqOg63Vs5W2Bm7cFbv4tcFFvNSrKot6dIXkBIS4MoANjCysAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EQAACxEBf2RfkQAAAMBJREFUWEftlcsNwjAQRAMl0BmiEgqJqIuS4PLQSjESIwLOjiX7kHdce55HysfT
+        tDMiNEK91agoi3qrcQVu3ha4eVvg5m3BEn/qvJoGBR7AWefVNCiQPzxwCwTACbjqvAq3AHAE7ovmput/
+        cQsEwCVexFICOOieVVoUCNIlfhUoa0lm9X2l7NZ58OnbjF9gC/oIdH2VFgXShwdugVE+w64/or6/4hEu
+        o6DrdWzlbYGbtwVu/i1wUW81Ksqi3p0heQEhLgygA2MLKwAAAABJRU5ErkJggg==
 </value>
   </data>
   <metadata name="BorrowID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

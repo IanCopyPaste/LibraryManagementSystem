@@ -290,6 +290,7 @@ Partial Class BookDashboardForAdmin
         Controls.Add(TopPanel)
         Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Margin = New Padding(4)
+        MinimumSize = New Size(1282, 676)
         Name = "BookDashboardForAdmin"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Admin Dashboard - Book Dashboard"

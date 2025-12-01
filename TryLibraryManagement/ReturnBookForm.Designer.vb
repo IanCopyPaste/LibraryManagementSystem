@@ -357,6 +357,7 @@ Partial Class ReturnBookForm
         Controls.Add(PictureBox3)
         Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Margin = New Padding(4)
+        MinimumSize = New Size(600, 457)
         Name = "ReturnBookForm"
         StartPosition = FormStartPosition.CenterScreen
         Text = "ReturnBookForm"

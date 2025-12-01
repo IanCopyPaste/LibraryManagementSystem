@@ -250,6 +250,7 @@ Partial Class CreateActualBook
         Controls.Add(PictureBox3)
         Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Margin = New Padding(4)
+        MinimumSize = New Size(573, 499)
         Name = "CreateActualBook"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Insert a Book"

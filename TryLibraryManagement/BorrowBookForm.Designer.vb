@@ -349,6 +349,7 @@ Partial Class BorrowBookForm
         Controls.Add(PictureBox2)
         Controls.Add(PictureBox1)
         Controls.Add(PictureBox3)
+        MinimumSize = New Size(600, 457)
         Name = "BorrowBookForm"
         StartPosition = FormStartPosition.CenterScreen
         Text = "BorrowBookForm"

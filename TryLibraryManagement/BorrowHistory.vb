@@ -1,4 +1,5 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports System.Runtime.Intrinsics
+Imports MySql.Data.MySqlClient
 
 Public Class BorrowHistory
     Private Sub InsertBooksBtn_Click(sender As Object, e As EventArgs) Handles InsertBooksBtn.Click
@@ -39,7 +40,7 @@ Public Class BorrowHistory
 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles comboStat.SelectedIndexChanged
         If comboStat.Text = "All" Then
-            loadOrFilterTable("")
+            loadOrFilterTable("%")
         ElseIf comboStat.Text = "Returned" Then
             loadOrFilterTable("Returned")
         ElseIf comboStat.Text = "Borrowed" Then
@@ -111,9 +112,9 @@ Public Class BorrowHistory
             Dim query As String = "SELECT br.borrowID AS BorrowID, u.userID AS UserID, u.email AS Email, bk.title AS Book_Borrowed, br.borrowDate AS Borrowed_On, br.dueDate AS Due_Date, br.stat AS Statuss
                                    FROM borrow br JOIN users u ON u.userID = br.userID
                                    JOIN books bk ON bk.bookID = br.bookID
-                                   WHERE (@stat = '' OR br.stat = @stat)"
+                                   WHERE br.stat LIKE @stat"
             Dim cmd As New MySqlCommand(query, con)
-            cmd.Parameters.AddWithValue("@stat", stat)
+            cmd.Parameters.AddWithValue("@stat", "%" & stat & "%")
             Dim dasd As New MySqlDataAdapter(cmd)
             Dim dt As New DataTable
             dasd.Fill(dt)

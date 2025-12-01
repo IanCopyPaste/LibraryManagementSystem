@@ -508,6 +508,7 @@ Partial Class SignUp
         Controls.Add(Panel1)
         Font = New Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Margin = New Padding(4)
+        MinimumSize = New Size(659, 627)
         Name = "SignUp"
         StartPosition = FormStartPosition.CenterScreen
         Text = "SignUp"

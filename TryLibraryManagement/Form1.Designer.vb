@@ -285,6 +285,7 @@ Partial Class Form1
         Controls.Add(Panel1)
         Font = New Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
+        MinimumSize = New Size(487, 569)
         Name = "Form1"
         StartPosition = FormStartPosition.CenterScreen
         Text = "LoginForm"

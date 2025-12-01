@@ -24,9 +24,9 @@ Partial Class InsertBooks
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(InsertBooks))
-        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
         TopPanel = New Panel()
         PictureBox1 = New PictureBox()
         ProfileBoxUpper = New PictureBox()
@@ -576,31 +576,31 @@ Partial Class InsertBooks
         ' 
         BookTable.AllowUserToAddRows = False
         BookTable.AllowUserToDeleteRows = False
-        DataGridViewCellStyle4.BackColor = Color.Gainsboro
-        DataGridViewCellStyle4.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        DataGridViewCellStyle4.ForeColor = SystemColors.ControlText
-        DataGridViewCellStyle4.SelectionBackColor = Color.DodgerBlue
-        BookTable.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle1.BackColor = Color.Gainsboro
+        DataGridViewCellStyle1.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        DataGridViewCellStyle1.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle1.SelectionBackColor = Color.DodgerBlue
+        BookTable.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         BookTable.BackgroundColor = Color.DarkSlateGray
-        DataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = Color.Snow
-        DataGridViewCellStyle5.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        DataGridViewCellStyle5.ForeColor = SystemColors.ControlText
-        DataGridViewCellStyle5.SelectionBackColor = Color.DodgerBlue
-        DataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = DataGridViewTriState.True
-        BookTable.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = Color.Snow
+        DataGridViewCellStyle2.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        DataGridViewCellStyle2.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = Color.DodgerBlue
+        DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
+        BookTable.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         BookTable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         BookTable.Columns.AddRange(New DataGridViewColumn() {BookID, Title, Author, PublishDate, Category, status, Edit, delete})
         BookTable.Cursor = Cursors.Hand
-        DataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = Color.Snow
-        DataGridViewCellStyle6.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
-        DataGridViewCellStyle6.ForeColor = SystemColors.ControlText
-        DataGridViewCellStyle6.SelectionBackColor = Color.DodgerBlue
-        DataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = DataGridViewTriState.False
-        BookTable.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = Color.Snow
+        DataGridViewCellStyle3.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
+        DataGridViewCellStyle3.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle3.SelectionBackColor = Color.DodgerBlue
+        DataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
+        BookTable.DefaultCellStyle = DataGridViewCellStyle3
         BookTable.GridColor = Color.WhiteSmoke
         BookTable.Location = New Point(416, 53)
         BookTable.Name = "BookTable"
@@ -694,6 +694,7 @@ Partial Class InsertBooks
         Controls.Add(MainPanel)
         Controls.Add(SidePanel)
         Controls.Add(TopPanel)
+        MinimumSize = New Size(1282, 676)
         Name = "InsertBooks"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Admin Dashboard - Manage Books"

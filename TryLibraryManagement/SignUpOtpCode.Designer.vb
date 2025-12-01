@@ -153,6 +153,7 @@ Partial Class SignUpOtpCode
         Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         ForeColor = SystemColors.ControlText
         Margin = New Padding(4)
+        MinimumSize = New Size(378, 402)
         Name = "SignUpOtpCode"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Enter OTP Code"

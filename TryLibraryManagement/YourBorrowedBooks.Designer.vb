@@ -32,8 +32,8 @@ Partial Class YourBorrowedBooks
         SignOutBtn = New Button()
         userPageBtn = New Button()
         MainPanel = New Panel()
-        ewanFLow = New FlowLayoutPanel()
         Label2 = New Label()
+        ewanFLow = New FlowLayoutPanel()
         TopPanel.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(ProfileBoxUpper, ComponentModel.ISupportInitialize).BeginInit()
@@ -162,15 +162,6 @@ Partial Class YourBorrowedBooks
         MainPanel.Size = New Size(1132, 563)
         MainPanel.TabIndex = 3
         ' 
-        ' ewanFLow
-        ' 
-        ewanFLow.AutoScroll = True
-        ewanFLow.BackColor = Color.DarkSlateGray
-        ewanFLow.Location = New Point(36, 59)
-        ewanFLow.Name = "ewanFLow"
-        ewanFLow.Size = New Size(1086, 465)
-        ewanFLow.TabIndex = 22
-        ' 
         ' Label2
         ' 
         Label2.AutoSize = True
@@ -186,6 +177,15 @@ Partial Class YourBorrowedBooks
         Label2.Text = "        Book Collections:"
         Label2.TextAlign = ContentAlignment.TopRight
         ' 
+        ' ewanFLow
+        ' 
+        ewanFLow.AutoScroll = True
+        ewanFLow.BackColor = Color.DarkSlateGray
+        ewanFLow.Location = New Point(36, 59)
+        ewanFLow.Name = "ewanFLow"
+        ewanFLow.Size = New Size(1086, 465)
+        ewanFLow.TabIndex = 22
+        ' 
         ' YourBorrowedBooks
         ' 
         AutoScaleDimensions = New SizeF(9F, 20F)
@@ -196,6 +196,7 @@ Partial Class YourBorrowedBooks
         Controls.Add(TopPanel)
         Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Margin = New Padding(4)
+        MinimumSize = New Size(1282, 676)
         Name = "YourBorrowedBooks"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Borrowed Books"
