@@ -256,7 +256,9 @@ Public Class MainDashboard
                 ProfileBoxMain.Image = Image.FromStream(ms)
             End If
         Catch ex As Exception
-            ' Exception ignored
+            MsgBox(ex.Message, vbCritical, "ERROR OCCURED")
+        Finally
+            con.Close()
         End Try
     End Sub
 
